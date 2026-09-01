@@ -144,6 +144,7 @@ ollama pull qwen2.5:1.5b
 | Версия scikit-learn отличается | это допустимо: самопроверка реально грузит все 20 моделей и скажет, работают ли они |
 | Режим GigaChat серый | ключа нет: `./I-ins.command --gigachat-test` покажет, где именно рвётся |
 | GigaChat выбирается, но отвечает ошибкой | `./I-ins.command --gigachat-test` — печатает HTTP-код и ответ сервиса |
+| `certificate verify failed` | у Python с python.org нет корневых сертификатов; `python3 gigachat_check.py` покажет, помогает ли набор certifi, а `I-ins.command` подставляет его сам |
 | Сеть требует прокси | `export HTTPS_PROXY=http://proxy:3128` перед запуском `./I-ins.command` |
 | Режим Qwen RAG серый | не запущена Ollama или не скачана модель `qwen2.5:1.5b` |
 | Отчёт не строится, «нужна библиотека reportlab» | запустите `./I-ins.command` заново — библиотека доустановится |

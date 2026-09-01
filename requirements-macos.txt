@@ -21,6 +21,9 @@ passlib>=1.7.4,<2
 bcrypt>=4.0,<4.1
 python-multipart>=0.0.9,<1
 httpx>=0.27,<1
+# Корневые сертификаты: сборки Python с python.org не пользуются
+# связкой ключей macOS, без этого набора HTTPS-запросы падают.
+certifi>=2024.2
 numpy>=1.26,<3
 pandas>=2,<3
 scipy>=1.11,<2

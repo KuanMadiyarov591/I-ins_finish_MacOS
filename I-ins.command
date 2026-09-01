@@ -172,6 +172,20 @@ if [[ ! -f "$DEPS_MARKER" || "$SOURCE_DIR/requirements-macos.txt" -nt "$DEPS_MAR
   echo
 fi
 
+# --- 4б. Корневые сертификаты ------------------------------------------------
+# Python с python.org не пользуется связкой ключей macOS: сразу после установки
+# у него нет доверенных корней, и любой HTTPS-запрос падает с
+# «certificate verify failed». Набор certifi закрывает это, не трогая систему.
+if [[ -z "${SSL_CERT_FILE:-}" ]]; then
+  CERT_FILE="$("$VENV_PY" -c 'import certifi; print(certifi.where())' 2>/dev/null || true)"
+  if [[ -n "$CERT_FILE" && -f "$CERT_FILE" ]]; then
+    export SSL_CERT_FILE="$CERT_FILE"
+    export REQUESTS_CA_BUNDLE="$CERT_FILE"
+    echo "Корневые сертификаты: $CERT_FILE"
+    echo
+  fi
+fi
+
 # --- 4a. Ключ GigaChat ------------------------------------------------------
 # Спрашивается ровно один раз. Дальше лежит в папке данных и переживает
 # обновление программы: в самом комплекте и в репозитории ключа нет.

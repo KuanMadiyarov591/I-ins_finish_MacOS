@@ -127,6 +127,27 @@ def active_services() -> tuple[Service, ...]:
 # --------------------------------------------------------------------------- пути
 
 
+
+def ensure_ca_bundle() -> None:
+    """Набор корневых сертификатов для сборок Python с python.org.
+
+    Такой Python не пользуется связкой ключей macOS: сразу после установки у
+    него нет ни одного доверенного корня, и любой HTTPS-запрос падает с
+    «certificate verify failed: unable to get local issuer certificate».
+    Набор certifi закрывает это, ничего не меняя в системе.
+    """
+    if os.getenv("SSL_CERT_FILE"):
+        return
+    try:
+        import certifi
+    except ImportError:
+        return
+    path = certifi.where()
+    if os.path.isfile(path):
+        os.environ["SSL_CERT_FILE"] = path
+        os.environ.setdefault("REQUESTS_CA_BUNDLE", path)
+
+
 def data_root() -> Path:
     override = os.getenv("IINS_DATA_ROOT")
     if override:
@@ -1191,6 +1212,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
+    ensure_ca_bundle()
     args = parse_args()
     if args.version:
         print(f"{APP_NAME} {APP_VERSION}")
