@@ -1614,7 +1614,7 @@
       return;
     }
     const ollamaReady = !!(status.ollama && status.ollama.model_ready);
-    const gigaReady = !!(status.gigachat && status.gigachat.available);
+    const gigaReady = !!(status.gigachat && (status.gigachat.selectable || status.gigachat.configured || status.gigachat.available));
     const savedMode = localStorage.getItem("ins_rag_mode") || "auto";
     const history = Array.isArray(state.ragHistory) ? state.ragHistory : [];
     const threadHtml = history.length

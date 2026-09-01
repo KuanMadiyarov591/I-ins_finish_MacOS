@@ -5,6 +5,15 @@
   2) переменная окружения GIGACHAT_API_KEY или I_INS_GIGACHAT_KEY;
   3) файл gigachat.key рядом с кабинетом, рядом с комплектом или в ~/.i-ins/.
 В исходном коде ключ не хранится.
+
+Два разных состояния, которые нельзя путать:
+  configured — ключ и адрес заданы. Этого достаточно, чтобы режим GigaChat
+               можно было ВЫБРАТЬ в кабинете;
+  ready      — пробный запрос к сервису прошёл. Требуется только для режима
+               «Авто», который сам решает, к какой модели обратиться.
+Если сеть отвечает через прокси или сервис медленный, проба может не пройти —
+но пользователь всё равно должен иметь возможность выбрать GigaChat и увидеть
+настоящую ошибку запроса, а не серый пункт в списке.
 """
 
 from __future__ import annotations
@@ -35,11 +44,16 @@ _DEFAULT_SYSTEM = (
 
 def _key_files() -> list[Path]:
     root = Path(__file__).resolve().parent.parent.parent  # каталог кабинета
-    return [
+    candidates = [
         root / "gigachat.key",
         root.parent / "gigachat.key",
+        root.parent.parent / "gigachat.key",
         Path.home() / ".i-ins" / "gigachat.key",
     ]
+    data_root = os.getenv("IINS_DATA_ROOT")
+    if data_root:
+        candidates.insert(0, Path(data_root).expanduser() / "gigachat.key")
+    return candidates
 
 
 def api_key() -> str:
@@ -77,7 +91,18 @@ def _timeout() -> float:
         return 60.0
 
 
+def _client(timeout: float) -> httpx.Client:
+    """Клиент, уважающий системные настройки прокси — как это делает curl.
+
+    Раньше здесь стояло trust_env=False, и в сети с прокси проба падала, хотя
+    установщик тем же ключом через curl проходил. Расхождение и приводило к
+    тому, что режим GigaChat оказывался недоступен.
+    """
+    return httpx.Client(timeout=timeout, trust_env=True, follow_redirects=True)
+
+
 def gigachat_configured() -> bool:
+    """Ключ и адрес заданы — режим можно выбирать."""
     return bool(base_url()) and bool(api_key())
 
 
@@ -85,22 +110,23 @@ def _probe_now() -> tuple[bool, Optional[str]]:
     url = base_url()
     key = api_key()
     if not url:
-        return False, "Не задан адрес GigaChat"
+        return False, "не задан адрес сервиса"
     if not key:
-        return False, "Не задан ключ GigaChat: GIGACHAT_API_KEY или файл gigachat.key"
+        return False, "не задан ключ: GIGACHAT_API_KEY или файл gigachat.key"
     try:
-        with httpx.Client(timeout=min(_timeout(), 10.0), trust_env=False) as client:
+        with _client(min(_timeout(), 15.0)) as client:
             r = client.get(f"{url}/models", headers={"Authorization": f"Bearer {key}"})
     except Exception as exc:  # noqa: BLE001
-        return False, f"GigaChat недоступен: {exc}"
+        return False, f"нет связи с {url}: {type(exc).__name__}: {exc}"
     if r.status_code in (401, 403):
-        return False, "Ключ GigaChat отклонён сервисом"
+        return False, f"ключ отклонён сервисом (HTTP {r.status_code})"
     if r.status_code >= 500:
-        return False, f"GigaChat отвечает ошибкой {r.status_code}"
+        return False, f"сервис отвечает ошибкой {r.status_code}"
     return True, None
 
 
 def gigachat_is_ready(force: bool = False) -> bool:
+    """True, если пробный запрос прошёл. Для выбора режима достаточно configured."""
     now = time.monotonic()
     if force or now - float(_probe.get("ts") or 0.0) > _PROBE_TTL:
         ok, err = _probe_now()
@@ -109,15 +135,20 @@ def gigachat_is_ready(force: bool = False) -> bool:
 
 
 def gigachat_status() -> dict[str, Any]:
-    ready = gigachat_is_ready()
+    configured = gigachat_configured()
+    ready = gigachat_is_ready() if configured else False
     return {
         "base_url": base_url(),
         "model": model_name(),
-        "configured": gigachat_configured(),
+        "configured": configured,
+        "selectable": configured,          # можно выбрать в кабинете
         "reachable": ready,
         "model_ready": ready,
-        "available": ready,
-        "error": None if ready else _probe.get("error"),
+        "available": ready,                # используется режимом «Авто»
+        "error": None if ready else (
+            _probe.get("error") if configured
+            else "ключ не задан: положите его в файл gigachat.key или задайте GIGACHAT_API_KEY"
+        ),
     }
 
 
@@ -147,20 +178,20 @@ def generate_gigachat_reply(
     }
     headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
     try:
-        with httpx.Client(timeout=_timeout(), trust_env=False) as client:
+        with _client(_timeout()) as client:
             r = client.post(f"{url}/chat/completions", json=payload, headers=headers)
     except Exception as exc:  # noqa: BLE001
         _probe.update({"ts": time.monotonic(), "ok": False, "error": str(exc)})
-        raise RuntimeError(f"GigaChat недоступен: {exc}") from exc
+        raise RuntimeError(f"GigaChat недоступен по адресу {url}: {exc}") from exc
     if r.status_code in (401, 403):
         _probe.update({"ts": time.monotonic(), "ok": False, "error": "ключ отклонён"})
-        raise RuntimeError("GigaChat отклонил ключ доступа")
+        raise RuntimeError(f"GigaChat отклонил ключ доступа (HTTP {r.status_code})")
     if r.status_code >= 400:
         raise RuntimeError(f"GigaChat вернул ошибку {r.status_code}: {r.text[:300]}")
     try:
         data = r.json()
     except ValueError as exc:
-        raise RuntimeError("GigaChat вернул неразбираемый ответ") from exc
+        raise RuntimeError(f"GigaChat вернул неразбираемый ответ: {r.text[:200]}") from exc
     text = _extract_text(data)
     if not text:
         raise RuntimeError("GigaChat вернул пустой ответ — повторите запрос.")
@@ -186,4 +217,6 @@ def _extract_text(data: Any) -> str:
         text = first.get("text")
         if isinstance(text, str):
             return text.strip()
-    return ""
+    # некоторые совместимые сервисы отвечают полем output_text
+    out = data.get("output_text")
+    return out.strip() if isinstance(out, str) else ""

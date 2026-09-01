@@ -259,6 +259,14 @@ if [[ "${1:-}" == "--check-only" ]]; then
   exit 0
 fi
 
+if [[ "${1:-}" == "--gigachat-test" ]]; then
+  echo
+  "$VENV_PY" "$RUNTIME_SRC/iins_runtime.py" --gigachat-test
+  code=$?
+  read -r -p "Нажмите Enter, чтобы закрыть окно..." _
+  exit $code
+fi
+
 if [[ "${1:-}" == "--smoke-test" ]]; then
   echo
   echo "Полный smoke-test всех шести модулей…"

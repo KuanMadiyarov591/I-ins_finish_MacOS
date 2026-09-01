@@ -577,7 +577,7 @@
       if (modeSel) {
         const ollamaOpt = modeSel.querySelector('option[value="ollama"]');
         if (ollamaOpt) ollamaOpt.disabled = !ready;
-        const gigaReady = !!(st.gigachat && st.gigachat.available);
+        const gigaReady = !!(st.gigachat && (st.gigachat.selectable || st.gigachat.configured || st.gigachat.available));
         const gigaOpt = modeSel.querySelector('option[value="gigachat"]');
         if (gigaOpt) gigaOpt.disabled = !gigaReady;
         if (!ready && modeSel.value === "ollama") modeSel.value = "auto";

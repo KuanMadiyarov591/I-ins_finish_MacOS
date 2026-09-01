@@ -132,8 +132,6 @@ def data_root() -> Path:
     if override:
         return Path(override).expanduser().resolve()
     if sys.platform == "darwin":
-        # На учебных Mac домашняя квота мала, а локальный диск смонтирован
-        # как ~/goinfre: если он есть, рабочая папка идёт туда.
         goinfre = Path.home() / "goinfre"
         if goinfre.is_dir():
             return goinfre / APP_NAME
@@ -758,6 +756,93 @@ def check_knowledge_base(runtime: Path) -> list[str]:
     return notes
 
 
+
+def run_gigachat_test() -> int:
+    """Настоящий запрос к GigaChat с подробным разбором ответа."""
+    import urllib.parse
+
+    key = gigachat_key()
+    url = (os.getenv("GIGACHAT_BASE_URL") or GIGACHAT_BASE_URL).rstrip("/")
+    model = os.getenv("GIGACHAT_MODEL") or GIGACHAT_MODEL
+
+    print(f"{APP_NAME} {APP_VERSION} — проверка GigaChat")
+    print(f"Адрес:  {url}")
+    print(f"Модель: {model}")
+    print(f"Ключ:   {'задан, ' + str(len(key)) + ' знаков, ...' + key[-4:] if key else 'НЕ ЗАДАН'}")
+    for name in ("HTTPS_PROXY", "https_proxy", "HTTP_PROXY", "http_proxy", "NO_PROXY", "no_proxy"):
+        value = os.getenv(name)
+        if value:
+            short = value if len(value) <= 70 else value[:70] + "…"
+            print(f"Прокси: {name}={short}")
+    print()
+
+    if not key:
+        print("[ошибка] Ключ не найден. Положите его в файл gigachat.key в папке данных")
+        print(f"         {data_root() / 'gigachat.key'}")
+        return 1
+
+    ok, note = gigachat_probe(timeout=20.0)
+    print(f"[{'ок' if ok else '——'}] Список моделей ({url}/models): {note}")
+
+    body = json.dumps({
+        "model": model,
+        "messages": [
+            {"role": "system", "content": "Отвечай одним словом."},
+            {"role": "user", "content": "Скажи слово: работает"},
+        ],
+        "max_tokens": 32,
+        "temperature": 0.0,
+        "stream": False,
+    }, ensure_ascii=False).encode("utf-8")
+    request = urllib.request.Request(
+        f"{url}/chat/completions", data=body, method="POST",
+        headers={"Authorization": f"Bearer {key}",
+                 "Content-Type": "application/json; charset=utf-8"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=90.0) as response:
+            raw = response.read().decode("utf-8", "replace")
+            status = response.status
+    except urllib.error.HTTPError as exc:
+        raw = exc.read().decode("utf-8", "replace")
+        status = exc.code
+    except Exception as exc:  # noqa: BLE001
+        print(f"[ошибка] Запрос не ушёл: {type(exc).__name__}: {exc}")
+        print()
+        print("Обычные причины: нет интернета; сеть требует прокси — задайте")
+        print("HTTPS_PROXY; сервис доступен только из сети учебного центра.")
+        return 1
+
+    print(f"[{'ок' if status < 400 else '——'}] Запрос к модели: HTTP {status}")
+    if status >= 400:
+        print(f"Ответ сервиса: {raw[:600]}")
+        if status in (401, 403):
+            print()
+            print("Ключ отклонён. Замените его командой:")
+            print(f"  echo 'sk-…' > \"{data_root() / 'gigachat.key'}\"")
+        return 1
+
+    try:
+        data = json.loads(raw)
+    except ValueError:
+        print(f"[ошибка] Ответ не разбирается как JSON: {raw[:300]}")
+        return 1
+
+    text = ""
+    choices = data.get("choices") or []
+    if choices:
+        text = ((choices[0].get("message") or {}).get("content")
+                or choices[0].get("text") or "")
+    if not text:
+        print(f"[ошибка] Пустой ответ. Тело: {raw[:400]}")
+        return 1
+
+    print(f"Ответ модели: {str(text).strip()[:200]}")
+    print()
+    print("GigaChat работает. Режим доступен во всех шести кабинетах.")
+    return 0
+
+
 def run_self_check(force_extract: bool) -> int:
     root = data_root()
     log_file = setup_logging(root)
@@ -1096,6 +1181,8 @@ class LauncherWindow:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(prog="iins_runtime", description=f"{APP_NAME} — локальный запуск")
     parser.add_argument("--self-check", action="store_true", help="проверить окружение и комплект")
+    parser.add_argument("--gigachat-test", action="store_true",
+                        help="проверить связь с GigaChat настоящим запросом")
     parser.add_argument("--smoke-test", action="store_true", help="запустить и проверить все модули без окна")
     parser.add_argument("--report", type=Path, help="куда сохранить JSON-отчёт smoke-теста")
     parser.add_argument("--force-extract", action="store_true", help="переустановить payload заново")
@@ -1108,6 +1195,8 @@ def main() -> int:
     if args.version:
         print(f"{APP_NAME} {APP_VERSION}")
         return 0
+    if args.gigachat_test:
+        return run_gigachat_test()
     if args.self_check:
         return run_self_check(args.force_extract)
     if args.smoke_test:

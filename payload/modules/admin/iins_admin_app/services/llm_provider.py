@@ -182,7 +182,11 @@ def providers_status() -> dict[str, Any]:
             "gigachat": {
                 "id": "gigachat",
                 "label": LABELS["gigachat"],
+                # ready — проба прошла, этим пользуется режим «Авто»;
+                # selectable — ключ задан, этого довольно, чтобы выбрать режим
+                # руками и увидеть настоящую ошибку вместо серого пункта.
                 "ready": bool(gigachat.get("available")),
+                "selectable": bool(gigachat.get("selectable") or gigachat.get("configured")),
                 "model": gigachat.get("model") or "",
                 "error": gigachat.get("error"),
             },

@@ -622,7 +622,7 @@
     try {
       const st = await api("/api/assistant/rag/status");
       state.ragOllamaReady = !!(st.ollama && st.ollama.model_ready);
-      state.ragGigaReady = !!(st.gigachat && st.gigachat.available);
+      state.ragGigaReady = !!(st.gigachat && (st.gigachat.selectable || st.gigachat.configured || st.gigachat.available));
       paintRagOllamaBadge();
       paintRagModeOptions();
     } catch {
