@@ -7,3 +7,4 @@ build/
 gigachat.key
 *-wal
 *-shm
+PUSH.bat
