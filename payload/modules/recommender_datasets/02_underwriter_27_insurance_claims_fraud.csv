@@ -1,0 +1,1001 @@
+months_as_customer,age,policy_deductable,policy_annual_premium,umbrella_limit,capital-gains,capital-loss,incident_hour_of_the_day,number_of_vehicles_involved,bodily_injuries,witnesses,auto_year,policy_state,policy_csl,insured_sex,insured_education_level,insured_occupation,insured_hobbies,insured_relationship,incident_type,collision_type,incident_severity,authorities_contacted,incident_state,incident_city,property_damage,police_report_available,auto_make,fraud_reported
+328,48,1000,1406.91,0,53300,0,5,1,1,2,2004,OH,250/500,MALE,MD,craft-repair,sleeping,husband,Single Vehicle Collision,Side Collision,Major Damage,Police,SC,Columbus,YES,YES,Saab,1
+228,42,2000,1197.22,5000000,0,0,8,1,0,0,2007,IN,250/500,MALE,MD,machine-op-inspct,reading,other-relative,Vehicle Theft,?,Minor Damage,Police,VA,Riverwood,?,?,Mercedes,1
+134,29,2000,1413.14,5000000,35100,0,7,3,2,3,2007,OH,100/300,FEMALE,PhD,sales,board-games,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Columbus,NO,NO,Dodge,0
+256,41,2000,1415.74,6000000,48900,-62400,5,1,1,2,2014,IL,250/500,FEMALE,PhD,armed-forces,board-games,unmarried,Single Vehicle Collision,Front Collision,Major Damage,Police,OH,Arlington,?,NO,Chevrolet,1
+228,44,1000,1583.91,6000000,66000,-46000,20,1,0,1,2009,IL,500/1000,MALE,Associate,sales,board-games,unmarried,Vehicle Theft,?,Minor Damage,,NY,Arlington,NO,NO,Accura,0
+256,39,1000,1351.1,0,0,0,19,3,0,2,2003,OH,250/500,FEMALE,PhD,tech-support,bungie-jumping,unmarried,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,SC,Arlington,NO,NO,Saab,1
+137,34,1000,1333.35,0,0,-77000,0,3,0,0,2012,IN,250/500,MALE,PhD,prof-specialty,board-games,husband,Multi-vehicle Collision,Front Collision,Minor Damage,Police,NY,Springfield,?,?,Nissan,0
+165,37,1000,1137.03,0,0,0,23,3,2,2,2015,IL,100/300,MALE,Associate,tech-support,base-jumping,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Police,VA,Columbus,?,YES,Audi,0
+27,33,500,1442.99,0,0,0,21,1,1,1,2012,IL,100/300,FEMALE,PhD,other-service,golf,own-child,Single Vehicle Collision,Front Collision,Total Loss,Police,WV,Arlington,NO,YES,Toyota,0
+212,42,500,1315.68,0,0,-39300,14,1,2,1,1996,IL,100/300,MALE,PhD,priv-house-serv,camping,wife,Single Vehicle Collision,Rear Collision,Total Loss,Other,NC,Hillsdale,NO,?,Saab,0
+235,42,500,1253.12,4000000,38400,0,22,1,2,2,2002,OH,100/300,FEMALE,Masters,exec-managerial,dancing,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Police,NY,Northbend,YES,?,Ford,0
+447,61,2000,1137.16,0,0,-51000,21,3,1,2,2006,OH,100/300,FEMALE,High School,exec-managerial,skydiving,other-relative,Multi-vehicle Collision,Front Collision,Major Damage,Fire,SC,Springfield,YES,YES,Audi,0
+60,23,500,1215.36,3000000,0,0,9,1,1,0,2000,OH,500/1000,MALE,MD,protective-serv,reading,wife,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Northbend,YES,NO,Saab,0
+121,34,1000,936.61,0,52800,-32800,5,1,1,1,2010,OH,100/300,FEMALE,MD,armed-forces,bungie-jumping,wife,Parked Car,?,Minor Damage,,SC,Springfield,NO,NO,Toyota,0
+180,38,2000,1301.13,0,41300,-55500,12,1,0,2,2003,OH,250/500,FEMALE,College,machine-op-inspct,board-games,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Police,SC,Springfield,NO,YES,Dodge,1
+473,58,2000,1131.4,0,55700,0,12,4,0,0,1999,IN,100/300,FEMALE,MD,transport-moving,movies,other-relative,Multi-vehicle Collision,Side Collision,Major Damage,Other,WV,Hillsdale,YES,NO,Accura,1
+70,26,1000,1199.44,5000000,63600,0,0,3,1,2,2012,OH,500/1000,MALE,College,machine-op-inspct,hiking,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Other,NY,Riverwood,?,YES,Nissan,0
+140,31,500,708.64,6000000,53500,0,9,1,0,2,2015,IN,500/1000,MALE,High School,machine-op-inspct,reading,unmarried,Single Vehicle Collision,Side Collision,Total Loss,Police,WV,Northbend,NO,YES,Suburu,0
+160,37,500,1374.22,0,45500,-37800,19,1,1,0,2015,OH,500/1000,FEMALE,MD,craft-repair,yachting,other-relative,Single Vehicle Collision,Side Collision,Total Loss,Other,NY,Northbrook,YES,NO,Accura,0
+196,39,2000,1475.73,0,57000,-27300,8,3,2,0,2014,IN,500/1000,FEMALE,High School,handlers-cleaners,camping,own-child,Multi-vehicle Collision,Side Collision,Major Damage,Police,VA,Columbus,?,NO,Nissan,0
+460,62,1000,1187.96,4000000,0,0,20,3,1,0,2011,IN,250/500,MALE,JD,other-service,bungie-jumping,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Columbus,NO,?,Suburu,0
+217,41,2000,875.15,0,46700,0,15,3,1,2,1996,IL,500/1000,FEMALE,Associate,machine-op-inspct,skydiving,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Police,SC,Arlington,?,?,Accura,0
+370,55,2000,972.18,0,72700,-68200,20,3,0,0,2000,IL,100/300,MALE,High School,prof-specialty,paintball,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,SC,Hillsdale,NO,YES,Suburu,1
+413,55,2000,1268.79,0,0,-31000,15,1,2,2,2011,IN,100/300,MALE,MD,priv-house-serv,chess,own-child,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,WV,Northbend,?,?,Dodge,1
+237,40,1000,883.31,0,0,-53500,6,1,1,3,2005,IN,100/300,MALE,College,craft-repair,kayaking,husband,Single Vehicle Collision,Rear Collision,Minor Damage,Other,VA,Riverwood,NO,NO,Ford,0
+8,35,2000,1266.92,0,0,0,16,3,1,3,2006,OH,100/300,MALE,Masters,sales,polo,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Other,OH,Arlington,NO,YES,Ford,1
+257,43,2000,1322.1,0,0,-29200,4,1,1,3,2005,IN,100/300,MALE,High School,prof-specialty,golf,own-child,Parked Car,?,Minor Damage,Police,PA,Arlington,YES,YES,Toyota,0
+202,34,500,848.07,3000000,31000,-30200,5,1,2,1,2003,IN,100/300,MALE,JD,exec-managerial,chess,not-in-family,Vehicle Theft,?,Minor Damage,,VA,Northbrook,YES,?,Suburu,1
+224,40,2000,1291.7,0,0,-55600,21,1,1,0,2009,OH,100/300,FEMALE,JD,sales,kayaking,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Other,SC,Northbend,NO,YES,Dodge,0
+241,45,2000,1104.5,0,0,0,5,1,2,2,2011,IL,500/1000,FEMALE,PhD,machine-op-inspct,basketball,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Police,SC,Northbrook,NO,NO,Accura,0
+64,25,1000,954.16,0,53200,0,22,4,0,0,2005,IL,250/500,MALE,Masters,prof-specialty,video-games,husband,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,SC,Columbus,NO,?,Toyota,0
+166,37,2000,1337.28,8000000,27500,0,10,3,2,2,2006,IL,100/300,MALE,JD,craft-repair,reading,husband,Multi-vehicle Collision,Side Collision,Major Damage,Police,WV,Riverwood,NO,?,Ford,1
+155,35,1000,1088.34,0,81100,0,16,3,2,3,2008,IL,500/1000,FEMALE,Associate,adm-clerical,yachting,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Police,NY,Arlington,YES,NO,BMW,0
+114,30,1000,1558.29,0,51400,-64000,1,3,1,2,2015,IL,100/300,MALE,High School,farming-fishing,video-games,wife,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Hillsdale,NO,?,Suburu,0
+149,37,500,1415.68,0,0,0,17,1,0,1,1999,IL,500/1000,MALE,PhD,prof-specialty,yachting,own-child,Single Vehicle Collision,Side Collision,Total Loss,Fire,WV,Hillsdale,YES,YES,Audi,0
+147,33,1000,1334.15,6000000,53300,-49200,15,1,2,0,1995,OH,100/300,MALE,High School,craft-repair,reading,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Other,WV,Springfield,YES,YES,Mercedes,1
+62,28,1000,988.45,0,0,0,3,1,1,1,2004,IL,100/300,FEMALE,Masters,protective-serv,camping,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Police,NY,Northbrook,?,YES,Suburu,1
+289,49,2000,1222.48,0,0,0,16,1,1,1,2001,IL,500/1000,FEMALE,JD,priv-house-serv,golf,unmarried,Parked Car,?,Minor Damage,,WV,Arlington,NO,YES,Suburu,0
+431,54,2000,1155.55,0,65700,0,4,3,2,0,2007,IN,500/1000,FEMALE,MD,craft-repair,bungie-jumping,unmarried,Multi-vehicle Collision,Rear Collision,Major Damage,Police,NY,Hillsdale,?,?,Jeep,0
+199,37,500,1262.08,0,48500,0,4,1,0,3,2011,IN,250/500,MALE,JD,tech-support,video-games,wife,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,NC,Columbus,?,NO,Nissan,1
+79,26,500,1451.62,0,0,-55700,19,1,2,2,2010,IL,100/300,MALE,Associate,tech-support,kayaking,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,WV,Columbus,NO,?,BMW,0
+116,34,500,1737.66,0,0,-24100,1,1,1,1,2001,IN,250/500,MALE,Associate,transport-moving,chess,unmarried,Single Vehicle Collision,Side Collision,Major Damage,Police,WV,Northbrook,?,?,BMW,1
+37,23,500,1475.93,0,0,-67400,17,3,1,0,2010,IL,500/1000,FEMALE,College,prof-specialty,hiking,husband,Multi-vehicle Collision,Side Collision,Minor Damage,Other,SC,Springfield,YES,NO,Dodge,0
+106,30,500,538.17,0,49700,-60200,23,1,2,2,2005,OH,250/500,FEMALE,PhD,transport-moving,reading,own-child,Single Vehicle Collision,Rear Collision,Total Loss,Other,NC,Arlington,NO,NO,Mercedes,0
+269,44,2000,1081.08,0,36400,-28700,14,1,0,2,2014,IL,100/300,MALE,JD,priv-house-serv,reading,unmarried,Single Vehicle Collision,Front Collision,Minor Damage,Other,SC,Springfield,YES,?,Toyota,0
+265,40,1000,1454.43,0,0,0,17,3,2,3,2002,IL,250/500,FEMALE,MD,protective-serv,yachting,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Other,NY,Arlington,NO,?,Accura,0
+163,33,500,1240.47,0,35300,0,11,3,1,1,2014,IN,100/300,FEMALE,Associate,other-service,polo,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,NC,Northbend,YES,?,Honda,0
+355,47,2000,1273.7,4000000,0,0,19,3,2,1,2003,OH,500/1000,MALE,College,other-service,kayaking,husband,Multi-vehicle Collision,Front Collision,Major Damage,Fire,WV,Arlington,NO,NO,Audi,1
+175,34,1000,1123.87,8000000,0,0,5,1,2,0,1995,IN,500/1000,FEMALE,PhD,protective-serv,dancing,other-relative,Vehicle Theft,?,Trivial Damage,Police,NY,Arlington,?,YES,Volkswagen,0
+192,35,1000,1245.89,0,0,-40300,19,1,0,0,2000,IL,100/300,FEMALE,Masters,exec-managerial,movies,wife,Single Vehicle Collision,Rear Collision,Total Loss,Other,WV,Springfield,NO,?,Mercedes,0
+430,59,2000,1326.62,7000000,0,0,19,3,0,3,1998,OH,250/500,MALE,MD,other-service,bungie-jumping,own-child,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,NY,Riverwood,?,YES,Nissan,0
+91,27,2000,1073.83,0,0,0,4,1,1,2,2008,IL,100/300,FEMALE,JD,farming-fishing,polo,husband,Vehicle Theft,?,Trivial Damage,,NY,Arlington,?,?,BMW,0
+217,39,1000,1530.52,0,0,0,8,1,2,1,2000,IN,100/300,MALE,College,armed-forces,basketball,not-in-family,Vehicle Theft,?,Minor Damage,,WV,Northbend,?,YES,Toyota,0
+223,40,500,1201.41,0,88400,-46500,7,3,1,0,1999,IN,100/300,FEMALE,JD,priv-house-serv,movies,husband,Multi-vehicle Collision,Side Collision,Major Damage,Police,NC,Columbus,YES,?,Suburu,0
+195,39,1000,1393.57,0,47600,-39600,5,1,0,1,2009,OH,250/500,MALE,PhD,machine-op-inspct,movies,not-in-family,Parked Car,?,Minor Damage,Police,VA,Northbend,NO,YES,Ford,0
+22,26,1000,1276.57,0,71500,0,3,1,1,2,1995,OH,100/300,MALE,PhD,craft-repair,skydiving,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,NY,Arlington,YES,NO,Chevrolet,0
+439,56,500,1082.49,0,36100,-55000,12,3,2,3,2014,IN,250/500,FEMALE,PhD,prof-specialty,chess,unmarried,Multi-vehicle Collision,Front Collision,Major Damage,Fire,SC,Columbus,?,?,Honda,0
+94,32,1000,1414.74,0,0,0,19,1,1,3,2014,IN,500/1000,FEMALE,Masters,adm-clerical,hiking,own-child,Parked Car,?,Minor Damage,,VA,Riverwood,NO,NO,Chevrolet,0
+11,39,2000,1470.06,0,56600,-45800,22,1,0,1,2007,IL,250/500,MALE,PhD,other-service,yachting,husband,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,WV,Riverwood,YES,NO,Saab,0
+151,36,2000,870.63,0,94800,-58500,12,3,1,1,2000,OH,250/500,FEMALE,MD,adm-clerical,kayaking,own-child,Multi-vehicle Collision,Side Collision,Minor Damage,Police,VA,Hillsdale,NO,NO,Ford,0
+154,34,500,795.23,0,36900,0,15,3,2,1,2014,IN,100/300,MALE,PhD,machine-op-inspct,base-jumping,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Police,NY,Springfield,YES,?,Nissan,1
+245,44,1000,1168.2,0,69100,0,23,3,0,3,1997,IL,500/1000,MALE,JD,handlers-cleaners,basketball,husband,Multi-vehicle Collision,Side Collision,Total Loss,Other,OH,Springfield,NO,NO,Honda,0
+119,32,1000,993.51,0,0,-49500,12,1,0,3,2011,IL,500/1000,MALE,High School,armed-forces,bungie-jumping,unmarried,Single Vehicle Collision,Side Collision,Minor Damage,Other,WV,Hillsdale,NO,YES,BMW,0
+215,42,500,1848.81,0,0,-49000,20,3,2,2,2003,OH,500/1000,MALE,JD,transport-moving,video-games,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Fire,WV,Northbend,YES,YES,Suburu,1
+295,42,2000,1641.73,5000000,62400,0,16,3,0,0,2006,OH,250/500,MALE,PhD,sales,chess,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,VA,Riverwood,NO,NO,Ford,1
+254,39,500,1362.87,0,35700,0,6,3,2,2,1995,IN,100/300,FEMALE,MD,exec-managerial,chess,other-relative,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,NY,Arlington,YES,NO,Dodge,1
+107,31,500,1239.22,7000000,43400,-91200,12,1,0,1,2009,IN,250/500,FEMALE,High School,tech-support,paintball,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Fire,SC,Springfield,YES,NO,Audi,1
+478,64,500,835.02,0,59600,0,17,3,1,1,1998,OH,250/500,FEMALE,Associate,adm-clerical,reading,unmarried,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,WV,Hillsdale,NO,NO,BMW,0
+128,30,1000,1061.33,0,43300,-66200,8,1,0,3,1997,OH,100/300,MALE,MD,machine-op-inspct,movies,own-child,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,WV,Northbrook,NO,NO,Audi,0
+338,49,1000,1279.08,0,0,-51500,13,1,0,1,2004,IN,500/1000,MALE,MD,other-service,kayaking,own-child,Parked Car,?,Minor Damage,,NC,Riverwood,NO,?,Ford,0
+271,42,500,1105.49,0,56200,-50000,12,2,2,3,2003,OH,100/300,FEMALE,Associate,prof-specialty,sleeping,own-child,Multi-vehicle Collision,Side Collision,Major Damage,Other,SC,Hillsdale,?,?,Audi,1
+222,41,2000,1055.53,0,37800,-50300,7,1,0,2,1995,OH,100/300,FEMALE,MD,armed-forces,cross-fit,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Other,WV,Northbrook,NO,NO,Honda,1
+199,41,1000,895.83,0,0,0,10,1,1,2,1999,OH,250/500,FEMALE,Associate,sales,paintball,husband,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,NC,Arlington,NO,NO,Chevrolet,0
+215,37,500,1632.93,0,0,-42900,7,3,2,0,2002,IN,100/300,FEMALE,College,transport-moving,golf,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Riverwood,NO,YES,Mercedes,0
+192,40,1000,1405.99,0,0,0,18,3,1,0,2005,IL,100/300,FEMALE,Associate,sales,yachting,wife,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,VA,Springfield,YES,YES,BMW,0
+120,35,1000,1425.54,0,78300,0,22,3,2,0,2010,OH,100/300,FEMALE,High School,transport-moving,bungie-jumping,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,SC,Riverwood,NO,NO,Ford,0
+270,45,1000,1038.09,0,0,-19700,18,3,1,1,1998,OH,500/1000,FEMALE,College,handlers-cleaners,golf,husband,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,NY,Springfield,NO,YES,Suburu,0
+319,47,500,1307.11,0,0,0,22,3,0,2,2005,IN,250/500,MALE,College,transport-moving,dancing,not-in-family,Multi-vehicle Collision,Front Collision,Total Loss,Police,WV,Northbrook,NO,?,Audi,0
+194,39,1000,1489.24,6000000,0,-45000,15,1,2,2,2004,OH,500/1000,FEMALE,JD,other-service,kayaking,wife,Vehicle Theft,?,Minor Damage,,SC,Springfield,YES,YES,Saab,0
+227,38,500,976.67,0,0,0,16,1,1,2,2013,OH,500/1000,FEMALE,PhD,handlers-cleaners,polo,unmarried,Single Vehicle Collision,Rear Collision,Major Damage,Fire,SC,Northbrook,?,?,BMW,1
+137,31,2000,1340.43,0,52700,-40600,6,3,1,2,2005,OH,250/500,MALE,High School,exec-managerial,paintball,husband,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,NC,Arlington,NO,NO,Accura,0
+244,40,2000,1267.81,5000000,0,0,10,1,2,1,2005,OH,500/1000,FEMALE,Masters,exec-managerial,video-games,wife,Vehicle Theft,?,Trivial Damage,,NC,Northbrook,?,?,Accura,0
+78,29,1000,1234.2,6000000,0,0,3,1,2,2,2002,IL,250/500,MALE,Masters,other-service,bungie-jumping,other-relative,Vehicle Theft,?,Minor Damage,Police,NY,Northbrook,YES,NO,Nissan,0
+200,35,2000,1318.06,0,57300,-80600,13,1,0,3,2002,IN,250/500,MALE,High School,exec-managerial,video-games,wife,Vehicle Theft,?,Trivial Damage,,VA,Hillsdale,NO,YES,Volkswagen,0
+284,48,2000,769.95,0,0,-44200,16,2,2,3,2013,IN,500/1000,MALE,Masters,prof-specialty,movies,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,NY,Hillsdale,?,NO,Audi,1
+275,41,2000,1514.72,0,35700,0,13,3,0,1,2007,OH,100/300,MALE,High School,transport-moving,board-games,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Fire,NY,Northbrook,YES,?,Suburu,0
+153,34,1000,873.64,4000000,800,0,9,3,2,1,2007,IL,500/1000,FEMALE,Associate,priv-house-serv,yachting,husband,Multi-vehicle Collision,Front Collision,Minor Damage,Other,SC,Columbus,NO,?,Ford,0
+134,32,500,1612.43,0,36400,0,2,1,2,1,2015,IL,500/1000,FEMALE,MD,other-service,yachting,own-child,Single Vehicle Collision,Side Collision,Total Loss,Fire,VA,Springfield,?,YES,BMW,0
+31,36,2000,1318.24,9000000,0,-78600,9,1,0,1,2002,IL,500/1000,FEMALE,College,prof-specialty,kayaking,not-in-family,Parked Car,?,Trivial Damage,,WV,Arlington,NO,YES,Dodge,0
+41,25,1000,1226.83,0,0,-56100,12,3,2,0,2011,IN,100/300,FEMALE,College,exec-managerial,exercise,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Other,SC,Columbus,YES,?,Accura,1
+127,29,2000,1326.44,5000000,0,0,12,2,1,1,1995,OH,250/500,FEMALE,High School,sales,board-games,own-child,Multi-vehicle Collision,Front Collision,Total Loss,Fire,SC,Arlington,YES,?,Saab,0
+61,23,2000,1136.83,4000000,0,-62400,14,1,0,3,2004,IL,250/500,FEMALE,Associate,tech-support,exercise,own-child,Single Vehicle Collision,Side Collision,Major Damage,Police,NY,Columbus,NO,?,Honda,1
+207,42,2000,1322.78,0,55200,0,9,1,0,1,2007,IL,250/500,MALE,PhD,farming-fishing,yachting,own-child,Parked Car,?,Trivial Damage,,WV,Springfield,NO,NO,BMW,0
+219,43,1000,1483.25,0,90700,-20800,3,3,1,1,2009,IN,100/300,FEMALE,MD,exec-managerial,exercise,not-in-family,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,NC,Riverwood,NO,?,Ford,0
+271,42,500,1515.3,0,0,0,21,3,1,0,2005,IL,100/300,FEMALE,High School,machine-op-inspct,hiking,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Northbend,NO,NO,Mercedes,0
+80,25,2000,1075.18,5000000,67700,-58400,5,1,2,0,2001,IL,100/300,FEMALE,PhD,armed-forces,exercise,husband,Vehicle Theft,?,Minor Damage,,OH,Northbrook,NO,YES,Toyota,0
+325,47,1000,1690.27,0,61500,0,11,1,0,3,2006,IN,500/1000,FEMALE,Associate,protective-serv,hiking,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Fire,VA,Springfield,YES,NO,Dodge,1
+29,25,2000,1352.83,0,0,-71700,4,4,1,2,2013,IL,250/500,MALE,Masters,farming-fishing,skydiving,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,SC,Hillsdale,YES,YES,Nissan,1
+295,48,1000,1148.73,0,0,0,6,1,1,2,1999,OH,250/500,FEMALE,College,machine-op-inspct,kayaking,wife,Parked Car,?,Trivial Damage,,WV,Columbus,?,YES,Saab,0
+239,42,1000,969.5,0,0,0,10,1,0,0,2007,IL,100/300,MALE,College,exec-managerial,reading,not-in-family,Vehicle Theft,?,Trivial Damage,,NC,Northbrook,NO,?,Audi,0
+269,41,500,1463.82,0,0,-72300,23,1,0,0,2007,IN,100/300,FEMALE,College,protective-serv,yachting,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Police,SC,Northbend,YES,?,Saab,0
+80,27,1000,1474.17,0,0,0,13,1,1,0,2004,IL,100/300,FEMALE,College,tech-support,exercise,unmarried,Single Vehicle Collision,Side Collision,Major Damage,Police,WV,Northbend,YES,YES,Saab,0
+279,41,500,1497.35,0,37300,-31700,16,3,2,3,2013,IL,250/500,FEMALE,JD,prof-specialty,bungie-jumping,husband,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,NC,Northbrook,?,NO,Ford,0
+165,33,1000,1427.14,0,35300,-58100,3,1,1,1,2008,OH,100/300,FEMALE,Associate,tech-support,kayaking,other-relative,Parked Car,?,Minor Damage,Police,WV,Northbend,NO,NO,Toyota,0
+350,54,500,1495.1,0,50500,0,15,3,0,0,2014,OH,500/1000,MALE,College,other-service,basketball,wife,Multi-vehicle Collision,Side Collision,Total Loss,Police,SC,Northbend,NO,?,Chevrolet,0
+295,49,500,1141.62,0,34300,-24300,4,1,1,3,2002,IL,100/300,MALE,College,prof-specialty,kayaking,husband,Vehicle Theft,?,Minor Damage,,WV,Columbus,YES,YES,Mercedes,0
+464,61,1000,1125.37,0,0,-56400,6,3,0,2,2000,OH,500/1000,FEMALE,Associate,prof-specialty,basketball,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Police,VA,Northbend,?,YES,Saab,1
+118,28,2000,1207.36,0,0,-57000,22,2,1,0,1997,IN,500/1000,FEMALE,High School,handlers-cleaners,camping,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,WV,Columbus,NO,?,Volkswagen,0
+298,47,2000,1338.5,0,28800,0,1,1,0,0,2000,IL,500/1000,FEMALE,PhD,machine-op-inspct,basketball,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Fire,NY,Northbrook,?,?,Saab,1
+87,31,1000,1074.07,0,0,-47500,16,3,0,3,2006,IN,500/1000,FEMALE,Masters,sales,chess,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,NY,Springfield,NO,YES,Nissan,1
+261,42,500,1337.56,0,0,0,18,1,1,2,2010,OH,250/500,FEMALE,College,prof-specialty,video-games,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Police,SC,Riverwood,?,YES,Dodge,0
+453,60,500,1298.91,6000000,52600,-38800,0,1,0,0,2015,IN,100/300,MALE,PhD,craft-repair,dancing,unmarried,Single Vehicle Collision,Front Collision,Major Damage,Fire,NC,Springfield,YES,?,Ford,1
+210,41,500,1222.75,0,0,-41000,12,3,2,0,2001,IL,500/1000,MALE,High School,exec-managerial,polo,other-relative,Multi-vehicle Collision,Rear Collision,Total Loss,Other,WV,Columbus,?,NO,BMW,0
+168,32,1000,1059.52,0,0,-40600,13,2,1,1,2007,IN,100/300,MALE,MD,protective-serv,camping,own-child,Multi-vehicle Collision,Side Collision,Major Damage,Other,VA,Hillsdale,?,?,Saab,0
+390,51,2000,1124.38,0,0,0,9,1,1,1,2001,OH,250/500,MALE,Associate,armed-forces,reading,other-relative,Vehicle Theft,?,Minor Damage,,VA,Northbrook,YES,YES,Ford,0
+258,46,1000,1110.37,10000000,34400,-56800,14,3,0,1,1997,IN,100/300,MALE,MD,machine-op-inspct,hiking,other-relative,Multi-vehicle Collision,Side Collision,Total Loss,Other,NY,Riverwood,NO,?,Accura,1
+107,31,2000,1374.22,0,62000,-63100,16,1,0,3,2002,IL,500/1000,FEMALE,PhD,machine-op-inspct,bungie-jumping,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Police,SC,Hillsdale,NO,NO,Suburu,0
+225,41,2000,1103.58,0,41200,-36200,20,3,2,2,2011,OH,500/1000,MALE,High School,exec-managerial,exercise,unmarried,Multi-vehicle Collision,Side Collision,Major Damage,Police,NY,Northbend,?,NO,Toyota,1
+164,38,2000,1269.76,0,44300,0,4,1,1,3,2015,IL,250/500,FEMALE,PhD,transport-moving,yachting,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,NY,Hillsdale,NO,YES,Ford,0
+245,39,500,964.79,8000000,58000,0,7,3,0,1,2010,OH,250/500,FEMALE,Associate,adm-clerical,camping,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Arlington,?,?,BMW,0
+255,41,2000,1167.3,4000000,0,0,22,1,2,0,2000,IL,500/1000,MALE,High School,priv-house-serv,board-games,other-relative,Single Vehicle Collision,Side Collision,Minor Damage,Fire,SC,Hillsdale,NO,?,Volkswagen,0
+206,36,500,1625.45,4000000,0,-53700,11,1,2,1,2008,IL,500/1000,FEMALE,MD,other-service,video-games,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Northbrook,NO,NO,Ford,1
+203,38,500,1394.43,0,0,0,7,1,0,1,1999,IL,250/500,FEMALE,Masters,other-service,skydiving,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,VA,Columbus,?,YES,Nissan,1
+22,25,2000,1053.24,0,51100,0,0,4,1,0,1995,OH,250/500,FEMALE,College,prof-specialty,movies,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Other,NC,Arlington,YES,NO,Accura,0
+211,35,500,1040.75,0,0,0,1,1,1,1,2011,IL,100/300,FEMALE,JD,prof-specialty,paintball,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,WV,Northbend,YES,?,BMW,0
+206,39,1000,1302.4,6000000,47200,-69700,12,3,2,3,2013,IN,250/500,MALE,JD,craft-repair,dancing,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,NY,Hillsdale,NO,YES,Ford,0
+166,38,2000,1588.55,0,59600,-32100,8,1,0,0,2001,IL,100/300,MALE,MD,protective-serv,video-games,unmarried,Single Vehicle Collision,Side Collision,Total Loss,Other,WV,Columbus,NO,?,Suburu,0
+165,32,500,1399.26,0,70500,0,9,1,2,0,1998,IN,500/1000,FEMALE,High School,tech-support,exercise,own-child,Parked Car,?,Minor Damage,Police,PA,Northbrook,?,?,BMW,0
+274,43,2000,1352.31,0,40700,-47300,22,1,0,3,2006,OH,100/300,MALE,College,farming-fishing,basketball,wife,Single Vehicle Collision,Front Collision,Major Damage,Fire,NY,Northbend,YES,YES,BMW,1
+81,28,1000,1139.0,6000000,42400,0,0,3,1,2,2000,IL,250/500,FEMALE,Masters,sales,sleeping,husband,Multi-vehicle Collision,Front Collision,Major Damage,Fire,SC,Northbend,?,?,Saab,1
+280,45,1000,1397.67,0,57900,0,0,3,1,2,1999,IN,250/500,MALE,JD,machine-op-inspct,camping,wife,Multi-vehicle Collision,Front Collision,Minor Damage,Other,NY,Arlington,YES,NO,Ford,0
+194,39,500,823.17,0,0,0,3,3,2,2,2012,IN,250/500,MALE,Masters,adm-clerical,paintball,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Other,WV,Columbus,?,NO,Dodge,0
+112,27,500,965.13,0,60000,-54800,21,3,0,1,2013,OH,100/300,FEMALE,Masters,tech-support,exercise,unmarried,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,NC,Arlington,?,?,Nissan,0
+24,33,1000,1922.84,0,0,-45200,0,1,2,1,2002,IL,500/1000,FEMALE,High School,machine-op-inspct,skydiving,wife,Single Vehicle Collision,Side Collision,Total Loss,Police,WV,Northbend,?,NO,Jeep,0
+93,32,2000,1624.82,0,65300,-65600,16,1,1,1,2006,OH,250/500,MALE,PhD,exec-managerial,basketball,unmarried,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,WV,Northbend,?,?,BMW,0
+171,34,2000,1277.25,0,84900,0,14,1,1,2,1996,IN,250/500,FEMALE,College,exec-managerial,yachting,other-relative,Single Vehicle Collision,Rear Collision,Major Damage,Police,NY,Springfield,NO,?,Volkswagen,1
+200,40,1000,1439.34,0,45300,-20400,9,1,0,0,2015,IL,100/300,FEMALE,High School,sales,exercise,other-relative,Vehicle Theft,?,Minor Damage,Police,VA,Riverwood,?,NO,Ford,0
+120,28,1000,1281.27,0,68900,0,9,3,0,3,2010,IL,250/500,FEMALE,PhD,tech-support,golf,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Springfield,NO,?,BMW,0
+325,46,500,1348.83,0,46300,-77500,21,3,1,2,1999,IL,500/1000,FEMALE,High School,prof-specialty,basketball,wife,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,NC,Springfield,?,YES,Toyota,0
+124,32,1000,1198.15,0,0,-43200,19,3,0,2,1995,IL,250/500,FEMALE,MD,other-service,hiking,not-in-family,Multi-vehicle Collision,Front Collision,Total Loss,Other,VA,Springfield,NO,YES,BMW,0
+211,35,2000,1221.22,0,76000,0,2,1,0,1,2008,OH,100/300,MALE,Masters,machine-op-inspct,camping,other-relative,Single Vehicle Collision,Rear Collision,Total Loss,Police,NY,Northbend,YES,?,Mercedes,0
+287,41,2000,968.74,0,0,-49000,9,1,2,3,2001,IL,500/1000,MALE,Masters,transport-moving,video-games,wife,Vehicle Theft,?,Trivial Damage,,SC,Northbrook,?,?,Suburu,0
+122,34,1000,1220.71,0,58600,-28700,5,1,2,1,2013,IN,250/500,MALE,PhD,machine-op-inspct,video-games,own-child,Parked Car,?,Minor Damage,,SC,Northbend,?,YES,Chevrolet,0
+22,29,2000,1238.62,6000000,0,-56200,14,1,2,3,2012,IN,250/500,MALE,MD,exec-managerial,yachting,other-relative,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,SC,Springfield,?,?,Accura,1
+106,31,2000,1320.75,0,54100,0,20,3,0,3,2011,IL,500/1000,FEMALE,JD,farming-fishing,video-games,wife,Multi-vehicle Collision,Rear Collision,Total Loss,Police,WV,Springfield,?,YES,Accura,0
+398,58,500,990.98,0,0,-57900,18,1,2,1,2002,OH,100/300,FEMALE,Associate,exec-managerial,cross-fit,wife,Single Vehicle Collision,Front Collision,Major Damage,Police,NC,Northbrook,YES,?,Accura,1
+214,41,500,1398.51,4000000,0,-57100,13,3,2,0,1996,IL,500/1000,MALE,Masters,tech-support,polo,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Fire,NC,Northbend,?,NO,BMW,1
+209,38,500,1355.08,0,58100,0,21,1,1,1,2014,OH,100/300,FEMALE,MD,other-service,golf,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Fire,WV,Northbrook,?,?,Nissan,0
+82,27,1000,1384.51,0,13100,-38200,14,1,2,3,2007,IL,100/300,MALE,PhD,adm-clerical,reading,not-in-family,Single Vehicle Collision,Rear Collision,Major Damage,Other,SC,Springfield,NO,?,Volkswagen,1
+193,41,500,847.03,0,0,0,1,1,1,0,2011,OH,250/500,FEMALE,JD,craft-repair,skydiving,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Other,SC,Springfield,?,YES,Suburu,1
+134,32,1000,1000.06,0,0,0,17,1,1,0,2014,OH,100/300,FEMALE,PhD,farming-fishing,base-jumping,wife,Single Vehicle Collision,Side Collision,Total Loss,Other,NY,Columbus,?,?,Audi,0
+288,45,1000,1046.71,0,0,0,4,3,2,1,2009,IL,100/300,MALE,Masters,priv-house-serv,polo,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,NC,Hillsdale,?,?,Mercedes,0
+104,32,500,1158.03,0,31900,-44600,23,3,1,3,2006,IN,250/500,MALE,High School,exec-managerial,kayaking,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Police,NY,Riverwood,YES,YES,Volkswagen,1
+431,54,1000,1372.27,0,17600,0,13,3,2,3,1997,OH,100/300,FEMALE,Masters,craft-repair,paintball,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,WV,Columbus,NO,?,Suburu,0
+101,33,1000,1053.04,7000000,52000,-44500,20,3,1,3,2013,OH,100/300,FEMALE,Masters,other-service,reading,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,NC,Northbrook,NO,?,Saab,1
+375,50,1000,1275.39,0,0,0,16,1,2,3,1996,OH,100/300,MALE,Associate,sales,bungie-jumping,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Police,NY,Riverwood,YES,NO,Audi,1
+461,61,2000,1402.75,0,0,0,10,3,2,1,2006,OH,100/300,MALE,JD,exec-managerial,exercise,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Columbus,?,YES,Jeep,0
+428,59,500,1344.36,7000000,0,0,8,1,2,3,2013,IN,250/500,FEMALE,JD,prof-specialty,hiking,other-relative,Parked Car,?,Minor Damage,,WV,Northbend,?,NO,Saab,0
+45,38,1000,1197.71,0,29000,0,17,3,2,0,2013,IN,100/300,MALE,Masters,machine-op-inspct,movies,not-in-family,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,WV,Springfield,?,?,Suburu,0
+136,29,500,1203.24,0,62500,-66900,9,1,2,0,1999,OH,100/300,FEMALE,JD,transport-moving,video-games,other-relative,Vehicle Theft,?,Minor Damage,Police,NY,Columbus,?,?,Honda,0
+216,36,1000,1152.4,0,39600,-82400,0,1,2,3,2014,IN,500/1000,FEMALE,Associate,priv-house-serv,reading,unmarried,Parked Car,?,Minor Damage,Police,VA,Springfield,YES,?,Mercedes,0
+278,48,2000,1142.62,7000000,0,-54000,12,1,2,0,1997,IN,500/1000,FEMALE,MD,farming-fishing,dancing,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,SC,Northbrook,?,?,Chevrolet,0
+295,48,1000,1332.07,0,49700,-59100,20,2,2,1,2002,OH,500/1000,FEMALE,MD,exec-managerial,polo,unmarried,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,NY,Hillsdale,NO,YES,Volkswagen,0
+112,30,1000,1166.54,0,47700,-59300,3,1,2,0,1997,OH,500/1000,FEMALE,Masters,prof-specialty,sleeping,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Fire,SC,Arlington,YES,NO,Dodge,1
+122,34,500,1495.06,0,38100,-31400,18,3,2,0,2011,IL,250/500,FEMALE,Masters,prof-specialty,polo,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,PA,Columbus,NO,YES,Mercedes,0
+108,29,1000,1337.92,0,71400,0,4,3,2,2,2012,IN,500/1000,FEMALE,PhD,armed-forces,bungie-jumping,not-in-family,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,WV,Columbus,NO,YES,Suburu,0
+14,28,2000,1587.96,0,0,-26900,18,1,2,1,2012,OH,250/500,FEMALE,Associate,craft-repair,board-games,unmarried,Single Vehicle Collision,Rear Collision,Major Damage,Fire,WV,Riverwood,?,YES,Audi,1
+298,45,1000,1362.29,0,0,-51100,18,3,0,0,1999,IL,500/1000,MALE,High School,farming-fishing,yachting,unmarried,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,NY,Northbend,NO,NO,Saab,0
+276,46,500,1448.84,0,0,-50000,7,1,0,1,2015,IL,250/500,FEMALE,Masters,machine-op-inspct,bungie-jumping,husband,Parked Car,?,Trivial Damage,Police,SC,Hillsdale,?,NO,Toyota,0
+47,37,2000,1241.97,0,75400,0,18,1,1,0,2011,IN,250/500,MALE,High School,other-service,movies,not-in-family,Parked Car,?,Minor Damage,,NY,Hillsdale,NO,NO,Jeep,0
+222,42,500,1124.6,0,0,0,23,3,0,0,2006,IL,250/500,MALE,Associate,armed-forces,hiking,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Arlington,YES,?,Jeep,0
+119,28,2000,1079.92,0,88800,0,1,1,0,1,2007,OH,250/500,MALE,High School,machine-op-inspct,hiking,husband,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,PA,Riverwood,?,YES,Volkswagen,1
+73,29,1000,1447.78,0,35100,-59900,15,3,1,0,2001,IL,250/500,MALE,College,protective-serv,board-games,wife,Multi-vehicle Collision,Rear Collision,Total Loss,Other,SC,Arlington,YES,?,Dodge,0
+8,31,500,1229.16,4000000,0,-88300,2,3,0,2,2014,IN,250/500,FEMALE,MD,transport-moving,kayaking,wife,Multi-vehicle Collision,Front Collision,Major Damage,Fire,PA,Hillsdale,?,YES,Volkswagen,0
+294,44,1000,1226.49,0,53900,0,3,1,0,1,2002,IL,100/300,FEMALE,PhD,farming-fishing,kayaking,unmarried,Vehicle Theft,?,Trivial Damage,,WV,Riverwood,NO,NO,Ford,0
+324,46,2000,897.89,6000000,0,-41300,13,1,1,0,2011,IN,100/300,MALE,MD,tech-support,board-games,wife,Single Vehicle Collision,Rear Collision,Minor Damage,Other,PA,Hillsdale,?,YES,Jeep,0
+155,34,500,1706.79,0,0,0,1,1,1,1,1998,IN,100/300,MALE,Masters,protective-serv,dancing,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,OH,Hillsdale,NO,YES,Honda,0
+261,45,1000,1254.18,0,0,-45100,16,1,0,1,2003,IL,250/500,FEMALE,PhD,prof-specialty,kayaking,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Columbus,YES,?,Volkswagen,0
+245,40,500,885.08,0,27000,-58900,0,1,0,1,1998,IN,500/1000,FEMALE,Masters,armed-forces,skydiving,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Other,WV,Northbend,YES,NO,Chevrolet,0
+235,39,500,1046.58,4000000,0,-31700,1,1,2,1,2010,IL,100/300,MALE,MD,tech-support,exercise,wife,Vehicle Theft,?,Trivial Damage,,NY,Hillsdale,?,NO,Chevrolet,0
+53,36,2000,1712.68,0,72200,0,17,3,2,0,2006,OH,500/1000,MALE,Associate,handlers-cleaners,basketball,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Fire,VA,Riverwood,?,YES,Audi,0
+426,54,2000,1097.71,0,29600,-22300,13,1,2,3,1997,IL,500/1000,FEMALE,Masters,adm-clerical,reading,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Police,SC,Springfield,YES,?,Dodge,0
+111,27,500,1363.77,4000000,51100,0,12,1,2,3,2009,IN,250/500,FEMALE,Masters,tech-support,exercise,husband,Single Vehicle Collision,Side Collision,Total Loss,Police,VA,Springfield,YES,NO,Accura,0
+86,26,500,1382.88,7000000,0,-30300,11,1,1,1,2011,OH,100/300,MALE,JD,tech-support,cross-fit,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Police,SC,Northbend,?,YES,Chevrolet,1
+296,46,1000,1141.35,7000000,0,0,18,1,0,2,2013,OH,100/300,MALE,Masters,craft-repair,sleeping,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Northbend,?,NO,Mercedes,0
+125,35,500,1054.83,7000000,0,-51300,17,1,2,3,2007,OH,500/1000,MALE,JD,tech-support,cross-fit,husband,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Northbend,YES,NO,Mercedes,1
+177,34,2000,1057.77,0,0,-57700,22,3,1,1,2009,IL,100/300,FEMALE,JD,tech-support,bungie-jumping,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,NC,Riverwood,?,NO,Audi,0
+238,39,2000,1488.02,0,0,-39200,9,1,1,3,2010,IN,250/500,FEMALE,JD,protective-serv,exercise,other-relative,Vehicle Theft,?,Minor Damage,Police,NY,Northbrook,YES,YES,Chevrolet,0
+81,25,500,920.3,5000000,51000,-67900,11,3,1,0,2003,IN,100/300,FEMALE,High School,tech-support,hiking,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Other,WV,Hillsdale,?,?,Honda,1
+128,28,1000,986.53,0,62700,0,11,1,0,2,2007,OH,500/1000,FEMALE,High School,adm-clerical,polo,other-relative,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,VA,Columbus,NO,YES,Honda,0
+449,57,2000,1440.68,0,25000,0,8,1,0,1,2008,OH,250/500,MALE,Associate,tech-support,movies,own-child,Parked Car,?,Minor Damage,,SC,Riverwood,YES,YES,Volkswagen,0
+252,39,1000,1086.21,0,68500,-57500,18,1,1,2,2001,IN,250/500,MALE,JD,farming-fishing,hiking,unmarried,Single Vehicle Collision,Side Collision,Minor Damage,Police,SC,Springfield,?,?,Nissan,0
+359,47,2000,1367.68,0,0,0,13,1,0,3,2012,OH,100/300,FEMALE,MD,handlers-cleaners,basketball,unmarried,Single Vehicle Collision,Front Collision,Total Loss,Police,SC,Arlington,NO,NO,Mercedes,0
+19,32,1000,1215.85,0,42900,-90200,8,1,1,1,2015,OH,500/1000,MALE,High School,other-service,hiking,husband,Vehicle Theft,?,Minor Damage,Police,VA,Hillsdale,YES,YES,Nissan,0
+73,26,2000,1191.19,4000000,29300,0,9,3,0,1,2003,IL,250/500,MALE,MD,farming-fishing,basketball,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Other,VA,Northbrook,?,YES,Chevrolet,0
+285,44,1000,1594.45,0,0,0,17,2,2,3,2006,IL,500/1000,MALE,High School,handlers-cleaners,bungie-jumping,husband,Multi-vehicle Collision,Side Collision,Total Loss,Fire,NC,Columbus,YES,NO,Saab,0
+196,36,2000,1463.07,0,0,0,3,1,1,1,2001,IN,250/500,MALE,MD,armed-forces,skydiving,own-child,Vehicle Theft,?,Trivial Damage,Police,WV,Springfield,?,NO,Jeep,1
+223,43,500,1734.09,0,0,0,6,1,0,3,2006,OH,250/500,FEMALE,MD,adm-clerical,camping,not-in-family,Parked Car,?,Trivial Damage,,WV,Arlington,YES,?,Accura,0
+328,48,500,1411.43,0,45100,-32800,17,1,2,1,2014,IL,250/500,MALE,Masters,armed-forces,bungie-jumping,own-child,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Riverwood,YES,NO,Honda,0
+285,43,2000,1512.58,0,47600,0,7,1,1,1,1997,OH,100/300,FEMALE,College,sales,paintball,other-relative,Vehicle Theft,?,Minor Damage,Police,SC,Arlington,?,?,BMW,0
+30,31,2000,1153.35,0,0,0,9,1,2,1,2011,IL,250/500,MALE,PhD,craft-repair,golf,not-in-family,Vehicle Theft,?,Trivial Damage,Police,NY,Hillsdale,NO,YES,Suburu,0
+342,49,500,1722.95,0,63100,-13800,3,1,2,0,2006,OH,250/500,MALE,PhD,transport-moving,base-jumping,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,WV,Hillsdale,?,YES,Suburu,0
+219,39,2000,1281.07,7000000,0,0,6,1,0,2,2015,IN,250/500,FEMALE,High School,protective-serv,board-games,unmarried,Parked Car,?,Trivial Damage,Police,NY,Springfield,NO,NO,Chevrolet,0
+468,62,500,1011.92,0,0,0,7,3,0,3,2009,IL,100/300,MALE,PhD,machine-op-inspct,paintball,wife,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,SC,Riverwood,YES,?,Chevrolet,0
+241,39,2000,1042.26,0,0,0,21,3,1,2,1995,IL,250/500,MALE,JD,sales,kayaking,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,WV,Northbend,NO,?,Saab,0
+223,43,500,1235.1,0,66400,-34400,14,1,2,1,2011,OH,500/1000,FEMALE,Masters,tech-support,exercise,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Police,SC,Springfield,NO,NO,BMW,0
+128,32,2000,768.91,0,0,-39300,0,1,1,0,1999,OH,100/300,FEMALE,College,sales,chess,other-relative,Single Vehicle Collision,Rear Collision,Total Loss,Fire,SC,Columbus,?,NO,Ford,1
+124,29,500,1301.72,0,0,0,14,3,0,3,2005,OH,500/1000,MALE,Masters,handlers-cleaners,golf,husband,Multi-vehicle Collision,Side Collision,Major Damage,Police,VA,Springfield,?,YES,Audi,0
+343,48,500,1451.54,3000000,0,0,13,4,2,3,2003,IN,250/500,MALE,JD,adm-clerical,hiking,husband,Multi-vehicle Collision,Side Collision,Total Loss,Police,SC,Riverwood,NO,NO,Mercedes,0
+404,53,500,767.14,0,25500,-36700,8,1,0,1,2002,IN,250/500,MALE,Associate,sales,reading,not-in-family,Parked Car,?,Trivial Damage,Police,WV,Columbus,NO,NO,Suburu,0
+63,24,2000,1620.89,0,0,0,7,1,2,0,2015,OH,250/500,FEMALE,High School,handlers-cleaners,movies,other-relative,Vehicle Theft,?,Minor Damage,Police,NC,Hillsdale,NO,NO,Toyota,0
+210,37,2000,1048.46,0,59900,0,9,1,1,2,1999,IN,500/1000,MALE,High School,priv-house-serv,skydiving,not-in-family,Vehicle Theft,?,Trivial Damage,,OH,Columbus,?,?,Dodge,0
+335,50,1000,1538.26,6000000,62200,-31400,12,3,2,3,2009,OH,100/300,MALE,High School,sales,yachting,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,NY,Riverwood,YES,YES,Volkswagen,0
+11,40,2000,1217.69,0,24000,0,6,3,1,0,2004,OH,500/1000,FEMALE,MD,prof-specialty,reading,wife,Multi-vehicle Collision,Side Collision,Major Damage,Other,SC,Springfield,?,?,Dodge,1
+142,33,2000,1362.64,5000000,0,0,11,1,1,3,2009,IN,100/300,FEMALE,JD,exec-managerial,cross-fit,wife,Single Vehicle Collision,Side Collision,Total Loss,Other,NC,Columbus,YES,?,Suburu,1
+272,43,1000,1279.13,0,0,0,5,3,1,2,2006,OH,100/300,MALE,PhD,craft-repair,bungie-jumping,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,NC,Springfield,?,YES,Audi,1
+69,26,2000,924.72,0,0,0,14,1,2,2,2008,IL,100/300,FEMALE,High School,machine-op-inspct,base-jumping,unmarried,Single Vehicle Collision,Front Collision,Minor Damage,Fire,NY,Columbus,NO,NO,Audi,0
+38,28,1000,1019.44,0,0,-39700,17,1,2,1,2004,OH,250/500,MALE,Masters,transport-moving,yachting,not-in-family,Vehicle Theft,?,Trivial Damage,,NC,Springfield,?,NO,BMW,0
+328,46,500,1314.6,0,24800,0,0,1,2,3,1998,IL,500/1000,FEMALE,MD,prof-specialty,exercise,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Other,WV,Hillsdale,?,?,Saab,1
+281,43,1000,1515.18,6000000,0,0,21,3,1,0,1999,OH,100/300,MALE,College,priv-house-serv,camping,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,SC,Northbrook,NO,NO,BMW,0
+246,44,2000,1649.18,0,0,-58600,18,1,1,2,2009,OH,250/500,MALE,College,farming-fishing,base-jumping,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Other,NY,Hillsdale,YES,YES,Honda,1
+298,49,500,1451.01,0,47800,0,17,1,2,2,2012,OH,250/500,FEMALE,College,other-service,exercise,own-child,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,NY,Springfield,NO,NO,Jeep,0
+330,50,1000,978.46,0,0,0,19,1,0,0,1995,IL,500/1000,FEMALE,High School,sales,yachting,husband,Single Vehicle Collision,Side Collision,Total Loss,Fire,NY,Hillsdale,YES,NO,Chevrolet,0
+362,50,500,1198.34,4000000,53000,-72500,17,3,1,1,1995,IL,250/500,MALE,Associate,sales,board-games,wife,Multi-vehicle Collision,Side Collision,Total Loss,Fire,NY,Columbus,?,NO,Mercedes,0
+241,38,2000,1003.23,0,0,0,23,3,0,3,2008,IN,100/300,FEMALE,Associate,tech-support,kayaking,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Fire,VA,Arlington,?,YES,Accura,0
+245,41,2000,1212.0,0,24400,-60500,4,1,0,1,1999,IN,500/1000,MALE,Masters,exec-managerial,basketball,unmarried,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,NY,Springfield,YES,YES,Jeep,0
+371,52,1000,1242.96,7000000,0,-37100,2,2,2,0,2010,IL,250/500,FEMALE,High School,other-service,paintball,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,NY,Riverwood,YES,?,Accura,0
+343,52,1000,1053.02,0,0,0,2,1,0,2,2005,IL,500/1000,FEMALE,Associate,prof-specialty,bungie-jumping,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Other,NY,Arlington,?,NO,Toyota,1
+377,53,500,1693.63,0,0,-64000,10,3,1,3,2015,IL,100/300,FEMALE,MD,craft-repair,kayaking,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Fire,WV,Hillsdale,YES,NO,Saab,0
+154,37,1000,2047.59,0,0,-67800,2,1,0,3,2000,IL,250/500,FEMALE,MD,farming-fishing,dancing,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Other,SC,Columbus,?,NO,Accura,0
+166,34,1000,1083.72,0,65600,-68200,18,1,0,2,2005,OH,100/300,FEMALE,High School,machine-op-inspct,base-jumping,wife,Single Vehicle Collision,Side Collision,Total Loss,Other,NY,Columbus,NO,YES,Honda,0
+298,46,1000,1138.42,6000000,36900,-55000,18,1,2,3,2005,OH,500/1000,MALE,JD,prof-specialty,dancing,own-child,Single Vehicle Collision,Side Collision,Minor Damage,Police,SC,Arlington,NO,YES,Volkswagen,0
+235,42,500,1072.62,0,39900,-60200,7,4,2,1,2006,IN,250/500,FEMALE,Masters,machine-op-inspct,exercise,husband,Multi-vehicle Collision,Side Collision,Total Loss,Other,WV,Springfield,?,YES,Toyota,0
+172,35,2000,1219.04,0,63600,-68700,19,3,2,0,1999,IL,100/300,MALE,MD,handlers-cleaners,paintball,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Police,OH,Hillsdale,?,NO,Nissan,0
+27,28,2000,1371.78,0,0,-32500,10,3,0,2,2015,IN,100/300,MALE,JD,farming-fishing,polo,other-relative,Multi-vehicle Collision,Front Collision,Major Damage,Other,PA,Riverwood,?,YES,Audi,1
+428,54,2000,1506.21,0,0,-24400,16,3,1,0,2009,IN,100/300,MALE,Masters,transport-moving,kayaking,unmarried,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,NY,Riverwood,NO,?,Nissan,0
+99,32,1000,1058.21,3000000,0,0,17,1,1,1,1999,IN,100/300,MALE,JD,craft-repair,golf,unmarried,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Arlington,YES,NO,Dodge,0
+107,26,2000,932.14,0,40600,0,2,3,2,3,1996,IL,500/1000,MALE,MD,sales,cross-fit,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,SC,Columbus,NO,NO,Audi,1
+272,41,2000,1608.34,0,33300,-10600,19,1,1,1,2010,OH,500/1000,FEMALE,Associate,farming-fishing,reading,own-child,Single Vehicle Collision,Side Collision,Major Damage,Other,NY,Springfield,?,?,Saab,0
+151,37,1000,1728.56,0,54000,0,0,1,1,1,1999,IN,500/1000,FEMALE,Masters,farming-fishing,dancing,own-child,Single Vehicle Collision,Front Collision,Minor Damage,Fire,WV,Northbrook,YES,?,Suburu,0
+249,43,1000,1518.46,0,0,0,16,1,0,0,2015,IL,250/500,FEMALE,MD,armed-forces,cross-fit,own-child,Single Vehicle Collision,Front Collision,Major Damage,Fire,SC,Riverwood,?,YES,Saab,0
+177,38,2000,1540.19,0,0,-74500,20,1,2,0,2001,IL,100/300,FEMALE,College,adm-clerical,skydiving,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Other,VA,Columbus,YES,NO,Chevrolet,1
+190,40,2000,965.21,0,36900,-53700,10,1,2,1,2001,OH,500/1000,FEMALE,JD,exec-managerial,camping,other-relative,Parked Car,?,Trivial Damage,,SC,Hillsdale,?,YES,Nissan,0
+174,36,2000,1278.75,0,53200,-53800,21,3,2,2,2012,IL,100/300,FEMALE,College,tech-support,paintball,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,NY,Riverwood,?,NO,Dodge,0
+95,28,1000,773.99,0,0,-70300,3,1,1,2,2014,OH,250/500,MALE,Associate,armed-forces,board-games,other-relative,Vehicle Theft,?,Trivial Damage,,PA,Springfield,YES,NO,Mercedes,0
+371,51,1000,1532.47,0,60300,-24700,7,1,0,3,2012,IN,500/1000,FEMALE,Associate,tech-support,golf,other-relative,Single Vehicle Collision,Rear Collision,Major Damage,Fire,NY,Arlington,YES,YES,Dodge,1
+2,28,1000,1340.56,0,0,0,19,1,0,2,2008,IL,250/500,FEMALE,JD,machine-op-inspct,golf,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Fire,NY,Northbend,YES,YES,Saab,0
+269,44,500,1297.75,4000000,0,-41400,15,3,0,1,2010,OH,100/300,FEMALE,JD,other-service,chess,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Columbus,?,?,Chevrolet,1
+101,27,1000,433.33,0,25900,0,7,1,0,3,2009,IL,250/500,MALE,Masters,machine-op-inspct,golf,other-relative,Parked Car,?,Minor Damage,,SC,Hillsdale,?,NO,Mercedes,0
+94,30,2000,1025.54,0,0,-52600,19,1,1,3,2001,IN,250/500,FEMALE,High School,armed-forces,paintball,other-relative,Single Vehicle Collision,Rear Collision,Major Damage,Fire,NC,Arlington,?,YES,Chevrolet,0
+117,28,500,1264.77,0,47500,-32500,13,2,0,1,2009,OH,250/500,FEMALE,Associate,transport-moving,yachting,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,SC,Springfield,YES,?,Suburu,1
+111,27,500,1459.97,5000000,0,0,2,3,1,2,2011,OH,250/500,MALE,MD,sales,yachting,other-relative,Multi-vehicle Collision,Side Collision,Major Damage,Police,SC,Northbend,NO,NO,Ford,1
+242,40,500,1238.65,0,0,-44600,5,1,1,1,1998,OH,100/300,FEMALE,High School,transport-moving,bungie-jumping,husband,Vehicle Theft,?,Trivial Damage,Police,WV,Springfield,YES,NO,Saab,0
+440,61,500,1050.76,0,41500,-70200,21,1,2,3,2004,OH,250/500,MALE,PhD,transport-moving,movies,wife,Single Vehicle Collision,Side Collision,Major Damage,Fire,OH,Riverwood,?,NO,Nissan,1
+20,23,1000,1711.72,0,0,0,21,3,2,2,2002,OH,500/1000,FEMALE,JD,tech-support,base-jumping,wife,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,SC,Northbrook,NO,NO,Chevrolet,1
+461,57,500,865.33,7000000,0,0,7,3,0,1,1995,IL,100/300,FEMALE,High School,farming-fishing,golf,own-child,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,NY,Hillsdale,NO,?,Dodge,0
+208,36,500,1153.49,0,0,0,16,3,1,0,2004,IL,250/500,MALE,Associate,craft-repair,base-jumping,other-relative,Multi-vehicle Collision,Side Collision,Total Loss,Other,SC,Arlington,YES,YES,Accura,0
+279,43,2000,1281.25,0,0,0,13,1,0,1,2010,OH,500/1000,MALE,Associate,machine-op-inspct,cross-fit,other-relative,Single Vehicle Collision,Side Collision,Major Damage,Police,SC,Columbus,YES,NO,Mercedes,1
+244,40,500,1342.8,0,0,0,2,1,1,3,2014,IL,100/300,FEMALE,MD,sales,base-jumping,husband,Vehicle Theft,?,Trivial Damage,Police,NY,Springfield,YES,YES,Toyota,0
+134,30,2000,1443.32,0,0,0,19,3,0,2,1995,OH,250/500,FEMALE,PhD,exec-managerial,dancing,unmarried,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,SC,Northbend,?,YES,Suburu,1
+122,29,1000,1629.94,0,0,-47100,17,1,0,1,2014,OH,250/500,FEMALE,Masters,priv-house-serv,skydiving,other-relative,Parked Car,?,Trivial Damage,,SC,Riverwood,?,NO,Dodge,0
+156,31,2000,1134.08,0,0,0,3,1,2,0,2013,IL,100/300,MALE,PhD,other-service,reading,husband,Single Vehicle Collision,Front Collision,Major Damage,Police,NC,Arlington,?,?,Ford,1
+232,43,500,1483.91,8000000,0,-33600,17,3,0,1,2013,OH,250/500,MALE,College,machine-op-inspct,golf,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,NY,Arlington,NO,?,Volkswagen,1
+244,40,2000,1304.67,7000000,0,-45000,5,3,1,1,2001,IN,500/1000,MALE,Masters,armed-forces,base-jumping,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Police,SC,Hillsdale,?,?,Dodge,0
+84,30,2000,1035.79,0,44400,-51500,9,1,1,0,2010,IL,500/1000,FEMALE,MD,protective-serv,kayaking,wife,Single Vehicle Collision,Side Collision,Minor Damage,Police,SC,Northbend,NO,YES,Volkswagen,0
+394,57,500,1401.2,0,51500,0,9,1,1,0,1999,IL,250/500,FEMALE,High School,craft-repair,movies,own-child,Vehicle Theft,?,Trivial Damage,Police,NC,Hillsdale,NO,NO,Audi,0
+246,45,1000,1665.45,0,34400,-33100,9,3,2,2,2006,IL,250/500,MALE,JD,machine-op-inspct,hiking,wife,Multi-vehicle Collision,Side Collision,Major Damage,Fire,PA,Columbus,?,?,Toyota,1
+35,29,2000,653.66,0,52100,-46900,22,3,0,0,2009,IN,500/1000,FEMALE,JD,handlers-cleaners,video-games,unmarried,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Springfield,NO,?,BMW,0
+156,37,500,1080.13,0,0,-61000,15,3,0,3,2001,OH,100/300,MALE,Associate,protective-serv,reading,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,PA,Springfield,YES,NO,Nissan,0
+195,36,2000,1346.18,0,57800,-53300,14,3,2,3,2007,IN,100/300,FEMALE,Associate,machine-op-inspct,camping,wife,Multi-vehicle Collision,Front Collision,Total Loss,Fire,SC,Hillsdale,YES,YES,Chevrolet,0
+369,55,2000,1589.54,0,55400,0,6,3,2,0,2003,OH,250/500,MALE,College,handlers-cleaners,camping,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,VA,Arlington,?,YES,Toyota,0
+271,40,1000,1251.65,0,71200,0,6,1,0,0,2012,IL,100/300,FEMALE,Associate,other-service,camping,wife,Parked Car,?,Minor Damage,,NY,Hillsdale,NO,NO,Audi,0
+332,47,2000,1083.01,0,91900,0,22,4,2,0,2010,IL,100/300,MALE,MD,craft-repair,paintball,other-relative,Multi-vehicle Collision,Front Collision,Major Damage,Police,WV,Arlington,YES,?,Jeep,1
+107,26,500,974.59,0,62800,0,14,3,1,0,2002,OH,100/300,FEMALE,JD,armed-forces,skydiving,wife,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,NY,Arlington,?,NO,Nissan,0
+217,39,2000,1399.85,0,49900,-19800,16,3,0,2,1997,IL,500/1000,FEMALE,Masters,other-service,skydiving,other-relative,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,NY,Columbus,NO,?,Ford,0
+243,43,500,1307.74,0,0,-75700,10,3,0,1,2008,IN,500/1000,FEMALE,Associate,machine-op-inspct,board-games,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,SC,Riverwood,?,NO,Jeep,0
+296,42,2000,1219.27,0,53100,-63400,9,3,1,2,2012,IN,250/500,MALE,Associate,tech-support,paintball,husband,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,WV,Columbus,YES,NO,Saab,0
+264,41,500,1411.3,0,55600,0,4,1,1,0,2004,OH,100/300,MALE,PhD,prof-specialty,cross-fit,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Other,PA,Northbrook,NO,?,BMW,1
+108,33,2000,694.45,0,0,0,6,3,0,1,2011,IL,100/300,FEMALE,JD,armed-forces,exercise,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Police,WV,Northbend,?,YES,Nissan,1
+32,38,500,1006.77,6000000,0,0,15,3,2,1,1997,IL,100/300,FEMALE,College,other-service,sleeping,own-child,Multi-vehicle Collision,Side Collision,Minor Damage,Police,SC,Northbend,YES,YES,BMW,0
+259,39,1000,1422.36,0,0,-83900,12,3,1,3,2012,OH,250/500,FEMALE,JD,craft-repair,movies,unmarried,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,PA,Columbus,NO,?,Nissan,0
+186,33,1000,1348.32,0,37600,-37600,3,1,2,1,2013,IN,100/300,FEMALE,Associate,craft-repair,cross-fit,wife,Vehicle Theft,?,Trivial Damage,Police,NY,Arlington,NO,?,Chevrolet,1
+201,40,2000,1315.56,0,0,0,14,1,0,0,2003,OH,250/500,FEMALE,PhD,transport-moving,video-games,not-in-family,Vehicle Theft,?,Minor Damage,Police,SC,Northbrook,YES,YES,Jeep,0
+436,58,2000,1407.01,5000000,47400,-27600,10,1,0,2,1997,OH,250/500,MALE,PhD,tech-support,sleeping,other-relative,Single Vehicle Collision,Rear Collision,Major Damage,Police,WV,Riverwood,?,?,BMW,1
+189,36,2000,1388.58,0,0,-49400,17,3,1,3,2009,OH,250/500,FEMALE,MD,priv-house-serv,basketball,own-child,Multi-vehicle Collision,Side Collision,Major Damage,Police,WV,Riverwood,?,YES,Ford,0
+105,33,500,1310.76,0,0,-40900,8,1,0,1,2008,IL,500/1000,FEMALE,High School,adm-clerical,kayaking,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Other,VA,Northbrook,YES,?,Accura,0
+163,31,1000,1004.63,6000000,26900,0,14,3,2,0,1999,IN,100/300,MALE,JD,priv-house-serv,hiking,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Hillsdale,YES,NO,Suburu,0
+219,40,500,1134.91,0,68700,0,6,1,1,0,1997,OH,100/300,FEMALE,Associate,transport-moving,golf,not-in-family,Vehicle Theft,?,Trivial Damage,,SC,Riverwood,?,NO,Toyota,0
+88,25,1000,1194.0,0,0,0,6,1,1,2,2013,IN,250/500,FEMALE,JD,handlers-cleaners,movies,husband,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,SC,Northbrook,YES,YES,Ford,1
+40,39,1000,1248.25,4000000,0,-33300,8,1,0,2,2013,IN,500/1000,FEMALE,College,sales,hiking,own-child,Parked Car,?,Minor Damage,Police,VA,Northbrook,NO,?,BMW,0
+284,42,500,1338.54,-1000000,0,0,13,1,0,1,1996,OH,100/300,MALE,Associate,machine-op-inspct,kayaking,wife,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,NC,Arlington,YES,?,Chevrolet,0
+59,40,2000,782.23,0,64200,-32300,0,3,0,2,2010,IL,250/500,MALE,College,protective-serv,golf,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,OH,Springfield,?,NO,BMW,0
+39,31,2000,1366.9,0,0,-15700,14,3,1,0,2014,IL,250/500,FEMALE,High School,handlers-cleaners,polo,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,NC,Northbend,?,NO,BMW,1
+147,34,1000,1275.81,0,0,-48300,13,1,2,2,1998,IL,500/1000,MALE,High School,sales,dancing,wife,Single Vehicle Collision,Side Collision,Minor Damage,Fire,NY,Columbus,YES,?,Mercedes,0
+156,37,500,1090.65,0,0,-51800,16,4,1,2,2010,IN,250/500,MALE,High School,exec-managerial,golf,unmarried,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NC,Columbus,?,YES,Honda,1
+123,31,500,1326.0,0,0,-54600,13,1,1,2,2009,IN,250/500,FEMALE,Associate,prof-specialty,basketball,wife,Single Vehicle Collision,Side Collision,Total Loss,Fire,SC,Northbrook,?,NO,Mercedes,0
+231,43,2000,972.47,0,0,-58100,15,3,2,2,2010,IL,250/500,MALE,College,protective-serv,reading,wife,Multi-vehicle Collision,Front Collision,Minor Damage,Police,PA,Hillsdale,YES,YES,Audi,0
+247,39,500,806.31,0,0,0,3,1,2,3,2003,IL,100/300,FEMALE,College,handlers-cleaners,dancing,wife,Parked Car,?,Trivial Damage,Police,SC,Northbend,?,?,Dodge,0
+194,35,500,1416.24,0,0,0,7,1,1,0,2003,IL,500/1000,FEMALE,MD,adm-clerical,golf,not-in-family,Parked Car,?,Minor Damage,,WV,Northbend,YES,?,Nissan,0
+119,27,2000,1097.64,0,27100,0,16,2,1,0,2006,IN,250/500,MALE,High School,transport-moving,video-games,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Other,PA,Northbend,NO,?,Accura,0
+259,43,500,947.75,0,0,-39300,15,1,1,3,2008,IL,100/300,FEMALE,Masters,farming-fishing,base-jumping,not-in-family,Vehicle Theft,?,Trivial Damage,Police,SC,Riverwood,NO,NO,Audi,0
+107,31,2000,1018.73,5000000,20000,-82700,21,3,1,2,2001,IL,100/300,MALE,Associate,handlers-cleaners,yachting,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Police,NY,Riverwood,YES,?,Honda,0
+48,44,2000,1400.74,0,34000,-55600,23,3,0,2,2013,IL,100/300,MALE,College,sales,base-jumping,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Police,NC,Arlington,YES,?,Jeep,0
+267,40,500,1155.53,5000000,0,-35200,5,1,0,2,1997,IL,250/500,MALE,JD,transport-moving,camping,wife,Parked Car,?,Trivial Damage,Police,NY,Columbus,?,NO,Ford,0
+286,47,500,1386.93,0,54100,-77600,15,3,0,0,2001,IN,250/500,MALE,High School,priv-house-serv,bungie-jumping,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,NY,Springfield,YES,NO,Accura,0
+175,34,500,915.29,0,82400,-57100,14,1,2,1,2009,OH,100/300,FEMALE,JD,handlers-cleaners,base-jumping,wife,Single Vehicle Collision,Front Collision,Major Damage,Other,NY,Arlington,?,YES,Honda,1
+111,29,500,1239.55,2000000,0,0,1,1,1,1,1996,IL,250/500,FEMALE,PhD,farming-fishing,kayaking,own-child,Single Vehicle Collision,Side Collision,Major Damage,Fire,SC,Riverwood,?,YES,Mercedes,1
+151,37,500,1366.42,0,44000,0,14,3,1,2,1998,IN,250/500,FEMALE,Associate,protective-serv,cross-fit,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,SC,Arlington,NO,YES,Nissan,1
+156,37,1000,1086.48,6000000,0,-53800,17,3,1,1,1999,OH,500/1000,MALE,Associate,machine-op-inspct,hiking,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Other,NY,Northbrook,?,YES,Suburu,0
+165,36,2000,1247.87,0,0,-39700,20,3,2,2,2008,IL,250/500,MALE,Masters,armed-forces,golf,husband,Multi-vehicle Collision,Side Collision,Total Loss,Fire,NY,Northbend,NO,NO,BMW,0
+253,41,2000,1312.75,0,81300,0,10,3,2,2,2014,OH,100/300,FEMALE,PhD,sales,dancing,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Other,SC,Springfield,NO,YES,Toyota,1
+10,26,2000,765.64,0,0,-22200,3,3,0,3,2001,IN,100/300,MALE,MD,sales,base-jumping,not-in-family,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,SC,Northbrook,?,?,Honda,1
+158,33,2000,1327.41,0,0,-38600,0,1,0,0,2012,OH,100/300,FEMALE,Associate,handlers-cleaners,skydiving,other-relative,Single Vehicle Collision,Side Collision,Total Loss,Other,SC,Hillsdale,?,?,Suburu,0
+436,59,1000,1338.55,0,39000,0,10,3,2,2,2014,OH,500/1000,MALE,PhD,protective-serv,board-games,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Police,WV,Hillsdale,?,NO,Toyota,0
+91,30,2000,1316.63,8000000,43900,0,13,3,2,0,2009,IL,250/500,FEMALE,Masters,machine-op-inspct,golf,unmarried,Multi-vehicle Collision,Side Collision,Minor Damage,Other,SC,Northbend,YES,?,BMW,0
+256,42,1000,1286.44,0,0,-39500,14,1,2,1,1998,IL,500/1000,FEMALE,MD,transport-moving,bungie-jumping,wife,Single Vehicle Collision,Rear Collision,Minor Damage,Police,WV,Northbend,NO,?,Nissan,0
+274,46,1000,1372.18,0,0,0,22,3,1,3,2009,OH,500/1000,MALE,High School,exec-managerial,bungie-jumping,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Other,WV,Riverwood,NO,?,BMW,0
+275,45,2000,1447.77,0,39400,-63900,8,3,1,1,1998,IN,500/1000,FEMALE,Associate,adm-clerical,camping,wife,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,VA,Northbend,YES,?,Accura,0
+1,33,500,903.32,0,0,0,1,3,1,0,2006,IL,250/500,FEMALE,High School,transport-moving,yachting,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Northbend,?,?,Toyota,0
+85,30,1000,1454.42,0,51600,-73900,19,1,0,1,2006,IN,500/1000,MALE,Associate,protective-serv,reading,other-relative,Single Vehicle Collision,Side Collision,Major Damage,Other,NY,Springfield,YES,YES,Suburu,1
+233,37,2000,1603.42,0,61600,-30200,17,1,0,2,2005,IL,100/300,FEMALE,High School,sales,video-games,wife,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Columbus,YES,YES,Toyota,0
+142,30,2000,1616.58,0,58500,-46800,13,3,0,3,2010,IN,250/500,MALE,JD,adm-clerical,polo,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Other,SC,Hillsdale,YES,YES,Dodge,0
+266,44,500,1611.83,0,0,0,4,1,1,2,2012,IL,250/500,MALE,High School,handlers-cleaners,movies,husband,Single Vehicle Collision,Front Collision,Total Loss,Police,WV,Riverwood,?,YES,BMW,0
+350,50,500,889.13,0,0,0,14,3,0,2,2015,OH,500/1000,FEMALE,Masters,priv-house-serv,board-games,other-relative,Multi-vehicle Collision,Rear Collision,Total Loss,Police,PA,Northbend,NO,NO,Audi,0
+97,26,1000,1252.08,0,0,0,4,2,2,2,2000,IL,250/500,MALE,College,exec-managerial,sleeping,not-in-family,Multi-vehicle Collision,Rear Collision,Major Damage,Other,VA,Springfield,YES,NO,Honda,1
+399,55,2000,995.56,0,0,-65400,23,3,1,1,2010,IL,500/1000,MALE,JD,tech-support,sleeping,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Police,NY,Northbend,YES,YES,Nissan,0
+305,49,2000,1347.92,0,0,-42100,21,3,0,2,2003,IL,100/300,FEMALE,High School,farming-fishing,bungie-jumping,own-child,Multi-vehicle Collision,Front Collision,Total Loss,Fire,NY,Hillsdale,YES,?,Volkswagen,0
+276,47,1000,1724.09,0,0,0,23,3,0,0,2014,IN,100/300,MALE,PhD,craft-repair,yachting,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Arlington,YES,?,Chevrolet,0
+257,40,500,1379.93,0,0,0,6,3,0,2,2002,IN,250/500,MALE,MD,armed-forces,base-jumping,husband,Multi-vehicle Collision,Side Collision,Major Damage,Other,NY,Columbus,?,YES,Audi,1
+78,31,1000,1554.64,4000000,0,-27900,21,1,1,0,2009,IN,250/500,MALE,PhD,protective-serv,board-games,own-child,Single Vehicle Collision,Front Collision,Major Damage,Other,WV,Springfield,NO,NO,Honda,1
+129,28,1000,1377.94,0,0,0,23,1,2,3,2005,OH,500/1000,MALE,Masters,machine-op-inspct,base-jumping,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Fire,NY,Springfield,?,?,Toyota,0
+283,46,2000,1313.33,0,53500,-73600,3,3,1,3,2004,IL,500/1000,FEMALE,PhD,transport-moving,reading,husband,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Riverwood,?,NO,Nissan,1
+85,25,500,1259.02,0,67000,-53600,8,1,2,2,2005,IN,250/500,FEMALE,JD,tech-support,base-jumping,unmarried,Parked Car,?,Trivial Damage,,SC,Northbend,NO,?,Nissan,0
+101,26,1000,1371.88,0,0,0,4,1,2,2,1995,IL,500/1000,FEMALE,MD,prof-specialty,reading,husband,Parked Car,?,Trivial Damage,,VA,Arlington,?,?,Suburu,0
+96,30,500,1399.27,6000000,38900,-48700,22,1,0,0,2004,OH,100/300,MALE,College,prof-specialty,hiking,wife,Single Vehicle Collision,Side Collision,Total Loss,Fire,NC,Arlington,?,YES,Ford,0
+121,31,1000,1061.98,6000000,0,0,16,1,0,1,2002,IL,500/1000,FEMALE,JD,armed-forces,camping,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Police,WV,Hillsdale,NO,YES,BMW,0
+176,39,500,1365.46,4000000,0,-56600,14,3,2,1,2008,OH,250/500,MALE,College,armed-forces,sleeping,unmarried,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,SC,Columbus,NO,NO,Chevrolet,0
+159,37,1000,894.4,0,0,-53700,13,1,2,0,1999,IL,500/1000,MALE,Associate,tech-support,camping,wife,Single Vehicle Collision,Rear Collision,Total Loss,Police,NY,Springfield,YES,NO,Dodge,0
+120,30,500,956.69,0,39600,-64300,20,1,1,1,2000,IN,250/500,FEMALE,Associate,priv-house-serv,movies,husband,Single Vehicle Collision,Front Collision,Minor Damage,Other,NY,Hillsdale,?,YES,Saab,0
+212,35,2000,1123.89,0,35400,-49200,0,3,1,3,1996,IN,500/1000,MALE,MD,priv-house-serv,video-games,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Fire,NY,Columbus,?,?,Suburu,0
+290,45,500,1085.03,0,0,-61000,23,3,2,2,2014,IL,100/300,FEMALE,JD,sales,cross-fit,wife,Multi-vehicle Collision,Side Collision,Total Loss,Police,VA,Arlington,YES,NO,Audi,1
+299,42,2000,1437.33,0,25000,0,13,1,1,3,2000,OH,100/300,FEMALE,Associate,craft-repair,movies,wife,Single Vehicle Collision,Rear Collision,Minor Damage,Other,SC,Columbus,YES,NO,BMW,0
+66,26,1000,988.29,0,0,0,8,1,2,2,2008,IL,250/500,MALE,College,armed-forces,skydiving,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Police,NY,Northbend,?,YES,Suburu,1
+334,47,500,1238.89,0,0,0,3,1,0,3,2011,IL,500/1000,MALE,Masters,protective-serv,sleeping,other-relative,Vehicle Theft,?,Minor Damage,,WV,Northbend,?,NO,Ford,0
+216,38,1000,1384.64,5000000,0,0,16,1,2,3,2012,IN,100/300,FEMALE,Associate,tech-support,board-games,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Police,VA,Columbus,?,NO,Jeep,1
+86,28,2000,1595.07,0,75800,0,19,1,0,2,2002,IN,100/300,MALE,PhD,transport-moving,hiking,unmarried,Single Vehicle Collision,Side Collision,Minor Damage,Police,VA,Hillsdale,YES,YES,Jeep,0
+429,56,1000,1127.89,6000000,67400,-43800,0,1,2,0,2002,OH,250/500,MALE,Associate,machine-op-inspct,skydiving,own-child,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,WV,Springfield,YES,YES,Suburu,0
+257,43,2000,929.7,6000000,46400,-74300,12,1,2,2,2005,IN,500/1000,FEMALE,PhD,handlers-cleaners,base-jumping,husband,Single Vehicle Collision,Front Collision,Total Loss,Other,VA,Arlington,?,YES,Mercedes,0
+15,34,1000,1829.63,0,56700,0,21,3,1,0,2009,IL,100/300,MALE,JD,tech-support,cross-fit,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Other,SC,Arlington,YES,?,Audi,0
+230,39,1000,904.7,7000000,68600,-22300,0,1,1,3,2002,IL,100/300,FEMALE,MD,craft-repair,bungie-jumping,unmarried,Single Vehicle Collision,Front Collision,Major Damage,Fire,SC,Riverwood,?,NO,Accura,1
+250,43,1000,1243.84,0,47900,-73400,22,1,1,3,2011,OH,500/1000,FEMALE,JD,tech-support,polo,own-child,Single Vehicle Collision,Side Collision,Minor Damage,Other,VA,Columbus,YES,NO,Volkswagen,0
+270,44,2000,1030.95,0,47200,0,20,3,1,0,2007,IL,500/1000,FEMALE,Associate,machine-op-inspct,paintball,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,NC,Northbend,?,NO,Audi,1
+65,26,500,1285.03,3000000,0,-41500,0,1,1,3,2011,IN,100/300,FEMALE,High School,craft-repair,camping,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,VA,Riverwood,NO,?,Honda,0
+475,57,500,1216.56,0,67400,-83200,20,1,0,2,2000,OH,100/300,MALE,Masters,adm-clerical,skydiving,own-child,Single Vehicle Collision,Front Collision,Minor Damage,Police,SC,Hillsdale,?,NO,Suburu,0
+77,27,2000,966.26,0,56400,-32800,1,3,0,0,1995,IN,500/1000,FEMALE,High School,adm-clerical,base-jumping,own-child,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,NY,Springfield,YES,?,Volkswagen,0
+256,43,500,1203.17,0,56700,-65600,11,1,0,0,1997,OH,100/300,FEMALE,MD,prof-specialty,golf,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Fire,WV,Hillsdale,NO,?,Nissan,0
+229,37,2000,1212.12,0,65600,0,14,3,1,1,1995,IL,250/500,FEMALE,MD,craft-repair,paintball,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Other,WV,Columbus,YES,YES,Ford,0
+110,28,1000,1573.93,0,30400,0,20,3,0,2,2010,OH,250/500,MALE,College,other-service,movies,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Police,NY,Springfield,YES,?,Suburu,0
+177,33,1000,1609.67,0,0,-13200,22,1,1,3,2004,IL,100/300,MALE,College,adm-clerical,yachting,wife,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,SC,Springfield,?,?,Jeep,1
+292,44,500,1097.57,0,0,0,12,1,1,0,2005,OH,500/1000,MALE,PhD,priv-house-serv,basketball,unmarried,Single Vehicle Collision,Side Collision,Total Loss,Other,SC,Columbus,NO,YES,Saab,0
+451,61,2000,1618.65,2000000,0,-42600,3,3,2,1,1997,IN,250/500,FEMALE,Associate,transport-moving,polo,unmarried,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,OH,Columbus,YES,YES,Chevrolet,1
+61,24,500,922.67,0,47400,0,15,3,2,1,2011,IN,100/300,FEMALE,College,priv-house-serv,paintball,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,SC,Northbend,YES,?,Toyota,1
+150,30,1000,1342.02,0,0,0,8,1,0,2,1999,IN,100/300,MALE,MD,prof-specialty,polo,own-child,Parked Car,?,Trivial Damage,,VA,Arlington,YES,NO,Saab,0
+283,41,500,1195.01,0,60700,-54300,13,3,0,2,2011,OH,100/300,FEMALE,Associate,sales,reading,own-child,Multi-vehicle Collision,Side Collision,Major Damage,Other,WV,Northbend,NO,?,Mercedes,1
+291,46,1000,994.74,0,0,-55300,8,1,2,2,2005,OH,500/1000,FEMALE,High School,adm-clerical,polo,own-child,Parked Car,?,Minor Damage,Police,SC,Hillsdale,NO,YES,Volkswagen,1
+162,31,1000,1050.24,0,30700,0,7,1,0,0,2013,IN,100/300,FEMALE,Masters,adm-clerical,chess,wife,Parked Car,?,Minor Damage,,NC,Arlington,?,NO,BMW,1
+154,36,2000,1313.51,7000000,68500,0,9,1,2,0,2015,IL,250/500,FEMALE,Masters,exec-managerial,dancing,own-child,Vehicle Theft,?,Trivial Damage,,SC,Northbrook,?,?,Volkswagen,0
+289,47,2000,1102.29,0,73000,-37900,15,1,1,0,1996,OH,500/1000,FEMALE,Associate,adm-clerical,hiking,own-child,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,VA,Northbend,NO,YES,Toyota,0
+10,19,1000,1185.78,0,0,-60700,5,1,0,2,2011,IN,250/500,FEMALE,JD,craft-repair,yachting,wife,Single Vehicle Collision,Side Collision,Minor Damage,Police,NC,Northbend,?,?,Accura,1
+309,47,500,1527.95,0,69400,0,15,4,0,1,2002,IL,500/1000,MALE,PhD,exec-managerial,hiking,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Other,WV,Northbend,YES,?,Dodge,0
+396,57,1000,1366.39,0,0,-22400,22,3,2,1,1995,IN,100/300,MALE,High School,protective-serv,exercise,other-relative,Multi-vehicle Collision,Front Collision,Major Damage,Other,NC,Columbus,YES,NO,Saab,0
+273,41,1000,1403.9,0,0,0,16,2,1,2,2015,OH,500/1000,FEMALE,PhD,farming-fishing,dancing,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Police,VA,Riverwood,?,YES,Honda,0
+129,30,2000,927.23,0,51500,0,7,1,1,3,2009,IL,500/1000,FEMALE,PhD,sales,video-games,husband,Single Vehicle Collision,Front Collision,Total Loss,Other,SC,Hillsdale,NO,?,Suburu,0
+140,31,2000,1554.86,6000000,59000,0,2,1,1,2,2002,OH,250/500,FEMALE,JD,armed-forces,base-jumping,wife,Parked Car,?,Minor Damage,,WV,Arlington,YES,?,Honda,1
+419,53,2000,736.07,6000000,45700,0,17,4,0,0,2012,IL,500/1000,MALE,College,transport-moving,chess,unmarried,Multi-vehicle Collision,Side Collision,Minor Damage,Police,SC,Northbend,?,YES,Suburu,0
+315,44,1000,974.16,6000000,0,-56800,12,3,1,0,2006,IL,250/500,FEMALE,Masters,sales,reading,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Other,NY,Springfield,?,YES,Volkswagen,0
+72,29,500,973.8,0,0,-85900,9,1,1,0,2013,OH,500/1000,FEMALE,Associate,craft-repair,exercise,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,WV,Arlington,?,NO,Dodge,0
+32,26,2000,1260.32,6000000,0,-79800,16,1,1,2,2009,OH,100/300,MALE,JD,other-service,polo,not-in-family,Single Vehicle Collision,Side Collision,Total Loss,Fire,VA,Northbrook,?,?,Toyota,0
+230,41,1000,1464.03,0,0,0,19,3,2,0,2006,IN,100/300,MALE,JD,transport-moving,sleeping,own-child,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,NY,Springfield,?,?,Audi,0
+157,32,2000,617.11,0,0,-54100,14,3,1,2,2013,OH,100/300,MALE,College,other-service,reading,other-relative,Multi-vehicle Collision,Front Collision,Major Damage,Other,VA,Columbus,?,NO,Mercedes,1
+265,41,2000,1724.46,6000000,81800,0,18,3,1,3,2014,IN,250/500,FEMALE,Associate,craft-repair,sleeping,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Police,SC,Northbend,?,?,Audi,0
+47,34,500,1161.31,0,64800,-24300,23,1,1,3,2012,IL,500/1000,FEMALE,PhD,exec-managerial,base-jumping,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Police,SC,Springfield,YES,?,Chevrolet,0
+113,29,2000,1091.73,0,36100,-42300,15,3,0,2,2004,OH,250/500,MALE,PhD,exec-managerial,golf,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,NY,Springfield,?,YES,Nissan,1
+289,46,2000,1209.07,0,0,0,18,1,0,1,1995,IL,250/500,MALE,JD,armed-forces,chess,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,NC,Arlington,YES,YES,BMW,1
+254,41,2000,1241.04,0,0,0,16,1,2,2,2014,IL,250/500,FEMALE,Masters,protective-serv,board-games,own-child,Single Vehicle Collision,Front Collision,Minor Damage,Police,NY,Riverwood,NO,YES,Audi,0
+115,30,500,1757.21,0,46400,0,12,3,1,0,2007,OH,500/1000,MALE,High School,prof-specialty,base-jumping,wife,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,NY,Northbend,NO,YES,Ford,0
+236,38,1000,802.24,0,0,-62500,16,1,0,1,2014,OH,250/500,FEMALE,College,other-service,paintball,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,WV,Northbrook,NO,?,Mercedes,0
+7,21,1000,1342.72,0,0,-45300,21,1,1,2,2003,IN,500/1000,MALE,Associate,machine-op-inspct,camping,wife,Single Vehicle Collision,Front Collision,Total Loss,Other,NY,Hillsdale,?,?,Honda,0
+208,36,2000,1209.41,5000000,0,0,15,3,0,1,1999,OH,100/300,MALE,JD,machine-op-inspct,base-jumping,wife,Multi-vehicle Collision,Side Collision,Total Loss,Other,NY,Columbus,YES,?,Nissan,0
+126,33,1000,1141.71,2000000,36700,-73400,21,1,1,2,2009,OH,500/1000,FEMALE,JD,priv-house-serv,sleeping,own-child,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,WV,Northbrook,YES,?,Suburu,0
+48,35,500,1090.03,0,0,-51000,1,1,0,2,2005,IL,100/300,FEMALE,JD,exec-managerial,golf,unmarried,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,WV,Arlington,YES,NO,Saab,0
+297,48,1000,1464.73,3000000,54900,-36700,17,3,0,0,2013,IN,250/500,MALE,PhD,exec-managerial,golf,other-relative,Multi-vehicle Collision,Side Collision,Total Loss,Fire,NY,Arlington,?,NO,Toyota,0
+160,36,1000,1118.58,0,0,-36600,5,3,2,1,2003,OH,100/300,FEMALE,High School,prof-specialty,board-games,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,NY,Columbus,NO,NO,Saab,0
+406,58,2000,1117.04,0,0,-42700,15,3,1,2,2009,OH,250/500,MALE,MD,exec-managerial,video-games,own-child,Multi-vehicle Collision,Front Collision,Total Loss,Other,WV,Northbend,?,?,Volkswagen,0
+157,31,500,1257.83,7000000,40700,-41600,2,4,2,2,2011,IN,500/1000,MALE,High School,farming-fishing,reading,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Other,OH,Arlington,NO,NO,Accura,1
+146,31,2000,1082.72,0,61400,-57500,3,1,2,0,2015,OH,250/500,FEMALE,PhD,machine-op-inspct,video-games,not-in-family,Vehicle Theft,?,Minor Damage,,SC,Northbend,YES,NO,Accura,0
+409,57,1000,1191.8,6000000,55600,0,19,1,1,0,2012,IN,100/300,MALE,High School,protective-serv,exercise,unmarried,Single Vehicle Collision,Side Collision,Major Damage,Other,NY,Riverwood,NO,?,Ford,0
+252,46,1000,1242.02,0,0,-28800,17,1,0,2,2003,IN,100/300,MALE,Masters,adm-clerical,dancing,wife,Single Vehicle Collision,Front Collision,Minor Damage,Fire,VA,Hillsdale,YES,YES,Jeep,0
+6,27,500,1075.71,0,0,-47400,7,1,0,1,2015,OH,250/500,FEMALE,High School,prof-specialty,dancing,unmarried,Vehicle Theft,?,Trivial Damage,Police,WV,Columbus,?,YES,Saab,0
+103,33,1000,969.88,6000000,0,0,21,1,1,0,2002,IN,100/300,MALE,MD,armed-forces,exercise,own-child,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,NY,Columbus,NO,YES,Chevrolet,0
+369,53,2000,1459.93,0,0,0,10,2,1,3,2012,OH,250/500,FEMALE,Masters,priv-house-serv,video-games,not-in-family,Multi-vehicle Collision,Front Collision,Total Loss,Police,WV,Springfield,YES,NO,Jeep,0
+261,46,1000,1245.61,0,0,0,11,1,1,0,2008,IL,500/1000,MALE,MD,transport-moving,base-jumping,own-child,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Columbus,YES,?,Ford,0
+159,33,2000,1462.76,0,69200,-36900,23,3,2,0,2004,IN,100/300,FEMALE,College,craft-repair,skydiving,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,NY,Columbus,YES,NO,Mercedes,1
+344,51,2000,1398.46,0,0,0,14,1,0,2,2004,IN,100/300,MALE,Associate,sales,skydiving,other-relative,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,NC,Northbend,?,NO,Audi,0
+437,60,1000,1269.64,0,48800,0,10,1,1,3,2012,OH,500/1000,FEMALE,College,armed-forces,cross-fit,unmarried,Single Vehicle Collision,Front Collision,Minor Damage,Other,SC,Riverwood,NO,NO,Chevrolet,1
+65,30,500,1455.65,4000000,0,-66300,6,3,2,3,1999,IN,100/300,FEMALE,College,transport-moving,skydiving,wife,Multi-vehicle Collision,Side Collision,Total Loss,Fire,WV,Hillsdale,?,NO,Honda,0
+280,41,2000,1140.31,0,29300,-64700,10,3,0,3,1999,OH,500/1000,MALE,MD,adm-clerical,exercise,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,WV,Arlington,?,YES,Toyota,0
+269,45,500,1330.46,0,54800,-64100,5,3,0,0,2008,IN,500/1000,FEMALE,High School,machine-op-inspct,sleeping,wife,Multi-vehicle Collision,Side Collision,Total Loss,Police,VA,Hillsdale,?,NO,Suburu,0
+275,40,2000,1190.6,0,0,-45300,17,1,1,3,2001,OH,250/500,MALE,Masters,exec-managerial,camping,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,OH,Riverwood,?,YES,Chevrolet,0
+265,45,500,972.5,0,0,0,3,1,2,3,1995,OH,250/500,FEMALE,College,exec-managerial,cross-fit,unmarried,Vehicle Theft,?,Trivial Damage,,NC,Springfield,NO,NO,Ford,0
+283,43,2000,1161.91,0,0,-50400,9,1,0,3,2006,IN,100/300,FEMALE,Associate,adm-clerical,polo,not-in-family,Parked Car,?,Minor Damage,,WV,Northbrook,?,NO,BMW,0
+84,29,1000,1117.17,0,0,-29900,6,1,2,0,2005,OH,250/500,FEMALE,High School,machine-op-inspct,video-games,not-in-family,Parked Car,?,Trivial Damage,Police,SC,Arlington,YES,YES,BMW,0
+247,44,2000,1101.51,0,64000,0,22,3,2,2,2008,OH,250/500,FEMALE,College,farming-fishing,camping,not-in-family,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,NY,Riverwood,NO,NO,Chevrolet,0
+56,29,1000,1523.17,0,0,0,10,3,1,2,1995,IL,100/300,MALE,Masters,prof-specialty,movies,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Fire,PA,Northbend,?,YES,Jeep,0
+210,39,1000,984.45,0,0,0,4,1,1,2,1997,OH,500/1000,MALE,Associate,armed-forces,paintball,unmarried,Vehicle Theft,?,Minor Damage,,NC,Riverwood,YES,?,Dodge,0
+108,32,2000,1257.0,4000000,63900,-43700,23,1,1,3,1999,OH,500/1000,FEMALE,High School,machine-op-inspct,basketball,unmarried,Single Vehicle Collision,Front Collision,Total Loss,Other,WV,Northbrook,NO,NO,Suburu,0
+328,49,500,1434.51,0,0,0,19,1,0,2,2005,OH,500/1000,FEMALE,Masters,transport-moving,bungie-jumping,wife,Single Vehicle Collision,Rear Collision,Total Loss,Police,NY,Riverwood,?,YES,Mercedes,0
+186,37,2000,1628.0,0,0,0,22,1,1,2,2009,OH,250/500,FEMALE,JD,priv-house-serv,exercise,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,NY,Hillsdale,YES,YES,Jeep,0
+277,44,500,1412.31,0,0,0,6,1,1,3,2005,IN,500/1000,MALE,High School,priv-house-serv,board-games,unmarried,Vehicle Theft,?,Trivial Damage,Police,NC,Riverwood,NO,NO,Jeep,0
+138,33,500,1362.87,5000000,56900,-56900,6,1,2,0,2007,IL,250/500,FEMALE,JD,exec-managerial,paintball,own-child,Single Vehicle Collision,Side Collision,Minor Damage,Other,NY,Springfield,NO,?,BMW,0
+208,41,1000,1134.68,0,0,0,18,1,2,2,1996,IN,100/300,FEMALE,College,tech-support,chess,husband,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,SC,Northbend,NO,?,Volkswagen,0
+147,37,1000,1306.78,0,0,0,22,1,1,0,1995,IN,250/500,MALE,MD,prof-specialty,video-games,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,SC,Northbend,?,NO,Toyota,0
+8,21,500,1021.9,0,0,0,21,1,0,0,2012,IN,500/1000,MALE,High School,handlers-cleaners,hiking,husband,Single Vehicle Collision,Front Collision,Major Damage,Other,WV,Columbus,?,?,Toyota,0
+297,48,1000,1538.6,0,0,-54700,12,1,0,0,2004,IN,100/300,FEMALE,MD,other-service,kayaking,wife,Single Vehicle Collision,Side Collision,Minor Damage,Fire,SC,Northbend,?,?,Ford,0
+150,31,1000,1354.5,0,52800,0,6,3,0,3,2000,IN,500/1000,MALE,Masters,machine-op-inspct,base-jumping,husband,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Arlington,?,YES,Suburu,1
+4,34,500,1282.93,0,0,0,0,4,0,0,1996,OH,500/1000,FEMALE,College,exec-managerial,basketball,other-relative,Multi-vehicle Collision,Side Collision,Major Damage,Police,WV,Northbrook,?,?,Chevrolet,1
+210,35,1000,1346.27,0,44900,-91400,11,1,0,2,2013,IL,500/1000,MALE,Masters,farming-fishing,cross-fit,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,WV,Arlington,NO,?,BMW,0
+91,31,1000,1338.4,4000000,63600,0,19,1,1,0,2011,IN,100/300,FEMALE,High School,priv-house-serv,polo,own-child,Single Vehicle Collision,Side Collision,Minor Damage,Police,NC,Hillsdale,?,NO,Nissan,0
+167,36,1000,949.44,0,0,-38400,22,3,0,0,2008,IL,100/300,FEMALE,Masters,exec-managerial,camping,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,NC,Springfield,?,NO,Mercedes,1
+467,58,2000,977.4,0,82200,0,2,1,2,3,2014,IN,500/1000,MALE,Masters,transport-moving,bungie-jumping,own-child,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Columbus,YES,NO,Nissan,0
+264,47,2000,1181.46,10000000,0,-67400,16,4,1,2,2001,IN,250/500,FEMALE,JD,transport-moving,sleeping,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,OH,Arlington,YES,YES,Dodge,0
+270,45,500,1187.53,0,83200,-53300,23,3,0,0,2005,OH,500/1000,FEMALE,PhD,priv-house-serv,yachting,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Other,VA,Columbus,?,YES,Saab,0
+310,48,1000,845.16,0,0,0,21,1,1,0,2005,OH,100/300,FEMALE,Masters,priv-house-serv,base-jumping,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Police,NC,Northbend,YES,NO,Audi,1
+143,34,500,1442.27,0,67900,0,10,1,2,3,1999,IL,100/300,MALE,College,priv-house-serv,exercise,wife,Single Vehicle Collision,Front Collision,Minor Damage,Other,NY,Columbus,?,YES,Dodge,0
+146,32,2000,1276.43,0,0,0,12,1,0,3,1995,OH,100/300,MALE,Associate,priv-house-serv,skydiving,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Fire,NC,Riverwood,?,?,Honda,0
+102,28,500,1075.41,0,55200,0,6,1,1,0,1996,OH,250/500,MALE,MD,machine-op-inspct,reading,wife,Single Vehicle Collision,Side Collision,Total Loss,Police,PA,Northbend,NO,NO,Dodge,0
+61,23,500,1111.72,0,54600,0,6,1,1,2,1997,IL,100/300,MALE,JD,exec-managerial,bungie-jumping,other-relative,Single Vehicle Collision,Side Collision,Major Damage,Fire,PA,Riverwood,?,?,Suburu,0
+255,44,2000,814.96,6000000,68500,0,7,1,2,2,2005,OH,500/1000,FEMALE,PhD,priv-house-serv,chess,not-in-family,Parked Car,?,Trivial Damage,Police,NC,Hillsdale,?,NO,Mercedes,1
+211,40,1000,1575.86,0,0,0,3,1,1,1,2004,IL,500/1000,FEMALE,PhD,other-service,sleeping,own-child,Vehicle Theft,?,Trivial Damage,Police,WV,Northbrook,NO,NO,Audi,0
+61,29,1000,1115.27,0,0,-66000,10,1,2,1,2010,IN,250/500,MALE,JD,handlers-cleaners,polo,unmarried,Parked Car,?,Trivial Damage,,VA,Hillsdale,YES,YES,Nissan,0
+108,31,2000,1175.7,0,0,0,14,1,0,2,2006,IN,500/1000,MALE,Masters,protective-serv,yachting,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Fire,NY,Columbus,NO,NO,Dodge,0
+303,50,500,793.15,0,54600,-45500,17,3,0,3,2008,OH,100/300,MALE,MD,tech-support,board-games,own-child,Multi-vehicle Collision,Front Collision,Total Loss,Other,WV,Hillsdale,NO,NO,Dodge,0
+152,33,500,942.51,0,0,0,16,1,0,0,2001,IN,250/500,FEMALE,PhD,transport-moving,exercise,wife,Single Vehicle Collision,Side Collision,Major Damage,Fire,SC,Hillsdale,YES,?,Suburu,1
+120,34,1000,1056.71,0,77900,0,3,1,2,1,2002,IN,500/1000,FEMALE,JD,protective-serv,paintball,not-in-family,Parked Car,?,Minor Damage,,VA,Columbus,NO,?,Jeep,0
+144,36,2000,1255.68,6000000,23600,-15600,7,1,0,0,2014,IN,500/1000,FEMALE,Associate,sales,reading,other-relative,Parked Car,?,Minor Damage,,NC,Arlington,NO,?,Dodge,0
+414,52,500,1335.13,0,44000,-71000,13,1,1,1,1999,IN,500/1000,FEMALE,High School,farming-fishing,chess,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Police,SC,Northbend,YES,?,Chevrolet,1
+163,37,500,1178.95,6000000,0,-67300,20,1,2,3,2005,IN,250/500,FEMALE,JD,priv-house-serv,dancing,own-child,Single Vehicle Collision,Rear Collision,Total Loss,Fire,NY,Springfield,YES,YES,Jeep,0
+352,53,500,1793.16,0,0,0,23,1,2,2,2009,IL,250/500,MALE,Associate,tech-support,exercise,wife,Single Vehicle Collision,Front Collision,Minor Damage,Fire,NC,Riverwood,YES,NO,Chevrolet,0
+27,32,500,1008.38,0,37900,0,11,1,1,0,2013,OH,100/300,FEMALE,PhD,adm-clerical,yachting,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,SC,Arlington,NO,?,Dodge,0
+239,39,500,1396.83,0,0,0,0,4,0,3,2007,IL,100/300,FEMALE,Masters,other-service,reading,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,WV,Northbend,?,NO,BMW,0
+33,32,500,1402.78,5000000,70300,-50300,2,1,0,1,2012,OH,100/300,FEMALE,PhD,other-service,base-jumping,husband,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,NY,Northbrook,YES,?,Toyota,0
+88,30,1000,1437.88,0,42800,-51200,3,1,2,0,2003,IN,100/300,FEMALE,College,transport-moving,reading,husband,Single Vehicle Collision,Side Collision,Total Loss,Fire,SC,Northbrook,NO,YES,Chevrolet,0
+101,33,1000,1313.64,0,12100,0,3,1,1,0,1997,IL,500/1000,FEMALE,College,priv-house-serv,board-games,unmarried,Parked Car,?,Trivial Damage,,NY,Hillsdale,YES,NO,Audi,0
+20,37,500,1482.14,0,33000,-43600,15,3,2,1,2003,IL,250/500,FEMALE,Associate,transport-moving,reading,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Other,NY,Arlington,?,NO,Suburu,0
+126,30,2000,1171.75,0,46500,-42700,23,1,2,3,2011,IL,250/500,FEMALE,Associate,machine-op-inspct,board-games,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Other,NY,Northbend,?,NO,Chevrolet,0
+264,43,2000,1353.33,0,0,-8500,9,3,2,0,2007,IL,500/1000,MALE,Associate,adm-clerical,video-games,not-in-family,Multi-vehicle Collision,Front Collision,Minor Damage,Police,WV,Springfield,YES,NO,Ford,0
+78,24,500,1175.51,0,0,0,20,1,0,1,2003,IN,100/300,MALE,Masters,craft-repair,yachting,husband,Vehicle Theft,?,Minor Damage,Police,NY,Columbus,?,YES,Dodge,0
+123,28,2000,1836.02,0,38000,-41200,5,1,2,1,2011,IL,100/300,MALE,Masters,transport-moving,movies,own-child,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,NC,Riverwood,?,YES,Volkswagen,1
+347,51,500,1480.79,9000000,0,-12100,15,1,0,2,1997,OH,500/1000,FEMALE,MD,priv-house-serv,board-games,unmarried,Single Vehicle Collision,Side Collision,Total Loss,Other,NC,Hillsdale,YES,?,Jeep,0
+163,38,2000,1453.92,0,51700,0,13,1,2,3,1995,IN,500/1000,FEMALE,PhD,other-service,yachting,other-relative,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,NY,Hillsdale,YES,?,Accura,0
+271,44,500,1340.71,0,0,0,16,1,2,2,1997,OH,250/500,FEMALE,High School,tech-support,base-jumping,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Other,SC,Riverwood,NO,NO,Volkswagen,1
+410,54,2000,714.03,0,0,-17000,0,1,0,2,2001,IL,100/300,MALE,MD,protective-serv,board-games,own-child,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,WV,Northbend,YES,NO,Honda,0
+448,57,2000,1376.16,0,38600,-50300,10,3,2,1,2013,IL,100/300,FEMALE,PhD,tech-support,hiking,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Police,SC,Arlington,NO,?,Suburu,1
+218,41,500,914.22,0,37900,-72900,14,3,2,0,2013,IL,100/300,MALE,JD,prof-specialty,golf,wife,Multi-vehicle Collision,Side Collision,Total Loss,Police,NY,Springfield,NO,NO,Saab,0
+43,38,1000,1601.47,0,64400,0,1,3,2,2,2006,OH,500/1000,MALE,PhD,handlers-cleaners,skydiving,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Other,SC,Columbus,YES,?,Nissan,0
+33,33,1000,1096.79,6000000,45500,-60600,16,1,2,1,1998,IL,500/1000,FEMALE,Associate,handlers-cleaners,dancing,unmarried,Single Vehicle Collision,Rear Collision,Major Damage,Police,VA,Springfield,?,?,BMW,0
+126,34,2000,1078.22,0,54500,0,2,3,0,1,2007,IN,100/300,FEMALE,Masters,transport-moving,camping,wife,Multi-vehicle Collision,Side Collision,Major Damage,Fire,SC,Northbend,NO,YES,Chevrolet,0
+411,56,1000,1595.28,0,0,0,23,3,0,0,2007,IL,250/500,FEMALE,College,protective-serv,exercise,other-relative,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,VA,Springfield,?,?,Volkswagen,0
+225,37,1000,1217.84,5000000,49600,0,19,3,2,2,2015,OH,100/300,FEMALE,High School,farming-fishing,yachting,not-in-family,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,WV,Northbrook,?,NO,Volkswagen,0
+35,35,2000,1117.42,0,0,-51900,23,3,2,2,1996,IL,100/300,FEMALE,PhD,protective-serv,kayaking,not-in-family,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,NC,Hillsdale,NO,NO,Volkswagen,0
+460,57,2000,1567.37,0,62500,0,10,1,2,3,2014,OH,100/300,FEMALE,JD,craft-repair,skydiving,husband,Single Vehicle Collision,Front Collision,Major Damage,Other,NY,Riverwood,?,NO,Nissan,1
+195,38,2000,1294.93,6000000,38000,-50300,12,3,1,2,2003,IL,500/1000,MALE,MD,tech-support,video-games,unmarried,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,WV,Springfield,YES,NO,Dodge,0
+360,51,1000,1152.12,0,0,-62400,15,3,2,0,2000,IL,250/500,MALE,PhD,armed-forces,hiking,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,WV,Riverwood,NO,YES,BMW,0
+300,49,1000,1441.21,0,0,0,3,1,1,0,2001,IL,100/300,FEMALE,PhD,farming-fishing,kayaking,wife,Vehicle Theft,?,Trivial Damage,,SC,Columbus,NO,NO,Nissan,0
+245,42,1000,1575.74,7000000,0,-68900,19,1,2,2,2011,IL,500/1000,MALE,JD,exec-managerial,chess,other-relative,Parked Car,?,Minor Damage,Police,PA,Springfield,?,?,Toyota,1
+146,36,2000,1233.96,0,34500,-60600,16,3,1,1,2015,OH,500/1000,FEMALE,Masters,other-service,golf,other-relative,Multi-vehicle Collision,Side Collision,Total Loss,Police,NC,Hillsdale,NO,NO,Nissan,0
+67,29,1000,1861.43,0,60400,-67800,16,1,0,3,1998,IL,250/500,MALE,High School,adm-clerical,polo,husband,Single Vehicle Collision,Rear Collision,Major Damage,Other,SC,Columbus,NO,YES,Saab,1
+380,56,1000,1570.86,0,66000,0,10,1,0,1,1996,OH,100/300,MALE,MD,farming-fishing,cross-fit,other-relative,Single Vehicle Collision,Side Collision,Total Loss,Police,VA,Northbend,?,YES,Saab,1
+389,53,2000,791.47,0,0,0,6,1,1,2,2001,IL,500/1000,MALE,Masters,armed-forces,chess,unmarried,Vehicle Theft,?,Minor Damage,Police,NC,Riverwood,NO,NO,Mercedes,1
+317,46,1000,1012.78,0,43700,0,18,1,2,1,1999,IN,250/500,MALE,MD,sales,yachting,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Fire,WV,Arlington,NO,NO,Mercedes,1
+264,44,500,1047.06,6000000,0,0,20,3,0,2,1999,IL,100/300,MALE,College,exec-managerial,sleeping,wife,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,SC,Springfield,NO,NO,Ford,0
+20,21,1000,1390.29,0,0,-41200,14,1,0,0,2006,OH,250/500,FEMALE,Masters,priv-house-serv,polo,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,PA,Northbrook,NO,?,Accura,0
+116,30,500,951.46,0,0,-35500,8,3,0,3,2004,IN,500/1000,MALE,JD,handlers-cleaners,golf,not-in-family,Multi-vehicle Collision,Front Collision,Major Damage,Other,WV,Riverwood,NO,?,Volkswagen,1
+222,40,1000,1226.78,0,49600,-49200,17,2,2,0,2013,IL,100/300,MALE,JD,armed-forces,camping,unmarried,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,NY,Springfield,YES,?,BMW,0
+439,56,500,1280.9,0,48900,-40900,9,1,2,0,2009,OH,100/300,MALE,High School,armed-forces,video-games,own-child,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,NC,Springfield,NO,?,Jeep,0
+66,28,2000,1472.77,0,0,-31700,0,1,2,1,1995,IN,100/300,MALE,Associate,adm-clerical,exercise,husband,Single Vehicle Collision,Front Collision,Total Loss,Other,NY,Springfield,?,?,Nissan,0
+128,29,1000,1878.44,0,0,-76000,2,1,0,0,2003,OH,500/1000,MALE,High School,other-service,golf,husband,Single Vehicle Collision,Rear Collision,Total Loss,Fire,VA,Riverwood,NO,?,Chevrolet,0
+69,24,500,1418.5,0,0,0,23,3,0,0,2012,IN,500/1000,FEMALE,High School,armed-forces,yachting,other-relative,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Springfield,?,NO,Dodge,0
+294,46,500,1532.8,0,0,0,8,1,0,3,2013,IL,100/300,MALE,College,prof-specialty,exercise,own-child,Single Vehicle Collision,Side Collision,Total Loss,Other,SC,Northbend,NO,YES,Mercedes,0
+19,29,500,1304.35,0,0,0,6,3,0,2,2005,OH,250/500,MALE,JD,transport-moving,cross-fit,not-in-family,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,NY,Columbus,NO,?,Dodge,1
+191,33,2000,1551.61,0,45000,-30400,3,1,1,1,2005,OH,500/1000,MALE,High School,armed-forces,movies,unmarried,Vehicle Theft,?,Minor Damage,,WV,Arlington,YES,NO,Toyota,0
+4,39,1000,1326.98,6000000,64200,0,14,3,1,3,2007,IL,100/300,FEMALE,High School,machine-op-inspct,reading,unmarried,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,VA,Northbend,YES,?,Jeep,0
+298,49,500,862.92,0,0,-71700,16,3,0,2,2007,OH,250/500,MALE,MD,machine-op-inspct,camping,wife,Multi-vehicle Collision,Side Collision,Major Damage,Other,NY,Northbrook,NO,NO,Saab,0
+231,43,2000,1331.69,0,0,0,12,1,1,2,2015,IN,100/300,FEMALE,Masters,adm-clerical,reading,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Police,NY,Northbend,?,NO,Chevrolet,0
+338,47,2000,1486.04,0,0,-56200,1,3,2,3,2014,OH,250/500,FEMALE,Associate,armed-forces,board-games,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Other,OH,Northbrook,NO,?,Dodge,1
+261,46,1000,870.55,0,0,-49400,19,1,0,3,2013,IN,100/300,MALE,PhD,prof-specialty,camping,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Other,SC,Springfield,?,?,Chevrolet,0
+321,44,2000,1344.56,6000000,0,-39100,7,1,1,2,1999,IL,500/1000,MALE,Associate,machine-op-inspct,hiking,husband,Vehicle Theft,?,Trivial Damage,Police,NY,Northbend,?,NO,Accura,0
+0,32,1000,1377.04,0,61400,-41100,6,4,1,1,2002,OH,500/1000,MALE,College,tech-support,base-jumping,wife,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,NY,Springfield,?,NO,Accura,0
+405,58,500,1237.88,0,0,-46900,11,1,0,0,1997,IL,250/500,MALE,MD,exec-managerial,exercise,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Police,NY,Arlington,?,?,Mercedes,1
+304,49,1000,1525.86,0,0,0,2,1,1,1,2013,IN,100/300,FEMALE,PhD,craft-repair,camping,own-child,Single Vehicle Collision,Side Collision,Minor Damage,Other,NC,Northbend,YES,YES,Saab,0
+1,29,500,854.58,0,52200,0,15,1,2,3,2003,OH,500/1000,FEMALE,JD,craft-repair,paintball,other-relative,Single Vehicle Collision,Side Collision,Minor Damage,Police,SC,Northbrook,?,YES,Honda,0
+26,39,1000,770.76,0,0,-53700,0,1,0,2,2015,IN,250/500,MALE,Masters,tech-support,sleeping,husband,Single Vehicle Collision,Side Collision,Major Damage,Police,WV,Columbus,NO,?,Mercedes,0
+202,38,2000,1132.74,0,0,-37500,12,1,1,1,2005,IL,100/300,FEMALE,Associate,armed-forces,exercise,husband,Single Vehicle Collision,Side Collision,Major Damage,Other,WV,Hillsdale,YES,NO,Nissan,0
+289,48,500,1173.37,8000000,0,-42700,1,1,1,0,1999,IL,500/1000,FEMALE,PhD,handlers-cleaners,board-games,own-child,Single Vehicle Collision,Front Collision,Total Loss,Other,SC,Springfield,?,?,Accura,0
+61,26,2000,1188.28,6000000,0,-53800,16,2,1,0,2015,OH,100/300,FEMALE,JD,farming-fishing,skydiving,wife,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,VA,Hillsdale,YES,NO,Ford,1
+334,46,1000,876.88,6000000,0,0,2,1,2,1,1998,IL,100/300,MALE,MD,sales,reading,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Police,WV,Hillsdale,NO,NO,Jeep,0
+12,24,1000,1143.95,0,51400,0,13,3,2,1,2011,IL,500/1000,FEMALE,PhD,tech-support,paintball,other-relative,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Riverwood,NO,?,Nissan,0
+86,29,2000,1409.06,0,74200,-68100,0,1,2,2,2005,IL,100/300,MALE,High School,prof-specialty,yachting,husband,Single Vehicle Collision,Front Collision,Minor Damage,Police,NY,Northbrook,NO,YES,Accura,0
+83,24,1000,1070.63,0,0,0,0,3,0,1,2003,IN,500/1000,FEMALE,High School,machine-op-inspct,board-games,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Fire,NY,Arlington,?,NO,Honda,0
+126,30,2000,916.13,0,55300,-58400,16,3,2,0,2002,IL,500/1000,MALE,College,sales,golf,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Police,NY,Northbend,YES,NO,Mercedes,0
+209,38,500,1191.5,0,38600,-52900,8,1,2,0,2015,OH,250/500,MALE,High School,priv-house-serv,reading,husband,Single Vehicle Collision,Rear Collision,Total Loss,Police,WV,Arlington,NO,?,Audi,0
+283,48,1000,1474.66,0,0,-46200,9,1,2,3,2003,OH,500/1000,FEMALE,JD,sales,paintball,husband,Parked Car,?,Trivial Damage,Police,NY,Hillsdale,?,NO,Volkswagen,0
+194,34,1000,1193.45,0,0,0,11,1,2,1,1997,IL,250/500,MALE,JD,other-service,hiking,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,WV,Northbend,?,YES,Nissan,0
+184,38,1000,1437.53,0,0,0,6,3,0,2,2013,IL,250/500,FEMALE,College,transport-moving,chess,not-in-family,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,PA,Northbrook,?,NO,Dodge,1
+479,60,2000,1304.83,0,0,0,18,1,0,0,2001,IL,100/300,FEMALE,College,other-service,cross-fit,husband,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,NY,Arlington,NO,NO,Honda,0
+284,48,1000,1168.8,0,0,-42400,11,1,0,3,2001,OH,250/500,FEMALE,JD,tech-support,movies,other-relative,Single Vehicle Collision,Side Collision,Total Loss,Other,NY,Northbrook,?,YES,Mercedes,0
+65,27,1000,1164.97,0,43000,-42500,17,1,1,2,2004,IN,100/300,FEMALE,College,adm-clerical,exercise,wife,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,WV,Arlington,?,YES,Chevrolet,0
+222,39,1000,1232.72,0,87800,-51200,21,3,1,0,1999,IL,250/500,MALE,High School,armed-forces,hiking,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Fire,SC,Springfield,?,NO,Jeep,1
+196,41,2000,1800.76,0,0,-78600,0,3,1,0,2009,IL,250/500,MALE,JD,protective-serv,camping,other-relative,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,SC,Hillsdale,NO,NO,Jeep,0
+253,43,500,1187.01,7000000,46300,-33000,9,1,0,1,2014,IL,500/1000,FEMALE,Associate,tech-support,exercise,unmarried,Vehicle Theft,?,Trivial Damage,Police,NY,Northbrook,NO,?,Chevrolet,0
+280,43,1000,1559.34,0,0,-51600,1,1,0,2,2004,IN,100/300,MALE,JD,transport-moving,hiking,own-child,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Riverwood,NO,?,Accura,0
+5,26,2000,1137.02,0,31500,0,22,1,1,3,2003,IL,250/500,FEMALE,PhD,farming-fishing,skydiving,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,WV,Springfield,YES,?,Audi,0
+220,42,1000,1281.72,0,33500,-49500,20,4,0,2,2005,IN,100/300,MALE,College,farming-fishing,hiking,other-relative,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Northbend,NO,YES,Honda,0
+85,30,1000,796.35,0,72400,-77000,9,3,2,1,2004,OH,100/300,FEMALE,MD,craft-repair,video-games,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,SC,Northbend,YES,YES,Ford,0
+266,46,500,1270.02,0,0,-45800,5,1,1,2,2004,OH,250/500,FEMALE,Associate,tech-support,skydiving,own-child,Parked Car,?,Minor Damage,Police,NC,Northbrook,NO,?,Toyota,0
+41,26,1000,1383.13,0,46700,0,12,1,1,1,1997,IL,100/300,FEMALE,JD,prof-specialty,exercise,own-child,Vehicle Theft,?,Trivial Damage,Police,SC,Riverwood,YES,?,Jeep,0
+316,45,2000,1290.74,5000000,58300,0,6,3,2,0,2013,IL,100/300,FEMALE,High School,prof-specialty,kayaking,husband,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,VA,Springfield,NO,YES,Suburu,0
+285,47,1000,1216.68,0,55100,0,8,1,1,1,2013,IN,100/300,FEMALE,Masters,sales,basketball,other-relative,Vehicle Theft,?,Trivial Damage,Police,SC,Columbus,NO,NO,Ford,0
+379,54,500,1251.16,0,41400,0,14,1,0,1,2010,IL,100/300,FEMALE,Associate,machine-op-inspct,kayaking,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,WV,Riverwood,?,NO,Jeep,0
+15,34,2000,1586.41,0,33500,-58900,10,1,1,3,2010,IN,250/500,FEMALE,High School,sales,video-games,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Police,WV,Northbrook,YES,?,BMW,1
+354,48,2000,1526.11,5000000,0,0,12,1,2,3,1995,IL,500/1000,FEMALE,Masters,sales,exercise,unmarried,Single Vehicle Collision,Front Collision,Minor Damage,Police,SC,Columbus,?,YES,Chevrolet,0
+342,53,1000,1028.44,0,0,0,12,1,0,0,2000,IN,100/300,FEMALE,College,prof-specialty,dancing,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,SC,Springfield,?,NO,Accura,0
+169,38,1000,1555.94,0,23300,0,12,3,1,3,2012,IL,100/300,MALE,PhD,craft-repair,skydiving,own-child,Multi-vehicle Collision,Front Collision,Total Loss,Other,VA,Riverwood,NO,YES,Mercedes,0
+339,49,2000,1570.77,0,98800,-65300,13,1,0,3,2009,IN,500/1000,MALE,JD,adm-clerical,paintball,not-in-family,Vehicle Theft,?,Minor Damage,,SC,Columbus,NO,NO,Mercedes,0
+259,42,2000,1170.53,0,65000,-49200,17,3,1,2,2006,OH,100/300,FEMALE,PhD,armed-forces,sleeping,wife,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,WV,Northbend,NO,YES,Nissan,0
+65,23,1000,1099.95,0,0,-71900,14,1,1,0,2005,OH,250/500,FEMALE,College,sales,dancing,wife,Single Vehicle Collision,Side Collision,Major Damage,Other,NY,Arlington,NO,YES,Accura,1
+254,46,2000,1472.43,0,0,-90600,3,3,1,3,2004,IL,250/500,MALE,MD,tech-support,basketball,husband,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,WV,Arlington,?,YES,Volkswagen,0
+440,55,500,1275.62,0,0,-56200,18,3,2,1,1995,IL,250/500,FEMALE,Associate,priv-house-serv,reading,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Police,NY,Riverwood,YES,NO,Nissan,0
+478,63,1000,1292.3,0,47600,0,5,1,1,3,2007,IL,250/500,MALE,High School,adm-clerical,paintball,own-child,Parked Car,?,Minor Damage,,VA,Northbend,YES,NO,Dodge,1
+230,44,2000,1009.37,0,45400,-39400,19,1,0,2,2015,IN,250/500,FEMALE,College,prof-specialty,hiking,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Fire,SC,Riverwood,NO,YES,BMW,0
+138,30,500,1093.07,4000000,27700,-72400,0,1,2,2,2011,OH,500/1000,FEMALE,PhD,other-service,reading,wife,Single Vehicle Collision,Front Collision,Major Damage,Other,VA,Hillsdale,?,NO,Volkswagen,0
+239,41,1000,1325.44,7000000,51400,-6300,22,1,0,2,2013,OH,250/500,FEMALE,JD,farming-fishing,paintball,other-relative,Parked Car,?,Trivial Damage,Police,NC,Arlington,?,YES,Mercedes,0
+93,31,2000,1017.18,0,0,0,21,3,1,3,2014,IL,100/300,FEMALE,MD,prof-specialty,paintball,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Police,NC,Arlington,YES,NO,Saab,0
+37,25,1000,1221.17,0,49300,0,4,3,0,0,1996,OH,100/300,FEMALE,Masters,protective-serv,golf,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,SC,Northbrook,YES,YES,Suburu,0
+254,40,500,1927.87,0,0,0,10,1,0,1,1996,IN,100/300,MALE,MD,prof-specialty,yachting,husband,Single Vehicle Collision,Front Collision,Minor Damage,Fire,VA,Arlington,YES,?,Honda,1
+131,29,1000,978.27,0,65700,0,5,1,1,3,2003,IN,250/500,FEMALE,Associate,sales,paintball,own-child,Single Vehicle Collision,Front Collision,Major Damage,Fire,SC,Hillsdale,?,NO,Suburu,0
+230,43,2000,1221.14,0,48100,0,13,1,0,2,2002,IN,100/300,MALE,MD,prof-specialty,board-games,wife,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,VA,Hillsdale,?,?,Audi,0
+313,50,2000,1255.62,0,0,0,18,3,2,1,1995,OH,100/300,MALE,MD,armed-forces,polo,unmarried,Multi-vehicle Collision,Side Collision,Major Damage,Other,OH,Northbrook,YES,YES,Ford,1
+210,38,500,999.52,0,0,0,6,1,1,2,2008,IN,250/500,MALE,JD,tech-support,golf,other-relative,Vehicle Theft,?,Minor Damage,Police,VA,Springfield,?,NO,Accura,0
+101,29,500,1380.89,0,30000,-53000,0,3,2,1,1996,OH,250/500,MALE,PhD,armed-forces,dancing,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,SC,Arlington,?,?,BMW,0
+153,37,500,1010.77,0,52300,-55600,5,3,0,3,1999,IN,500/1000,MALE,High School,transport-moving,basketball,unmarried,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,NC,Arlington,?,NO,Volkswagen,0
+337,53,500,1205.86,0,0,-34600,8,1,0,1,2001,OH,100/300,MALE,Associate,armed-forces,basketball,wife,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Arlington,YES,NO,Accura,0
+360,51,1000,1526.61,0,0,-32900,5,1,2,2,2009,IL,500/1000,MALE,Masters,handlers-cleaners,chess,not-in-family,Vehicle Theft,?,Minor Damage,Police,SC,Hillsdale,YES,?,Dodge,1
+428,53,1000,1496.44,0,0,0,9,1,2,2,2013,IL,100/300,FEMALE,High School,tech-support,camping,unmarried,Parked Car,?,Trivial Damage,Police,NC,Springfield,YES,NO,Honda,0
+204,40,500,1256.2,0,0,0,10,3,1,2,2013,IL,100/300,FEMALE,JD,sales,hiking,not-in-family,Multi-vehicle Collision,Side Collision,Minor Damage,Other,SC,Northbend,YES,YES,Saab,0
+364,51,500,1268.35,0,0,0,16,1,2,1,2014,IL,100/300,MALE,Masters,transport-moving,board-games,wife,Single Vehicle Collision,Rear Collision,Major Damage,Other,NY,Northbrook,YES,NO,Volkswagen,1
+185,35,2000,1421.59,0,0,0,8,1,2,3,2011,IN,500/1000,MALE,College,other-service,sleeping,own-child,Vehicle Theft,?,Trivial Damage,Police,WV,Arlington,?,YES,Ford,0
+63,26,500,1500.04,6000000,0,-36500,5,1,0,2,2004,IL,500/1000,MALE,PhD,craft-repair,polo,own-child,Vehicle Theft,?,Minor Damage,Police,NC,Northbrook,NO,YES,Accura,0
+210,35,500,1433.24,0,0,-19500,11,3,2,1,2006,IL,100/300,FEMALE,College,exec-managerial,yachting,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Fire,WV,Riverwood,NO,?,Saab,1
+194,38,2000,1231.25,0,46500,0,15,3,1,0,2011,IN,100/300,FEMALE,PhD,craft-repair,movies,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,WV,Arlington,?,?,Toyota,0
+294,49,500,1135.43,0,22700,0,23,3,1,1,2010,IN,500/1000,MALE,Masters,farming-fishing,bungie-jumping,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Police,WV,Columbus,YES,YES,Chevrolet,0
+272,41,2000,945.73,5000000,38600,-42800,23,1,0,0,2009,OH,250/500,MALE,MD,protective-serv,chess,wife,Single Vehicle Collision,Front Collision,Minor Damage,Fire,NY,Arlington,NO,NO,Ford,1
+27,27,2000,1118.76,0,0,-55800,23,1,1,3,2008,IN,100/300,FEMALE,College,adm-clerical,dancing,own-child,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Northbrook,?,?,Ford,0
+251,39,2000,1231.98,0,0,-31700,10,1,0,0,1997,IN,500/1000,FEMALE,Associate,other-service,hiking,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Police,NY,Hillsdale,YES,?,Dodge,0
+180,33,2000,1005.47,0,58100,-49000,12,4,2,3,2002,IN,500/1000,FEMALE,JD,protective-serv,hiking,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,VA,Columbus,?,YES,Jeep,0
+392,50,2000,1108.97,0,68400,-66800,4,1,2,2,2002,OH,100/300,FEMALE,PhD,exec-managerial,exercise,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Other,WV,Springfield,NO,YES,Saab,0
+143,30,500,1392.39,5000000,0,-65700,16,1,2,0,2010,IN,100/300,FEMALE,High School,exec-managerial,dancing,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Riverwood,NO,YES,Toyota,0
+371,54,2000,1317.97,0,34700,-81000,18,3,1,2,2010,IN,100/300,MALE,High School,craft-repair,movies,wife,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,SC,Columbus,?,?,Ford,1
+292,42,1000,1588.22,0,0,-53800,15,3,1,1,2007,IN,250/500,MALE,JD,machine-op-inspct,camping,other-relative,Multi-vehicle Collision,Rear Collision,Total Loss,Other,WV,Riverwood,YES,NO,Chevrolet,0
+165,35,500,900.02,6000000,0,-49900,8,1,1,3,2008,IL,250/500,MALE,College,craft-repair,camping,own-child,Single Vehicle Collision,Front Collision,Total Loss,Other,SC,Springfield,NO,YES,BMW,0
+158,33,1000,1744.64,3000000,0,0,4,3,0,1,1998,OH,100/300,MALE,JD,prof-specialty,movies,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,WV,Springfield,NO,NO,Volkswagen,0
+241,39,1000,1260.56,0,0,-54900,20,3,0,2,2010,OH,250/500,FEMALE,JD,adm-clerical,paintball,own-child,Multi-vehicle Collision,Side Collision,Minor Damage,Police,SC,Northbrook,NO,YES,Jeep,0
+103,33,2000,1021.14,0,69500,-47700,1,3,2,3,2014,OH,500/1000,FEMALE,Masters,other-service,paintball,wife,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,NY,Northbend,NO,?,Dodge,0
+402,54,2000,1285.09,0,48000,-79600,19,1,0,2,2013,OH,250/500,MALE,JD,farming-fishing,board-games,not-in-family,Single Vehicle Collision,Rear Collision,Major Damage,Other,NY,Springfield,NO,YES,Mercedes,1
+102,32,500,1537.07,3000000,0,0,11,1,1,0,2004,OH,100/300,MALE,JD,tech-support,chess,wife,Single Vehicle Collision,Side Collision,Total Loss,Other,OH,Northbend,NO,NO,Chevrolet,1
+182,40,1000,1022.42,0,50000,-56900,13,1,0,2,2008,IN,100/300,MALE,PhD,other-service,skydiving,husband,Single Vehicle Collision,Front Collision,Total Loss,Other,SC,Northbend,YES,?,Audi,0
+282,46,2000,1558.86,0,51100,-75100,2,1,2,2,2012,OH,100/300,MALE,MD,other-service,dancing,wife,Single Vehicle Collision,Front Collision,Minor Damage,Police,NY,Springfield,?,NO,BMW,0
+222,39,500,1757.87,0,71400,0,9,3,2,1,1996,OH,500/1000,MALE,High School,transport-moving,board-games,not-in-family,Multi-vehicle Collision,Rear Collision,Major Damage,Other,SC,Northbrook,YES,?,Saab,1
+415,52,1000,973.5,0,50400,0,15,2,1,3,2003,IN,250/500,MALE,PhD,machine-op-inspct,polo,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Police,WV,Arlington,YES,YES,Toyota,0
+51,34,500,1430.8,0,0,0,23,1,2,3,2007,OH,500/1000,MALE,PhD,machine-op-inspct,camping,unmarried,Single Vehicle Collision,Side Collision,Major Damage,Fire,NY,Springfield,?,NO,Honda,1
+255,45,500,1192.27,0,0,-40200,16,1,2,0,2006,IL,500/1000,MALE,High School,sales,base-jumping,own-child,Single Vehicle Collision,Front Collision,Total Loss,Other,NC,Riverwood,NO,YES,Ford,0
+143,31,500,1163.83,0,37700,0,21,4,2,0,1999,IL,250/500,MALE,Associate,protective-serv,movies,husband,Multi-vehicle Collision,Side Collision,Major Damage,Other,NC,Arlington,YES,?,Audi,0
+130,28,1000,1003.15,0,0,-38500,21,2,2,1,2010,OH,500/1000,FEMALE,JD,farming-fishing,movies,other-relative,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,SC,Hillsdale,YES,NO,Ford,0
+242,41,2000,1153.54,6000000,0,-57000,3,3,0,1,2009,OH,250/500,MALE,Masters,protective-serv,polo,unmarried,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,NY,Northbrook,NO,?,Toyota,0
+96,27,1000,1631.1,0,0,0,4,1,1,2,2007,IL,100/300,FEMALE,High School,priv-house-serv,exercise,wife,Parked Car,?,Trivial Damage,Police,WV,Arlington,?,NO,Nissan,0
+180,35,1000,1252.48,0,0,-55800,17,1,1,3,2000,IL,500/1000,MALE,MD,machine-op-inspct,yachting,wife,Vehicle Theft,?,Minor Damage,,OH,Springfield,?,NO,Chevrolet,0
+150,30,1000,1677.26,0,40100,0,7,1,1,3,2013,IN,100/300,MALE,College,sales,yachting,own-child,Vehicle Theft,?,Trivial Damage,Police,WV,Springfield,YES,YES,Volkswagen,0
+463,59,1000,979.73,0,51700,0,14,2,1,2,1999,IL,250/500,FEMALE,JD,exec-managerial,yachting,not-in-family,Multi-vehicle Collision,Front Collision,Major Damage,Other,SC,Columbus,?,NO,Chevrolet,1
+472,64,500,989.24,0,0,0,13,1,2,3,2002,IN,250/500,MALE,Masters,other-service,skydiving,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Fire,NY,Northbrook,NO,NO,Mercedes,0
+75,25,1000,1389.86,0,0,0,23,2,2,3,2011,IL,500/1000,FEMALE,Associate,priv-house-serv,hiking,husband,Multi-vehicle Collision,Side Collision,Total Loss,Other,WV,Springfield,?,YES,Saab,0
+193,40,500,1233.85,0,0,0,23,3,2,1,1999,OH,100/300,FEMALE,College,handlers-cleaners,chess,husband,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,PA,Hillsdale,?,YES,Ford,0
+43,43,500,1320.39,0,0,0,16,1,2,1,1996,IL,500/1000,FEMALE,Associate,armed-forces,yachting,not-in-family,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,WV,Arlington,?,?,Honda,1
+253,41,1000,1435.09,0,36600,0,17,1,2,0,1995,IN,100/300,FEMALE,College,machine-op-inspct,bungie-jumping,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Police,SC,Northbrook,NO,?,Chevrolet,0
+152,30,500,1448.54,0,58600,0,9,1,1,1,2000,IN,500/1000,FEMALE,JD,craft-repair,polo,wife,Single Vehicle Collision,Side Collision,Major Damage,Fire,VA,Northbrook,YES,?,Toyota,1
+160,38,500,1733.56,0,0,-43800,13,3,2,1,1996,OH,250/500,MALE,High School,sales,sleeping,wife,Multi-vehicle Collision,Side Collision,Major Damage,Fire,SC,Hillsdale,NO,YES,Mercedes,0
+56,36,500,1533.07,0,0,-28800,13,1,1,2,2001,IN,100/300,MALE,JD,farming-fishing,exercise,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Police,NC,Springfield,YES,YES,Ford,0
+286,41,500,1106.77,0,45500,-62500,3,1,2,0,2003,IL,100/300,FEMALE,College,prof-specialty,golf,other-relative,Parked Car,?,Trivial Damage,Police,WV,Columbus,?,NO,Dodge,0
+3,29,500,995.7,5000000,0,0,3,1,2,1,2008,IL,100/300,FEMALE,JD,priv-house-serv,chess,unmarried,Parked Car,?,Trivial Damage,Police,PA,Springfield,?,?,Mercedes,1
+286,41,1000,1298.85,6000000,71300,-70300,16,3,1,3,2007,IL,250/500,FEMALE,High School,sales,camping,other-relative,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Columbus,?,YES,Saab,0
+239,38,1000,1276.73,5000000,0,0,12,3,1,3,2003,OH,250/500,FEMALE,Masters,handlers-cleaners,bungie-jumping,other-relative,Multi-vehicle Collision,Front Collision,Major Damage,Police,WV,Northbrook,NO,?,Saab,0
+64,29,2000,1202.28,0,0,-61400,4,1,1,2,2007,OH,250/500,MALE,High School,exec-managerial,cross-fit,other-relative,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,VA,Hillsdale,?,NO,Nissan,1
+98,31,500,671.92,0,0,-26400,3,1,2,0,1997,IN,100/300,MALE,Masters,machine-op-inspct,bungie-jumping,wife,Single Vehicle Collision,Front Collision,Minor Damage,Other,NC,Riverwood,?,?,Ford,0
+16,35,1000,1358.03,0,59300,-31400,0,1,2,1,2008,IL,250/500,MALE,JD,sales,chess,own-child,Single Vehicle Collision,Rear Collision,Total Loss,Other,SC,Hillsdale,NO,?,Volkswagen,1
+70,27,1000,1008.79,4000000,46000,0,19,1,2,3,2000,IN,250/500,FEMALE,Masters,adm-clerical,video-games,own-child,Vehicle Theft,?,Trivial Damage,Police,WV,Columbus,NO,?,Toyota,0
+75,27,1000,1141.1,0,0,0,15,2,0,1,2008,OH,100/300,MALE,JD,armed-forces,movies,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Police,SC,Hillsdale,?,YES,Toyota,0
+246,44,1000,1397.0,0,0,0,6,1,1,0,1997,OH,100/300,MALE,High School,machine-op-inspct,reading,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Other,NY,Arlington,NO,NO,Accura,0
+110,27,1000,1664.66,0,0,-66200,3,1,0,3,2010,OH,500/1000,FEMALE,Associate,priv-house-serv,golf,own-child,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,SC,Springfield,?,?,Audi,0
+236,39,1000,1151.39,4000000,0,-63900,17,1,0,0,2003,IN,250/500,FEMALE,Masters,exec-managerial,reading,wife,Parked Car,?,Minor Damage,Police,NY,Springfield,YES,?,Accura,0
+267,46,2000,1546.01,0,0,0,4,4,2,1,1996,OH,100/300,FEMALE,MD,adm-clerical,polo,wife,Multi-vehicle Collision,Front Collision,Total Loss,Police,VA,Riverwood,NO,?,Volkswagen,0
+463,57,500,1063.67,0,0,0,14,1,2,0,1995,IL,250/500,MALE,Masters,priv-house-serv,dancing,wife,Single Vehicle Collision,Front Collision,Minor Damage,Police,NY,Springfield,NO,YES,Dodge,0
+303,46,1000,709.14,0,0,0,3,3,1,0,2006,IN,100/300,MALE,Masters,machine-op-inspct,kayaking,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,NY,Northbrook,NO,NO,Toyota,0
+137,30,500,1039.55,0,55600,-59700,4,3,2,1,2005,IL,250/500,MALE,MD,exec-managerial,kayaking,unmarried,Multi-vehicle Collision,Front Collision,Minor Damage,Other,WV,Columbus,?,?,Chevrolet,0
+56,42,500,1339.39,0,0,0,13,1,1,2,1998,IL,250/500,FEMALE,Associate,adm-clerical,chess,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Other,NY,Columbus,?,YES,BMW,0
+75,27,1000,1202.75,0,57900,-90100,23,3,0,2,2003,IN,250/500,MALE,High School,handlers-cleaners,board-games,not-in-family,Multi-vehicle Collision,Front Collision,Minor Damage,Police,SC,Northbrook,NO,YES,Volkswagen,0
+131,33,2000,1081.17,0,0,-65200,3,1,0,1,2010,IL,100/300,MALE,MD,sales,yachting,wife,Parked Car,?,Minor Damage,Police,NY,Northbend,?,NO,Toyota,0
+153,34,500,991.39,0,45600,-61400,0,3,1,0,2000,IL,250/500,MALE,High School,tech-support,paintball,other-relative,Multi-vehicle Collision,Side Collision,Total Loss,Other,WV,Springfield,?,NO,Nissan,0
+255,43,500,984.02,0,75800,0,14,2,2,2,2007,IN,500/1000,FEMALE,JD,transport-moving,board-games,unmarried,Multi-vehicle Collision,Side Collision,Major Damage,Fire,SC,Columbus,?,?,Nissan,1
+103,26,500,1354.83,0,66300,0,14,2,2,2,2010,IL,100/300,MALE,MD,tech-support,sleeping,husband,Multi-vehicle Collision,Front Collision,Minor Damage,Police,NY,Arlington,NO,?,Volkswagen,0
+97,28,1000,830.31,0,0,-32600,22,1,1,0,2006,OH,100/300,MALE,JD,farming-fishing,video-games,husband,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Springfield,?,?,Jeep,0
+214,36,2000,987.42,7000000,0,0,17,3,0,3,2006,IL,100/300,FEMALE,Associate,machine-op-inspct,kayaking,own-child,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,NY,Springfield,NO,?,Saab,0
+438,57,500,1119.29,0,0,0,14,1,0,0,2000,OH,500/1000,FEMALE,MD,machine-op-inspct,chess,husband,Single Vehicle Collision,Side Collision,Minor Damage,Police,SC,Hillsdale,?,NO,Volkswagen,1
+87,27,500,1048.39,0,0,0,2,1,2,1,1996,OH,100/300,FEMALE,Masters,transport-moving,polo,own-child,Single Vehicle Collision,Side Collision,Minor Damage,Police,NY,Riverwood,?,YES,Ford,0
+27,28,1000,1074.47,0,0,0,4,1,2,0,2012,OH,500/1000,MALE,MD,protective-serv,camping,wife,Parked Car,?,Trivial Damage,Police,WV,Riverwood,?,?,Jeep,0
+206,42,1000,1230.76,0,0,-74200,2,1,1,1,1997,IL,500/1000,MALE,High School,machine-op-inspct,yachting,unmarried,Single Vehicle Collision,Rear Collision,Major Damage,Fire,VA,Hillsdale,?,NO,Saab,1
+127,31,500,1255.02,0,58200,0,10,1,1,0,1996,OH,500/1000,MALE,Associate,sales,reading,not-in-family,Parked Car,?,Minor Damage,,SC,Riverwood,YES,NO,Nissan,0
+422,60,1000,1555.52,0,43600,-67800,11,1,1,1,1999,IN,100/300,FEMALE,MD,machine-op-inspct,hiking,own-child,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,NC,Northbrook,YES,NO,Mercedes,0
+303,50,2000,836.11,5000000,0,0,1,4,1,2,2010,IL,100/300,MALE,Masters,sales,camping,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Fire,SC,Springfield,YES,NO,Dodge,0
+228,40,500,1450.98,0,43700,0,20,1,0,2,2010,IN,100/300,MALE,Associate,exec-managerial,base-jumping,husband,Parked Car,?,Trivial Damage,Police,WV,Northbend,?,NO,Toyota,0
+239,39,2000,625.08,0,44200,-37000,10,1,2,3,2014,IN,250/500,FEMALE,JD,protective-serv,hiking,wife,Single Vehicle Collision,Front Collision,Major Damage,Fire,SC,Riverwood,NO,YES,BMW,1
+330,47,2000,1133.27,0,0,-56400,20,2,0,2,1999,IL,100/300,FEMALE,High School,craft-repair,chess,wife,Multi-vehicle Collision,Side Collision,Total Loss,Other,NY,Northbrook,?,YES,Ford,1
+128,35,500,1366.6,0,0,0,10,3,2,1,2008,IN,500/1000,FEMALE,MD,machine-op-inspct,kayaking,other-relative,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,NY,Columbus,?,NO,Chevrolet,0
+147,37,1000,1439.9,6000000,0,-48400,2,2,1,2,2004,OH,500/1000,FEMALE,Associate,prof-specialty,video-games,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Other,SC,Springfield,NO,NO,Accura,0
+287,45,1000,1230.69,0,0,-54600,19,1,0,2,2006,OH,500/1000,MALE,Masters,transport-moving,golf,not-in-family,Single Vehicle Collision,Front Collision,Minor Damage,Fire,VA,Springfield,NO,NO,Accura,0
+142,29,2000,1307.68,0,0,-48500,10,1,1,2,1995,OH,100/300,FEMALE,MD,craft-repair,dancing,husband,Single Vehicle Collision,Rear Collision,Major Damage,Police,NY,Columbus,YES,NO,Mercedes,1
+162,35,2000,1124.69,0,0,0,14,1,0,3,2001,IL,500/1000,FEMALE,Masters,handlers-cleaners,bungie-jumping,husband,Single Vehicle Collision,Side Collision,Major Damage,Police,WV,Arlington,YES,YES,Toyota,0
+140,35,1000,1520.78,0,0,-42900,5,1,0,2,1997,OH,100/300,FEMALE,High School,craft-repair,chess,wife,Parked Car,?,Trivial Damage,,SC,Columbus,?,YES,Chevrolet,1
+106,28,2000,1609.11,0,0,0,8,1,2,1,1999,OH,100/300,MALE,High School,craft-repair,polo,own-child,Vehicle Theft,?,Minor Damage,Police,WV,Hillsdale,YES,YES,Saab,0
+292,45,1000,1358.91,0,0,0,4,1,0,2,1997,IL,500/1000,MALE,Masters,craft-repair,dancing,unmarried,Vehicle Theft,?,Trivial Damage,Police,WV,Northbend,NO,?,Suburu,0
+34,34,500,1295.87,0,0,0,4,3,1,0,1997,OH,500/1000,FEMALE,PhD,priv-house-serv,chess,husband,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,NC,Columbus,?,NO,Audi,1
+290,48,500,1161.03,5000000,45300,0,20,2,1,1,2014,IL,250/500,MALE,Associate,adm-clerical,video-games,not-in-family,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,VA,Northbrook,?,?,Nissan,0
+182,38,2000,1441.06,0,53800,-78300,18,1,2,3,2005,OH,500/1000,FEMALE,Masters,armed-forces,movies,husband,Single Vehicle Collision,Side Collision,Total Loss,Police,NY,Riverwood,?,YES,Dodge,0
+362,55,1000,1097.99,0,44400,-71500,0,3,0,3,1998,OH,100/300,FEMALE,JD,other-service,base-jumping,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Police,NY,Hillsdale,NO,NO,Suburu,0
+143,32,1000,1464.42,0,79900,0,1,1,2,0,1995,IL,500/1000,FEMALE,High School,exec-managerial,golf,husband,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,SC,Springfield,?,NO,Saab,0
+183,38,500,1543.68,0,20200,0,17,1,0,1,2001,IL,250/500,FEMALE,Masters,prof-specialty,paintball,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Police,NC,Hillsdale,NO,YES,Audi,1
+254,40,500,1390.89,5000000,0,-74400,23,1,2,2,2009,IL,250/500,MALE,College,armed-forces,bungie-jumping,wife,Single Vehicle Collision,Front Collision,Minor Damage,Other,NY,Riverwood,?,?,Volkswagen,0
+249,43,2000,1148.58,0,0,-71200,4,3,2,1,2014,OH,100/300,FEMALE,MD,adm-clerical,golf,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,SC,Arlington,YES,YES,Honda,0
+169,36,500,1616.26,0,50700,-57600,0,3,2,3,2004,IN,250/500,MALE,High School,exec-managerial,yachting,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,NY,Springfield,NO,?,Dodge,0
+235,40,500,1398.94,0,0,0,11,1,1,2,2003,IL,500/1000,MALE,College,craft-repair,bungie-jumping,husband,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,NY,Riverwood,NO,NO,Suburu,0
+112,32,1000,1238.92,0,57800,-53700,4,1,0,2,2012,OH,500/1000,MALE,Associate,other-service,base-jumping,other-relative,Parked Car,?,Trivial Damage,,NY,Arlington,?,?,Honda,0
+16,32,1000,968.46,0,50800,-66200,0,3,0,2,1995,IL,100/300,MALE,MD,tech-support,chess,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,WV,Columbus,?,?,Dodge,1
+128,31,500,1045.12,0,0,-28300,2,3,0,2,2013,IL,100/300,FEMALE,High School,transport-moving,cross-fit,other-relative,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,NY,Springfield,NO,?,Ford,1
+103,27,1000,1537.33,0,0,-74800,11,3,1,1,2008,IN,100/300,FEMALE,College,handlers-cleaners,board-games,husband,Multi-vehicle Collision,Front Collision,Minor Damage,Police,NY,Springfield,YES,NO,Jeep,0
+356,54,500,912.3,0,58500,-44000,23,3,2,1,2007,OH,500/1000,MALE,College,prof-specialty,yachting,wife,Multi-vehicle Collision,Front Collision,Major Damage,Other,SC,Northbend,NO,?,Audi,1
+109,29,2000,1007.28,6000000,0,0,17,3,1,3,1995,OH,100/300,FEMALE,High School,adm-clerical,movies,husband,Multi-vehicle Collision,Side Collision,Minor Damage,Police,NY,Riverwood,NO,YES,Jeep,0
+2,20,1000,1189.98,4000000,0,-54700,22,1,1,3,2000,IN,500/1000,FEMALE,High School,craft-repair,golf,other-relative,Single Vehicle Collision,Side Collision,Minor Damage,Other,WV,Columbus,NO,YES,Audi,0
+198,34,1000,1576.41,0,0,-55100,18,1,1,1,2001,OH,250/500,MALE,Associate,handlers-cleaners,kayaking,other-relative,Single Vehicle Collision,Side Collision,Major Damage,Other,WV,Hillsdale,YES,YES,Ford,0
+107,32,500,1172.82,4000000,82100,0,8,1,1,3,2010,OH,100/300,MALE,Associate,machine-op-inspct,yachting,other-relative,Vehicle Theft,?,Trivial Damage,Police,SC,Arlington,?,NO,Ford,0
+252,39,500,1312.22,9000000,0,-33300,15,3,0,3,2010,IL,500/1000,MALE,High School,transport-moving,cross-fit,other-relative,Multi-vehicle Collision,Front Collision,Minor Damage,Other,NC,Riverwood,?,NO,Jeep,1
+303,43,1000,671.01,7000000,42900,-61500,20,1,2,0,2013,OH,500/1000,FEMALE,Associate,machine-op-inspct,camping,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,NC,Springfield,?,?,Nissan,0
+101,32,500,895.14,0,52600,-30400,4,1,0,3,2010,IL,250/500,MALE,JD,sales,video-games,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,SC,Columbus,?,YES,Suburu,0
+446,57,2000,1373.21,0,42700,-64900,10,3,0,0,2012,IN,100/300,MALE,College,adm-clerical,sleeping,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Police,SC,Northbrook,NO,NO,Jeep,0
+330,48,1000,1625.65,0,0,0,10,1,1,3,2006,OH,250/500,MALE,College,farming-fishing,skydiving,husband,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,VA,Springfield,YES,?,Dodge,0
+211,37,2000,1295.63,4000000,42200,-33800,22,3,1,0,2009,OH,250/500,FEMALE,PhD,armed-forces,skydiving,not-in-family,Multi-vehicle Collision,Front Collision,Total Loss,Police,WV,Northbend,YES,?,Honda,0
+172,33,1000,1459.96,6000000,41300,-42000,15,3,0,1,1999,IL,100/300,FEMALE,High School,adm-clerical,reading,wife,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,NY,Northbend,NO,NO,Saab,0
+316,46,500,1219.94,7000000,0,-51000,13,1,0,1,2000,OH,100/300,FEMALE,Masters,prof-specialty,paintball,wife,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,NY,Arlington,?,YES,Accura,0
+435,60,500,1064.49,5000000,73500,-43300,23,1,2,1,2007,OH,500/1000,MALE,Associate,priv-house-serv,chess,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,WV,Arlington,NO,?,Mercedes,1
+344,51,1000,959.83,0,0,-38700,18,3,2,2,2006,IL,100/300,FEMALE,Masters,sales,paintball,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Fire,NY,Northbend,?,YES,BMW,1
+204,40,2000,1767.02,0,0,-49300,7,1,1,1,1997,OH,250/500,MALE,JD,machine-op-inspct,hiking,husband,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Arlington,YES,NO,Audi,0
+278,47,500,1285.01,0,0,-39800,21,1,2,2,2010,IN,500/1000,MALE,Masters,machine-op-inspct,sleeping,not-in-family,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,VA,Hillsdale,NO,YES,Toyota,0
+434,57,2000,1422.95,0,0,0,15,3,1,3,2003,OH,500/1000,MALE,JD,transport-moving,bungie-jumping,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Other,SC,Columbus,NO,NO,Nissan,0
+209,36,2000,1223.39,0,0,0,17,3,1,3,2014,IN,100/300,FEMALE,MD,craft-repair,camping,wife,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,PA,Hillsdale,?,?,Jeep,0
+250,43,2000,1539.06,0,37800,0,2,1,0,3,2002,IL,500/1000,MALE,Masters,sales,exercise,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Fire,SC,Hillsdale,NO,?,Ford,0
+61,25,2000,988.06,0,0,0,1,3,1,0,2000,IN,100/300,FEMALE,Masters,other-service,dancing,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,WV,Northbend,YES,NO,Dodge,0
+80,28,1000,1740.57,0,0,-18600,3,1,0,1,2011,IL,500/1000,FEMALE,College,farming-fishing,golf,wife,Single Vehicle Collision,Rear Collision,Major Damage,Police,SC,Northbend,?,?,Dodge,0
+25,38,1000,1540.91,7000000,40900,0,0,1,1,1,1995,OH,250/500,MALE,College,adm-clerical,polo,wife,Vehicle Theft,?,Trivial Damage,,VA,Northbend,NO,YES,Toyota,0
+4,29,500,1381.88,5000000,0,-77800,4,1,0,2,2008,IL,250/500,MALE,High School,tech-support,exercise,other-relative,Vehicle Theft,?,Trivial Damage,Police,SC,Hillsdale,NO,?,Jeep,0
+32,29,500,1446.98,0,0,-45700,11,3,2,0,2006,OH,100/300,MALE,MD,adm-clerical,sleeping,own-child,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,NY,Arlington,YES,NO,Saab,0
+125,31,500,1220.86,0,55400,-40400,4,1,1,2,2003,IN,500/1000,MALE,JD,other-service,paintball,husband,Parked Car,?,Trivial Damage,,NY,Arlington,YES,?,Saab,0
+276,45,500,948.1,0,44500,-61400,11,3,0,2,2010,IL,500/1000,FEMALE,High School,machine-op-inspct,reading,wife,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,SC,Columbus,?,?,Ford,0
+148,30,500,1471.24,0,57500,-93600,4,3,2,2,1997,OH,100/300,FEMALE,Masters,farming-fishing,camping,own-child,Multi-vehicle Collision,Side Collision,Minor Damage,Police,NC,Riverwood,NO,NO,Dodge,0
+222,38,2000,1157.97,0,0,-64500,20,1,2,2,2001,IN,100/300,MALE,MD,machine-op-inspct,hiking,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Police,NY,Hillsdale,?,YES,Accura,0
+32,38,2000,566.11,5000000,0,0,22,1,0,0,2015,IL,250/500,MALE,Associate,armed-forces,polo,unmarried,Parked Car,?,Trivial Damage,Police,NC,Springfield,YES,NO,Honda,0
+78,27,500,1060.88,0,0,-66500,4,1,0,3,2009,OH,500/1000,MALE,JD,other-service,skydiving,other-relative,Parked Car,?,Trivial Damage,Police,SC,Northbend,NO,NO,Volkswagen,0
+238,43,1000,1524.45,4000000,0,-44800,21,4,0,0,1995,OH,250/500,MALE,High School,handlers-cleaners,chess,wife,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,NC,Hillsdale,NO,NO,Saab,1
+313,47,1000,1556.17,0,63900,-53300,20,1,1,3,1996,IN,250/500,MALE,College,prof-specialty,reading,wife,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,SC,Hillsdale,YES,NO,Accura,1
+334,50,500,1216.24,0,26700,-47200,7,1,2,0,2008,OH,500/1000,MALE,Masters,priv-house-serv,polo,wife,Single Vehicle Collision,Rear Collision,Major Damage,Fire,NY,Columbus,NO,?,Chevrolet,0
+190,35,500,1484.72,5000000,0,0,4,1,0,1,1998,IN,250/500,FEMALE,High School,tech-support,golf,husband,Parked Car,?,Trivial Damage,,NY,Riverwood,NO,NO,Saab,0
+194,41,500,1203.81,0,52500,-51300,17,3,0,2,1999,IL,250/500,MALE,JD,transport-moving,video-games,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,WV,Springfield,?,?,Saab,0
+290,47,1000,1393.34,0,0,-61400,20,3,1,3,2002,IN,250/500,MALE,High School,exec-managerial,bungie-jumping,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,WV,Northbend,YES,YES,Audi,0
+26,42,1000,1484.48,0,50700,-36300,10,1,2,3,1996,OH,100/300,MALE,PhD,armed-forces,sleeping,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Police,SC,Riverwood,NO,?,Saab,0
+254,41,500,1581.27,5000000,42200,-48000,8,1,2,2,1999,IL,250/500,FEMALE,PhD,handlers-cleaners,skydiving,own-child,Single Vehicle Collision,Front Collision,Minor Damage,Police,NY,Riverwood,YES,NO,BMW,0
+199,38,1000,1281.25,0,0,-53100,6,1,0,2,2007,IL,250/500,FEMALE,High School,tech-support,movies,other-relative,Single Vehicle Collision,Front Collision,Major Damage,Police,WV,Columbus,?,NO,BMW,1
+137,35,500,1667.83,0,48500,-67400,4,1,1,1,2005,IN,250/500,MALE,JD,prof-specialty,paintball,husband,Parked Car,?,Minor Damage,Police,WV,Northbrook,YES,NO,Jeep,0
+134,36,1000,1497.41,0,14100,-44500,17,3,2,0,1996,OH,250/500,MALE,PhD,machine-op-inspct,kayaking,husband,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,WV,Northbrook,NO,YES,Ford,0
+73,30,500,803.36,0,0,0,15,3,0,0,2013,OH,100/300,FEMALE,High School,protective-serv,reading,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Other,WV,Springfield,?,YES,Audi,0
+289,45,2000,1221.41,0,46700,-72500,9,1,2,1,2006,OH,250/500,FEMALE,Masters,farming-fishing,movies,wife,Vehicle Theft,?,Trivial Damage,Police,WV,Riverwood,NO,NO,Honda,0
+176,36,500,1865.83,5000000,32800,-50600,17,1,2,1,2006,OH,250/500,MALE,College,transport-moving,kayaking,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Police,WV,Hillsdale,?,YES,Volkswagen,0
+145,37,2000,1434.27,0,0,-35900,13,1,2,3,2002,OH,250/500,FEMALE,Associate,tech-support,sleeping,unmarried,Single Vehicle Collision,Rear Collision,Major Damage,Other,VA,Arlington,?,?,Nissan,0
+164,31,500,1114.68,0,44500,-55900,5,1,1,0,2002,IN,500/1000,FEMALE,Associate,other-service,reading,husband,Vehicle Theft,?,Trivial Damage,Police,SC,Springfield,YES,NO,Mercedes,0
+186,38,2000,1218.56,0,39300,-60300,23,3,2,2,1998,OH,250/500,FEMALE,Masters,transport-moving,video-games,husband,Multi-vehicle Collision,Front Collision,Total Loss,Police,VA,Arlington,YES,?,Saab,1
+85,31,2000,1234.69,9000000,0,0,1,2,2,1,2003,IL,250/500,FEMALE,MD,tech-support,paintball,husband,Multi-vehicle Collision,Front Collision,Major Damage,Other,WV,Arlington,NO,?,BMW,1
+162,33,500,964.92,0,45700,0,17,4,2,1,1996,OH,250/500,FEMALE,Associate,exec-managerial,base-jumping,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,NY,Hillsdale,NO,NO,Mercedes,1
+396,57,500,1351.72,0,0,-49400,3,1,1,3,2000,IL,500/1000,MALE,High School,tech-support,camping,wife,Parked Car,?,Minor Damage,,NY,Springfield,YES,?,Volkswagen,0
+270,41,1000,817.28,0,62200,0,17,3,1,1,2014,IL,250/500,MALE,High School,sales,cross-fit,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Columbus,?,NO,Mercedes,1
+168,39,1000,1389.59,0,0,-42600,23,3,1,3,2015,IL,500/1000,FEMALE,Masters,machine-op-inspct,exercise,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,NY,Northbend,YES,NO,Chevrolet,1
+274,45,1000,1353.53,0,54700,-47900,13,1,0,0,1995,IN,250/500,FEMALE,JD,tech-support,cross-fit,unmarried,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,NY,Columbus,YES,NO,Accura,1
+263,43,1000,1294.04,0,0,0,17,1,2,3,1997,IN,500/1000,FEMALE,Masters,handlers-cleaners,movies,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Riverwood,YES,YES,Nissan,0
+152,33,1000,840.81,0,0,0,2,1,0,2,2002,OH,100/300,FEMALE,High School,farming-fishing,chess,husband,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,NY,Arlington,YES,?,Ford,1
+46,41,2000,998.19,0,43700,-66300,23,3,1,3,2004,OH,100/300,FEMALE,MD,priv-house-serv,video-games,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Hillsdale,NO,?,Dodge,1
+276,46,2000,1090.32,0,0,-70400,17,1,1,2,2007,OH,100/300,MALE,College,handlers-cleaners,chess,husband,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,SC,Columbus,NO,?,Volkswagen,1
+234,44,500,1780.67,0,0,0,3,1,1,0,2012,IN,500/1000,MALE,Associate,other-service,exercise,other-relative,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,NC,Springfield,NO,NO,Ford,1
+64,30,2000,1681.01,0,0,-51100,16,1,2,1,2015,IL,250/500,MALE,JD,protective-serv,base-jumping,own-child,Parked Car,?,Minor Damage,,SC,Riverwood,NO,NO,Jeep,0
+456,62,1000,1395.77,0,82600,-49500,13,3,1,3,2012,OH,250/500,FEMALE,MD,protective-serv,chess,own-child,Multi-vehicle Collision,Side Collision,Major Damage,Other,PA,Hillsdale,?,NO,Saab,1
+58,23,2000,1471.44,5000000,57500,0,8,1,2,1,2007,OH,500/1000,MALE,High School,transport-moving,reading,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Fire,NC,Riverwood,NO,NO,Chevrolet,1
+475,61,500,1265.72,0,0,-59500,23,1,0,2,1998,IL,500/1000,FEMALE,Masters,handlers-cleaners,paintball,wife,Single Vehicle Collision,Front Collision,Major Damage,Fire,SC,Columbus,YES,?,Mercedes,0
+96,29,1000,1274.7,5000000,47500,-58700,15,3,2,3,2004,IN,250/500,MALE,College,prof-specialty,hiking,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,NC,Springfield,YES,YES,Chevrolet,1
+99,28,500,1330.39,0,0,0,3,1,2,2,1998,OH,100/300,MALE,MD,prof-specialty,basketball,wife,Single Vehicle Collision,Front Collision,Total Loss,Other,NY,Columbus,NO,YES,Dodge,0
+38,28,500,1122.95,4000000,78000,0,4,3,0,3,2000,OH,500/1000,MALE,Masters,priv-house-serv,golf,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,WV,Northbrook,NO,YES,Accura,0
+259,44,2000,1655.79,0,0,0,8,1,0,0,2002,OH,250/500,FEMALE,Masters,exec-managerial,exercise,husband,Single Vehicle Collision,Front Collision,Minor Damage,Other,NY,Northbend,YES,YES,Audi,0
+241,43,1000,935.77,0,0,-36000,21,1,1,0,2003,IN,250/500,MALE,Associate,prof-specialty,golf,own-child,Vehicle Theft,?,Trivial Damage,Police,PA,Northbend,NO,YES,Volkswagen,0
+437,58,2000,1192.04,0,66100,-31400,23,1,0,0,2004,IN,500/1000,MALE,Associate,craft-repair,dancing,own-child,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,SC,Northbrook,YES,NO,Dodge,0
+130,34,500,990.11,0,0,-41200,8,1,1,3,2015,OH,100/300,MALE,Masters,sales,kayaking,other-relative,Parked Car,?,Trivial Damage,,NY,Riverwood,?,YES,Dodge,0
+269,41,2000,1422.21,0,0,-46400,21,1,2,1,2005,OH,100/300,FEMALE,Associate,handlers-cleaners,polo,unmarried,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,WV,Riverwood,YES,NO,Suburu,1
+103,29,500,914.85,0,72100,0,5,1,2,3,2005,OH,500/1000,MALE,Associate,prof-specialty,base-jumping,other-relative,Parked Car,?,Minor Damage,Police,OH,Columbus,NO,NO,Accura,0
+284,43,500,1123.84,0,48200,0,12,3,0,0,2007,IL,250/500,MALE,PhD,prof-specialty,kayaking,other-relative,Multi-vehicle Collision,Side Collision,Total Loss,Fire,WV,Columbus,NO,YES,Chevrolet,0
+189,39,2000,838.02,0,0,0,7,3,2,0,1997,OH,250/500,FEMALE,College,tech-support,movies,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,VA,Northbrook,?,YES,Dodge,0
+267,43,500,1300.68,0,49000,0,0,1,1,3,2011,OH,250/500,MALE,PhD,adm-clerical,sleeping,unmarried,Parked Car,?,Minor Damage,,NC,Northbend,NO,YES,Chevrolet,0
+39,22,500,1173.21,0,0,0,14,1,0,1,2009,IN,500/1000,MALE,JD,farming-fishing,polo,not-in-family,Single Vehicle Collision,Rear Collision,Major Damage,Police,SC,Northbend,YES,YES,Suburu,1
+140,32,1000,985.97,5000000,0,0,13,1,2,3,1995,IL,250/500,FEMALE,College,protective-serv,cross-fit,other-relative,Single Vehicle Collision,Side Collision,Major Damage,Fire,VA,Northbrook,?,?,Chevrolet,1
+243,41,1000,1129.23,0,17300,-60400,1,1,1,0,1999,IN,100/300,FEMALE,College,farming-fishing,camping,own-child,Single Vehicle Collision,Front Collision,Major Damage,Fire,WV,Hillsdale,?,YES,Suburu,1
+116,31,500,1194.83,0,28600,0,23,1,0,0,1997,IN,250/500,FEMALE,MD,prof-specialty,camping,husband,Single Vehicle Collision,Side Collision,Major Damage,Police,SC,Riverwood,NO,NO,Suburu,0
+219,43,1000,1114.29,0,51300,0,1,1,2,2,2006,IN,100/300,FEMALE,High School,transport-moving,polo,other-relative,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,VA,Northbrook,?,YES,Toyota,0
+96,26,2000,1509.04,0,10000,0,9,1,2,3,2007,OH,250/500,FEMALE,Associate,prof-specialty,bungie-jumping,husband,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,SC,Riverwood,YES,NO,Saab,0
+149,34,500,664.86,0,0,-60000,3,1,0,1,1999,IN,250/500,FEMALE,PhD,craft-repair,skydiving,wife,Single Vehicle Collision,Rear Collision,Total Loss,Fire,WV,Columbus,?,NO,Dodge,0
+246,43,1000,1267.4,6000000,0,0,0,1,2,1,2006,IN,250/500,MALE,JD,adm-clerical,basketball,husband,Single Vehicle Collision,Side Collision,Minor Damage,Fire,NY,Hillsdale,NO,?,Accura,0
+293,45,1000,1119.23,0,51500,0,13,3,1,1,2015,IL,100/300,FEMALE,MD,exec-managerial,exercise,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Fire,WV,Northbend,NO,NO,Jeep,0
+339,48,500,1698.51,0,0,0,18,3,2,1,2001,OH,100/300,MALE,JD,other-service,dancing,unmarried,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,SC,Hillsdale,NO,?,Volkswagen,0
+160,33,1000,1422.78,0,61600,0,17,3,2,3,2006,IL,500/1000,FEMALE,High School,exec-managerial,exercise,husband,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,NC,Riverwood,?,YES,Nissan,0
+224,42,500,1212.75,0,0,-51400,11,1,0,0,1998,OH,500/1000,FEMALE,College,prof-specialty,kayaking,own-child,Single Vehicle Collision,Front Collision,Minor Damage,Fire,WV,Springfield,?,YES,Honda,0
+194,34,1000,1423.34,0,55300,-37900,0,1,0,3,2003,IN,100/300,MALE,Associate,sales,camping,not-in-family,Vehicle Theft,?,Minor Damage,,WV,Riverwood,YES,NO,Chevrolet,0
+385,51,1000,976.37,0,0,-61000,14,3,1,3,2007,IN,250/500,FEMALE,MD,craft-repair,reading,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,WV,Riverwood,?,?,Suburu,0
+100,33,500,1124.59,6000000,67300,0,4,1,1,2,2004,OH,250/500,MALE,College,adm-clerical,golf,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Other,NC,Columbus,NO,NO,BMW,0
+371,50,1000,1569.33,0,79600,0,2,3,2,1,2011,IN,250/500,MALE,PhD,machine-op-inspct,board-games,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Other,WV,Springfield,NO,YES,Volkswagen,1
+175,39,500,1359.36,5000000,0,-43600,9,3,2,2,2012,IN,500/1000,MALE,PhD,exec-managerial,hiking,husband,Multi-vehicle Collision,Front Collision,Major Damage,Other,SC,Arlington,YES,YES,Toyota,1
+373,55,500,1607.36,0,0,0,21,4,0,2,2007,IN,250/500,MALE,MD,sales,yachting,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Other,SC,Arlington,?,NO,Dodge,1
+258,41,500,1042.25,0,0,-44400,0,3,2,3,2008,IL,100/300,MALE,Masters,exec-managerial,reading,unmarried,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,NC,Riverwood,NO,NO,Mercedes,1
+255,39,500,1453.95,0,38200,0,17,3,0,3,2010,OH,250/500,FEMALE,PhD,armed-forces,bungie-jumping,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Fire,WV,Springfield,YES,NO,Audi,0
+37,31,500,1969.63,0,0,0,21,3,1,1,1995,IL,500/1000,FEMALE,MD,sales,skydiving,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Fire,WV,Northbend,NO,YES,Dodge,0
+322,44,1000,1156.19,0,49900,-62700,20,3,0,3,2010,IL,100/300,FEMALE,College,machine-op-inspct,cross-fit,husband,Multi-vehicle Collision,Side Collision,Major Damage,Fire,NY,Northbrook,YES,?,Jeep,0
+204,38,2000,1124.47,0,0,-45100,5,1,0,1,2003,IL,100/300,FEMALE,MD,tech-support,kayaking,wife,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,SC,Northbrook,NO,?,Ford,0
+76,31,500,1493.5,5000000,39900,-44000,7,1,2,1,1995,OH,500/1000,FEMALE,Associate,priv-house-serv,movies,not-in-family,Vehicle Theft,?,Minor Damage,Police,WV,Northbrook,NO,NO,Mercedes,0
+193,40,500,1155.38,0,34200,-32300,6,1,0,0,2001,IL,100/300,FEMALE,PhD,handlers-cleaners,movies,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Fire,NY,Columbus,NO,YES,Accura,0
+405,55,500,878.19,0,57100,0,2,4,0,2,1997,IL,250/500,MALE,PhD,machine-op-inspct,golf,unmarried,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,NC,Northbend,YES,NO,Chevrolet,0
+435,58,2000,1145.85,0,0,-40000,19,3,1,1,2004,IN,100/300,MALE,JD,sales,movies,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Other,NY,Columbus,?,YES,Mercedes,0
+54,35,500,1261.28,0,68500,-42100,21,3,2,0,2012,IN,100/300,FEMALE,MD,protective-serv,hiking,unmarried,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,VA,Springfield,YES,?,Nissan,0
+144,35,500,1427.46,0,0,0,3,3,0,0,1995,IL,100/300,MALE,High School,machine-op-inspct,cross-fit,wife,Multi-vehicle Collision,Side Collision,Major Damage,Police,WV,Springfield,?,?,Dodge,0
+92,32,500,1592.41,0,58900,-29100,22,1,2,3,1996,IL,500/1000,MALE,Masters,prof-specialty,yachting,husband,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,WV,Columbus,?,YES,Jeep,0
+173,36,1000,1274.63,0,51000,0,22,1,2,3,1995,OH,250/500,MALE,College,machine-op-inspct,basketball,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Fire,SC,Springfield,YES,NO,Accura,0
+436,60,500,1362.31,0,67600,-65300,16,1,0,2,2005,IN,250/500,MALE,High School,prof-specialty,bungie-jumping,wife,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,VA,Arlington,NO,NO,Saab,0
+155,35,1000,919.37,0,83600,0,0,1,0,3,1997,OH,250/500,FEMALE,Associate,protective-serv,hiking,not-in-family,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,NY,Northbrook,?,?,Nissan,0
+78,31,1000,1377.23,0,72600,0,1,3,2,1,1997,OH,250/500,FEMALE,Masters,armed-forces,kayaking,unmarried,Multi-vehicle Collision,Side Collision,Minor Damage,Other,NY,Hillsdale,?,?,Nissan,0
+440,57,1000,995.55,5000000,51500,-52100,19,3,0,3,2007,IL,100/300,MALE,College,protective-serv,paintball,wife,Multi-vehicle Collision,Rear Collision,Major Damage,Police,SC,Arlington,YES,?,Jeep,1
+264,43,500,1508.12,6000000,0,0,0,3,2,1,2015,IL,100/300,MALE,PhD,craft-repair,basketball,wife,Multi-vehicle Collision,Rear Collision,Major Damage,Other,NY,Columbus,?,NO,Jeep,1
+66,30,500,484.67,0,21100,-60800,2,3,0,2,2015,IN,500/1000,FEMALE,College,adm-clerical,paintball,wife,Multi-vehicle Collision,Front Collision,Major Damage,Fire,SC,Arlington,?,YES,Volkswagen,1
+366,50,1000,1561.41,0,21200,0,5,3,1,3,2012,IN,500/1000,FEMALE,High School,handlers-cleaners,basketball,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Arlington,YES,NO,Mercedes,0
+188,37,500,1457.21,0,46300,0,6,1,2,0,2003,OH,100/300,FEMALE,JD,adm-clerical,hiking,own-child,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,SC,Columbus,?,YES,Suburu,0
+224,39,1000,1128.71,0,0,-47100,21,3,2,1,2007,IL,500/1000,FEMALE,JD,prof-specialty,sleeping,other-relative,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,VA,Riverwood,YES,?,Suburu,0
+253,46,500,1358.2,0,52900,0,11,3,0,0,2001,IL,100/300,FEMALE,MD,transport-moving,movies,husband,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Columbus,YES,NO,Jeep,0
+446,61,1000,1232.79,0,49900,-62100,3,1,2,0,2007,IL,100/300,FEMALE,High School,adm-clerical,reading,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Other,VA,Springfield,YES,YES,Suburu,0
+169,37,1000,936.19,0,70600,-48500,4,3,2,1,2005,IL,100/300,MALE,JD,armed-forces,movies,other-relative,Multi-vehicle Collision,Side Collision,Total Loss,Police,SC,Northbrook,?,YES,Audi,0
+255,46,500,1302.34,0,0,-52600,2,3,1,0,2011,IL,250/500,FEMALE,JD,prof-specialty,video-games,own-child,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,WV,Northbrook,NO,NO,Volkswagen,0
+209,39,500,1264.99,0,67800,0,22,1,1,1,1995,IN,100/300,MALE,PhD,transport-moving,polo,husband,Single Vehicle Collision,Side Collision,Minor Damage,Fire,VA,Northbrook,?,NO,Chevrolet,0
+210,37,500,1467.76,0,38700,-33100,8,1,1,3,2000,OH,500/1000,FEMALE,MD,tech-support,hiking,own-child,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,NY,Northbend,?,YES,Toyota,0
+174,33,2000,1124.43,0,0,0,14,3,0,1,1995,IN,250/500,FEMALE,College,farming-fishing,paintball,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,WV,Northbrook,YES,YES,Saab,0
+70,28,1000,1319.81,0,67200,-59400,14,4,1,0,2006,IL,250/500,MALE,High School,machine-op-inspct,yachting,husband,Multi-vehicle Collision,Side Collision,Minor Damage,Police,WV,Arlington,NO,YES,Toyota,0
+89,32,2000,1482.53,0,49100,-45100,5,1,1,2,2002,IN,100/300,FEMALE,MD,tech-support,kayaking,not-in-family,Parked Car,?,Trivial Damage,Police,WV,Northbrook,YES,?,Audi,0
+458,61,1000,1328.18,0,53000,0,18,1,2,1,2003,IN,100/300,FEMALE,High School,protective-serv,bungie-jumping,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Fire,WV,Columbus,NO,NO,Volkswagen,0
+239,40,500,1463.95,0,0,0,20,3,0,0,2003,IN,100/300,FEMALE,JD,sales,skydiving,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Police,NC,Springfield,?,YES,Dodge,0
+161,38,2000,1133.85,0,60200,0,0,3,2,2,2003,IL,100/300,MALE,PhD,priv-house-serv,exercise,not-in-family,Multi-vehicle Collision,Front Collision,Total Loss,Police,WV,Springfield,YES,YES,Volkswagen,0
+446,61,1000,1037.32,0,0,-15700,1,3,2,1,2005,IN,500/1000,FEMALE,High School,tech-support,skydiving,wife,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NC,Hillsdale,?,NO,Nissan,0
+476,61,1000,1562.8,0,42800,-68200,10,1,1,2,2009,IN,250/500,FEMALE,Masters,handlers-cleaners,dancing,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Fire,WV,Hillsdale,?,YES,Suburu,0
+70,29,1000,1425.79,0,62400,-52300,12,1,0,3,2009,IN,100/300,FEMALE,MD,armed-forces,video-games,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,NC,Riverwood,NO,?,Dodge,0
+233,41,2000,1615.14,0,67100,0,6,1,0,1,2011,OH,500/1000,FEMALE,Associate,tech-support,board-games,other-relative,Vehicle Theft,?,Minor Damage,,NY,Springfield,NO,?,Chevrolet,0
+122,33,500,1236.5,0,0,-48700,1,1,0,1,2003,IL,250/500,MALE,PhD,other-service,bungie-jumping,husband,Parked Car,?,Trivial Damage,,NY,Hillsdale,NO,NO,Nissan,0
+335,48,2000,1017.97,0,59900,-34800,21,3,0,0,2005,IL,500/1000,FEMALE,MD,machine-op-inspct,chess,wife,Multi-vehicle Collision,Front Collision,Total Loss,Police,WV,Columbus,NO,YES,BMW,1
+257,40,2000,1306.0,0,46100,-46900,3,3,2,1,2008,IN,100/300,MALE,Associate,machine-op-inspct,cross-fit,husband,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,NY,Columbus,YES,?,Ford,1
+85,27,2000,1174.14,0,50400,-61500,14,4,0,0,2012,IL,500/1000,MALE,College,priv-house-serv,dancing,unmarried,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,NY,Northbend,YES,NO,Toyota,0
+133,30,1000,1231.01,0,0,-31700,19,3,1,2,2007,IN,500/1000,MALE,College,adm-clerical,board-games,husband,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,SC,Riverwood,NO,?,Dodge,0
+119,34,500,1299.18,0,57100,0,7,1,2,1,1998,IL,250/500,FEMALE,College,tech-support,hiking,wife,Single Vehicle Collision,Front Collision,Major Damage,Fire,OH,Springfield,YES,YES,Honda,1
+169,34,500,1469.75,0,0,-57600,0,1,0,0,2012,IN,100/300,FEMALE,JD,sales,reading,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,VA,Arlington,?,YES,Volkswagen,0
+225,39,500,1390.72,0,83900,-52100,6,1,2,1,2011,OH,250/500,MALE,Masters,tech-support,paintball,other-relative,Parked Car,?,Trivial Damage,,SC,Northbrook,YES,YES,Nissan,0
+84,32,500,1694.09,7000000,0,0,0,1,0,2,1995,IL,500/1000,FEMALE,Associate,prof-specialty,cross-fit,husband,Single Vehicle Collision,Rear Collision,Total Loss,Other,NY,Northbend,YES,?,BMW,1
+169,39,2000,1140.15,0,0,-36800,9,3,0,3,2015,OH,100/300,MALE,High School,armed-forces,exercise,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Police,VA,Riverwood,YES,NO,Suburu,0
+124,32,1000,1310.71,0,29300,0,23,1,0,1,2003,IN,100/300,FEMALE,Masters,farming-fishing,kayaking,wife,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,NY,Columbus,YES,NO,Toyota,0
+320,48,2000,1730.49,7000000,46300,-41700,13,3,2,0,1995,IL,250/500,MALE,College,transport-moving,hiking,not-in-family,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,WV,Northbrook,NO,NO,Saab,0
+297,47,500,1616.65,7000000,0,-59500,0,3,0,3,1999,IN,250/500,MALE,MD,adm-clerical,movies,unmarried,Multi-vehicle Collision,Side Collision,Total Loss,Fire,WV,Columbus,?,YES,Jeep,0
+421,56,500,1935.85,4000000,49500,-81100,7,1,2,3,2004,IN,100/300,MALE,Masters,machine-op-inspct,reading,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,NY,Hillsdale,?,?,Mercedes,1
+136,33,1000,855.14,0,37900,0,23,1,0,1,2015,OH,250/500,FEMALE,PhD,craft-repair,paintball,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Fire,NC,Northbrook,YES,YES,Toyota,0
+46,24,2000,1568.47,4000000,46800,0,7,1,2,0,1999,OH,250/500,FEMALE,High School,armed-forces,yachting,unmarried,Single Vehicle Collision,Side Collision,Major Damage,Fire,NY,Northbrook,NO,?,Toyota,0
+34,24,2000,1550.53,0,0,-27700,20,1,0,1,1998,IN,500/1000,FEMALE,MD,armed-forces,dancing,own-child,Parked Car,?,Trivial Damage,,VA,Hillsdale,YES,?,Audi,0
+95,30,2000,1370.92,0,48900,0,22,1,0,3,1999,IL,250/500,MALE,College,transport-moving,video-games,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Police,SC,Arlington,YES,?,Accura,0
+140,36,500,1363.59,0,43200,0,10,3,2,0,2000,IN,250/500,FEMALE,JD,armed-forces,kayaking,not-in-family,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,NY,Riverwood,?,YES,Chevrolet,0
+200,34,1000,828.42,3000000,0,0,10,1,2,2,2009,IN,250/500,FEMALE,College,prof-specialty,basketball,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Police,NY,Arlington,?,NO,Chevrolet,0
+123,29,500,1209.63,0,64800,-44200,17,1,1,0,2014,IN,250/500,FEMALE,Masters,machine-op-inspct,chess,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,NC,Arlington,YES,YES,Volkswagen,1
+267,46,2000,1111.17,0,35000,0,3,1,2,3,1995,OH,250/500,MALE,MD,craft-repair,base-jumping,unmarried,Parked Car,?,Trivial Damage,,WV,Arlington,YES,YES,Toyota,0
+290,42,500,989.97,0,32500,0,10,1,0,1,2013,IN,500/1000,MALE,Masters,machine-op-inspct,kayaking,own-child,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,WV,Hillsdale,NO,NO,Saab,0
+45,37,1000,1114.23,0,0,0,1,1,0,1,2005,IN,250/500,MALE,College,prof-specialty,dancing,wife,Single Vehicle Collision,Side Collision,Major Damage,Fire,SC,Arlington,YES,YES,Nissan,0
+186,38,2000,1347.31,0,80900,-111100,1,3,2,3,1995,IN,250/500,FEMALE,JD,protective-serv,dancing,unmarried,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,NY,Springfield,NO,?,Audi,0
+135,34,2000,1687.53,0,0,-69600,7,1,1,2,2009,IL,250/500,FEMALE,JD,protective-serv,base-jumping,other-relative,Single Vehicle Collision,Side Collision,Total Loss,Fire,NC,Northbend,?,NO,Audi,0
+110,33,1000,1183.48,0,0,0,19,1,2,3,2015,IN,250/500,MALE,Associate,other-service,bungie-jumping,husband,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,VA,Northbend,?,NO,Saab,1
+259,43,2000,1537.13,0,0,-58300,3,3,0,2,2012,IL,500/1000,FEMALE,PhD,handlers-cleaners,kayaking,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Other,NY,Northbend,NO,YES,Ford,0
+114,30,1000,1173.25,0,0,-34700,3,1,0,3,2013,OH,250/500,FEMALE,Masters,protective-serv,dancing,husband,Vehicle Theft,?,Minor Damage,,WV,Arlington,NO,YES,Chevrolet,0
+404,56,1000,1361.16,4000000,0,-63700,23,1,2,0,2005,IN,250/500,FEMALE,Masters,transport-moving,cross-fit,not-in-family,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,VA,Hillsdale,NO,YES,Accura,1
+282,48,2000,1422.56,7000000,26900,-55300,7,1,1,2,2013,OH,500/1000,FEMALE,MD,prof-specialty,video-games,husband,Vehicle Theft,?,Minor Damage,,WV,Springfield,?,NO,Accura,0
+57,25,2000,1143.06,0,63100,-54100,0,3,0,1,2010,IL,500/1000,FEMALE,Masters,tech-support,dancing,own-child,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,VA,Riverwood,NO,YES,Nissan,0
+215,38,500,1405.71,0,0,0,10,1,0,1,2008,IN,250/500,FEMALE,PhD,craft-repair,camping,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Police,SC,Arlington,?,NO,Volkswagen,0
+140,30,500,1354.2,0,100500,0,4,4,0,0,2006,IL,100/300,FEMALE,College,adm-clerical,bungie-jumping,wife,Multi-vehicle Collision,Side Collision,Minor Damage,Other,SC,Columbus,?,?,Nissan,0
+250,42,500,1055.6,0,69500,-40700,16,1,1,1,2009,IN,100/300,MALE,High School,exec-managerial,paintball,husband,Single Vehicle Collision,Rear Collision,Major Damage,Other,SC,Columbus,?,?,Ford,1
+286,41,1000,999.43,0,25800,0,3,1,2,0,2009,IL,250/500,MALE,College,prof-specialty,paintball,wife,Vehicle Theft,?,Trivial Damage,Police,WV,Northbend,YES,?,Chevrolet,0
+356,47,2000,1155.97,0,0,0,5,1,0,3,2009,IN,250/500,MALE,High School,prof-specialty,camping,husband,Single Vehicle Collision,Side Collision,Minor Damage,Other,SC,Columbus,YES,?,Dodge,0
+65,29,1000,1726.91,0,0,0,14,1,0,0,1999,IL,250/500,MALE,High School,other-service,basketball,own-child,Vehicle Theft,?,Trivial Damage,,VA,Hillsdale,?,?,Audi,0
+187,34,500,1232.57,0,59500,0,7,3,0,0,2011,IN,500/1000,FEMALE,PhD,machine-op-inspct,polo,not-in-family,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,NY,Arlington,?,?,Nissan,0
+386,53,500,1078.65,0,36800,0,16,1,2,3,2006,OH,250/500,MALE,JD,craft-repair,camping,not-in-family,Single Vehicle Collision,Front Collision,Minor Damage,Police,WV,Northbend,?,YES,Honda,0
+197,41,1000,1324.78,0,0,-64500,6,1,2,2,1997,OH,500/1000,FEMALE,PhD,prof-specialty,basketball,not-in-family,Single Vehicle Collision,Front Collision,Major Damage,Police,NC,Northbrook,NO,YES,Volkswagen,1
+166,37,500,1518.54,0,0,0,10,1,1,1,2001,IN,250/500,FEMALE,MD,craft-repair,kayaking,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,PA,Riverwood,YES,NO,Ford,0
+293,49,2000,1239.06,0,34900,0,19,1,1,1,2002,IL,100/300,FEMALE,JD,transport-moving,skydiving,husband,Single Vehicle Collision,Front Collision,Total Loss,Police,SC,Riverwood,?,?,Volkswagen,0
+179,32,2000,1246.68,0,0,0,10,1,0,1,2006,OH,500/1000,FEMALE,PhD,priv-house-serv,movies,own-child,Single Vehicle Collision,Front Collision,Minor Damage,Fire,NY,Arlington,?,?,Suburu,0
+76,24,1000,1622.67,0,0,0,6,3,1,1,1997,OH,250/500,FEMALE,MD,priv-house-serv,paintball,husband,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,WV,Riverwood,NO,?,Suburu,0
+105,28,500,1082.36,0,0,0,12,3,2,2,1995,OH,250/500,FEMALE,Associate,prof-specialty,golf,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,SC,Riverwood,NO,NO,Audi,0
+97,26,1000,1270.55,0,0,-72100,10,3,2,3,2006,OH,250/500,MALE,Masters,protective-serv,chess,unmarried,Multi-vehicle Collision,Side Collision,Total Loss,Other,NC,Riverwood,YES,NO,Jeep,1
+148,36,1000,1236.32,5000000,55100,0,0,1,2,0,2009,IL,500/1000,FEMALE,MD,adm-clerical,hiking,own-child,Single Vehicle Collision,Side Collision,Total Loss,Police,PA,Northbrook,NO,NO,Dodge,0
+77,26,2000,785.82,0,49700,0,12,3,2,0,2009,IL,250/500,MALE,JD,exec-managerial,movies,other-relative,Multi-vehicle Collision,Rear Collision,Major Damage,Police,NY,Hillsdale,YES,?,Audi,1
+295,46,500,1265.84,0,52200,-44500,10,1,1,3,2007,IN,250/500,FEMALE,JD,prof-specialty,paintball,own-child,Vehicle Theft,?,Minor Damage,,VA,Arlington,YES,YES,Nissan,0
+126,28,500,1508.9,0,0,0,3,4,0,1,2011,IN,250/500,FEMALE,JD,machine-op-inspct,skydiving,other-relative,Multi-vehicle Collision,Rear Collision,Total Loss,Police,WV,Northbend,NO,?,Ford,0
+132,32,2000,1106.84,0,43100,-31900,21,1,1,1,2005,OH,250/500,MALE,PhD,other-service,reading,wife,Vehicle Theft,?,Minor Damage,Police,SC,Riverwood,YES,YES,Suburu,0
+370,55,2000,1389.13,7000000,0,-53200,6,1,0,2,2015,IN,500/1000,MALE,JD,other-service,basketball,wife,Vehicle Theft,?,Minor Damage,,NC,Northbrook,?,?,Mercedes,0
+257,43,1000,974.84,0,52100,0,0,1,0,1,2006,IN,100/300,FEMALE,JD,transport-moving,kayaking,other-relative,Single Vehicle Collision,Rear Collision,Total Loss,Police,VA,Northbend,NO,YES,Nissan,0
+9,24,2000,1304.46,0,51700,-33300,6,1,0,3,2001,IL,100/300,FEMALE,PhD,machine-op-inspct,golf,other-relative,Vehicle Theft,?,Trivial Damage,,NC,Arlington,NO,YES,Audi,1
+185,34,500,1257.36,0,0,0,20,3,1,1,2000,OH,250/500,FEMALE,PhD,armed-forces,movies,husband,Multi-vehicle Collision,Side Collision,Major Damage,Fire,SC,Arlington,YES,?,BMW,1
+234,43,500,1257.04,0,0,-48800,4,1,2,2,2011,OH,250/500,MALE,Associate,protective-serv,reading,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Police,SC,Northbrook,NO,YES,Dodge,0
+253,44,2000,719.52,0,45800,0,9,1,0,3,1998,OH,100/300,FEMALE,High School,farming-fishing,golf,own-child,Parked Car,?,Trivial Damage,,SC,Arlington,NO,?,Chevrolet,0
+233,39,2000,1524.18,0,0,0,20,3,1,0,1999,OH,500/1000,MALE,JD,craft-repair,reading,unmarried,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,SC,Northbrook,?,YES,Saab,0
+274,44,500,1395.58,0,0,0,7,1,2,1,2000,IN,500/1000,FEMALE,JD,tech-support,reading,husband,Vehicle Theft,?,Minor Damage,Police,WV,Springfield,NO,?,BMW,0
+297,48,1000,1243.68,0,0,-71400,18,3,0,2,2002,IL,500/1000,MALE,Masters,protective-serv,camping,wife,Multi-vehicle Collision,Front Collision,Major Damage,Other,NY,Springfield,?,?,Toyota,1
+273,47,1000,1189.04,0,59600,0,0,3,1,3,2014,OH,500/1000,FEMALE,Associate,prof-specialty,video-games,own-child,Multi-vehicle Collision,Side Collision,Minor Damage,Police,VA,Northbrook,NO,?,Jeep,0
+147,37,2000,1375.29,0,0,0,11,3,0,1,2015,IN,500/1000,FEMALE,Masters,armed-forces,chess,own-child,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,SC,Columbus,?,?,Ford,1
+285,42,500,1389.13,0,63100,-79400,13,1,0,3,2005,IN,100/300,MALE,Associate,priv-house-serv,golf,not-in-family,Single Vehicle Collision,Side Collision,Total Loss,Fire,VA,Hillsdale,NO,?,Toyota,0
+289,43,1000,1387.51,0,0,0,19,3,1,3,2010,OH,500/1000,FEMALE,Associate,sales,base-jumping,not-in-family,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,NY,Riverwood,YES,?,Jeep,0
+427,60,1000,1178.61,7000000,0,-54400,23,1,1,2,2004,IN,100/300,MALE,MD,craft-repair,board-games,own-child,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,NY,Springfield,YES,YES,Volkswagen,1
+380,53,2000,1166.62,6000000,0,0,23,1,0,3,2001,IL,250/500,MALE,Associate,priv-house-serv,bungie-jumping,wife,Parked Car,?,Trivial Damage,Police,NC,Northbend,NO,NO,Saab,0
+13,21,1000,1556.31,0,0,-75000,19,3,2,0,2014,IN,100/300,MALE,Associate,prof-specialty,golf,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Police,NY,Hillsdale,YES,YES,Accura,0
+282,43,500,1452.27,0,75800,0,19,1,1,2,2007,OH,250/500,MALE,MD,farming-fishing,video-games,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,SC,Northbend,NO,NO,Audi,1
+312,47,1000,1212.07,0,66900,-51800,17,3,2,3,2000,OH,500/1000,FEMALE,MD,exec-managerial,polo,wife,Multi-vehicle Collision,Side Collision,Total Loss,Fire,NY,Northbend,NO,NO,Mercedes,0
+266,46,2000,1578.54,0,0,-41400,18,1,1,3,1996,OH,100/300,MALE,Associate,handlers-cleaners,chess,husband,Single Vehicle Collision,Front Collision,Minor Damage,Fire,WV,Hillsdale,NO,YES,Nissan,0
+30,36,500,1488.26,0,0,-63500,17,3,2,2,2008,IN,500/1000,FEMALE,College,machine-op-inspct,golf,wife,Multi-vehicle Collision,Side Collision,Total Loss,Police,WV,Northbrook,NO,?,Saab,0
+198,36,1000,1096.39,0,0,0,11,3,1,3,2015,IN,250/500,MALE,High School,armed-forces,kayaking,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,SC,Springfield,?,YES,Audi,0
+290,45,2000,1215.36,0,54400,0,22,3,0,1,2012,OH,500/1000,MALE,Associate,tech-support,reading,own-child,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,WV,Northbend,?,NO,Suburu,0
+260,46,2000,1482.57,0,35000,0,7,1,0,1,2005,OH,100/300,MALE,MD,priv-house-serv,reading,husband,Single Vehicle Collision,Front Collision,Minor Damage,Fire,NY,Columbus,NO,NO,Toyota,0
+233,43,1000,954.18,0,0,0,17,3,2,3,2000,OH,250/500,FEMALE,College,tech-support,dancing,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Other,SC,Northbrook,?,YES,Nissan,0
+130,30,2000,1193.4,0,0,-40800,16,3,2,3,2005,IL,500/1000,MALE,PhD,exec-managerial,bungie-jumping,own-child,Multi-vehicle Collision,Side Collision,Total Loss,Other,SC,Columbus,NO,?,Suburu,0
+230,42,1000,1023.11,0,0,-45300,13,3,1,2,1999,IN,100/300,FEMALE,MD,adm-clerical,golf,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,NY,Northbend,NO,YES,Accura,0
+212,40,1000,1524.45,0,73200,0,17,3,0,2,2006,IL,500/1000,FEMALE,Masters,other-service,golf,husband,Multi-vehicle Collision,Side Collision,Minor Damage,Other,NY,Northbrook,YES,YES,Nissan,0
+299,44,1000,1653.32,0,0,-48800,3,1,2,0,2009,OH,500/1000,FEMALE,College,other-service,bungie-jumping,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,WV,Springfield,YES,?,Suburu,0
+91,26,1000,1022.46,0,52700,0,15,3,0,2,1996,IL,250/500,FEMALE,Associate,armed-forces,video-games,other-relative,Multi-vehicle Collision,Front Collision,Minor Damage,Other,SC,Arlington,?,?,Jeep,0
+398,53,2000,1396.43,0,21500,0,16,1,2,1,2000,IL,100/300,FEMALE,Associate,priv-house-serv,base-jumping,unmarried,Single Vehicle Collision,Front Collision,Total Loss,Fire,WV,Hillsdale,YES,?,Toyota,0
+218,43,500,1521.55,0,61100,-64500,18,1,1,3,2003,IL,250/500,FEMALE,Associate,priv-house-serv,polo,other-relative,Single Vehicle Collision,Rear Collision,Major Damage,Fire,SC,Hillsdale,?,YES,Dodge,1
+152,33,1000,1034.27,0,0,0,18,1,1,0,2014,IN,100/300,FEMALE,JD,armed-forces,exercise,husband,Single Vehicle Collision,Front Collision,Minor Damage,Fire,NY,Hillsdale,NO,NO,Accura,0
+212,39,1000,1255.35,0,60300,-58900,22,2,0,3,2008,OH,100/300,FEMALE,JD,protective-serv,skydiving,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,NY,Riverwood,NO,YES,Dodge,0
+242,44,2000,1396.89,6000000,0,-61600,15,3,1,2,1999,IL,500/1000,FEMALE,College,priv-house-serv,chess,other-relative,Multi-vehicle Collision,Front Collision,Minor Damage,Other,SC,Springfield,NO,YES,Suburu,1
+80,27,500,795.31,0,0,-51000,16,3,1,3,2000,OH,500/1000,MALE,JD,farming-fishing,skydiving,husband,Multi-vehicle Collision,Rear Collision,Major Damage,Police,OH,Arlington,YES,?,Ford,1
+260,43,500,982.22,0,54500,-72100,18,1,1,0,2011,IN,100/300,FEMALE,JD,exec-managerial,skydiving,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Riverwood,?,?,Honda,0
+133,34,500,1074.07,0,70900,-61100,8,1,2,0,2013,IN,500/1000,FEMALE,JD,prof-specialty,bungie-jumping,husband,Parked Car,?,Minor Damage,,WV,Northbend,NO,YES,Jeep,0
+290,45,1000,1311.3,0,38500,0,23,3,0,0,2001,OH,100/300,FEMALE,Associate,machine-op-inspct,chess,wife,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,NY,Hillsdale,YES,YES,Ford,1
+322,49,2000,1277.12,0,0,-46000,18,1,0,2,2007,IL,250/500,FEMALE,PhD,armed-forces,kayaking,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,WV,Hillsdale,?,YES,Chevrolet,0
+228,39,500,1388.62,0,35200,0,10,1,1,0,1995,IN,500/1000,FEMALE,JD,sales,reading,husband,Single Vehicle Collision,Side Collision,Minor Damage,Other,NC,Riverwood,YES,YES,Mercedes,0
+195,37,1000,1406.52,8000000,0,0,12,1,0,2,2002,IL,100/300,MALE,MD,tech-support,base-jumping,unmarried,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,SC,Arlington,NO,NO,Jeep,1
+247,39,500,1558.29,0,0,-49300,5,1,1,2,2000,IN,100/300,FEMALE,Masters,protective-serv,reading,unmarried,Vehicle Theft,?,Trivial Damage,Police,WV,Springfield,YES,?,Saab,0
+405,57,1000,1132.47,4000000,46300,0,21,3,2,3,2008,IN,500/1000,MALE,MD,priv-house-serv,exercise,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Other,NY,Northbend,?,?,Saab,0
+144,37,2000,1896.91,0,73700,0,17,3,1,3,2015,OH,250/500,FEMALE,PhD,handlers-cleaners,sleeping,not-in-family,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,SC,Columbus,YES,NO,Chevrolet,1
+338,47,500,1143.46,4000000,0,0,4,1,2,1,2002,IL,500/1000,MALE,MD,priv-house-serv,polo,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Other,NC,Arlington,YES,?,Mercedes,0
+121,34,500,1285.42,0,0,0,11,1,1,1,2000,IN,500/1000,MALE,MD,priv-house-serv,video-games,wife,Single Vehicle Collision,Front Collision,Major Damage,Fire,VA,Northbrook,NO,NO,Dodge,1
+398,55,2000,1305.26,0,66200,-49700,18,1,1,3,1998,OH,250/500,MALE,MD,farming-fishing,skydiving,wife,Single Vehicle Collision,Rear Collision,Major Damage,Fire,VA,Hillsdale,?,YES,BMW,1
+9,30,1000,1073.83,0,0,0,12,1,0,0,2011,IL,100/300,FEMALE,High School,machine-op-inspct,dancing,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Police,NY,Northbrook,?,NO,BMW,0
+115,31,1000,1051.67,0,0,0,18,3,0,3,2005,OH,500/1000,FEMALE,Associate,exec-managerial,bungie-jumping,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,WV,Riverwood,YES,NO,Audi,1
+280,48,1000,1387.35,0,0,-72000,16,1,2,2,1998,IL,250/500,MALE,JD,transport-moving,paintball,not-in-family,Single Vehicle Collision,Front Collision,Minor Damage,Fire,WV,Hillsdale,NO,?,BMW,0
+254,45,500,1083.64,0,59800,0,19,3,0,0,2004,IL,250/500,MALE,JD,other-service,paintball,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Police,NC,Columbus,YES,?,BMW,0
+141,30,1000,1851.78,0,78800,0,13,1,1,0,2002,IL,250/500,FEMALE,High School,craft-repair,exercise,other-relative,Single Vehicle Collision,Front Collision,Total Loss,Fire,SC,Riverwood,NO,YES,Audi,0
+441,55,500,1270.29,4000000,24000,-50500,4,1,0,0,2002,IN,250/500,MALE,College,armed-forces,exercise,husband,Parked Car,?,Minor Damage,,VA,Arlington,NO,NO,Honda,0
+381,55,500,1459.99,0,35900,0,8,1,1,2,2011,OH,500/1000,FEMALE,MD,other-service,chess,wife,Single Vehicle Collision,Rear Collision,Major Damage,Fire,SC,Northbrook,YES,YES,Accura,0
+191,38,2000,1253.44,0,0,0,19,3,2,0,2007,IL,100/300,FEMALE,Masters,craft-repair,sleeping,not-in-family,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,VA,Hillsdale,NO,NO,Volkswagen,0
+145,34,1000,1142.48,0,0,0,18,1,2,0,2012,IN,100/300,FEMALE,JD,priv-house-serv,sleeping,other-relative,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,NC,Northbend,YES,NO,Suburu,0
+479,60,1000,1188.45,0,0,-44800,9,2,0,3,2006,IL,500/1000,FEMALE,MD,exec-managerial,camping,other-relative,Multi-vehicle Collision,Rear Collision,Total Loss,Other,SC,Arlington,?,?,Saab,0
+215,35,1000,1125.4,0,40000,-43400,6,1,2,1,2001,IL,500/1000,MALE,Masters,adm-clerical,yachting,husband,Vehicle Theft,?,Trivial Damage,,WV,Columbus,?,NO,Jeep,0
+41,33,500,1294.41,0,0,0,8,1,0,0,2011,OH,250/500,MALE,High School,transport-moving,sleeping,husband,Vehicle Theft,?,Minor Damage,,NC,Arlington,YES,?,Dodge,0
+45,31,500,1459.5,0,0,0,6,1,1,3,2000,IN,100/300,MALE,MD,priv-house-serv,movies,not-in-family,Parked Car,?,Minor Damage,,NY,Springfield,?,?,Suburu,0
+156,38,500,1367.99,0,26500,0,23,3,0,3,1998,IL,100/300,MALE,High School,armed-forces,board-games,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Fire,WV,Northbend,?,?,Saab,1
+246,45,500,1594.37,0,0,0,13,1,0,3,2008,IN,250/500,MALE,Associate,exec-managerial,board-games,own-child,Parked Car,?,Trivial Damage,,SC,Riverwood,NO,YES,Saab,0
+178,39,500,1035.99,0,0,0,3,3,2,0,2010,IL,100/300,FEMALE,JD,exec-managerial,sleeping,own-child,Multi-vehicle Collision,Front Collision,Minor Damage,Police,NY,Springfield,NO,?,Jeep,0
+237,43,500,911.53,0,53200,0,23,1,0,1,1998,OH,250/500,FEMALE,PhD,sales,basketball,husband,Single Vehicle Collision,Rear Collision,Major Damage,Police,WV,Northbrook,NO,NO,Chevrolet,0
+127,34,500,1319.97,0,73700,0,8,1,1,3,1998,OH,500/1000,FEMALE,Associate,craft-repair,paintball,own-child,Vehicle Theft,?,Minor Damage,,NC,Arlington,YES,?,Saab,0
+1,33,2000,1391.63,0,61200,0,23,1,0,3,2000,OH,250/500,MALE,Associate,sales,video-games,husband,Single Vehicle Collision,Side Collision,Total Loss,Other,NY,Columbus,YES,NO,Mercedes,0
+5,21,500,915.41,5000000,0,0,23,1,0,0,1998,IN,250/500,FEMALE,High School,exec-managerial,sleeping,own-child,Single Vehicle Collision,Side Collision,Total Loss,Police,NY,Northbrook,YES,NO,Nissan,0
+64,28,1000,1468.82,0,56800,-51800,9,3,2,1,1997,IL,500/1000,MALE,JD,handlers-cleaners,skydiving,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,SC,Riverwood,NO,NO,Honda,0
+142,30,500,1412.76,0,66400,-63700,22,1,2,3,1996,IN,500/1000,MALE,PhD,armed-forces,basketball,wife,Single Vehicle Collision,Side Collision,Minor Damage,Other,WV,Riverwood,YES,NO,Volkswagen,0
+97,27,500,1588.26,0,56700,-49300,22,3,2,1,2014,OH,500/1000,FEMALE,High School,tech-support,movies,husband,Multi-vehicle Collision,Side Collision,Total Loss,Other,VA,Riverwood,YES,YES,Saab,0
+121,31,1000,1140.91,0,51300,0,15,3,1,2,2002,IN,100/300,MALE,Associate,adm-clerical,paintball,other-relative,Multi-vehicle Collision,Side Collision,Major Damage,Fire,VA,Northbend,NO,?,Chevrolet,1
+225,43,1000,1517.54,0,0,-20900,16,3,2,0,2011,OH,100/300,MALE,JD,priv-house-serv,camping,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Police,SC,Columbus,NO,YES,BMW,0
+425,53,2000,912.29,0,42900,-39100,17,3,1,2,2005,OH,250/500,FEMALE,High School,priv-house-serv,paintball,husband,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,WV,Northbend,?,?,Saab,0
+285,44,2000,1144.3,0,52600,0,3,1,1,0,2010,OH,250/500,MALE,MD,priv-house-serv,base-jumping,not-in-family,Vehicle Theft,?,Minor Damage,Police,WV,Northbrook,YES,?,Honda,0
+192,38,1000,1281.43,0,65100,-50300,10,3,0,2,2010,IN,500/1000,FEMALE,Masters,transport-moving,skydiving,not-in-family,Multi-vehicle Collision,Rear Collision,Total Loss,Other,SC,Northbend,?,NO,Jeep,0
+285,48,2000,1101.85,0,46100,0,9,1,1,2,2012,IL,100/300,FEMALE,College,sales,dancing,wife,Single Vehicle Collision,Side Collision,Minor Damage,Police,PA,Springfield,NO,YES,Nissan,0
+98,26,2000,1082.1,0,0,-30900,13,2,0,1,2001,IN,500/1000,MALE,JD,exec-managerial,kayaking,other-relative,Multi-vehicle Collision,Front Collision,Total Loss,Police,WV,Northbend,?,YES,Jeep,0
+175,36,500,1185.44,0,44900,-52500,15,3,2,1,2006,OH,500/1000,MALE,Masters,exec-managerial,kayaking,not-in-family,Multi-vehicle Collision,Rear Collision,Major Damage,Police,NC,Northbend,YES,YES,Accura,1
+259,45,2000,1175.07,0,30100,0,23,1,1,1,2011,IL,500/1000,MALE,MD,craft-repair,movies,not-in-family,Single Vehicle Collision,Side Collision,Minor Damage,Fire,WV,Springfield,?,NO,Honda,0
+140,36,2000,979.26,0,0,-67000,2,4,0,2,1998,OH,500/1000,FEMALE,JD,transport-moving,cross-fit,own-child,Multi-vehicle Collision,Front Collision,Major Damage,Fire,NY,Riverwood,YES,YES,Honda,0
+231,37,500,920.81,0,0,0,14,1,2,0,1997,OH,250/500,FEMALE,High School,sales,chess,wife,Single Vehicle Collision,Rear Collision,Major Damage,Fire,SC,Hillsdale,YES,?,Mercedes,1
+186,38,500,922.85,0,70300,-70900,7,1,1,1,1999,OH,100/300,MALE,High School,adm-clerical,golf,husband,Vehicle Theft,?,Trivial Damage,,NY,Hillsdale,?,YES,Honda,0
+229,41,2000,1107.59,3000000,65400,0,23,1,1,3,2009,OH,250/500,MALE,PhD,tech-support,chess,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Other,NY,Columbus,NO,NO,Mercedes,0
+180,36,500,1272.46,0,0,0,7,3,2,1,1998,IL,100/300,MALE,College,prof-specialty,exercise,wife,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,NY,Northbrook,YES,?,Toyota,0
+188,33,1000,1340.24,0,0,-68800,8,3,1,0,1995,IL,250/500,MALE,High School,protective-serv,chess,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,NY,Hillsdale,YES,?,Dodge,1
+214,40,1000,1648.0,0,57700,-43500,17,1,1,0,2000,OH,100/300,MALE,JD,transport-moving,base-jumping,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Other,WV,Northbrook,NO,YES,Accura,0
+178,38,500,1381.14,0,0,0,10,3,0,3,2011,IL,250/500,FEMALE,College,other-service,camping,wife,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,NY,Northbrook,NO,NO,BMW,0
+55,35,500,1198.44,8000000,0,0,9,1,0,3,1998,IL,500/1000,MALE,MD,priv-house-serv,polo,wife,Vehicle Theft,?,Minor Damage,Police,WV,Columbus,NO,NO,Nissan,0
+90,31,2000,951.27,0,42100,0,2,1,1,0,2007,OH,250/500,FEMALE,PhD,other-service,hiking,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Other,SC,Hillsdale,YES,YES,Accura,0
+135,30,2000,1341.24,0,37100,-46500,18,3,0,1,2003,IN,500/1000,FEMALE,MD,farming-fishing,skydiving,wife,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,WV,Riverwood,NO,NO,Honda,0
+277,46,2000,1177.57,0,0,-65500,4,1,2,3,2010,IL,250/500,FEMALE,Associate,adm-clerical,video-games,husband,Vehicle Theft,?,Minor Damage,Police,VA,Arlington,?,NO,Jeep,0
+211,38,1000,1055.09,0,0,0,12,1,0,3,2005,IN,250/500,FEMALE,Masters,transport-moving,video-games,own-child,Single Vehicle Collision,Front Collision,Total Loss,Fire,NY,Columbus,?,YES,BMW,1
+156,32,500,1479.48,0,0,0,15,1,1,3,2008,IL,250/500,MALE,Masters,prof-specialty,bungie-jumping,unmarried,Single Vehicle Collision,Front Collision,Major Damage,Other,NY,Northbrook,YES,YES,Dodge,1
+84,30,2000,1827.38,0,0,-15900,9,1,1,3,1998,IN,500/1000,MALE,Associate,priv-house-serv,polo,other-relative,Vehicle Theft,?,Trivial Damage,Police,VA,Springfield,YES,?,Audi,0
+136,32,500,1169.62,0,0,0,6,1,0,0,2008,IN,100/300,FEMALE,JD,sales,yachting,not-in-family,Single Vehicle Collision,Side Collision,Major Damage,Police,SC,Arlington,YES,NO,Toyota,1
+310,48,500,1516.34,0,11000,0,11,4,0,2,1996,IN,100/300,FEMALE,JD,adm-clerical,sleeping,unmarried,Multi-vehicle Collision,Rear Collision,Major Damage,Police,SC,Springfield,YES,NO,Saab,1
+123,34,2000,1270.21,0,16100,-61200,13,3,1,1,2000,OH,500/1000,FEMALE,College,sales,sleeping,husband,Multi-vehicle Collision,Side Collision,Total Loss,Fire,PA,Columbus,NO,?,Nissan,0
+243,44,500,809.11,0,33200,0,4,3,2,1,1996,IL,250/500,MALE,JD,craft-repair,polo,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Other,NC,Springfield,?,YES,Honda,0
+36,37,1000,1115.81,0,0,-59800,20,3,1,3,2008,IL,500/1000,FEMALE,Masters,machine-op-inspct,reading,husband,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,NY,Columbus,YES,?,Dodge,0
+146,31,1000,1457.65,5000000,0,0,0,3,1,3,2010,OH,100/300,FEMALE,College,armed-forces,camping,own-child,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,VA,Riverwood,NO,?,Toyota,0
+154,34,1000,1041.36,0,53100,-43900,18,4,2,3,2005,OH,100/300,FEMALE,JD,priv-house-serv,cross-fit,husband,Multi-vehicle Collision,Side Collision,Total Loss,Other,WV,Hillsdale,?,YES,Toyota,1
+204,40,1000,1693.83,7000000,44000,-20800,6,1,1,0,2003,OH,250/500,MALE,High School,protective-serv,polo,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Police,NY,Northbrook,?,?,Honda,0
+458,59,1000,1685.69,0,31400,0,23,1,2,2,1995,IN,100/300,FEMALE,High School,protective-serv,hiking,wife,Single Vehicle Collision,Front Collision,Total Loss,Police,VA,Hillsdale,?,YES,Jeep,0
+147,31,500,1054.92,6000000,51900,0,4,1,0,0,2013,IN,250/500,FEMALE,PhD,prof-specialty,exercise,own-child,Single Vehicle Collision,Front Collision,Major Damage,Other,NY,Northbrook,?,?,Toyota,1
+279,45,2000,1333.97,6000000,61100,-30700,21,3,1,0,2011,IN,250/500,FEMALE,MD,other-service,bungie-jumping,unmarried,Multi-vehicle Collision,Rear Collision,Major Damage,Other,SC,Arlington,?,?,Dodge,1
+308,47,1000,1013.61,6000000,45700,-41400,7,1,1,1,2002,OH,100/300,FEMALE,Associate,craft-repair,movies,own-child,Parked Car,?,Minor Damage,,NY,Springfield,?,YES,Suburu,0
+284,48,500,958.3,0,47900,0,19,3,0,0,1998,IL,500/1000,FEMALE,PhD,machine-op-inspct,exercise,husband,Multi-vehicle Collision,Side Collision,Major Damage,Fire,NY,Columbus,?,?,Volkswagen,0
+108,31,2000,1112.04,6000000,52800,-54300,5,1,1,3,1998,IN,250/500,FEMALE,PhD,other-service,base-jumping,own-child,Parked Car,?,Minor Damage,,SC,Arlington,NO,NO,Volkswagen,0
+421,57,2000,1206.26,0,69900,0,22,3,0,0,2015,IN,250/500,FEMALE,Associate,armed-forces,bungie-jumping,own-child,Multi-vehicle Collision,Front Collision,Minor Damage,Police,NC,Arlington,YES,NO,Audi,0
+266,42,1000,763.67,0,12800,-49700,12,1,1,3,2005,IL,500/1000,MALE,Associate,prof-specialty,movies,own-child,Single Vehicle Collision,Side Collision,Total Loss,Police,SC,Northbrook,YES,YES,Jeep,0
+412,56,500,1042.56,0,0,-66100,19,3,0,2,1997,IL,250/500,MALE,High School,handlers-cleaners,yachting,own-child,Multi-vehicle Collision,Front Collision,Total Loss,Police,SC,Springfield,NO,NO,Suburu,0
+31,32,2000,1263.48,4000000,46800,-87300,10,1,2,0,1997,IL,100/300,FEMALE,JD,other-service,hiking,wife,Single Vehicle Collision,Side Collision,Major Damage,Fire,WV,Hillsdale,?,?,Audi,1
+465,63,500,1006.99,6000000,0,0,7,1,0,3,2015,IL,250/500,FEMALE,Masters,sales,board-games,own-child,Single Vehicle Collision,Side Collision,Minor Damage,Other,WV,Columbus,NO,?,Suburu,0
+126,31,1000,1328.26,0,42300,-45800,17,1,1,1,2011,OH,250/500,MALE,Masters,sales,exercise,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Police,WV,Hillsdale,NO,NO,Suburu,0
+407,55,1000,1250.08,5000000,0,-57700,0,3,2,3,2010,OH,100/300,FEMALE,PhD,tech-support,bungie-jumping,wife,Multi-vehicle Collision,Side Collision,Total Loss,Police,WV,Arlington,?,YES,Ford,0
+101,27,500,982.7,6000000,30800,-43700,9,1,1,0,2001,IL,500/1000,FEMALE,College,transport-moving,video-games,unmarried,Parked Car,?,Minor Damage,,SC,Arlington,NO,NO,Toyota,0
+187,37,1000,1412.06,5000000,60100,0,21,1,0,3,2000,IN,500/1000,FEMALE,Masters,protective-serv,reading,not-in-family,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,NC,Riverwood,?,?,Nissan,0
+252,46,2000,1066.7,0,0,0,22,3,0,2,2014,IN,500/1000,FEMALE,JD,handlers-cleaners,sleeping,own-child,Multi-vehicle Collision,Front Collision,Total Loss,Other,VA,Northbend,NO,NO,Audi,0
+229,43,2000,1585.54,0,42600,-44400,3,1,1,0,2012,IN,250/500,MALE,High School,protective-serv,reading,not-in-family,Vehicle Theft,?,Minor Damage,,WV,Hillsdale,NO,YES,Volkswagen,0
+246,39,1000,1416.08,0,0,-36600,16,1,0,3,2004,IN,250/500,FEMALE,JD,craft-repair,yachting,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,WV,Northbrook,YES,?,Honda,0
+190,38,500,1246.03,0,61900,-50000,14,1,0,0,2013,OH,250/500,MALE,JD,craft-repair,movies,unmarried,Single Vehicle Collision,Side Collision,Total Loss,Other,NY,Riverwood,YES,NO,Nissan,0
+95,32,2000,1356.64,0,67800,-48600,21,3,0,3,2003,IN,500/1000,MALE,Masters,machine-op-inspct,golf,not-in-family,Multi-vehicle Collision,Side Collision,Total Loss,Police,SC,Springfield,YES,YES,Toyota,0
+205,42,2000,1387.7,4000000,0,0,19,1,2,1,1995,IL,100/300,FEMALE,High School,priv-house-serv,skydiving,other-relative,Single Vehicle Collision,Rear Collision,Minor Damage,Police,WV,Columbus,NO,NO,Chevrolet,0
+41,25,1000,1004.14,0,35400,0,13,3,1,3,1995,OH,100/300,MALE,Masters,priv-house-serv,sleeping,wife,Multi-vehicle Collision,Front Collision,Major Damage,Fire,NC,Hillsdale,NO,NO,Dodge,0
+137,35,500,1107.07,0,0,-45300,21,1,0,0,2008,OH,500/1000,FEMALE,High School,protective-serv,movies,husband,Vehicle Theft,?,Minor Damage,Police,VA,Hillsdale,NO,YES,Saab,0
+194,34,500,1429.96,0,67800,0,11,3,1,2,2005,IL,100/300,FEMALE,JD,protective-serv,board-games,husband,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,NY,Northbend,NO,YES,Toyota,0
+128,35,1000,1074.99,0,0,-48800,16,1,2,0,2012,IN,250/500,FEMALE,Associate,adm-clerical,bungie-jumping,husband,Vehicle Theft,?,Trivial Damage,Police,VA,Columbus,?,?,Accura,0
+150,37,1000,1007.0,0,30400,-89400,9,1,0,2,2013,OH,500/1000,FEMALE,PhD,transport-moving,board-games,unmarried,Single Vehicle Collision,Rear Collision,Total Loss,Police,VA,Arlington,NO,?,Chevrolet,0
+104,30,500,1052.85,0,0,-70100,8,1,0,0,2006,OH,100/300,FEMALE,MD,protective-serv,skydiving,other-relative,Vehicle Theft,?,Minor Damage,Police,WV,Riverwood,NO,YES,BMW,0
+163,37,1000,1200.33,4000000,0,-36400,7,1,2,1,2008,IN,500/1000,FEMALE,High School,craft-repair,cross-fit,own-child,Vehicle Theft,?,Minor Damage,Police,WV,Springfield,?,YES,Volkswagen,1
+80,26,1000,1343.0,0,64600,0,12,1,0,0,1995,IL,100/300,MALE,Masters,handlers-cleaners,camping,other-relative,Single Vehicle Collision,Front Collision,Minor Damage,Other,SC,Arlington,?,NO,BMW,0
+65,29,2000,1441.6,5000000,0,0,21,3,0,0,1998,OH,250/500,FEMALE,MD,sales,kayaking,own-child,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,NC,Columbus,YES,?,Jeep,0
+179,32,1000,1433.42,6000000,53800,0,4,1,1,2,2014,OH,100/300,FEMALE,Associate,protective-serv,base-jumping,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Police,NC,Arlington,YES,NO,Nissan,1
+372,50,2000,1368.57,0,0,0,18,3,2,2,2003,OH,500/1000,FEMALE,MD,tech-support,paintball,other-relative,Multi-vehicle Collision,Side Collision,Major Damage,Police,NY,Northbend,NO,YES,Accura,0
+398,55,500,862.19,0,69400,0,7,1,2,3,2012,OH,250/500,MALE,High School,adm-clerical,movies,unmarried,Vehicle Theft,?,Trivial Damage,Police,SC,Northbend,?,?,Accura,0
+213,35,500,871.46,0,58500,-77700,13,1,2,0,2007,OH,250/500,MALE,MD,tech-support,movies,husband,Single Vehicle Collision,Side Collision,Total Loss,Fire,SC,Northbrook,YES,YES,Ford,0
+79,25,500,1863.04,0,53400,-35200,0,1,2,1,1995,OH,500/1000,FEMALE,Associate,priv-house-serv,paintball,not-in-family,Single Vehicle Collision,Front Collision,Total Loss,Fire,VA,Northbend,NO,?,Mercedes,0
+232,44,2000,1181.64,0,25800,0,22,1,1,1,2002,OH,250/500,MALE,College,other-service,exercise,wife,Single Vehicle Collision,Rear Collision,Major Damage,Fire,NY,Northbend,?,YES,Jeep,1
+230,37,1000,1060.74,0,0,-51500,15,1,2,3,1996,IL,500/1000,MALE,PhD,tech-support,reading,own-child,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,SC,Columbus,YES,?,Suburu,1
+234,41,500,951.56,0,59400,-78600,3,3,2,1,2007,IN,100/300,FEMALE,JD,transport-moving,video-games,wife,Multi-vehicle Collision,Side Collision,Major Damage,Police,SC,Riverwood,NO,?,Chevrolet,1
+240,40,500,1533.71,9000000,0,-70900,18,2,0,2,2008,IN,100/300,FEMALE,JD,protective-serv,polo,own-child,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,VA,Northbend,YES,?,Ford,0
+143,33,1000,1200.09,0,38400,-5700,17,3,2,2,2002,OH,500/1000,FEMALE,Associate,craft-repair,board-games,unmarried,Multi-vehicle Collision,Side Collision,Major Damage,Fire,WV,Arlington,?,?,Accura,0
+266,42,500,1093.83,4000000,0,-49600,18,3,1,1,2015,IN,100/300,MALE,Associate,adm-clerical,board-games,other-relative,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,WV,Springfield,?,NO,Suburu,1
+89,32,1000,988.93,0,27600,0,11,1,2,3,1999,IN,250/500,FEMALE,High School,craft-repair,golf,unmarried,Single Vehicle Collision,Front Collision,Total Loss,Other,NY,Columbus,?,YES,Dodge,0
+229,37,1000,1331.94,0,0,-55400,17,1,0,2,2004,IN,500/1000,FEMALE,Masters,farming-fishing,base-jumping,not-in-family,Single Vehicle Collision,Rear Collision,Total Loss,Other,NY,Columbus,NO,YES,Saab,0
+245,40,1000,1361.45,0,39300,0,12,1,0,2,1999,IL,500/1000,MALE,PhD,handlers-cleaners,camping,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,OH,Northbend,YES,YES,Suburu,0
+50,44,2000,1188.51,0,0,-65800,15,3,1,2,2008,OH,250/500,MALE,College,handlers-cleaners,bungie-jumping,unmarried,Multi-vehicle Collision,Front Collision,Total Loss,Police,NY,Northbend,?,NO,Dodge,0
+230,43,2000,1101.83,0,28900,0,0,3,0,3,2011,IN,500/1000,MALE,High School,exec-managerial,cross-fit,other-relative,Multi-vehicle Collision,Front Collision,Minor Damage,Police,NY,Arlington,?,YES,BMW,1
+17,39,1000,840.95,0,32500,-80800,9,1,2,1,2002,IL,250/500,FEMALE,JD,adm-clerical,hiking,unmarried,Parked Car,?,Trivial Damage,Police,SC,Arlington,?,?,Suburu,0
+163,36,1000,1503.21,0,55700,-49900,1,1,2,1,2013,IN,250/500,MALE,MD,other-service,cross-fit,husband,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,WV,Springfield,YES,NO,Toyota,0
+29,32,1000,1722.5,0,0,-21500,22,1,0,2,1995,OH,100/300,MALE,High School,other-service,base-jumping,wife,Single Vehicle Collision,Side Collision,Major Damage,Other,WV,Columbus,?,?,Jeep,0
+232,42,500,944.03,0,0,-58400,11,1,2,3,2015,IN,100/300,MALE,College,handlers-cleaners,kayaking,not-in-family,Single Vehicle Collision,Rear Collision,Minor Damage,Other,WV,Riverwood,YES,?,Toyota,1
+235,39,2000,1453.61,4000000,0,0,10,1,0,3,2012,IL,500/1000,MALE,JD,craft-repair,yachting,other-relative,Single Vehicle Collision,Side Collision,Major Damage,Other,NC,Hillsdale,?,?,Chevrolet,1
+295,46,500,1672.88,0,0,0,5,1,1,1,1997,IN,100/300,FEMALE,High School,armed-forces,dancing,wife,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,NY,Columbus,YES,NO,Honda,0
+22,21,1000,1248.05,0,37500,-54000,3,3,1,2,2015,IN,250/500,FEMALE,High School,exec-managerial,movies,husband,Multi-vehicle Collision,Rear Collision,Total Loss,Police,SC,Arlington,YES,?,Chevrolet,0
+286,43,500,1564.43,3000000,77500,-32800,18,1,2,2,2013,IL,100/300,FEMALE,MD,prof-specialty,movies,unmarried,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,NY,Northbrook,?,YES,Jeep,0
+257,44,1000,1280.88,0,59400,-32200,21,1,0,1,2002,OH,100/300,MALE,MD,other-service,basketball,other-relative,Single Vehicle Collision,Rear Collision,Total Loss,Other,WV,Riverwood,NO,NO,Accura,0
+94,26,500,722.66,0,50300,0,6,3,1,2,2010,IN,100/300,MALE,MD,exec-managerial,camping,husband,Multi-vehicle Collision,Front Collision,Major Damage,Fire,OH,Springfield,YES,YES,Nissan,0
+124,28,1000,1235.14,0,0,-32100,20,3,0,1,2012,OH,250/500,MALE,MD,exec-managerial,camping,husband,Multi-vehicle Collision,Side Collision,Total Loss,Other,OH,Hillsdale,?,?,Volkswagen,0
+141,30,1000,1347.04,0,0,-82100,6,1,1,2,1996,IN,500/1000,MALE,High School,sales,bungie-jumping,own-child,Parked Car,?,Minor Damage,,SC,Northbend,?,YES,Honda,0
+3,38,1000,1310.8,0,0,0,20,1,0,1,2006,OH,500/1000,FEMALE,Masters,craft-repair,paintball,unmarried,Single Vehicle Collision,Front Collision,Minor Damage,Fire,NC,Northbrook,YES,?,Honda,0
+285,41,1000,1436.79,0,70900,0,23,1,2,3,2015,IL,100/300,FEMALE,PhD,prof-specialty,sleeping,wife,Single Vehicle Collision,Rear Collision,Major Damage,Fire,SC,Northbend,YES,?,Volkswagen,0
+130,34,500,1383.49,3000000,35100,0,4,3,2,3,1996,OH,250/500,FEMALE,Masters,armed-forces,bungie-jumping,other-relative,Multi-vehicle Collision,Side Collision,Minor Damage,Police,NC,Arlington,?,YES,Suburu,0
+458,62,2000,1356.92,5000000,0,0,2,1,0,1,1998,IL,500/1000,MALE,Associate,handlers-cleaners,base-jumping,wife,Single Vehicle Collision,Rear Collision,Major Damage,Other,NY,Arlington,?,YES,Audi,0
+456,60,1000,766.19,0,0,0,6,1,0,3,2007,OH,250/500,FEMALE,Associate,sales,kayaking,husband,Parked Car,?,Minor Damage,Police,WV,Columbus,?,?,Mercedes,0

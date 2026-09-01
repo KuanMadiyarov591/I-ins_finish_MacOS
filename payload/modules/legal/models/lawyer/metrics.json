@@ -1,0 +1,48 @@
+{
+  "models": [
+    {
+      "name": "pi_verdict",
+      "n_rows": 3099,
+      "n_pos": 2168,
+      "accuracy": 1.0,
+      "roc_auc": 1.0,
+      "features": [
+        "amount",
+        "log_amount",
+        "year",
+        "injuryType",
+        "practiceArea",
+        "state",
+        "resultType",
+        "county"
+      ],
+      "path": "models/lawyer/pi_verdict.joblib"
+    },
+    {
+      "name": "imr_overturn",
+      "n_rows": 4000,
+      "n_pos": 1912,
+      "accuracy": 0.6813,
+      "roc_auc": 0.7523,
+      "features": [
+        "text",
+        "appeal_type",
+        "text_len"
+      ],
+      "path": "models/lawyer/imr_overturn.joblib"
+    },
+    {
+      "name": "pi_amount",
+      "n_rows": 3099,
+      "mae_log": 1.2651,
+      "features": [
+        "year",
+        "injuryType",
+        "practiceArea",
+        "state",
+        "resultType"
+      ],
+      "path": "models/lawyer/pi_amount.joblib"
+    }
+  ]
+}

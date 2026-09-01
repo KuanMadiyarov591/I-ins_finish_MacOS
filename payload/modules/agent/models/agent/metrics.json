@@ -1,0 +1,27 @@
+{
+  "trained_at": "2026-07-30T09:15:02.317950+00:00",
+  "models": {
+    "travel_propensity": {
+      "name": "travel_propensity",
+      "target": "TravelInsurance",
+      "n_rows": 1987,
+      "accuracy": 0.8190954773869347,
+      "f1_macro": 0.780997798972854,
+      "roc_auc": 0.7976039832746479,
+      "features_num": [
+        "Age",
+        "AnnualIncome",
+        "FamilyMembers",
+        "ChronicDiseases"
+      ],
+      "features_cat": [
+        "Employment Type",
+        "GraduateOrNot",
+        "FrequentFlyer",
+        "EverTravelledAbroad"
+      ],
+      "source": "01_agent_22_travel_insurance_prediction.csv",
+      "trained_at": "2026-07-30T09:15:02.317950+00:00"
+    }
+  }
+}

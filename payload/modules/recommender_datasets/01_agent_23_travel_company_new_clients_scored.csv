@@ -1,0 +1,1304 @@
+Age,AnnualIncome,FamilyMembers,ChronicDiseases,Employment Type,GraduateOrNot,FrequentFlyer,EverTravelledAbroad,purchase_probability,recommended_contact
+25,1150000,4,0,Private Sector/Self Employed,No,No,No,0.2728426683702591,False
+34,1500000,4,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9833289095352313,True
+33,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9827280658308872,True
+28,1150000,3,0,Private Sector/Self Employed,Yes,No,No,0.19546071931014292,False
+33,400000,5,1,Government Sector,Yes,No,No,0.261306912512002,False
+27,500000,7,0,Government Sector,Yes,No,No,0.13012953640451902,False
+33,1400000,8,0,Private Sector/Self Employed,Yes,No,Yes,0.8945903047175321,True
+31,950000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.12954730336896353,False
+31,300000,6,0,Government Sector,No,No,No,0.06454206273734026,False
+27,800000,5,1,Private Sector/Self Employed,No,No,No,0.23383408706142478,False
+34,1100000,6,1,Government Sector,Yes,No,No,0.8010835676102696,True
+28,1150000,7,0,Private Sector/Self Employed,Yes,No,No,0.17859638116028267,False
+32,350000,2,0,Government Sector,Yes,No,No,0.19653368278323025,False
+25,1400000,3,1,Private Sector/Self Employed,Yes,No,Yes,0.9080206240414406,True
+33,1200000,7,0,Private Sector/Self Employed,Yes,No,No,0.8286577413062077,True
+32,800000,3,1,Government Sector,Yes,Yes,No,0.29393347401798364,False
+28,1450000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.956645254803504,True
+29,1350000,7,1,Private Sector/Self Employed,Yes,No,Yes,0.9374682484642827,True
+28,500000,8,0,Private Sector/Self Employed,Yes,No,No,0.30026718125698937,False
+27,500000,6,0,Government Sector,Yes,No,No,0.09915502553352809,False
+33,700000,8,0,Government Sector,Yes,No,No,0.88082733926931,True
+27,850000,5,1,Government Sector,Yes,No,No,0.3100406225771914,False
+34,700000,4,0,Private Sector/Self Employed,Yes,No,No,0.47789973541005076,False
+28,550000,4,1,Private Sector/Self Employed,Yes,No,No,0.3559965920432311,False
+34,1000000,3,0,Private Sector/Self Employed,Yes,No,No,0.24140461782158865,False
+33,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9827280658308872,True
+26,1450000,3,1,Government Sector,Yes,Yes,Yes,0.9251059754346629,True
+34,1000000,8,0,Private Sector/Self Employed,Yes,No,No,0.8891964735671016,True
+28,1450000,9,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9392062156568305,True
+28,1100000,2,1,Private Sector/Self Employed,Yes,No,No,0.41811111822918895,False
+28,300000,4,0,Government Sector,Yes,No,No,0.17820132877215245,False
+28,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.278281153732474,False
+29,1100000,7,0,Private Sector/Self Employed,Yes,No,No,0.39693812078338425,False
+28,800000,4,0,Private Sector/Self Employed,Yes,No,No,0.2782590310267018,False
+27,900000,4,0,Government Sector,Yes,No,No,0.24092057501024197,False
+34,1300000,4,0,Private Sector/Self Employed,No,No,No,0.4609420858516538,False
+27,850000,2,0,Government Sector,Yes,No,Yes,0.42321286514318407,False
+34,1050000,4,0,Private Sector/Self Employed,Yes,No,No,0.38502779239348833,False
+33,400000,8,0,Government Sector,Yes,No,No,0.7920524521697802,True
+29,1050000,2,1,Private Sector/Self Employed,Yes,Yes,No,0.1408520216288025,False
+25,750000,3,0,Government Sector,Yes,No,No,0.36716411272367905,False
+30,800000,4,0,Private Sector/Self Employed,No,No,No,0.42697587499168804,False
+25,1700000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.9594393192978987,True
+34,1100000,7,1,Government Sector,Yes,No,No,0.8863036443992088,True
+28,1250000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.26356581057402867,False
+27,600000,3,0,Private Sector/Self Employed,No,No,Yes,0.30557485161803916,False
+31,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.3361631335570971,False
+28,800000,5,0,Private Sector/Self Employed,Yes,No,No,0.06986410134480622,False
+30,800000,4,0,Private Sector/Self Employed,No,No,No,0.42697587499168804,False
+27,900000,4,0,Government Sector,Yes,Yes,No,0.23556410830907062,False
+34,1050000,7,0,Private Sector/Self Employed,Yes,No,No,0.8972428970334759,True
+28,300000,4,0,Government Sector,Yes,No,No,0.17820132877215245,False
+30,650000,7,0,Private Sector/Self Employed,No,No,No,0.1746852792846114,False
+28,700000,4,1,Private Sector/Self Employed,Yes,No,No,0.3381942190586182,False
+28,800000,7,0,Private Sector/Self Employed,Yes,Yes,No,0.12103401834259658,False
+33,550000,4,0,Private Sector/Self Employed,Yes,No,No,0.5696640996385403,True
+34,1000000,6,1,Private Sector/Self Employed,Yes,No,No,0.906586050016127,True
+34,1300000,6,0,Private Sector/Self Employed,Yes,No,No,0.884444185033017,True
+34,1050000,7,1,Private Sector/Self Employed,Yes,No,No,0.8884912406599312,True
+29,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.4215463176841839,False
+29,1050000,5,1,Private Sector/Self Employed,Yes,No,Yes,0.3087684030852929,False
+28,600000,3,0,Government Sector,Yes,Yes,No,0.3259226193416241,False
+27,500000,3,1,Government Sector,Yes,No,No,0.27034544408921646,False
+34,1300000,6,0,Private Sector/Self Employed,Yes,No,No,0.884444185033017,True
+28,650000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.17877749706874646,False
+34,1300000,8,0,Government Sector,Yes,No,No,0.8697316244286908,True
+35,800000,4,0,Private Sector/Self Employed,No,No,No,0.43840545306239626,False
+28,1350000,9,0,Private Sector/Self Employed,Yes,No,Yes,0.9583934797134355,True
+28,550000,6,0,Private Sector/Self Employed,No,No,No,0.3070283119957894,False
+33,1100000,4,1,Government Sector,Yes,No,No,0.3272413177924958,False
+32,850000,3,0,Government Sector,Yes,No,No,0.3695489135812655,False
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+28,300000,6,0,Government Sector,No,No,No,0.10992228621049609,False
+27,500000,6,1,Government Sector,Yes,No,No,0.13134872438796805,False
+33,1400000,6,1,Private Sector/Self Employed,Yes,No,Yes,0.8704705789376316,True
+34,700000,7,1,Private Sector/Self Employed,Yes,No,No,0.8980574748849564,True
+27,500000,4,1,Government Sector,Yes,No,No,0.38044688951785544,False
+26,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9820647999502685,True
+28,800000,5,0,Private Sector/Self Employed,Yes,No,No,0.06986410134480622,False
+28,600000,4,1,Government Sector,Yes,No,No,0.1714853471587341,False
+27,500000,5,0,Government Sector,Yes,No,No,0.1603179468608338,False
+29,350000,4,0,Private Sector/Self Employed,Yes,No,No,0.25670878203446246,False
+34,700000,3,1,Private Sector/Self Employed,Yes,No,No,0.2807488040311671,False
+28,300000,6,0,Government Sector,No,No,No,0.10992228621049609,False
+34,1500000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9723013013837789,True
+30,800000,3,0,Private Sector/Self Employed,No,No,No,0.3952664550257635,False
+28,600000,5,0,Government Sector,Yes,No,No,0.14397442186473147,False
+29,500000,7,0,Private Sector/Self Employed,Yes,No,No,0.5423338785453364,True
+35,950000,3,0,Private Sector/Self Employed,No,No,No,0.40453978297418464,False
+31,950000,6,0,Private Sector/Self Employed,Yes,No,No,0.2762759389191547,False
+28,800000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.12713189105245615,False
+32,350000,3,0,Government Sector,Yes,No,No,0.2054422647763764,False
+25,1400000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.934221376970308,True
+27,500000,5,0,Government Sector,Yes,No,No,0.1603179468608338,False
+27,850000,6,0,Government Sector,Yes,No,No,0.3241416514064605,False
+25,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9559184773251391,True
+31,400000,6,0,Government Sector,Yes,No,No,0.062259118401182326,False
+27,500000,5,0,Government Sector,Yes,No,No,0.1603179468608338,False
+28,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.20475699244031795,False
+29,1100000,7,0,Private Sector/Self Employed,Yes,No,No,0.39693812078338425,False
+31,1500000,5,1,Government Sector,Yes,Yes,Yes,0.894083927259742,True
+29,1200000,7,0,Private Sector/Self Employed,Yes,No,Yes,0.3952607223826046,False
+29,500000,2,0,Private Sector/Self Employed,Yes,No,No,0.2601927262262,False
+34,1000000,4,0,Private Sector/Self Employed,Yes,No,No,0.4676584663695326,False
+34,500000,7,0,Private Sector/Self Employed,Yes,No,No,0.7981723873850889,True
+28,750000,4,0,Private Sector/Self Employed,Yes,No,No,0.31925190207107784,False
+32,900000,4,1,Government Sector,Yes,No,No,0.34408226948714976,False
+35,800000,7,0,Private Sector/Self Employed,No,No,No,0.8031061103465582,True
+28,750000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.08149731386548406,False
+28,1150000,6,0,Private Sector/Self Employed,Yes,No,No,0.23837942382175714,False
+26,500000,7,1,Government Sector,Yes,No,No,0.1872465100856428,False
+32,350000,3,0,Government Sector,Yes,No,No,0.2054422647763764,False
+28,300000,7,0,Government Sector,Yes,No,No,0.29550910975663003,False
+28,300000,4,0,Government Sector,Yes,No,No,0.17820132877215245,False
+34,1300000,5,1,Government Sector,Yes,No,No,0.2685066116173837,False
+31,1200000,3,0,Government Sector,Yes,No,No,0.30306088787171664,False
+31,1200000,6,0,Government Sector,Yes,No,No,0.22205098549187918,False
+31,500000,4,1,Private Sector/Self Employed,Yes,No,No,0.30416048409144286,False
+30,550000,5,1,Private Sector/Self Employed,No,No,No,0.5059287526489973,True
+29,1050000,7,1,Private Sector/Self Employed,Yes,No,No,0.38930909850237794,False
+27,350000,4,1,Private Sector/Self Employed,No,No,No,0.10659627531132006,False
+29,1050000,3,1,Private Sector/Self Employed,Yes,Yes,No,0.10577054621350515,False
+30,550000,5,0,Private Sector/Self Employed,No,No,No,0.30865095778479135,False
+27,1050000,3,0,Government Sector,Yes,Yes,No,0.3449358148849332,False
+34,1500000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9793560264732963,True
+30,1450000,5,1,Private Sector/Self Employed,No,Yes,Yes,0.9489386053121847,True
+29,600000,4,1,Private Sector/Self Employed,Yes,No,No,0.2503480392463561,False
+26,450000,3,0,Private Sector/Self Employed,Yes,No,No,0.14555370489225453,False
+33,1000000,4,1,Government Sector,Yes,No,No,0.31251345759335797,False
+30,550000,3,0,Private Sector/Self Employed,No,No,No,0.4106620345699322,False
+29,1050000,6,1,Private Sector/Self Employed,Yes,No,Yes,0.33293208164492044,False
+25,1700000,5,1,Private Sector/Self Employed,No,Yes,No,0.7495951797973077,True
+34,1050000,4,0,Private Sector/Self Employed,Yes,No,No,0.38502779239348833,False
+27,500000,4,0,Government Sector,Yes,No,No,0.3847571100538936,False
+28,900000,4,0,Private Sector/Self Employed,Yes,No,No,0.3254815623788977,False
+28,1150000,4,1,Private Sector/Self Employed,Yes,No,No,0.17593545814273628,False
+25,1150000,4,0,Private Sector/Self Employed,No,No,No,0.2728426683702591,False
+34,1000000,4,1,Private Sector/Self Employed,Yes,No,No,0.41154470012663735,False
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+28,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.20475699244031795,False
+32,850000,4,0,Government Sector,Yes,No,No,0.11085831374014395,False
+29,900000,7,0,Private Sector/Self Employed,Yes,No,No,0.5425959893892847,True
+28,1150000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.18347170450640216,False
+32,850000,7,1,Government Sector,Yes,No,No,0.34640222200454746,False
+34,1000000,6,1,Private Sector/Self Employed,Yes,No,No,0.906586050016127,True
+26,600000,5,0,Private Sector/Self Employed,Yes,No,No,0.26557777524642906,False
+34,1050000,6,0,Private Sector/Self Employed,Yes,No,No,0.9130954323351312,True
+27,1050000,6,1,Government Sector,Yes,No,No,0.2110467845383948,False
+34,1500000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9793560264732963,True
+31,1500000,3,0,Government Sector,Yes,Yes,Yes,0.9358540422114195,True
+33,1400000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.925019632246719,True
+35,600000,9,0,Private Sector/Self Employed,No,No,No,0.6833272728408339,True
+28,1450000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.956645254803504,True
+29,1100000,7,0,Private Sector/Self Employed,Yes,Yes,No,0.15673120435197688,False
+29,1100000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.1258679906889858,False
+26,1250000,4,0,Private Sector/Self Employed,Yes,No,No,0.31988867809753957,False
+28,1100000,3,0,Private Sector/Self Employed,Yes,No,No,0.2451927350373369,False
+34,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9815432934502502,True
+29,1100000,3,0,Private Sector/Self Employed,Yes,No,No,0.3790391468171371,False
+29,600000,3,0,Private Sector/Self Employed,Yes,No,No,0.39049820260112866,False
+33,1100000,2,0,Government Sector,Yes,No,No,0.3046663092698026,False
+28,750000,3,1,Private Sector/Self Employed,Yes,No,No,0.2538922723989731,False
+28,700000,4,0,Private Sector/Self Employed,Yes,No,No,0.2602374146181823,False
+29,1050000,4,0,Private Sector/Self Employed,Yes,No,No,0.39317229052185004,False
+35,900000,6,1,Government Sector,Yes,No,No,0.778705811486121,True
+34,1300000,4,0,Government Sector,Yes,No,No,0.36994992985646546,False
+32,850000,4,0,Government Sector,Yes,Yes,No,0.19617981536849805,False
+28,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.2660218307331377,False
+27,500000,3,1,Government Sector,Yes,No,No,0.27034544408921646,False
+31,400000,6,1,Government Sector,Yes,No,No,0.06391071745492308,False
+32,850000,3,1,Government Sector,Yes,No,No,0.18732864374716937,False
+26,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.2102375194798497,False
+34,700000,7,0,Private Sector/Self Employed,Yes,No,No,0.8461230132027499,True
+28,600000,3,0,Government Sector,Yes,No,No,0.3855358624464513,False
+27,1050000,5,0,Government Sector,Yes,Yes,No,0.22128420829548998,False
+28,800000,4,0,Private Sector/Self Employed,Yes,No,No,0.2782590310267018,False
+34,1000000,4,1,Private Sector/Self Employed,Yes,No,No,0.41154470012663735,False
+30,1450000,3,1,Private Sector/Self Employed,No,Yes,Yes,0.9407295464550626,True
+28,300000,3,1,Government Sector,Yes,No,No,0.2925025083579672,False
+29,1100000,3,0,Private Sector/Self Employed,Yes,No,No,0.3790391468171371,False
+26,600000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.14600761395395026,False
+31,1350000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.9564748014218651,True
+31,1400000,3,1,Private Sector/Self Employed,Yes,No,Yes,0.8994931057306649,True
+33,750000,5,0,Private Sector/Self Employed,Yes,No,No,0.34334017689807395,False
+28,1200000,5,1,Government Sector,Yes,No,No,0.2960314326486927,False
+33,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9422586240318991,True
+35,800000,2,0,Private Sector/Self Employed,No,No,Yes,0.341402379460232,False
+25,1700000,5,1,Private Sector/Self Employed,No,Yes,Yes,0.8447453843957876,True
+27,1000000,3,0,Private Sector/Self Employed,No,No,No,0.2625328189113546,False
+32,350000,3,0,Government Sector,Yes,No,No,0.2054422647763764,False
+28,550000,4,0,Private Sector/Self Employed,Yes,No,No,0.20981502588183382,False
+29,600000,3,1,Private Sector/Self Employed,Yes,No,No,0.23858984922584153,False
+28,800000,4,1,Private Sector/Self Employed,Yes,No,No,0.30635337653121675,False
+26,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9445076015189477,True
+26,600000,4,0,Private Sector/Self Employed,Yes,No,No,0.19804384767886696,False
+29,1050000,4,0,Private Sector/Self Employed,Yes,No,No,0.39317229052185004,False
+28,750000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.08149731386548406,False
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+26,600000,4,1,Private Sector/Self Employed,Yes,No,No,0.3158913975437965,False
+28,1350000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9730389042202887,True
+35,1100000,8,0,Government Sector,Yes,Yes,No,0.8474573401461867,True
+32,350000,5,0,Government Sector,Yes,No,No,0.060441917728845836,False
+31,1350000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9776357027356487,True
+28,600000,4,0,Government Sector,Yes,No,No,0.15581385401483552,False
+28,1250000,6,1,Private Sector/Self Employed,Yes,No,No,0.1735813669430184,False
+35,800000,3,1,Private Sector/Self Employed,No,No,No,0.4032211582750659,False
+33,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9422586240318991,True
+29,1050000,5,1,Private Sector/Self Employed,Yes,No,No,0.3322125314184582,False
+29,1050000,4,0,Private Sector/Self Employed,Yes,No,No,0.39317229052185004,False
+31,400000,2,0,Government Sector,Yes,No,No,0.06312433943949851,False
+30,800000,5,0,Private Sector/Self Employed,No,No,No,0.4074338924433489,False
+28,600000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.18967979285091413,False
+33,600000,4,0,Government Sector,Yes,No,No,0.33480539523553804,False
+31,1300000,5,1,Government Sector,Yes,No,No,0.38996117891286247,False
+31,1300000,5,0,Government Sector,Yes,No,No,0.24481291962091511,False
+25,1700000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.9688361748322473,True
+29,1050000,3,1,Private Sector/Self Employed,Yes,Yes,No,0.10577054621350515,False
+33,700000,2,0,Government Sector,Yes,No,No,0.2745503664067589,False
+34,500000,7,1,Private Sector/Self Employed,Yes,No,No,0.8705043776012725,True
+28,600000,4,0,Government Sector,Yes,No,No,0.15581385401483552,False
+28,300000,6,0,Government Sector,Yes,No,No,0.28595474778771757,False
+28,550000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.2058606957657291,False
+34,1300000,5,1,Government Sector,Yes,No,No,0.2685066116173837,False
+26,1400000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.9823508622282818,True
+34,1300000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.3928402343706374,False
+26,1400000,4,1,Private Sector/Self Employed,Yes,No,Yes,0.9287278225223298,True
+34,1300000,4,0,Government Sector,Yes,No,No,0.36994992985646546,False
+27,1050000,5,0,Government Sector,Yes,Yes,No,0.22128420829548998,False
+31,1400000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9562861650804659,True
+31,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9745437257002674,True
+32,800000,6,1,Government Sector,Yes,No,No,0.305686824173984,False
+28,600000,2,0,Government Sector,Yes,Yes,No,0.31907833877119346,False
+26,1500000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9505811667580386,True
+28,300000,6,0,Government Sector,Yes,No,No,0.28595474778771757,False
+33,1000000,7,1,Government Sector,Yes,No,No,0.8792763050421745,True
+26,1500000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9505811667580386,True
+32,650000,5,0,Government Sector,Yes,No,No,0.2450123100976799,False
+33,400000,4,0,Government Sector,Yes,No,No,0.08500963876033443,False
+29,900000,4,0,Private Sector/Self Employed,Yes,No,No,0.2841986821307606,False
+28,1100000,4,1,Private Sector/Self Employed,Yes,Yes,No,0.20225784872020525,False
+31,400000,6,0,Government Sector,Yes,No,No,0.062259118401182326,False
+30,800000,3,0,Private Sector/Self Employed,No,No,No,0.3952664550257635,False
+34,700000,5,0,Private Sector/Self Employed,Yes,No,No,0.4859154505955812,False
+33,1500000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9585559156526864,True
+26,450000,7,0,Private Sector/Self Employed,Yes,No,No,0.2658940670631913,False
+26,600000,5,0,Private Sector/Self Employed,Yes,No,No,0.26557777524642906,False
+34,700000,7,1,Private Sector/Self Employed,Yes,No,No,0.8980574748849564,True
+28,1200000,6,1,Government Sector,Yes,No,No,0.18121652547555114,False
+27,1050000,5,1,Government Sector,Yes,No,No,0.42132395584548393,False
+28,600000,5,0,Government Sector,Yes,No,Yes,0.26967638003555555,False
+28,800000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.12713189105245615,False
+27,1550000,7,0,Private Sector/Self Employed,No,Yes,No,0.863242611481909,True
+33,800000,3,0,Government Sector,Yes,No,No,0.26068076833287396,False
+28,1250000,4,0,Private Sector/Self Employed,Yes,No,No,0.24512154911800618,False
+28,1200000,8,0,Government Sector,Yes,Yes,No,0.42048466074350976,False
+31,500000,8,0,Private Sector/Self Employed,Yes,No,No,0.4607847969533133,False
+25,1400000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.934221376970308,True
+34,1000000,5,0,Private Sector/Self Employed,Yes,No,No,0.20737869770582662,False
+25,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.3180327640631811,False
+29,1200000,5,1,Private Sector/Self Employed,Yes,No,No,0.3290192955027309,False
+33,600000,3,0,Government Sector,Yes,No,No,0.43107038494336186,False
+28,1200000,9,0,Private Sector/Self Employed,Yes,No,No,0.2460786336872003,False
+25,1400000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9186757278866888,True
+35,800000,5,0,Private Sector/Self Employed,No,No,No,0.3543198595741752,False
+29,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.39214908649864333,False
+29,1200000,3,1,Private Sector/Self Employed,Yes,No,Yes,0.4859124030643167,False
+28,550000,5,0,Private Sector/Self Employed,Yes,No,No,0.1572465044110066,False
+34,1500000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9723013013837789,True
+28,1450000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9729572300635191,True
+29,1750000,6,0,Private Sector/Self Employed,Yes,No,No,0.536716078542422,True
+34,1000000,5,1,Private Sector/Self Employed,Yes,Yes,No,0.28371110003110683,False
+34,1300000,6,0,Private Sector/Self Employed,Yes,No,No,0.884444185033017,True
+25,1700000,5,0,Private Sector/Self Employed,No,Yes,No,0.9294818217431116,True
+28,500000,5,1,Private Sector/Self Employed,Yes,No,No,0.595984462497319,True
+27,350000,5,1,Private Sector/Self Employed,No,No,No,0.13823974002412195,False
+31,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.3361631335570971,False
+28,1450000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.956645254803504,True
+28,300000,6,1,Government Sector,No,No,No,0.05744770104190952,False
+33,1000000,5,0,Government Sector,Yes,No,No,0.19570010128277054,False
+26,600000,6,1,Private Sector/Self Employed,Yes,No,No,0.2572823543585291,False
+33,400000,9,1,Government Sector,Yes,No,No,0.7091662466769064,True
+25,1150000,8,0,Private Sector/Self Employed,No,Yes,No,0.24666574358558027,False
+25,1700000,4,1,Private Sector/Self Employed,Yes,Yes,No,0.902424439171847,True
+29,900000,5,0,Private Sector/Self Employed,Yes,No,No,0.16198335945129533,False
+31,1250000,5,1,Private Sector/Self Employed,Yes,No,No,0.2636385984765649,False
+31,900000,3,0,Private Sector/Self Employed,Yes,No,No,0.24760861017290897,False
+27,450000,7,0,Private Sector/Self Employed,No,No,No,0.1221115290743336,False
+34,1050000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.7583054789866581,True
+28,1200000,3,0,Private Sector/Self Employed,Yes,No,No,0.3095154749462133,False
+26,1500000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9652630805019679,True
+26,1500000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9652630805019679,True
+30,1450000,3,1,Private Sector/Self Employed,No,Yes,Yes,0.9407295464550626,True
+26,1300000,5,0,Private Sector/Self Employed,Yes,No,No,0.39102634448708334,False
+34,1500000,2,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9815432934502502,True
+32,900000,4,0,Government Sector,Yes,Yes,No,0.19548936342251821,False
+30,650000,4,0,Private Sector/Self Employed,No,No,No,0.3186254135681438,False
+28,300000,8,0,Government Sector,Yes,No,No,0.23794217039483215,False
+27,750000,3,0,Government Sector,Yes,No,No,0.3582363304302387,False
+27,850000,5,0,Government Sector,Yes,No,No,0.21295466326952983,False
+35,950000,6,0,Private Sector/Self Employed,No,Yes,No,0.8068893301742908,True
+28,550000,5,1,Private Sector/Self Employed,Yes,No,No,0.36106329932349135,False
+25,1400000,3,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9399727169229601,True
+25,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9171727772637265,True
+33,1400000,2,1,Private Sector/Self Employed,Yes,No,Yes,0.8923868674179423,True
+31,1750000,7,0,Private Sector/Self Employed,Yes,No,No,0.5787019752849472,True
+33,400000,7,1,Government Sector,Yes,No,No,0.7181308744010337,True
+29,600000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.38957114686234173,False
+30,1450000,7,0,Private Sector/Self Employed,No,Yes,Yes,0.962071123994511,True
+28,1100000,4,1,Private Sector/Self Employed,Yes,No,No,0.361639398765496,False
+34,700000,2,0,Private Sector/Self Employed,Yes,Yes,No,0.33257677619451775,False
+28,550000,6,1,Private Sector/Self Employed,Yes,No,No,0.19511858785820346,False
+27,850000,5,0,Government Sector,Yes,No,No,0.21295466326952983,False
+31,1400000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9504109720593172,True
+28,700000,4,1,Private Sector/Self Employed,Yes,No,No,0.3381942190586182,False
+26,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9760001316514222,True
+34,1300000,6,0,Private Sector/Self Employed,Yes,No,No,0.884444185033017,True
+28,300000,4,0,Government Sector,Yes,No,No,0.17820132877215245,False
+26,1250000,5,0,Private Sector/Self Employed,Yes,No,No,0.42404204762973735,False
+29,500000,8,0,Private Sector/Self Employed,Yes,No,No,0.4940205864744409,False
+31,1250000,5,1,Private Sector/Self Employed,Yes,No,No,0.2636385984765649,False
+31,400000,4,1,Government Sector,No,No,No,0.03584446469555507,False
+27,350000,4,0,Private Sector/Self Employed,No,No,No,0.06630547325526093,False
+28,1100000,6,0,Private Sector/Self Employed,Yes,No,No,0.1907436030893286,False
+34,1000000,6,0,Private Sector/Self Employed,Yes,No,No,0.9214417673630244,True
+26,1400000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.9881463897138205,True
+34,1500000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9798939354563418,True
+27,500000,8,0,Government Sector,Yes,No,No,0.12933794202919338,False
+35,950000,9,0,Private Sector/Self Employed,No,No,No,0.8089693933242721,True
+29,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.2959848650803967,False
+25,600000,4,0,Private Sector/Self Employed,No,Yes,No,0.10906591107165761,False
+26,550000,5,0,Government Sector,Yes,No,No,0.3696347917689311,False
+26,1400000,4,1,Private Sector/Self Employed,Yes,No,Yes,0.9287278225223298,True
+29,350000,9,1,Private Sector/Self Employed,Yes,No,No,0.33733743957113255,False
+28,300000,3,1,Government Sector,Yes,No,No,0.2925025083579672,False
+31,400000,7,0,Government Sector,Yes,No,No,0.07893916194492118,False
+27,850000,4,1,Government Sector,Yes,Yes,Yes,0.377122329123884,False
+25,1150000,4,0,Private Sector/Self Employed,No,No,No,0.2728426683702591,False
+28,1150000,4,0,Private Sector/Self Employed,Yes,No,No,0.1845254994822408,False
+27,850000,5,0,Government Sector,Yes,Yes,No,0.18167339013979616,False
+25,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9171727772637265,True
+32,800000,9,0,Government Sector,Yes,No,Yes,0.5448441938351699,True
+31,1300000,4,1,Government Sector,Yes,No,No,0.39513545155917684,False
+28,700000,4,0,Private Sector/Self Employed,Yes,No,No,0.2602374146181823,False
+25,1150000,5,0,Private Sector/Self Employed,No,Yes,No,0.158591292222918,False
+25,1150000,3,1,Private Sector/Self Employed,No,No,No,0.2361924074672868,False
+31,300000,3,0,Government Sector,No,No,No,0.024553216844635767,False
+34,1000000,3,1,Private Sector/Self Employed,Yes,No,No,0.23868028692572266,False
+29,1200000,9,0,Private Sector/Self Employed,Yes,No,No,0.3319047704357214,False
+32,850000,3,0,Government Sector,Yes,No,No,0.3695489135812655,False
+31,1250000,4,0,Private Sector/Self Employed,Yes,No,No,0.40570611393360134,False
+25,1400000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9383367944053697,True
+34,1300000,3,0,Private Sector/Self Employed,Yes,No,No,0.20991372779834844,False
+28,750000,5,0,Private Sector/Self Employed,Yes,No,No,0.1257545626314812,False
+29,900000,7,0,Private Sector/Self Employed,Yes,No,No,0.5425959893892847,True
+30,550000,4,0,Private Sector/Self Employed,No,No,No,0.3575916992160899,False
+28,800000,3,1,Private Sector/Self Employed,Yes,No,No,0.31740321423612244,False
+32,850000,3,0,Government Sector,Yes,Yes,No,0.22431428392504393,False
+26,500000,2,1,Private Sector/Self Employed,Yes,No,No,0.4430117222107273,False
+31,500000,2,0,Private Sector/Self Employed,Yes,No,No,0.17201736076261068,False
+30,500000,8,0,Private Sector/Self Employed,No,No,No,0.22833456217721082,False
+25,1350000,6,0,Private Sector/Self Employed,No,No,Yes,0.9626404401950761,True
+28,1100000,4,1,Private Sector/Self Employed,Yes,No,No,0.361639398765496,False
+33,400000,5,1,Government Sector,Yes,No,No,0.261306912512002,False
+31,1350000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9767393283843127,True
+25,500000,5,1,Private Sector/Self Employed,Yes,No,No,0.5820546938158915,True
+29,900000,7,0,Private Sector/Self Employed,Yes,No,No,0.5425959893892847,True
+33,1100000,2,1,Government Sector,Yes,No,Yes,0.3597163142463302,False
+25,600000,4,0,Private Sector/Self Employed,No,Yes,Yes,0.28966731749779806,False
+29,1200000,7,1,Private Sector/Self Employed,Yes,No,No,0.3277164525316665,False
+34,1050000,4,0,Private Sector/Self Employed,Yes,No,No,0.38502779239348833,False
+31,400000,5,0,Government Sector,Yes,No,No,0.01738134048901429,False
+25,1700000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.9594393192978987,True
+31,1300000,4,0,Government Sector,Yes,No,No,0.2167767413155984,False
+28,700000,6,1,Private Sector/Self Employed,Yes,No,No,0.1822202086738969,False
+27,900000,6,0,Government Sector,Yes,Yes,Yes,0.4066613832320398,False
+32,350000,4,0,Government Sector,Yes,No,No,0.1189008990146237,False
+35,950000,5,1,Private Sector/Self Employed,No,No,No,0.33822084667881713,False
+31,400000,3,0,Government Sector,Yes,No,No,0.06157725160475183,False
+32,650000,4,0,Government Sector,Yes,No,No,0.21561805490441557,False
+28,1200000,6,0,Private Sector/Self Employed,Yes,No,No,0.24197518978042712,False
+29,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.2959848650803967,False
+28,300000,7,1,Government Sector,No,No,No,0.08568259023488185,False
+29,1200000,5,1,Private Sector/Self Employed,Yes,No,No,0.3290192955027309,False
+34,700000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.4965850963064564,False
+27,500000,4,1,Government Sector,Yes,No,No,0.38044688951785544,False
+28,800000,4,1,Private Sector/Self Employed,Yes,No,No,0.30635337653121675,False
+33,800000,5,1,Government Sector,Yes,No,No,0.3275800907928869,False
+27,750000,8,0,Government Sector,Yes,No,No,0.18565974952006825,False
+31,400000,6,0,Government Sector,Yes,No,No,0.062259118401182326,False
+28,500000,7,0,Private Sector/Self Employed,Yes,No,No,0.3053585861649503,False
+34,1500000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.946972558815914,True
+32,650000,5,0,Government Sector,Yes,Yes,No,0.24298761590842038,False
+31,1350000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9767393283843127,True
+27,1050000,4,0,Government Sector,Yes,No,No,0.33891682577837673,False
+31,300000,3,0,Government Sector,No,No,No,0.024553216844635767,False
+34,1000000,3,0,Private Sector/Self Employed,Yes,No,No,0.24140461782158865,False
+28,700000,7,0,Private Sector/Self Employed,Yes,No,No,0.20380551613108214,False
+26,1450000,5,0,Government Sector,Yes,Yes,Yes,0.9120825513757193,True
+29,1200000,8,1,Private Sector/Self Employed,Yes,No,No,0.3347519013080983,False
+25,1150000,8,0,Private Sector/Self Employed,No,No,No,0.3720676704789927,False
+29,1050000,4,0,Private Sector/Self Employed,Yes,No,No,0.39317229052185004,False
+28,1250000,7,0,Private Sector/Self Employed,Yes,No,No,0.21535658959115767,False
+28,300000,3,0,Government Sector,Yes,No,No,0.06460616360271719,False
+31,1200000,7,1,Government Sector,Yes,No,No,0.2709259555047759,False
+28,1250000,9,1,Private Sector/Self Employed,Yes,No,No,0.232356641421252,False
+26,500000,3,0,Private Sector/Self Employed,Yes,No,No,0.08085515591972793,False
+29,1100000,5,1,Private Sector/Self Employed,Yes,No,No,0.26849984614334893,False
+34,1500000,9,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9601505623349066,True
+31,1500000,7,0,Government Sector,Yes,Yes,Yes,0.9497035949297498,True
+26,1500000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9712122164788113,True
+34,700000,5,1,Private Sector/Self Employed,Yes,No,No,0.2820486323474526,False
+34,1100000,9,0,Government Sector,Yes,No,No,0.8813191699621453,True
+30,1450000,7,1,Private Sector/Self Employed,No,Yes,Yes,0.9564675960623341,True
+28,600000,8,0,Government Sector,Yes,Yes,No,0.3814367015615532,False
+28,1150000,6,1,Private Sector/Self Employed,Yes,No,No,0.1291172864608359,False
+35,800000,6,0,Private Sector/Self Employed,No,No,No,0.8508241964834363,True
+27,450000,3,0,Private Sector/Self Employed,No,No,No,0.2726955060378155,False
+34,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.11589617161319243,False
+29,1200000,5,1,Private Sector/Self Employed,Yes,No,No,0.3290192955027309,False
+34,1050000,5,1,Private Sector/Self Employed,Yes,No,No,0.1907145071301135,False
+34,1000000,5,0,Private Sector/Self Employed,Yes,No,No,0.20737869770582662,False
+26,1450000,7,0,Government Sector,Yes,Yes,Yes,0.9168102755963193,True
+34,1300000,4,0,Private Sector/Self Employed,Yes,No,No,0.34886691458476304,False
+26,1400000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.9881463897138205,True
+35,950000,3,0,Private Sector/Self Employed,No,Yes,No,0.5284690251028616,True
+25,1400000,4,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9628768622730927,True
+29,1100000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.32362199383135504,False
+34,500000,3,0,Private Sector/Self Employed,Yes,No,No,0.14171072905419976,False
+35,800000,4,0,Private Sector/Self Employed,No,No,No,0.43840545306239626,False
+33,400000,5,0,Government Sector,Yes,No,No,0.12146851967590405,False
+33,1000000,3,0,Government Sector,Yes,No,Yes,0.4070744407512202,False
+34,700000,2,0,Private Sector/Self Employed,Yes,No,No,0.3097789352914298,False
+28,600000,9,0,Government Sector,Yes,Yes,No,0.42111633387886527,False
+28,800000,5,1,Private Sector/Self Employed,Yes,No,No,0.28350025948807334,False
+33,1100000,2,0,Government Sector,Yes,Yes,No,0.3400968910425856,False
+28,300000,6,1,Government Sector,Yes,No,No,0.11422811503657689,False
+31,300000,4,0,Government Sector,No,No,No,0.016090806380296165,False
+34,1000000,6,1,Private Sector/Self Employed,Yes,No,No,0.906586050016127,True
+34,700000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.49701551878801303,False
+25,1800000,6,1,Private Sector/Self Employed,Yes,Yes,No,0.8270853223122216,True
+29,1100000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.1258679906889858,False
+28,300000,5,0,Government Sector,Yes,No,No,0.06098745234544436,False
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+30,650000,6,0,Private Sector/Self Employed,No,Yes,No,0.34302197084515645,False
+33,700000,4,0,Government Sector,Yes,No,No,0.2730670765346537,False
+26,1500000,2,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9820647999502685,True
+28,550000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.2789936731284851,False
+31,400000,3,0,Government Sector,Yes,No,No,0.06157725160475183,False
+34,1300000,4,0,Government Sector,Yes,No,No,0.36994992985646546,False
+35,1100000,3,1,Government Sector,Yes,No,No,0.3883794897492337,False
+31,1250000,7,0,Private Sector/Self Employed,Yes,No,No,0.47247380729139266,False
+28,1100000,7,1,Private Sector/Self Employed,Yes,No,No,0.27432766130074615,False
+27,600000,6,0,Private Sector/Self Employed,No,No,No,0.3083328433127264,False
+35,800000,5,0,Private Sector/Self Employed,No,No,No,0.3543198595741752,False
+28,900000,6,1,Private Sector/Self Employed,Yes,Yes,No,0.22207072860083205,False
+26,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.18519516726643848,False
+28,750000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.30387025172685456,False
+33,750000,4,1,Private Sector/Self Employed,Yes,No,No,0.24550139306609162,False
+27,750000,6,0,Government Sector,Yes,No,No,0.20149124029049936,False
+27,500000,4,0,Government Sector,Yes,No,No,0.3847571100538936,False
+31,300000,4,0,Government Sector,No,No,No,0.016090806380296165,False
+28,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.2660218307331377,False
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+26,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9820647999502685,True
+28,700000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.13171964711676915,False
+25,1400000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9186757278866888,True
+28,600000,3,0,Private Sector/Self Employed,Yes,No,No,0.4254502998569351,False
+34,700000,7,0,Private Sector/Self Employed,Yes,No,No,0.8461230132027499,True
+28,300000,4,0,Government Sector,Yes,No,No,0.17820132877215245,False
+28,1150000,6,0,Private Sector/Self Employed,Yes,No,No,0.23837942382175714,False
+34,1000000,5,1,Private Sector/Self Employed,Yes,No,No,0.263022247105876,False
+28,600000,4,0,Government Sector,Yes,Yes,No,0.33008710592545903,False
+28,1300000,6,0,Private Sector/Self Employed,Yes,No,No,0.5079288513079371,True
+28,800000,5,1,Private Sector/Self Employed,Yes,No,No,0.28350025948807334,False
+34,700000,2,0,Private Sector/Self Employed,Yes,No,No,0.3097789352914298,False
+31,1250000,3,0,Private Sector/Self Employed,Yes,No,No,0.3061960614797696,False
+29,1050000,3,1,Private Sector/Self Employed,Yes,No,No,0.30856360134899313,False
+28,600000,3,0,Private Sector/Self Employed,Yes,No,No,0.4254502998569351,False
+34,1400000,4,0,Private Sector/Self Employed,No,No,Yes,0.835622844733478,True
+29,900000,3,0,Private Sector/Self Employed,Yes,No,No,0.4041843717191514,False
+31,1400000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.9481996449094123,True
+28,1150000,2,0,Private Sector/Self Employed,Yes,No,No,0.3921925100966016,False
+34,1300000,3,0,Private Sector/Self Employed,Yes,No,No,0.20991372779834844,False
+34,1050000,4,0,Private Sector/Self Employed,Yes,No,No,0.38502779239348833,False
+28,600000,3,0,Government Sector,Yes,No,No,0.3855358624464513,False
+25,1400000,7,0,Private Sector/Self Employed,Yes,No,Yes,0.9872896061912837,True
+34,1300000,5,0,Government Sector,Yes,No,No,0.2620614384911893,False
+31,400000,4,0,Government Sector,Yes,No,No,0.051501950632198874,False
+28,900000,4,1,Private Sector/Self Employed,Yes,No,No,0.38193222723817255,False
+32,850000,7,0,Government Sector,Yes,No,Yes,0.5703244121403666,True
+30,800000,4,1,Private Sector/Self Employed,No,Yes,No,0.3623626414785936,False
+33,400000,4,1,Government Sector,Yes,No,No,0.22614579356167347,False
+34,1300000,5,0,Private Sector/Self Employed,No,No,No,0.3182321692309459,False
+34,700000,2,1,Private Sector/Self Employed,Yes,Yes,No,0.24485638220631947,False
+28,800000,4,0,Private Sector/Self Employed,Yes,No,No,0.2782590310267018,False
+27,500000,6,0,Government Sector,Yes,No,No,0.09915502553352809,False
+26,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.2102375194798497,False
+28,600000,3,0,Private Sector/Self Employed,Yes,No,No,0.4254502998569351,False
+28,300000,5,0,Government Sector,Yes,No,No,0.06098745234544436,False
+29,1100000,4,1,Private Sector/Self Employed,Yes,No,No,0.2890507796386742,False
+35,800000,4,0,Private Sector/Self Employed,No,No,No,0.43840545306239626,False
+33,400000,4,0,Government Sector,Yes,No,No,0.08500963876033443,False
+31,900000,3,1,Private Sector/Self Employed,Yes,No,No,0.16277836009979985,False
+29,1200000,6,1,Private Sector/Self Employed,Yes,No,No,0.22758194880721339,False
+26,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.2013007911159689,False
+34,1300000,3,0,Private Sector/Self Employed,No,No,No,0.33293313696002286,False
+31,1250000,3,0,Private Sector/Self Employed,Yes,No,No,0.3061960614797696,False
+25,1150000,5,1,Private Sector/Self Employed,No,No,No,0.3163089431483058,False
+33,1100000,3,0,Government Sector,Yes,No,No,0.39328023340614593,False
+34,950000,3,0,Private Sector/Self Employed,No,No,No,0.37856145427528637,False
+31,1350000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9776357027356487,True
+31,900000,3,0,Private Sector/Self Employed,Yes,No,No,0.24760861017290897,False
+28,300000,2,0,Government Sector,Yes,No,No,0.09896336819444772,False
+25,1700000,5,1,Private Sector/Self Employed,Yes,Yes,No,0.8943195565559903,True
+33,400000,4,0,Government Sector,Yes,No,No,0.08500963876033443,False
+28,1200000,7,1,Government Sector,Yes,No,No,0.22692186022760044,False
+26,1400000,4,1,Private Sector/Self Employed,Yes,No,Yes,0.9287278225223298,True
+28,650000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.16772745522772986,False
+31,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9745437257002674,True
+28,1150000,6,1,Private Sector/Self Employed,Yes,No,No,0.1291172864608359,False
+28,800000,3,1,Private Sector/Self Employed,Yes,No,No,0.31740321423612244,False
+33,700000,3,0,Government Sector,Yes,No,No,0.33551101691603763,False
+29,1200000,3,0,Private Sector/Self Employed,Yes,No,No,0.5321751980592669,True
+26,450000,6,0,Private Sector/Self Employed,Yes,No,No,0.2430034591489508,False
+31,1200000,9,0,Government Sector,Yes,No,No,0.25269775287816193,False
+34,1500000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.946972558815914,True
+30,800000,5,0,Private Sector/Self Employed,No,No,No,0.4074338924433489,False
+25,1700000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.9748714599347597,True
+34,1300000,5,0,Private Sector/Self Employed,No,No,No,0.3182321692309459,False
+25,750000,2,0,Government Sector,Yes,No,Yes,0.557812031535522,True
+31,1200000,2,1,Government Sector,Yes,No,No,0.2624403621484457,False
+25,1700000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.9594393192978987,True
+27,800000,6,0,Private Sector/Self Employed,No,No,No,0.4314068555309704,False
+31,400000,7,0,Government Sector,Yes,No,No,0.07893916194492118,False
+28,1150000,7,0,Private Sector/Self Employed,Yes,No,No,0.17859638116028267,False
+34,700000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.7583884281765421,True
+28,1100000,5,0,Private Sector/Self Employed,Yes,No,No,0.1065883187854741,False
+28,300000,2,0,Government Sector,Yes,No,No,0.09896336819444772,False
+29,1350000,3,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9385348416691648,True
+33,550000,5,1,Private Sector/Self Employed,Yes,No,No,0.5118023560643581,True
+33,1400000,7,0,Private Sector/Self Employed,Yes,No,Yes,0.9029453981846953,True
+31,350000,3,1,Government Sector,No,No,No,0.03604777822361107,False
+34,1500000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9723013013837789,True
+29,1050000,7,0,Private Sector/Self Employed,Yes,No,No,0.3757160601839872,False
+31,400000,4,1,Government Sector,No,No,No,0.03584446469555507,False
+33,400000,9,0,Government Sector,Yes,No,No,0.7736428719493027,True
+31,1500000,6,0,Government Sector,Yes,Yes,Yes,0.9173613188968445,True
+34,1500000,4,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9833289095352313,True
+31,350000,4,1,Government Sector,No,No,No,0.03316126828006314,False
+27,1050000,5,1,Government Sector,Yes,No,No,0.42132395584548393,False
+34,1300000,4,0,Government Sector,Yes,No,No,0.36994992985646546,False
+28,1200000,3,0,Government Sector,Yes,No,No,0.44756819478876053,False
+28,600000,3,0,Government Sector,Yes,No,No,0.3855358624464513,False
+31,900000,7,0,Private Sector/Self Employed,Yes,No,Yes,0.3999807620706908,False
+34,700000,6,0,Private Sector/Self Employed,Yes,No,No,0.8951695789411797,True
+34,1500000,6,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9583114619634362,True
+28,700000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.13171964711676915,False
+33,1100000,8,0,Government Sector,Yes,No,No,0.8935736210577813,True
+28,700000,3,1,Private Sector/Self Employed,Yes,No,Yes,0.3516032109922575,False
+33,700000,6,1,Government Sector,Yes,No,No,0.8121928960150308,True
+25,1150000,3,1,Private Sector/Self Employed,No,No,Yes,0.3345598390613226,False
+26,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9445076015189477,True
+26,1250000,4,0,Private Sector/Self Employed,Yes,No,No,0.31988867809753957,False
+26,500000,7,0,Private Sector/Self Employed,Yes,No,No,0.23659647868341765,False
+28,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.278281153732474,False
+28,600000,4,0,Government Sector,Yes,No,No,0.15581385401483552,False
+28,800000,7,0,Private Sector/Self Employed,Yes,No,No,0.3602571214177932,False
+28,500000,5,1,Private Sector/Self Employed,Yes,No,No,0.595984462497319,True
+34,1050000,5,0,Private Sector/Self Employed,Yes,No,No,0.15066854782893427,False
+25,1700000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.9688361748322473,True
+34,700000,8,0,Private Sector/Self Employed,Yes,No,No,0.8579231487875084,True
+28,1200000,3,0,Government Sector,Yes,No,No,0.44756819478876053,False
+28,500000,5,1,Private Sector/Self Employed,Yes,No,No,0.595984462497319,True
+28,550000,5,0,Private Sector/Self Employed,No,No,No,0.21440161122748091,False
+34,1300000,7,1,Government Sector,Yes,No,No,0.8723180254189535,True
+33,400000,6,0,Government Sector,Yes,No,No,0.7214747435534891,True
+30,550000,4,0,Private Sector/Self Employed,No,No,No,0.3575916992160899,False
+33,800000,6,1,Government Sector,Yes,No,No,0.8289106357033017,True
+27,500000,4,0,Government Sector,Yes,No,No,0.3847571100538936,False
+28,600000,7,1,Government Sector,Yes,No,No,0.15370622748922738,False
+31,400000,6,0,Government Sector,Yes,No,No,0.062259118401182326,False
+34,1000000,5,0,Private Sector/Self Employed,Yes,No,No,0.20737869770582662,False
+33,1400000,8,1,Private Sector/Self Employed,Yes,No,Yes,0.8966991974172555,True
+31,1350000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9862826902363551,True
+33,1000000,5,0,Government Sector,Yes,No,Yes,0.4657073018386231,False
+31,1200000,3,0,Government Sector,Yes,No,No,0.30306088787171664,False
+31,350000,3,0,Government Sector,No,No,No,0.03402006895404699,False
+25,500000,4,1,Private Sector/Self Employed,Yes,No,No,0.5229574789788459,True
+33,650000,3,0,Government Sector,Yes,No,No,0.5084603104134628,True
+29,1200000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.3048768504230847,False
+34,1000000,3,0,Private Sector/Self Employed,Yes,No,No,0.24140461782158865,False
+29,600000,6,0,Private Sector/Self Employed,Yes,No,No,0.3408685696470222,False
+31,1200000,5,1,Government Sector,Yes,No,No,0.4001505992826921,False
+34,1500000,2,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9815432934502502,True
+30,550000,3,0,Private Sector/Self Employed,No,No,No,0.4106620345699322,False
+29,1200000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.2851044893444821,False
+25,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9559184773251391,True
+29,600000,4,0,Government Sector,Yes,No,No,0.19013886376336941,False
+31,1400000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9859443326573388,True
+28,900000,2,0,Private Sector/Self Employed,Yes,Yes,No,0.18528412600973201,False
+33,400000,5,0,Government Sector,Yes,No,No,0.12146851967590405,False
+26,500000,4,0,Government Sector,Yes,No,No,0.28558295046882715,False
+28,550000,3,0,Private Sector/Self Employed,Yes,No,No,0.35833338970263917,False
+34,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.11589617161319243,False
+28,750000,3,0,Private Sector/Self Employed,Yes,No,No,0.3579383058801619,False
+28,800000,2,0,Private Sector/Self Employed,Yes,No,No,0.49826357158642304,False
+31,1400000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9375632192936976,True
+34,1500000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.946972558815914,True
+33,650000,9,1,Government Sector,Yes,No,No,0.825904005398869,True
+28,300000,6,1,Government Sector,Yes,No,No,0.11422811503657689,False
+28,600000,4,0,Private Sector/Self Employed,Yes,No,No,0.23569893991239751,False
+35,900000,7,1,Government Sector,Yes,Yes,No,0.8699460458146427,True
+29,1050000,3,0,Private Sector/Self Employed,Yes,No,No,0.44191676891296,False
+28,300000,4,0,Government Sector,Yes,No,No,0.17820132877215245,False
+27,500000,2,1,Government Sector,Yes,No,No,0.35321595858954546,False
+28,700000,6,1,Private Sector/Self Employed,Yes,No,No,0.1822202086738969,False
+31,1200000,6,0,Government Sector,Yes,No,No,0.22205098549187918,False
+28,550000,3,0,Private Sector/Self Employed,No,No,No,0.41813172884322247,False
+28,550000,3,0,Private Sector/Self Employed,No,No,No,0.41813172884322247,False
+28,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.278281153732474,False
+34,1050000,5,0,Private Sector/Self Employed,Yes,No,No,0.15066854782893427,False
+29,900000,5,0,Private Sector/Self Employed,Yes,No,No,0.16198335945129533,False
+28,700000,5,1,Private Sector/Self Employed,Yes,No,No,0.18809358512447436,False
+28,900000,3,0,Private Sector/Self Employed,Yes,No,No,0.32704306788668597,False
+31,1250000,7,1,Private Sector/Self Employed,Yes,No,No,0.259152587955285,False
+33,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9238937719315105,True
+28,1150000,6,0,Private Sector/Self Employed,Yes,No,No,0.23837942382175714,False
+28,800000,3,0,Private Sector/Self Employed,Yes,No,No,0.33606326378209267,False
+34,1300000,5,0,Private Sector/Self Employed,Yes,No,No,0.1889799192857791,False
+29,900000,7,0,Private Sector/Self Employed,Yes,No,No,0.5425959893892847,True
+31,1400000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.9481996449094123,True
+25,1150000,3,0,Private Sector/Self Employed,No,No,No,0.24991438262951549,False
+31,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9764416124501614,True
+25,1700000,4,0,Private Sector/Self Employed,No,Yes,No,0.9255889487976977,True
+31,1350000,3,1,Private Sector/Self Employed,Yes,No,Yes,0.917863643751711,True
+26,600000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.14600761395395026,False
+31,1350000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9862826902363551,True
+31,300000,7,0,Government Sector,No,No,No,0.07393430397876223,False
+34,1050000,6,0,Private Sector/Self Employed,Yes,No,No,0.9130954323351312,True
+34,1750000,5,0,Private Sector/Self Employed,Yes,No,No,0.4954386648596137,False
+33,400000,9,1,Government Sector,Yes,No,No,0.7091662466769064,True
+30,800000,4,0,Private Sector/Self Employed,No,No,No,0.42697587499168804,False
+34,700000,5,0,Private Sector/Self Employed,Yes,No,No,0.4859154505955812,False
+28,800000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.167768831464685,False
+28,900000,2,0,Private Sector/Self Employed,Yes,Yes,No,0.18528412600973201,False
+33,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9238937719315105,True
+33,1100000,4,0,Government Sector,Yes,No,No,0.31352572411969193,False
+31,1250000,5,0,Private Sector/Self Employed,Yes,No,No,0.5625987149584968,True
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+28,1250000,5,0,Private Sector/Self Employed,Yes,No,No,0.3285310484559312,False
+25,750000,3,0,Government Sector,Yes,No,Yes,0.5421007371647151,True
+25,750000,5,1,Government Sector,Yes,Yes,No,0.34300639256162946,False
+28,900000,3,0,Private Sector/Self Employed,Yes,No,No,0.32704306788668597,False
+28,1250000,4,0,Private Sector/Self Employed,Yes,No,No,0.24512154911800618,False
+28,1450000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.956645254803504,True
+34,1500000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9723013013837789,True
+28,700000,4,1,Private Sector/Self Employed,Yes,No,No,0.3381942190586182,False
+34,1000000,3,0,Private Sector/Self Employed,Yes,No,No,0.24140461782158865,False
+25,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9171727772637265,True
+26,1500000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9528779646915966,True
+25,1700000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.9688361748322473,True
+28,700000,2,1,Private Sector/Self Employed,Yes,No,No,0.45864607053475714,False
+29,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.2803873482206894,False
+28,1300000,3,0,Private Sector/Self Employed,Yes,No,No,0.26175797348778507,False
+33,800000,4,0,Government Sector,Yes,No,No,0.2108033583466523,False
+26,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9445076015189477,True
+33,700000,3,1,Government Sector,Yes,No,No,0.3090210083514575,False
+28,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.2634560627539825,False
+31,400000,5,0,Government Sector,Yes,No,No,0.01738134048901429,False
+33,1200000,2,0,Private Sector/Self Employed,Yes,No,No,0.2232746844063625,False
+26,1400000,9,1,Private Sector/Self Employed,Yes,No,Yes,0.9590643503041734,True
+30,650000,6,0,Private Sector/Self Employed,No,Yes,No,0.34302197084515645,False
+30,550000,3,0,Private Sector/Self Employed,No,Yes,Yes,0.3845196501225284,False
+30,550000,7,0,Private Sector/Self Employed,No,No,No,0.14285707027613115,False
+26,1500000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9652630805019679,True
+32,850000,9,0,Government Sector,Yes,Yes,No,0.3437553312973111,False
+34,1300000,2,0,Private Sector/Self Employed,Yes,No,No,0.1895892879968759,False
+26,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9760001316514222,True
+28,700000,2,1,Private Sector/Self Employed,Yes,No,No,0.45864607053475714,False
+28,600000,7,0,Government Sector,Yes,No,No,0.17894071015340668,False
+29,350000,6,1,Private Sector/Self Employed,Yes,No,No,0.2157530676011027,False
+34,750000,3,0,Private Sector/Self Employed,No,Yes,No,0.4890954891062283,False
+31,1750000,2,0,Government Sector,No,No,No,0.4947846818562844,False
+27,850000,5,0,Government Sector,Yes,No,No,0.21295466326952983,False
+29,1350000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.9450629976616947,True
+34,750000,4,0,Private Sector/Self Employed,No,Yes,No,0.5416803841536142,True
+28,800000,6,0,Private Sector/Self Employed,Yes,No,No,0.2699783094452888,False
+28,1200000,4,0,Government Sector,Yes,No,No,0.27874709597267716,False
+33,550000,5,1,Private Sector/Self Employed,Yes,No,No,0.5118023560643581,True
+28,650000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.16959601512042868,False
+28,300000,6,1,Government Sector,Yes,No,No,0.11422811503657689,False
+28,1450000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9729572300635191,True
+27,750000,3,1,Government Sector,Yes,No,No,0.194017407343188,False
+26,1450000,3,0,Government Sector,Yes,Yes,Yes,0.9538885095039896,True
+34,1300000,2,1,Government Sector,Yes,No,No,0.276197522969126,False
+35,800000,3,0,Private Sector/Self Employed,No,Yes,No,0.5600621633509049,True
+28,500000,5,1,Private Sector/Self Employed,Yes,No,No,0.595984462497319,True
+25,1400000,4,1,Private Sector/Self Employed,Yes,No,Yes,0.9447111983345345,True
+28,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9753883796696405,True
+25,1400000,2,1,Private Sector/Self Employed,Yes,No,Yes,0.9028739414624504,True
+34,1000000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.40170003990143244,False
+27,500000,4,0,Government Sector,Yes,No,No,0.3847571100538936,False
+28,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.26798366124735584,False
+30,650000,6,1,Private Sector/Self Employed,No,No,No,0.4587542993075067,False
+27,350000,5,1,Private Sector/Self Employed,No,No,No,0.13823974002412195,False
+25,1150000,6,0,Private Sector/Self Employed,No,No,No,0.579980527531065,True
+32,900000,5,0,Government Sector,Yes,No,No,0.1627268658189616,False
+31,1400000,4,1,Private Sector/Self Employed,Yes,No,Yes,0.8874545919964341,True
+27,1050000,2,0,Government Sector,Yes,No,No,0.4036710552786102,False
+33,1000000,4,0,Government Sector,Yes,Yes,Yes,0.4233491388357183,False
+30,650000,3,1,Private Sector/Self Employed,No,No,No,0.47003183259937514,False
+35,1100000,2,1,Government Sector,Yes,No,No,0.3262380113810632,False
+32,350000,5,1,Government Sector,Yes,No,No,0.14122063536960114,False
+28,900000,9,1,Private Sector/Self Employed,Yes,No,Yes,0.4311672672292102,False
+31,1400000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9859443326573388,True
+25,600000,3,1,Private Sector/Self Employed,No,No,No,0.26641222235854517,False
+29,1050000,6,1,Private Sector/Self Employed,Yes,Yes,No,0.17747068531420088,False
+28,300000,3,0,Government Sector,Yes,No,No,0.06460616360271719,False
+26,600000,4,1,Private Sector/Self Employed,Yes,No,No,0.3158913975437965,False
+28,750000,2,0,Private Sector/Self Employed,Yes,No,No,0.5186069955021226,True
+34,1000000,6,0,Private Sector/Self Employed,Yes,No,No,0.9214417673630244,True
+28,600000,8,0,Government Sector,Yes,No,No,0.16257328723881415,False
+33,1100000,4,0,Government Sector,Yes,No,No,0.31352572411969193,False
+31,1250000,4,0,Private Sector/Self Employed,Yes,No,No,0.40570611393360134,False
+33,700000,7,0,Government Sector,Yes,No,No,0.8419824957327953,True
+28,1200000,3,0,Private Sector/Self Employed,Yes,No,No,0.3095154749462133,False
+28,550000,8,0,Private Sector/Self Employed,Yes,No,No,0.18540893035408929,False
+29,1200000,3,1,Private Sector/Self Employed,Yes,No,No,0.4207947248742874,False
+26,500000,4,1,Private Sector/Self Employed,Yes,No,No,0.5436406832151854,True
+28,1150000,6,0,Private Sector/Self Employed,Yes,No,No,0.23837942382175714,False
+34,700000,3,0,Private Sector/Self Employed,Yes,No,No,0.35984051710501413,False
+31,1300000,3,1,Government Sector,Yes,No,No,0.3131835387398646,False
+26,600000,6,1,Private Sector/Self Employed,Yes,No,No,0.2572823543585291,False
+35,800000,5,0,Private Sector/Self Employed,No,No,No,0.3543198595741752,False
+30,800000,4,0,Private Sector/Self Employed,No,No,No,0.42697587499168804,False
+27,1050000,5,0,Government Sector,Yes,No,No,0.2814007754827337,False
+33,700000,3,0,Government Sector,Yes,No,No,0.33551101691603763,False
+31,1350000,3,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9674995252457541,True
+28,700000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.14108178499111934,False
+33,550000,8,0,Private Sector/Self Employed,Yes,No,No,0.7863844614369577,True
+31,400000,9,0,Government Sector,Yes,No,No,0.1101148466361263,False
+28,600000,4,0,Government Sector,Yes,No,No,0.15581385401483552,False
+26,500000,6,1,Government Sector,Yes,No,No,0.1639534738120517,False
+25,1150000,6,0,Private Sector/Self Employed,No,No,No,0.579980527531065,True
+34,1300000,7,0,Private Sector/Self Employed,Yes,No,No,0.8799936623054134,True
+32,650000,3,0,Government Sector,Yes,No,No,0.4479696790555617,False
+25,1400000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.9836255370214048,True
+25,1150000,6,0,Private Sector/Self Employed,No,No,No,0.579980527531065,True
+28,700000,3,0,Private Sector/Self Employed,Yes,No,No,0.3216209108221408,False
+31,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9745437257002674,True
+34,1750000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.6505427888069399,True
+34,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.11589617161319243,False
+31,900000,5,0,Private Sector/Self Employed,Yes,No,No,0.20082479280243684,False
+30,500000,7,0,Private Sector/Self Employed,No,No,No,0.20797427903294183,False
+32,850000,3,0,Government Sector,Yes,Yes,No,0.22431428392504393,False
+33,400000,7,1,Government Sector,Yes,No,No,0.7181308744010337,True
+34,850000,5,0,Private Sector/Self Employed,Yes,No,No,0.3632315422177366,False
+31,400000,4,0,Government Sector,Yes,No,No,0.051501950632198874,False
+26,500000,2,0,Private Sector/Self Employed,Yes,No,No,0.18337920523778733,False
+29,1200000,7,1,Private Sector/Self Employed,Yes,No,No,0.3277164525316665,False
+31,900000,6,0,Private Sector/Self Employed,Yes,No,No,0.31586324644684505,False
+28,1100000,4,1,Private Sector/Self Employed,Yes,No,No,0.361639398765496,False
+29,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.39214908649864333,False
+31,300000,3,1,Government Sector,No,No,No,0.03455025576896,False
+32,800000,4,1,Government Sector,Yes,No,No,0.2402660204633066,False
+29,1100000,4,1,Private Sector/Self Employed,Yes,No,No,0.2890507796386742,False
+34,1050000,7,0,Private Sector/Self Employed,Yes,No,No,0.8972428970334759,True
+25,1150000,4,1,Private Sector/Self Employed,No,No,No,0.24179373334073997,False
+31,1350000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9776357027356487,True
+30,550000,3,1,Private Sector/Self Employed,No,No,No,0.46291641484622803,False
+27,1050000,7,1,Government Sector,Yes,No,No,0.23597656318594543,False
+33,1100000,4,0,Government Sector,Yes,No,No,0.31352572411969193,False
+25,1700000,3,0,Private Sector/Self Employed,No,Yes,No,0.930422023219522,True
+25,600000,3,0,Private Sector/Self Employed,No,No,No,0.3654955387203936,False
+28,800000,4,0,Private Sector/Self Employed,Yes,No,No,0.2782590310267018,False
+34,1500000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.946972558815914,True
+28,550000,4,0,Private Sector/Self Employed,Yes,No,No,0.20981502588183382,False
+31,400000,8,0,Government Sector,No,No,No,0.0809113834264709,False
+28,500000,3,1,Private Sector/Self Employed,Yes,No,No,0.3831592705173167,False
+28,1150000,6,0,Private Sector/Self Employed,Yes,No,No,0.23837942382175714,False
+31,400000,3,0,Government Sector,Yes,No,No,0.06157725160475183,False
+35,950000,2,1,Private Sector/Self Employed,No,No,No,0.384843039905249,False
+29,1200000,7,0,Private Sector/Self Employed,Yes,No,No,0.3763710024344903,False
+32,850000,5,1,Government Sector,Yes,Yes,No,0.30274837692061657,False
+31,1250000,6,1,Private Sector/Self Employed,Yes,No,No,0.1979403950162183,False
+28,300000,6,0,Government Sector,Yes,No,No,0.28595474778771757,False
+33,1100000,4,0,Government Sector,Yes,No,No,0.31352572411969193,False
+35,1100000,3,0,Government Sector,Yes,No,No,0.4172700310965649,False
+28,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.278281153732474,False
+29,1050000,6,0,Private Sector/Self Employed,Yes,No,No,0.2022566265020347,False
+28,300000,5,1,Government Sector,Yes,No,No,0.16287545806965306,False
+28,300000,4,0,Government Sector,Yes,No,No,0.17820132877215245,False
+33,1750000,6,0,Private Sector/Self Employed,Yes,No,No,0.6842181369501346,True
+34,1000000,5,0,Private Sector/Self Employed,Yes,No,No,0.20737869770582662,False
+28,1100000,4,1,Government Sector,Yes,No,No,0.3255441143805477,False
+25,1400000,7,0,Private Sector/Self Employed,Yes,No,Yes,0.9872896061912837,True
+27,750000,4,0,Government Sector,Yes,Yes,No,0.2430234221185514,False
+34,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.8137563320454904,True
+33,700000,4,0,Government Sector,Yes,No,Yes,0.4274265488816598,False
+28,300000,3,1,Government Sector,Yes,No,No,0.2925025083579672,False
+28,800000,4,1,Private Sector/Self Employed,Yes,No,No,0.30635337653121675,False
+34,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.11589617161319243,False
+32,350000,5,0,Government Sector,Yes,No,No,0.060441917728845836,False
+32,350000,3,0,Government Sector,Yes,No,No,0.2054422647763764,False
+28,700000,4,0,Private Sector/Self Employed,Yes,No,No,0.2602374146181823,False
+29,1350000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9720204834270386,True
+25,1150000,5,0,Private Sector/Self Employed,No,No,No,0.42175560918124594,False
+26,1400000,7,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9560543031874786,True
+27,1000000,6,0,Private Sector/Self Employed,No,No,No,0.376202069269705,False
+32,900000,6,1,Government Sector,Yes,No,No,0.2956802046278631,False
+25,750000,6,0,Government Sector,Yes,No,No,0.40713392392469644,False
+29,600000,4,0,Private Sector/Self Employed,Yes,No,No,0.4121128668028712,False
+28,750000,4,0,Private Sector/Self Employed,Yes,No,No,0.31925190207107784,False
+33,400000,6,0,Government Sector,Yes,No,No,0.7214747435534891,True
+33,600000,4,0,Government Sector,Yes,No,No,0.33480539523553804,False
+28,1200000,3,0,Private Sector/Self Employed,Yes,No,No,0.3095154749462133,False
+25,1750000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.7674244365574371,True
+28,800000,4,0,Private Sector/Self Employed,Yes,No,No,0.2782590310267018,False
+28,750000,6,1,Private Sector/Self Employed,Yes,No,No,0.1752332434516775,False
+29,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.4443580490969395,False
+34,850000,2,0,Private Sector/Self Employed,Yes,No,No,0.2606474511981065,False
+27,500000,4,0,Government Sector,Yes,No,No,0.3847571100538936,False
+28,1150000,6,1,Private Sector/Self Employed,Yes,No,No,0.1291172864608359,False
+27,750000,5,0,Government Sector,Yes,No,No,0.15153059281423575,False
+25,1700000,5,0,Private Sector/Self Employed,No,Yes,Yes,0.9259473651371711,True
+28,1300000,4,1,Private Sector/Self Employed,Yes,No,No,0.23463798421542192,False
+26,500000,3,0,Private Sector/Self Employed,Yes,No,No,0.08085515591972793,False
+26,1300000,5,0,Private Sector/Self Employed,Yes,No,No,0.39102634448708334,False
+28,500000,3,0,Private Sector/Self Employed,Yes,No,No,0.19813522689236024,False
+28,1450000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9729572300635191,True
+34,1000000,6,1,Private Sector/Self Employed,Yes,No,No,0.906586050016127,True
+32,350000,3,1,Government Sector,Yes,No,No,0.20235023050238868,False
+34,1300000,2,0,Government Sector,Yes,No,No,0.30408719341583057,False
+26,1400000,4,1,Private Sector/Self Employed,Yes,No,Yes,0.9287278225223298,True
+31,1250000,6,0,Private Sector/Self Employed,Yes,No,No,0.45111331636085744,False
+28,300000,6,0,Government Sector,Yes,No,No,0.28595474778771757,False
+28,600000,4,1,Government Sector,Yes,No,No,0.1714853471587341,False
+29,1350000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.946499362289717,True
+31,400000,3,0,Government Sector,No,No,No,0.011577271275651634,False
+27,750000,5,0,Government Sector,Yes,No,No,0.15153059281423575,False
+29,1200000,3,0,Private Sector/Self Employed,Yes,No,No,0.5321751980592669,True
+30,800000,4,0,Private Sector/Self Employed,No,No,No,0.42697587499168804,False
+30,550000,5,1,Private Sector/Self Employed,No,No,No,0.5059287526489973,True
+31,1250000,5,0,Private Sector/Self Employed,Yes,No,No,0.5625987149584968,True
+28,750000,2,0,Private Sector/Self Employed,Yes,No,No,0.5186069955021226,True
+31,1250000,4,0,Private Sector/Self Employed,Yes,No,No,0.40570611393360134,False
+26,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.2013007911159689,False
+27,750000,5,0,Government Sector,Yes,No,No,0.15153059281423575,False
+28,1200000,5,0,Government Sector,Yes,No,No,0.2767970031779931,False
+33,600000,8,0,Government Sector,Yes,No,No,0.8359160919000042,True
+33,1750000,6,0,Government Sector,Yes,No,No,0.6910339346423322,True
+33,650000,5,0,Government Sector,Yes,Yes,No,0.4573198879093182,False
+26,600000,7,1,Private Sector/Self Employed,Yes,No,No,0.34383997982072784,False
+29,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.4443580490969395,False
+31,400000,5,0,Government Sector,Yes,No,No,0.01738134048901429,False
+33,550000,7,1,Private Sector/Self Employed,Yes,Yes,No,0.7920146076493942,True
+34,1100000,4,0,Government Sector,Yes,No,No,0.396676597870859,False
+28,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.2634560627539825,False
+28,800000,3,0,Private Sector/Self Employed,Yes,No,No,0.33606326378209267,False
+32,350000,4,0,Government Sector,Yes,No,No,0.1189008990146237,False
+29,1200000,8,0,Private Sector/Self Employed,Yes,No,No,0.29858602573746446,False
+34,1400000,3,0,Private Sector/Self Employed,No,Yes,Yes,0.9489694304086927,True
+30,550000,2,1,Private Sector/Self Employed,No,No,No,0.42999372641157696,False
+34,1500000,4,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9833289095352313,True
+27,450000,3,0,Private Sector/Self Employed,No,No,No,0.2726955060378155,False
+28,700000,4,1,Private Sector/Self Employed,Yes,No,No,0.3381942190586182,False
+28,1200000,7,0,Private Sector/Self Employed,Yes,No,No,0.22235942824676588,False
+28,1300000,6,0,Private Sector/Self Employed,Yes,No,No,0.5079288513079371,True
+28,750000,2,0,Private Sector/Self Employed,Yes,No,No,0.5186069955021226,True
+28,1450000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.976635505132847,True
+31,900000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.15554737983571165,False
+26,1400000,9,1,Private Sector/Self Employed,Yes,No,Yes,0.9590643503041734,True
+30,1450000,6,0,Private Sector/Self Employed,No,Yes,Yes,0.9552128920248171,True
+32,800000,7,0,Government Sector,Yes,No,No,0.33456538275816394,False
+32,800000,5,0,Government Sector,Yes,No,No,0.13254345378450277,False
+34,1050000,3,1,Private Sector/Self Employed,Yes,No,No,0.21230989073629103,False
+28,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.20475699244031795,False
+28,700000,7,0,Private Sector/Self Employed,Yes,No,No,0.20380551613108214,False
+29,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.2803873482206894,False
+31,1250000,7,0,Private Sector/Self Employed,Yes,No,No,0.47247380729139266,False
+30,550000,5,0,Private Sector/Self Employed,No,No,No,0.30865095778479135,False
+28,800000,2,0,Private Sector/Self Employed,Yes,No,No,0.49826357158642304,False
+34,1500000,3,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9714248581959773,True
+33,1500000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9741403933349637,True
+29,1200000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.3169565066381064,False
+27,500000,5,0,Government Sector,Yes,No,No,0.1603179468608338,False
+28,700000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.19162834665968417,False
+34,1500000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9793560264732963,True
+25,1150000,5,0,Private Sector/Self Employed,No,Yes,No,0.158591292222918,False
+33,650000,4,1,Government Sector,Yes,No,No,0.41535447767103484,False
+28,550000,7,0,Private Sector/Self Employed,No,No,No,0.12934971076774143,False
+30,550000,3,0,Private Sector/Self Employed,No,No,No,0.4106620345699322,False
+28,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.2634560627539825,False
+28,300000,4,0,Government Sector,No,No,No,0.03373588016879415,False
+27,500000,6,1,Government Sector,Yes,No,No,0.13134872438796805,False
+28,1200000,3,1,Private Sector/Self Employed,Yes,Yes,No,0.25087866454884156,False
+28,1200000,5,1,Private Sector/Self Employed,Yes,Yes,No,0.21331510561274353,False
+33,550000,6,0,Private Sector/Self Employed,Yes,No,No,0.8023818797316703,True
+31,900000,4,0,Private Sector/Self Employed,Yes,No,No,0.15706745185939433,False
+28,300000,6,0,Government Sector,Yes,No,No,0.28595474778771757,False
+28,300000,3,0,Government Sector,Yes,No,No,0.06460616360271719,False
+25,1700000,2,1,Private Sector/Self Employed,Yes,Yes,No,0.8435048038615013,True
+28,1450000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.956645254803504,True
+28,750000,3,0,Private Sector/Self Employed,Yes,No,No,0.3579383058801619,False
+31,900000,5,1,Private Sector/Self Employed,Yes,Yes,No,0.17139591030466012,False
+25,1400000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9359015703384804,True
+30,550000,5,0,Private Sector/Self Employed,No,Yes,No,0.4813664166792227,False
+28,300000,3,0,Government Sector,Yes,No,No,0.06460616360271719,False
+25,1700000,5,0,Private Sector/Self Employed,No,Yes,No,0.9294818217431116,True
+26,500000,8,0,Private Sector/Self Employed,Yes,No,No,0.21996785372859562,False
+25,1400000,5,1,Private Sector/Self Employed,Yes,No,Yes,0.9492494718706226,True
+34,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.18908648037784764,False
+31,400000,3,0,Government Sector,No,No,No,0.011577271275651634,False
+31,1250000,6,0,Private Sector/Self Employed,Yes,No,No,0.45111331636085744,False
+32,650000,5,1,Government Sector,Yes,No,No,0.3190488639875555,False
+27,850000,3,0,Government Sector,Yes,No,No,0.3756028266646906,False
+28,300000,7,0,Government Sector,Yes,No,No,0.29550910975663003,False
+28,1250000,4,1,Private Sector/Self Employed,Yes,No,No,0.21810525735116093,False
+28,700000,5,0,Private Sector/Self Employed,Yes,No,No,0.09767608170826458,False
+28,600000,6,0,Government Sector,Yes,No,No,0.11744615475805098,False
+29,1050000,7,0,Private Sector/Self Employed,Yes,No,No,0.3757160601839872,False
+26,450000,4,0,Private Sector/Self Employed,Yes,No,No,0.21248134909610258,False
+33,700000,2,0,Government Sector,Yes,No,No,0.2745503664067589,False
+29,350000,8,1,Private Sector/Self Employed,Yes,No,No,0.3666038711172547,False
+26,1500000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9505811667580386,True
+27,500000,3,1,Government Sector,Yes,No,No,0.27034544408921646,False
+33,550000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.4170909947089151,False
+26,1400000,6,1,Private Sector/Self Employed,Yes,No,Yes,0.9459327069580878,True
+31,1400000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.9481996449094123,True
+28,550000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.2885552349311094,False
+34,1300000,4,0,Government Sector,Yes,No,No,0.36994992985646546,False
+30,650000,5,0,Private Sector/Self Employed,No,No,No,0.3106032861382756,False
+27,500000,2,0,Government Sector,Yes,No,No,0.4132738848554263,False
+28,1150000,7,1,Private Sector/Self Employed,Yes,No,No,0.1911853391286578,False
+28,300000,4,0,Government Sector,Yes,No,No,0.17820132877215245,False
+25,750000,6,0,Government Sector,Yes,No,No,0.40713392392469644,False
+27,850000,4,1,Government Sector,Yes,No,No,0.32687789956807584,False
+31,900000,4,1,Private Sector/Self Employed,Yes,No,No,0.22135319766657968,False
+34,1000000,9,0,Private Sector/Self Employed,Yes,No,No,0.8721207341969439,True
+33,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9422586240318991,True
+25,1150000,6,1,Private Sector/Self Employed,No,No,No,0.43696552507672193,False
+28,300000,3,1,Government Sector,Yes,No,No,0.2925025083579672,False
+26,600000,3,0,Private Sector/Self Employed,Yes,No,No,0.2153370030829875,False
+29,1050000,3,0,Private Sector/Self Employed,Yes,No,No,0.44191676891296,False
+29,1150000,4,1,Private Sector/Self Employed,Yes,No,No,0.20413649127805397,False
+34,1000000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.34554101523530106,False
+31,900000,4,1,Private Sector/Self Employed,Yes,No,No,0.22135319766657968,False
+33,1000000,3,0,Government Sector,Yes,No,No,0.25435528795929524,False
+32,800000,7,0,Government Sector,Yes,No,No,0.33456538275816394,False
+25,1150000,3,0,Private Sector/Self Employed,No,Yes,No,0.074806867497826,False
+34,1000000,5,0,Private Sector/Self Employed,Yes,No,No,0.20737869770582662,False
+31,1250000,5,0,Private Sector/Self Employed,Yes,No,No,0.5625987149584968,True
+28,1400000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9034633748606887,True
+35,800000,5,0,Private Sector/Self Employed,No,No,Yes,0.4038759217714849,False
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+25,1700000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.9748714599347597,True
+26,600000,6,0,Private Sector/Self Employed,Yes,No,No,0.178837368967624,False
+28,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.2634560627539825,False
+31,1250000,7,0,Private Sector/Self Employed,Yes,No,No,0.47247380729139266,False
+28,1150000,9,0,Private Sector/Self Employed,Yes,No,No,0.20269750831481775,False
+28,1100000,7,0,Private Sector/Self Employed,Yes,No,No,0.2994312476491826,False
+25,1150000,3,0,Private Sector/Self Employed,No,Yes,No,0.074806867497826,False
+28,1250000,3,1,Private Sector/Self Employed,Yes,No,No,0.35365132274612826,False
+34,850000,5,1,Private Sector/Self Employed,Yes,Yes,No,0.2862456305485881,False
+28,1100000,5,0,Private Sector/Self Employed,Yes,No,No,0.1065883187854741,False
+28,1150000,4,1,Private Sector/Self Employed,Yes,No,No,0.17593545814273628,False
+25,1800000,4,1,Private Sector/Self Employed,Yes,Yes,No,0.8173987665891296,True
+34,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9815432934502502,True
+34,1100000,7,1,Government Sector,Yes,Yes,No,0.8716603780522856,True
+26,500000,5,1,Private Sector/Self Employed,Yes,No,No,0.6191230207612736,True
+25,1400000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9490039770811732,True
+28,300000,7,1,Government Sector,Yes,No,No,0.15773310893137069,False
+26,600000,3,0,Private Sector/Self Employed,Yes,No,No,0.2153370030829875,False
+28,550000,4,0,Private Sector/Self Employed,Yes,No,No,0.20981502588183382,False
+35,950000,6,0,Private Sector/Self Employed,No,No,Yes,0.6422592093371275,True
+29,500000,3,0,Private Sector/Self Employed,Yes,No,No,0.232017770349642,False
+29,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.2959848650803967,False
+28,700000,4,0,Private Sector/Self Employed,Yes,No,No,0.2602374146181823,False
+28,550000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.22836535200427377,False
+28,1250000,3,0,Private Sector/Self Employed,Yes,No,No,0.2788041883488776,False
+25,1150000,4,0,Private Sector/Self Employed,No,Yes,No,0.08327217418797335,False
+31,300000,5,0,Government Sector,No,No,No,0.006910541699139514,False
+34,1300000,6,0,Private Sector/Self Employed,No,No,No,0.8155304233846118,True
+28,750000,5,0,Private Sector/Self Employed,Yes,No,No,0.1257545626314812,False
+29,350000,9,0,Private Sector/Self Employed,Yes,No,No,0.35236198636958993,False
+26,500000,5,1,Private Sector/Self Employed,Yes,No,No,0.6191230207612736,True
+34,1050000,8,1,Private Sector/Self Employed,Yes,No,No,0.8874738366647871,True
+29,1350000,8,0,Private Sector/Self Employed,Yes,No,Yes,0.955558535601336,True
+28,1350000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.9429325675649229,True
+28,700000,3,0,Private Sector/Self Employed,Yes,No,No,0.3216209108221408,False
+34,950000,3,0,Private Sector/Self Employed,No,Yes,No,0.47612222038377533,False
+33,750000,7,1,Private Sector/Self Employed,Yes,No,No,0.8666828507169975,True
+27,1050000,7,0,Government Sector,Yes,No,No,0.3732247326808507,False
+28,300000,3,1,Government Sector,Yes,No,No,0.2925025083579672,False
+31,1350000,7,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9673675630371512,True
+28,550000,4,0,Private Sector/Self Employed,Yes,No,No,0.20981502588183382,False
+31,1300000,8,0,Government Sector,Yes,No,No,0.4408296686626107,False
+29,1050000,7,0,Private Sector/Self Employed,Yes,No,No,0.3757160601839872,False
+30,800000,3,0,Private Sector/Self Employed,No,No,No,0.3952664550257635,False
+28,800000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.167768831464685,False
+26,1400000,6,1,Private Sector/Self Employed,Yes,No,Yes,0.9459327069580878,True
+28,750000,5,1,Private Sector/Self Employed,Yes,Yes,No,0.20141109472521251,False
+28,800000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.20801628437104575,False
+31,400000,4,1,Government Sector,No,No,No,0.03584446469555507,False
+31,1250000,8,0,Private Sector/Self Employed,Yes,No,No,0.4072956811291256,False
+27,500000,5,0,Government Sector,Yes,No,No,0.1603179468608338,False
+35,800000,6,1,Private Sector/Self Employed,No,No,Yes,0.7162841188553045,True
+26,1400000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.9881463897138205,True
+29,1100000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.1426690001094961,False
+31,1300000,2,0,Government Sector,Yes,Yes,No,0.44853918804884757,False
+31,400000,5,0,Government Sector,Yes,No,No,0.01738134048901429,False
+35,1100000,5,0,Government Sector,Yes,No,No,0.30575099965528146,False
+28,800000,2,1,Private Sector/Self Employed,Yes,No,No,0.44845631425633775,False
+29,1050000,5,0,Private Sector/Self Employed,Yes,No,No,0.14007874485773777,False
+29,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.4443580490969395,False
+28,700000,3,0,Private Sector/Self Employed,Yes,No,No,0.3216209108221408,False
+28,800000,6,1,Private Sector/Self Employed,Yes,No,No,0.2510416356180159,False
+31,1250000,6,0,Private Sector/Self Employed,Yes,No,No,0.45111331636085744,False
+27,1050000,2,0,Government Sector,Yes,No,No,0.4036710552786102,False
+31,900000,5,1,Private Sector/Self Employed,Yes,No,No,0.2198399720763389,False
+26,1400000,3,1,Private Sector/Self Employed,Yes,No,Yes,0.894958030972488,True
+28,300000,8,0,Government Sector,Yes,No,No,0.23794217039483215,False
+33,400000,6,0,Government Sector,Yes,No,No,0.7214747435534891,True
+35,800000,4,0,Private Sector/Self Employed,No,No,No,0.43840545306239626,False
+26,1250000,3,1,Private Sector/Self Employed,Yes,No,No,0.3083923677226906,False
+28,1200000,6,1,Private Sector/Self Employed,Yes,No,No,0.14488668557817216,False
+31,1350000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9767393283843127,True
+28,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.2634560627539825,False
+28,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9753883796696405,True
+28,800000,4,0,Private Sector/Self Employed,Yes,No,No,0.2782590310267018,False
+27,500000,2,0,Government Sector,Yes,No,No,0.4132738848554263,False
+28,800000,6,1,Private Sector/Self Employed,Yes,No,No,0.2510416356180159,False
+31,1250000,3,0,Private Sector/Self Employed,Yes,No,No,0.3061960614797696,False
+34,1500000,5,1,Private Sector/Self Employed,Yes,Yes,Yes,0.946972558815914,True
+34,700000,3,0,Private Sector/Self Employed,Yes,No,No,0.35984051710501413,False
+25,1700000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.9688361748322473,True
+29,1100000,2,0,Private Sector/Self Employed,Yes,No,No,0.3450950213345167,False
+30,1450000,2,1,Private Sector/Self Employed,No,Yes,Yes,0.9407295464550626,True
+34,1500000,3,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9714248581959773,True
+32,800000,6,0,Government Sector,Yes,Yes,No,0.22548369281680883,False
+28,900000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.22811879914408636,False
+28,700000,3,0,Private Sector/Self Employed,Yes,No,No,0.3216209108221408,False
+34,1500000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9793560264732963,True
+28,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.2634560627539825,False
+26,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.2102375194798497,False
+35,900000,7,0,Government Sector,Yes,No,No,0.8800570810910129,True
+31,1100000,4,0,Private Sector/Self Employed,Yes,No,No,0.21112229333249868,False
+31,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.31129926679556713,False
+29,1200000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.45588922235660795,False
+31,300000,5,0,Government Sector,No,No,No,0.006910541699139514,False
+34,1050000,4,1,Private Sector/Self Employed,Yes,No,No,0.3225547043790097,False
+34,500000,6,0,Private Sector/Self Employed,Yes,No,No,0.8137563320454904,True
+33,750000,8,1,Private Sector/Self Employed,Yes,No,No,0.872619828134365,True
+27,1050000,7,0,Government Sector,Yes,No,No,0.3732247326808507,False
+29,1200000,8,0,Private Sector/Self Employed,Yes,Yes,No,0.20472495528643456,False
+29,500000,2,0,Private Sector/Self Employed,Yes,No,No,0.2601927262262,False
+26,600000,7,0,Private Sector/Self Employed,Yes,No,No,0.20533676656728958,False
+28,800000,3,0,Private Sector/Self Employed,Yes,No,No,0.33606326378209267,False
+28,800000,3,0,Private Sector/Self Employed,Yes,No,No,0.33606326378209267,False
+35,950000,4,0,Private Sector/Self Employed,No,No,No,0.49015063774756484,False
+28,550000,6,1,Private Sector/Self Employed,No,No,No,0.24314016166688915,False
+34,850000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.4150597286662616,False
+31,400000,2,0,Government Sector,Yes,No,No,0.06312433943949851,False
+33,1500000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9741403933349637,True
+28,1100000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.2179175080129911,False
+33,1100000,4,1,Government Sector,Yes,No,Yes,0.39487725865986584,False
+28,700000,5,0,Private Sector/Self Employed,Yes,No,No,0.09767608170826458,False
+28,300000,5,0,Government Sector,Yes,No,No,0.06098745234544436,False
+26,500000,5,1,Government Sector,Yes,No,No,0.39118745715361364,False
+33,600000,7,0,Government Sector,Yes,No,No,0.8110086989572168,True
+30,1450000,4,1,Private Sector/Self Employed,No,Yes,Yes,0.9498285095526222,True
+34,850000,5,1,Private Sector/Self Employed,Yes,No,No,0.24147558180160086,False
+29,900000,3,0,Private Sector/Self Employed,Yes,No,No,0.4041843717191514,False
+25,1150000,7,0,Private Sector/Self Employed,No,No,No,0.4000363824900201,False
+26,500000,6,0,Government Sector,Yes,No,No,0.14742220310414925,False
+25,750000,2,0,Government Sector,Yes,Yes,No,0.3110897796451653,False
+34,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9815432934502502,True
+30,500000,7,1,Private Sector/Self Employed,No,No,No,0.32256161789008225,False
+28,1300000,5,1,Private Sector/Self Employed,Yes,Yes,No,0.33331612819826617,False
+29,1050000,3,0,Private Sector/Self Employed,Yes,No,No,0.44191676891296,False
+32,900000,5,0,Government Sector,Yes,Yes,No,0.18977388666659556,False
+34,1300000,6,1,Private Sector/Self Employed,Yes,No,No,0.8059083675439157,True
+26,550000,4,0,Government Sector,Yes,No,No,0.40622761180818917,False
+35,800000,4,0,Private Sector/Self Employed,No,No,No,0.43840545306239626,False
+28,650000,3,0,Private Sector/Self Employed,Yes,No,No,0.32641938011490196,False
+29,1050000,5,0,Private Sector/Self Employed,Yes,No,No,0.14007874485773777,False
+34,1050000,4,1,Private Sector/Self Employed,Yes,No,No,0.3225547043790097,False
+26,1400000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9760001316514222,True
+28,1150000,8,0,Private Sector/Self Employed,Yes,Yes,No,0.1086786050548531,False
+28,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.26798366124735584,False
+32,350000,5,0,Government Sector,Yes,No,No,0.060441917728845836,False
+33,1100000,8,0,Government Sector,Yes,No,No,0.8935736210577813,True
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+34,700000,4,1,Private Sector/Self Employed,Yes,Yes,No,0.32216586164456984,False
+28,750000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.14482492536910588,False
+25,1700000,6,0,Private Sector/Self Employed,No,Yes,No,0.9219851090394878,True
+31,950000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.12954730336896353,False
+29,600000,5,1,Private Sector/Self Employed,Yes,No,No,0.2835055412140594,False
+34,850000,4,0,Private Sector/Self Employed,Yes,No,No,0.47327373668328593,False
+29,1200000,9,0,Private Sector/Self Employed,Yes,No,No,0.3319047704357214,False
+34,700000,4,0,Private Sector/Self Employed,Yes,No,No,0.47789973541005076,False
+25,1150000,2,0,Private Sector/Self Employed,No,No,Yes,0.3420569527649673,False
+31,950000,4,0,Private Sector/Self Employed,Yes,No,No,0.17880042411235902,False
+34,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.18908648037784764,False
+26,1750000,3,0,Private Sector/Self Employed,Yes,No,No,0.41043722289147877,False
+28,1150000,3,1,Private Sector/Self Employed,Yes,No,No,0.26764597294581915,False
+28,1150000,4,0,Private Sector/Self Employed,Yes,No,No,0.1845254994822408,False
+28,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.278281153732474,False
+34,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9815432934502502,True
+34,1500000,3,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9815432934502502,True
+28,1450000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9729572300635191,True
+27,850000,4,0,Government Sector,Yes,No,No,0.2351605828041903,False
+28,1200000,3,0,Private Sector/Self Employed,Yes,No,No,0.3095154749462133,False
+28,800000,3,1,Private Sector/Self Employed,Yes,No,No,0.31740321423612244,False
+25,1700000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.9688361748322473,True
+26,1450000,3,0,Government Sector,Yes,Yes,Yes,0.9538885095039896,True
+25,750000,3,1,Government Sector,Yes,No,No,0.2064836431312293,False
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+31,400000,6,0,Government Sector,Yes,No,No,0.062259118401182326,False
+33,1400000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.9030223625979752,True
+28,1100000,5,0,Private Sector/Self Employed,Yes,No,No,0.1065883187854741,False
+29,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.29045375178318844,False
+26,550000,4,0,Government Sector,Yes,No,No,0.40622761180818917,False
+26,600000,3,0,Private Sector/Self Employed,Yes,No,No,0.2153370030829875,False
+28,500000,4,1,Private Sector/Self Employed,Yes,No,No,0.4535727084309672,False
+28,300000,6,1,Government Sector,Yes,No,No,0.11422811503657689,False
+27,350000,4,0,Private Sector/Self Employed,No,No,No,0.06630547325526093,False
+29,1100000,8,0,Private Sector/Self Employed,Yes,No,No,0.28814430636142574,False
+28,800000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.20801628437104575,False
+29,1350000,4,0,Private Sector/Self Employed,Yes,No,Yes,0.9720204834270386,True
+28,550000,5,0,Private Sector/Self Employed,No,Yes,No,0.441621463900298,False
+33,550000,3,1,Private Sector/Self Employed,Yes,No,No,0.4615413968591355,False
+34,1000000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.32275624655359986,False
+29,1050000,7,0,Private Sector/Self Employed,Yes,Yes,No,0.17551910125791254,False
+26,500000,8,0,Government Sector,Yes,No,No,0.13558286664056893,False
+25,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9171727772637265,True
+28,800000,5,0,Private Sector/Self Employed,Yes,No,No,0.06986410134480622,False
+25,1350000,5,1,Private Sector/Self Employed,No,No,Yes,0.8539388256658108,True
+35,800000,5,0,Private Sector/Self Employed,No,No,No,0.3543198595741752,False
+25,1800000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.8500300253842415,True
+28,800000,4,1,Private Sector/Self Employed,Yes,Yes,No,0.29214646660637217,False
+29,600000,6,0,Private Sector/Self Employed,Yes,No,No,0.3408685696470222,False
+29,1200000,6,0,Private Sector/Self Employed,Yes,No,No,0.26623987197376237,False
+32,800000,5,1,Government Sector,Yes,Yes,No,0.3690712575822577,False
+28,300000,3,0,Government Sector,Yes,No,No,0.06460616360271719,False
+31,1400000,4,1,Private Sector/Self Employed,Yes,No,Yes,0.8874545919964341,True
+25,1700000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.9484333589989188,True
+31,350000,4,1,Government Sector,No,No,No,0.03316126828006314,False
+29,1050000,5,0,Private Sector/Self Employed,Yes,No,No,0.14007874485773777,False
+29,1200000,5,0,Private Sector/Self Employed,Yes,No,No,0.2959848650803967,False
+31,1100000,4,0,Private Sector/Self Employed,Yes,Yes,No,0.16567214068678354,False
+31,400000,5,0,Government Sector,No,No,No,0.006910541699139514,False
+33,800000,4,0,Government Sector,Yes,No,No,0.2108033583466523,False
+34,1300000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.40554036543477645,False
+28,700000,4,1,Private Sector/Self Employed,Yes,No,Yes,0.3026136043298578,False
+32,350000,3,0,Government Sector,Yes,No,Yes,0.44250952506032426,False
+28,900000,8,0,Private Sector/Self Employed,Yes,No,No,0.30031018317570124,False
+32,350000,3,0,Government Sector,Yes,No,Yes,0.44250952506032426,False
+34,700000,4,1,Private Sector/Self Employed,Yes,Yes,No,0.32216586164456984,False
+28,1200000,4,0,Private Sector/Self Employed,Yes,No,No,0.20475699244031795,False
+27,350000,5,1,Private Sector/Self Employed,No,No,No,0.13823974002412195,False
+28,300000,5,0,Government Sector,Yes,No,No,0.06098745234544436,False
+32,850000,4,0,Government Sector,Yes,No,No,0.11085831374014395,False
+28,1200000,3,0,Government Sector,Yes,No,No,0.44756819478876053,False
+31,400000,7,1,Government Sector,No,No,No,0.049932750082539244,False
+28,1250000,7,0,Private Sector/Self Employed,Yes,No,No,0.21535658959115767,False
+28,300000,5,0,Government Sector,Yes,No,No,0.06098745234544436,False
+28,550000,6,0,Private Sector/Self Employed,No,No,No,0.3070283119957894,False
+28,1200000,6,1,Private Sector/Self Employed,Yes,No,No,0.14488668557817216,False
+34,700000,5,0,Private Sector/Self Employed,Yes,No,No,0.4859154505955812,False
+34,1300000,5,0,Government Sector,Yes,Yes,No,0.5129843750838529,True
+27,1550000,4,0,Private Sector/Self Employed,No,Yes,No,0.9071528047226424,True
+26,600000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.12691122382302028,False
+27,900000,4,0,Government Sector,Yes,No,No,0.24092057501024197,False
+30,750000,3,1,Private Sector/Self Employed,No,No,No,0.51015589991942,True
+32,800000,3,1,Government Sector,Yes,No,No,0.19852396764322894,False
+28,550000,8,0,Private Sector/Self Employed,Yes,No,No,0.18540893035408929,False
+34,1050000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.3286164601867081,False
+28,550000,5,0,Private Sector/Self Employed,Yes,No,No,0.1572465044110066,False
+34,500000,5,0,Private Sector/Self Employed,Yes,No,No,0.18908648037784764,False
+31,400000,6,1,Government Sector,Yes,No,No,0.06391071745492308,False
+26,1400000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.9823508622282818,True
+28,300000,7,1,Government Sector,Yes,No,No,0.15773310893137069,False
+35,800000,5,0,Private Sector/Self Employed,No,No,No,0.3543198595741752,False
+25,1400000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.971540624545273,True
+31,1500000,2,0,Government Sector,Yes,Yes,Yes,0.9307483555890259,True
+25,1700000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.9688361748322473,True
+34,1500000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9798939354563418,True
+29,1050000,7,0,Private Sector/Self Employed,Yes,No,No,0.3757160601839872,False
+34,1000000,3,0,Private Sector/Self Employed,Yes,No,No,0.24140461782158865,False
+29,500000,3,0,Private Sector/Self Employed,Yes,No,No,0.232017770349642,False
+26,1400000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.9881463897138205,True
+34,1500000,4,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9833289095352313,True
+28,1100000,7,0,Private Sector/Self Employed,Yes,Yes,No,0.14352582159502233,False
+28,700000,4,0,Private Sector/Self Employed,Yes,No,No,0.2602374146181823,False
+27,350000,2,0,Private Sector/Self Employed,No,No,No,0.1382021944566672,False
+27,1050000,4,1,Government Sector,Yes,No,No,0.4215752772093456,False
+34,1300000,4,0,Private Sector/Self Employed,Yes,No,No,0.34886691458476304,False
+31,1350000,9,1,Private Sector/Self Employed,Yes,No,Yes,0.9013941629485194,True
+27,500000,4,0,Government Sector,Yes,No,No,0.3847571100538936,False
+28,1200000,4,0,Government Sector,Yes,No,No,0.27874709597267716,False
+35,1100000,3,0,Government Sector,Yes,No,No,0.4172700310965649,False
+32,350000,6,0,Government Sector,Yes,No,No,0.14701093534171253,False
+31,900000,5,0,Private Sector/Self Employed,Yes,No,No,0.20082479280243684,False
+26,750000,5,1,Private Sector/Self Employed,Yes,No,No,0.31457711958059226,False
+31,1300000,6,0,Government Sector,Yes,No,No,0.4498219705894095,False
+28,1200000,5,0,Government Sector,Yes,No,No,0.2767970031779931,False
+28,800000,7,1,Private Sector/Self Employed,Yes,No,No,0.38608349723544577,False
+28,700000,5,0,Private Sector/Self Employed,Yes,No,No,0.09767608170826458,False
+32,850000,4,1,Government Sector,Yes,No,No,0.25700487884262446,False
+28,700000,4,1,Private Sector/Self Employed,Yes,No,No,0.3381942190586182,False
+26,500000,3,0,Government Sector,Yes,No,No,0.2217003199162541,False
+31,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9764416124501614,True
+35,1100000,4,0,Government Sector,Yes,Yes,No,0.5574709629220329,True
+25,600000,4,1,Private Sector/Self Employed,No,Yes,No,0.15176598796776028,False
+31,1250000,4,1,Private Sector/Self Employed,Yes,No,No,0.20408027674575904,False
+27,1000000,3,1,Private Sector/Self Employed,No,No,No,0.26105646351206674,False
+28,600000,4,1,Government Sector,Yes,No,No,0.1714853471587341,False
+33,400000,2,0,Government Sector,Yes,No,No,0.09549153972847174,False
+33,650000,4,0,Government Sector,Yes,No,Yes,0.49321119567787236,False
+28,700000,7,0,Private Sector/Self Employed,Yes,Yes,No,0.13665917217274806,False
+25,600000,4,1,Private Sector/Self Employed,No,Yes,No,0.15176598796776028,False
+28,1450000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.958308261223387,True
+28,600000,5,0,Private Sector/Self Employed,Yes,Yes,No,0.27392094047939614,False
+28,800000,4,0,Private Sector/Self Employed,Yes,No,No,0.2782590310267018,False
+28,300000,4,1,Government Sector,No,No,No,0.07873588721567976,False
+28,1150000,7,0,Private Sector/Self Employed,Yes,No,No,0.17859638116028267,False
+27,1550000,6,1,Private Sector/Self Employed,No,Yes,No,0.8298433411821258,True
+34,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.11589617161319243,False
+33,1100000,5,0,Government Sector,Yes,No,No,0.23832603092918905,False
+30,550000,6,0,Private Sector/Self Employed,No,No,No,0.27282288948673034,False
+28,800000,5,0,Private Sector/Self Employed,Yes,No,No,0.06986410134480622,False
+28,1100000,6,1,Government Sector,Yes,No,No,0.17665289653915134,False
+34,1300000,4,0,Private Sector/Self Employed,No,No,No,0.4609420858516538,False
+33,1400000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9422586240318991,True
+28,300000,6,0,Government Sector,Yes,No,No,0.28595474778771757,False
+32,800000,5,0,Government Sector,Yes,No,No,0.13254345378450277,False
+31,300000,5,0,Government Sector,No,No,No,0.006910541699139514,False
+34,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.11589617161319243,False
+26,750000,3,0,Private Sector/Self Employed,Yes,No,No,0.21248650399067295,False
+33,750000,3,1,Private Sector/Self Employed,Yes,No,No,0.24136013163331108,False
+33,400000,5,0,Government Sector,Yes,No,No,0.12146851967590405,False
+25,1400000,5,0,Private Sector/Self Employed,Yes,No,Yes,0.971540624545273,True
+34,1000000,4,0,Private Sector/Self Employed,Yes,No,No,0.4676584663695326,False
+34,1500000,7,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9718715483864634,True
+28,600000,7,1,Government Sector,Yes,No,No,0.15370622748922738,False
+31,1200000,7,0,Government Sector,Yes,No,No,0.3057028715985846,False
+34,1300000,4,1,Private Sector/Self Employed,Yes,No,No,0.30189734381243855,False
+35,800000,4,1,Private Sector/Self Employed,No,No,No,0.42546453307700005,False
+28,550000,4,1,Private Sector/Self Employed,Yes,Yes,No,0.3422285381756729,False
+25,1350000,3,1,Private Sector/Self Employed,No,Yes,Yes,0.8395950328573544,True
+33,1000000,6,0,Government Sector,Yes,Yes,No,0.6589920701503377,True
+33,1500000,7,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9480893957873261,True
+34,500000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.4762172538490164,False
+34,1400000,4,0,Private Sector/Self Employed,No,No,Yes,0.835622844733478,True
+27,450000,8,0,Private Sector/Self Employed,No,No,No,0.11830430332208904,False
+25,1400000,5,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9186757278866888,True
+27,450000,3,0,Private Sector/Self Employed,No,No,No,0.2726955060378155,False
+28,900000,5,0,Private Sector/Self Employed,Yes,No,No,0.11726270136748836,False
+29,1050000,2,0,Private Sector/Self Employed,Yes,No,No,0.3794681100836762,False
+34,1500000,4,1,Private Sector/Self Employed,Yes,Yes,Yes,0.9833289095352313,True
+28,550000,4,1,Private Sector/Self Employed,No,No,Yes,0.257025517284357,False
+32,850000,7,0,Government Sector,Yes,Yes,Yes,0.570255701887757,True
+32,900000,2,0,Government Sector,Yes,Yes,No,0.20052971411441917,False
+35,800000,6,0,Private Sector/Self Employed,No,Yes,No,0.7922393426829666,True
+34,700000,6,0,Private Sector/Self Employed,Yes,No,No,0.8951695789411797,True
+28,1250000,6,0,Private Sector/Self Employed,Yes,No,Yes,0.26356581057402867,False
+27,600000,4,0,Private Sector/Self Employed,No,No,No,0.26902058936581585,False
+31,1500000,4,0,Government Sector,Yes,Yes,Yes,0.9016176022640973,True
+34,1300000,7,0,Government Sector,Yes,No,No,0.8669146284451515,True
+30,550000,6,1,Private Sector/Self Employed,No,No,No,0.3432939145860572,False
+33,1750000,4,0,Government Sector,Yes,No,No,0.4980254019098944,False
+32,350000,3,1,Government Sector,Yes,No,Yes,0.448904678548038,False
+31,1250000,7,0,Private Sector/Self Employed,Yes,No,No,0.47247380729139266,False
+31,1300000,3,1,Government Sector,Yes,No,No,0.3131835387398646,False
+28,550000,6,0,Private Sector/Self Employed,No,No,No,0.3070283119957894,False
+28,300000,6,0,Government Sector,Yes,No,No,0.28595474778771757,False
+26,500000,3,0,Government Sector,Yes,No,No,0.2217003199162541,False
+25,1150000,7,0,Private Sector/Self Employed,No,No,No,0.4000363824900201,False
+33,1100000,4,0,Government Sector,Yes,No,No,0.31352572411969193,False
+28,1100000,4,0,Government Sector,Yes,No,No,0.2316423975630182,False
+30,550000,3,0,Private Sector/Self Employed,No,No,No,0.4106620345699322,False
+34,700000,3,0,Private Sector/Self Employed,Yes,Yes,No,0.4061653144853906,False
+34,700000,3,1,Private Sector/Self Employed,Yes,No,No,0.2807488040311671,False
+28,300000,5,1,Government Sector,Yes,No,No,0.16287545806965306,False
+31,500000,4,1,Private Sector/Self Employed,Yes,No,No,0.30416048409144286,False
+29,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.4443580490969395,False
+31,950000,5,0,Private Sector/Self Employed,Yes,No,No,0.194802942212666,False
+28,800000,5,1,Private Sector/Self Employed,Yes,No,No,0.28350025948807334,False
+31,1350000,3,0,Private Sector/Self Employed,Yes,No,Yes,0.9776357027356487,True
+28,1200000,6,0,Private Sector/Self Employed,Yes,Yes,No,0.2081910999609342,False
+26,1400000,9,0,Private Sector/Self Employed,Yes,No,Yes,0.9739426804861605,True
+32,900000,6,0,Government Sector,Yes,No,No,0.37972681341496795,False
+25,1350000,6,0,Private Sector/Self Employed,No,No,Yes,0.9626404401950761,True
+34,700000,5,0,Private Sector/Self Employed,Yes,No,No,0.4859154505955812,False
+28,1100000,4,1,Private Sector/Self Employed,Yes,No,No,0.361639398765496,False
+25,1150000,5,1,Private Sector/Self Employed,No,No,No,0.3163089431483058,False
+27,850000,3,0,Government Sector,Yes,No,No,0.3756028266646906,False
+33,1500000,4,0,Private Sector/Self Employed,Yes,Yes,Yes,0.9738648829852831,True
+28,1750000,5,1,Private Sector/Self Employed,Yes,No,Yes,0.7957641712307888,True
+28,1150000,6,1,Private Sector/Self Employed,Yes,No,No,0.1291172864608359,False
+34,1000000,6,0,Private Sector/Self Employed,Yes,Yes,Yes,0.7793263038460294,True
+34,500000,4,0,Private Sector/Self Employed,Yes,No,No,0.11589617161319243,False

@@ -1,0 +1,147 @@
+{
+  "trained_at": "2026-07-30T08:56:43.152983+00:00",
+  "datasets": [
+    "13_medical_premium.csv",
+    "24_home_premium_sample40k.csv",
+    "22_travel_insurance_prediction.csv",
+    "01_car_insurance_claim.csv",
+    "motor_011_fe.csv"
+  ],
+  "external_sources": {
+    "medical_cost": "Medical Cost Personal Dataset",
+    "home_premium": "home insurance train sample 40k (local) / kaggle fallback",
+    "travel_propensity": "Kaggle Travel Insurance Prediction (agent 22, AUC~0.79)",
+    "auto_premium": "Vehicle insurance motor FE (UW 011, R2~0.83)",
+    "auto_claim_risk": "Car insurance claim OUTCOME (UW 01, AUC~0.89)"
+  },
+  "models": {
+    "medical_premium": {
+      "name": "medical_premium",
+      "target": "charges",
+      "n_rows": 1338,
+      "mae": 2536.2557840494887,
+      "r2": 0.8726155241051393,
+      "y_mean": 13270.422265141257,
+      "features_num": [
+        "age",
+        "bmi",
+        "children"
+      ],
+      "features_cat": [
+        "smoker",
+        "region"
+      ]
+    },
+    "home_premium": {
+      "name": "home_premium",
+      "target": "Premium",
+      "n_rows": 40000,
+      "mae": 48.00678355962951,
+      "r2": 0.9796776302004793,
+      "y_mean": 1570.7371167499998,
+      "features_num": [
+        "building_value",
+        "contents_value",
+        "previous_claims_count",
+        "flood_risk_score",
+        "fire_risk_score"
+      ],
+      "features_cat": [
+        "coverage_level"
+      ]
+    },
+    "travel_propensity": {
+      "name": "travel_propensity",
+      "target": "TravelInsurance",
+      "n_rows": 1987,
+      "accuracy": 0.8190954773869347,
+      "f1_macro": 0.780997798972854,
+      "roc_auc": 0.7976039832746479,
+      "features_num": [
+        "Age",
+        "AnnualIncome",
+        "FamilyMembers",
+        "ChronicDiseases"
+      ],
+      "features_cat": [
+        "Employment Type",
+        "GraduateOrNot",
+        "FrequentFlyer",
+        "EverTravelledAbroad"
+      ],
+      "source": "01_agent_22_travel_insurance_prediction"
+    },
+    "auto_premium": {
+      "name": "auto_premium",
+      "target": "PREMIUM",
+      "n_rows": 47006,
+      "mae": 1363.7757606717541,
+      "r2": 0.8523417955433312,
+      "y_mean": 7554.994806194954,
+      "features_num": [
+        "INSURED_VALUE",
+        "vehicle_age",
+        "SEATS_NUM",
+        "CCM_TON",
+        "SEX"
+      ],
+      "features_cat": [
+        "TYPE_VEHICLE",
+        "USAGE"
+      ]
+    },
+    "auto_claim_risk": {
+      "name": "auto_claim_risk",
+      "target": "OUTCOME",
+      "n_rows": 10000,
+      "accuracy": 0.8225,
+      "f1_macro": 0.7915173397377641,
+      "roc_auc": 0.8804786082932285,
+      "features_num": [
+        "CREDIT_SCORE",
+        "ANNUAL_MILEAGE",
+        "SPEEDING_VIOLATIONS",
+        "DUIS",
+        "PAST_ACCIDENTS",
+        "VEHICLE_OWNERSHIP"
+      ],
+      "features_cat": [
+        "AGE",
+        "GENDER",
+        "DRIVING_EXPERIENCE",
+        "VEHICLE_YEAR",
+        "VEHICLE_TYPE"
+      ],
+      "source": "02_underwriter_01_car_insurance_claim"
+    },
+    "category_recommender": {
+      "name": "category_recommender",
+      "n_rows": 5710,
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "classes": [
+        "Автострахование",
+        "Имущественное страхование",
+        "Медицинское страхование",
+        "Страхование жизни",
+        "Туристическое страхование"
+      ],
+      "features_num": [
+        "age",
+        "bmi",
+        "children",
+        "smoker",
+        "income",
+        "has_home",
+        "has_auto",
+        "travels",
+        "high_income",
+        "prior_claims"
+      ],
+      "features_cat": [
+        "sex"
+      ]
+    }
+  },
+  "notes": "Клиент: medical + home + auto_premium; travel_propensity + auto_claim_risk. Fraud (27) оставлен для underwriter, не в клиентском ranking."
+}

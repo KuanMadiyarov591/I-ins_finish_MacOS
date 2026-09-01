@@ -1,0 +1,231 @@
+{
+  "passed": 5,
+  "total": 5,
+  "cases": [
+    {
+      "query": "срок выплаты по полису Жизнь Плюс",
+      "expected_sources": [
+        "01_client_internal_01_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.151883,
+          "source": "01_client_internal_01_01_life_policy.pdf",
+          "page": 1,
+          "chunk_id": "ed2aa7015872ccbb:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.101918,
+          "source": "01_04_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Consumer_Rights_2024.pdf",
+          "page": 15,
+          "chunk_id": "4c92511314f250ad:p15:c35"
+        },
+        {
+          "rank": 3,
+          "score": 0.099606,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 11,
+          "chunk_id": "5be7c1c5b39ea710:p11:c24"
+        },
+        {
+          "rank": 4,
+          "score": 0.09768,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 11,
+          "chunk_id": "5be7c1c5b39ea710:p11:c25"
+        },
+        {
+          "rank": 5,
+          "score": 0.095273,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 10,
+          "chunk_id": "5be7c1c5b39ea710:p10:c23"
+        }
+      ]
+    },
+    {
+      "query": "случайное повреждение остекления лимит",
+      "expected_sources": [
+        "01_client_internal_02_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.290403,
+          "source": "01_client_internal_02_02_property_policy.pdf",
+          "page": 1,
+          "chunk_id": "43ecff0a6e4cf23d:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.121308,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 15,
+          "chunk_id": "5be7c1c5b39ea710:p15:c36"
+        },
+        {
+          "rank": 3,
+          "score": 0.100249,
+          "source": "01_02_client_and_02_insurance_agent_and_04_admin_Law_4015-1_selected_current.pdf",
+          "page": 31,
+          "chunk_id": "6a16622946e61bbd:p31:c72"
+        },
+        {
+          "rank": 4,
+          "score": 0.098381,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 15,
+          "chunk_id": "5be7c1c5b39ea710:p15:c37"
+        },
+        {
+          "rank": 5,
+          "score": 0.078588,
+          "source": "01_02_client_and_02_insurance_agent_and_04_admin_Law_4015-1_selected_current.pdf",
+          "page": 30,
+          "chunk_id": "6a16622946e61bbd:p30:c70"
+        }
+      ]
+    },
+    {
+      "query": "куда обратиться потребителю страховых услуг с претензией",
+      "expected_sources": [
+        "01_04_",
+        "01_05_",
+        "01_06_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.16891,
+          "source": "01_04_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Consumer_Rights_2024.pdf",
+          "page": 19,
+          "chunk_id": "4c92511314f250ad:p19:c44"
+        },
+        {
+          "rank": 2,
+          "score": 0.141731,
+          "source": "01_06_client_and_02_insurance_agent_and_04_admin_Financial_Ombudsman_123-FZ_selected_current.pdf",
+          "page": 23,
+          "chunk_id": "09d65bf85023cc78:p23:c56"
+        },
+        {
+          "rank": 3,
+          "score": 0.135946,
+          "source": "01_05_client_and_02_insurance_agent_and_04_admin_Consumer_Law_2300-1_selected_current.pdf",
+          "page": 14,
+          "chunk_id": "64f467721230fd65:p14:c30"
+        },
+        {
+          "rank": 4,
+          "score": 0.134023,
+          "source": "01_06_client_and_02_insurance_agent_and_04_admin_Financial_Ombudsman_123-FZ_selected_current.pdf",
+          "page": 13,
+          "chunk_id": "09d65bf85023cc78:p13:c29"
+        },
+        {
+          "rank": 5,
+          "score": 0.132401,
+          "source": "01_06_client_and_02_insurance_agent_and_04_admin_Financial_Ombudsman_123-FZ_selected_current.pdf",
+          "page": 20,
+          "chunk_id": "09d65bf85023cc78:p20:c50"
+        }
+      ]
+    },
+    {
+      "query": "право страхователя отказаться от договора страхования",
+      "expected_sources": [
+        "01_01_",
+        "01_02_",
+        "01_03_",
+        "01_04_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.275261,
+          "source": "01_01_client_and_02_insurance_agent_and_04_admin_GK_RF_Chapter_48_selected_current.pdf",
+          "page": 21,
+          "chunk_id": "663f6909263acf96:p21:c27"
+        },
+        {
+          "rank": 2,
+          "score": 0.248687,
+          "source": "01_02_client_and_02_insurance_agent_and_04_admin_Law_4015-1_selected_current.pdf",
+          "page": 31,
+          "chunk_id": "6a16622946e61bbd:p31:c72"
+        },
+        {
+          "rank": 3,
+          "score": 0.236392,
+          "source": "01_01_client_and_02_insurance_agent_and_04_admin_GK_RF_Chapter_48_selected_current.pdf",
+          "page": 21,
+          "chunk_id": "663f6909263acf96:p21:c26"
+        },
+        {
+          "rank": 4,
+          "score": 0.214445,
+          "source": "01_04_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Consumer_Rights_2024.pdf",
+          "page": 12,
+          "chunk_id": "4c92511314f250ad:p12:c27"
+        },
+        {
+          "rank": 5,
+          "score": 0.213387,
+          "source": "01_01_client_and_02_insurance_agent_and_04_admin_GK_RF_Chapter_48_selected_current.pdf",
+          "page": 24,
+          "chunk_id": "663f6909263acf96:p24:c31"
+        }
+      ]
+    },
+    {
+      "query": "обработка персональных данных клиента страховой компании",
+      "expected_sources": [
+        "01_07_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.267344,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 32,
+          "chunk_id": "d376f55610040401:p32:c72"
+        },
+        {
+          "rank": 2,
+          "score": 0.259599,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 11,
+          "chunk_id": "d376f55610040401:p11:c24"
+        },
+        {
+          "rank": 3,
+          "score": 0.240313,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 10,
+          "chunk_id": "d376f55610040401:p10:c21"
+        },
+        {
+          "rank": 4,
+          "score": 0.239845,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 7,
+          "chunk_id": "d376f55610040401:p7:c15"
+        },
+        {
+          "rank": 5,
+          "score": 0.236588,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 5,
+          "chunk_id": "d376f55610040401:p5:c9"
+        }
+      ]
+    }
+  ]
+}

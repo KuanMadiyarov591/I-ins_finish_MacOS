@@ -1,0 +1,227 @@
+{
+  "passed": 5,
+  "total": 5,
+  "cases": [
+    {
+      "query": "когда refer при DUI и нескольких ДТП",
+      "expected_sources": [
+        "05_underwriter_internal_01_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.183091,
+          "source": "05_underwriter_internal_01_01_auto_risk.pdf",
+          "page": 1,
+          "chunk_id": "08861e5c254c274b:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.155731,
+          "source": "05_underwriter_internal_04_04_renewal_underwriting.pdf",
+          "page": 2,
+          "chunk_id": "22e5a3053580ef51:p2:c2"
+        },
+        {
+          "rank": 3,
+          "score": 0.137383,
+          "source": "05_underwriter_internal_04_04_renewal_underwriting.pdf",
+          "page": 1,
+          "chunk_id": "22e5a3053580ef51:p1:c1"
+        },
+        {
+          "rank": 4,
+          "score": 0.130383,
+          "source": "05_underwriter_internal_04_04_renewal_underwriting.pdf",
+          "page": 1,
+          "chunk_id": "22e5a3053580ef51:p1:c0"
+        },
+        {
+          "rank": 5,
+          "score": 0.129913,
+          "source": "01_06_client_and_02_insurance_agent_and_04_admin_Financial_Ombudsman_123-FZ_selected_current.pdf",
+          "page": 9,
+          "chunk_id": "09d65bf85023cc78:p9:c19"
+        }
+      ]
+    },
+    {
+      "query": "сигналы мошенничества крупный ущерб без police report",
+      "expected_sources": [
+        "05_underwriter_internal_02_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.261545,
+          "source": "05_underwriter_internal_02_02_fraud_signals.pdf",
+          "page": 1,
+          "chunk_id": "acda6d7aa5a094f4:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.248307,
+          "source": "05_underwriter_internal_04_04_renewal_underwriting.pdf",
+          "page": 2,
+          "chunk_id": "22e5a3053580ef51:p2:c2"
+        },
+        {
+          "rank": 3,
+          "score": 0.109878,
+          "source": "05_underwriter_internal_04_04_renewal_underwriting.pdf",
+          "page": 1,
+          "chunk_id": "22e5a3053580ef51:p1:c1"
+        },
+        {
+          "rank": 4,
+          "score": 0.077395,
+          "source": "05_underwriter_internal_03_03_motor_underwriting.pdf",
+          "page": 1,
+          "chunk_id": "afe2f19eabfef3a1:p1:c0"
+        },
+        {
+          "rank": 5,
+          "score": 0.06245,
+          "source": "legal_Федеральный закон от 25.04.2002 N 40-ФЗ (ред. от 31.07.2025, с изм. от 26.05.2026) _Об обязательном страховании .pdf",
+          "page": 63,
+          "chunk_id": "e9920437b62d3c64:p63:c234"
+        }
+      ]
+    },
+    {
+      "query": "андеррайтинг такси возраст автомобиля история убытков",
+      "expected_sources": [
+        "05_underwriter_internal_03_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.237788,
+          "source": "05_underwriter_internal_01_01_auto_risk.pdf",
+          "page": 1,
+          "chunk_id": "08861e5c254c274b:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.125107,
+          "source": "legal_Федеральный закон от 25.04.2002 N 40-ФЗ (ред. от 31.07.2025, с изм. от 26.05.2026) _Об обязательном страховании .pdf",
+          "page": 33,
+          "chunk_id": "e9920437b62d3c64:p33:c127"
+        },
+        {
+          "rank": 3,
+          "score": 0.118338,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 11,
+          "chunk_id": "30d1457108b4a9bc:p11:c41"
+        },
+        {
+          "rank": 4,
+          "score": 0.115397,
+          "source": "05_underwriter_internal_03_03_motor_underwriting.pdf",
+          "page": 1,
+          "chunk_id": "afe2f19eabfef3a1:p1:c0"
+        },
+        {
+          "rank": 5,
+          "score": 0.110989,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 3,
+          "chunk_id": "30d1457108b4a9bc:p3:c10"
+        }
+      ]
+    },
+    {
+      "query": "возмещение вреда по ОСАГО порядок страховой выплаты",
+      "expected_sources": [
+        "legal_Федеральный",
+        "underwr_Постановление"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.273793,
+          "source": "legal_Федеральный закон от 25.04.2002 N 40-ФЗ (ред. от 31.07.2025, с изм. от 26.05.2026) _Об обязательном страховании .pdf",
+          "page": 33,
+          "chunk_id": "e9920437b62d3c64:p33:c124"
+        },
+        {
+          "rank": 2,
+          "score": 0.259812,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 11,
+          "chunk_id": "30d1457108b4a9bc:p11:c40"
+        },
+        {
+          "rank": 3,
+          "score": 0.259479,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 17,
+          "chunk_id": "30d1457108b4a9bc:p17:c65"
+        },
+        {
+          "rank": 4,
+          "score": 0.256854,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 18,
+          "chunk_id": "30d1457108b4a9bc:p18:c69"
+        },
+        {
+          "rank": 5,
+          "score": 0.248059,
+          "source": "legal_Федеральный закон от 25.04.2002 N 40-ФЗ (ред. от 31.07.2025, с изм. от 26.05.2026) _Об обязательном страховании .pdf",
+          "page": 18,
+          "chunk_id": "e9920437b62d3c64:p18:c68"
+        }
+      ]
+    },
+    {
+      "query": "необоснованный отказ от заключения публичного договора страхования КоАП",
+      "expected_sources": [
+        "underwriter_КоАП РФ Ст. 15.34.1"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.325413,
+          "source": "underwriter_КоАП РФ Ст. 15.34.1.pdf",
+          "page": 1,
+          "chunk_id": "8f08878c08a3b777:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.179614,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 2,
+          "chunk_id": "30d1457108b4a9bc:p2:c7"
+        },
+        {
+          "rank": 3,
+          "score": 0.161412,
+          "source": "01_04_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Consumer_Rights_2024.pdf",
+          "page": 6,
+          "chunk_id": "4c92511314f250ad:p6:c12"
+        },
+        {
+          "rank": 4,
+          "score": 0.155502,
+          "source": "01_01_client_and_02_insurance_agent_and_04_admin_GK_RF_Chapter_48_selected_current.pdf",
+          "page": 17,
+          "chunk_id": "663f6909263acf96:p17:c22"
+        },
+        {
+          "rank": 5,
+          "score": 0.154272,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 7,
+          "chunk_id": "5be7c1c5b39ea710:p7:c15"
+        }
+      ]
+    }
+  ]
+}

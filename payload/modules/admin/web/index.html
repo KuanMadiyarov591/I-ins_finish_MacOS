@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InsuraDesk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css?v=ports-split-2" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero" id="landing">
+      <div class="hero-top">
+        <h1
+          class="brand"
+          data-i18n-title="brand_tagline"
+          title="Система управления страхованием: учёт клиентов, полисы, заявки и чат-консультант по условиям страхования — без ожидания одобрения регистрации."
+        >InsuraDesk</h1>
+        <label class="lang-switch">
+          <span data-i18n="lang_label">Язык</span>
+          <select id="lang-select-auth" aria-label="Language">
+            <option value="ru">Русский</option>
+            <option value="kk">Қазақша</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-ghost" type="button" data-scroll="auth-panel" data-i18n="enter_register">Войти / Регистрация</button>
+        <a class="btn btn-ghost" href="/docs" target="_blank" rel="noopener" data-i18n="api_docs">Документация API</a>
+      </div>
+    </header>
+
+    <section class="panel auth-grid" id="auth-panel">
+      <div>
+        <h2
+          class="auth-heading"
+          data-i18n="login_title"
+          data-i18n-title="login_hint"
+          title="Демо: admin / admin123 · client / client123"
+          style="font-family:var(--font-display);margin-top:0"
+        >Вход</h2>
+        <form class="stack" id="login-form">
+          <label><span data-i18n="username">Логин</span> <input name="username" id="login-username" required autocomplete="username" /></label>
+          <label><span data-i18n="password">Пароль</span> <input name="password" id="login-password" type="password" required autocomplete="current-password" /></label>
+          <button class="btn btn-primary" type="submit" data-i18n="sign_in">Войти</button>
+          <div class="demo-logins">
+            <button class="btn btn-ghost" type="button" id="demo-admin-btn" data-i18n="demo_admin">Войти как администратор</button>
+            <button class="btn btn-ghost" type="button" id="demo-client-btn" data-i18n="demo_client">Войти как клиент</button>
+          </div>
+          <div class="error hidden" id="login-error"></div>
+        </form>
+      </div>
+      <div>
+        <h2 style="font-family:var(--font-display);margin-top:0" data-i18n="signup_title">Регистрация клиента</h2>
+        <form class="stack" id="signup-form">
+          <label><span data-i18n="username">Логин</span> <input name="username" required minlength="3" /></label>
+          <label><span data-i18n="password">Пароль</span> <input name="password" type="password" required minlength="4" /></label>
+          <label><span data-i18n="first_name">Имя</span> <input name="first_name" /></label>
+          <label><span data-i18n="last_name">Фамилия</span> <input name="last_name" /></label>
+          <label><span data-i18n="address">Адрес</span> <input name="address" /></label>
+          <label><span data-i18n="phone">Телефон</span> <input name="mobile" /></label>
+          <button class="btn btn-secondary" type="submit" data-i18n="create_account">Создать учётную запись</button>
+          <div class="error hidden" id="signup-error"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="app-panel">
+      <div class="topbar">
+        <div>
+          <h2 id="welcome">Кабинет</h2>
+          <div class="muted" id="role-line"></div>
+        </div>
+        <div class="topbar-actions">
+          <label class="lang-switch lang-switch-dark">
+            <span data-i18n="lang_label">Язык</span>
+            <select id="lang-select" aria-label="Language">
+              <option value="ru">Русский</option>
+              <option value="kk">Қазақша</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+          <button class="btn btn-danger" type="button" id="logout-btn" data-i18n="logout">Выйти</button>
+        </div>
+      </div>
+      <div class="tabs" id="nav-tabs"></div>
+      <div id="view"></div>
+    </section>
+  </div>
+
+  <div id="pdf-modal" class="pdf-modal" hidden>
+    <div class="pdf-window" role="dialog" aria-modal="true" aria-labelledby="pdf-title">
+      <div class="pdf-window-head" id="pdf-drag-handle">
+        <strong id="pdf-title">Документ</strong>
+        <button id="pdf-close" class="pdf-close" type="button" aria-label="Закрыть">×</button>
+      </div>
+      <div class="pdf-match-wrap">
+        <div class="pdf-match-title" data-i18n="rag_relevant_fragment">Фрагмент, связанный с вопросом</div>
+        <mark id="pdf-match"></mark>
+      </div>
+      <iframe id="pdf-frame" class="pdf-frame" title="Просмотр PDF"></iframe>
+    </div>
+  </div>
+
+  <script src="/static/i18n.js?v=admin-rag-1"></script>
+  <script src="/static/app.js?v=admin-rag-1"></script>
+</body>
+</html>

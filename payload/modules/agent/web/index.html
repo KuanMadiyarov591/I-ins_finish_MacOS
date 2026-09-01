@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Insurance Agent Desk</title>
+  <link rel="stylesheet" href="/static/styles.css?v=20260730f" />
+</head>
+<body>
+  <div id="auth" class="shell auth-shell">
+    <div class="card auth-card">
+      <div class="auth-top">
+        <h1 class="brand" data-i18n="brand">Insurance Agent Desk</h1>
+        <label class="lang-switch">
+          <span data-i18n="lang_label">Язык</span>
+          <select id="lang-auth">
+            <option value="ru">Русский</option>
+            <option value="kk">Қазақша</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+      </div>
+      <form id="login-form">
+        <label><span data-i18n="username">Логин</span><input name="username" value="agent" autocomplete="username" /></label>
+        <label><span data-i18n="password">Пароль</span><input name="password" type="password" value="agent123" autocomplete="current-password" /></label>
+        <button class="btn primary" type="submit" data-i18n="sign_in">Войти</button>
+        <p id="auth-err" class="error" hidden></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="app" class="shell" hidden>
+    <header class="topbar">
+      <h1 class="brand" data-i18n="brand">Insurance Agent Desk</h1>
+      <div class="topbar-actions">
+        <label class="lang-switch">
+          <span data-i18n="lang_label">Язык</span>
+          <select id="lang-app">
+            <option value="ru">Русский</option>
+            <option value="kk">Қазақша</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+        <button id="btn-logout" class="btn ghost" type="button" data-i18n="logout">Выйти</button>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button type="button" class="tab active" data-tab="clients" data-i18n="tab_clients">Клиенты</button>
+      <button type="button" class="tab" data-tab="apps" data-i18n="tab_apps">Заявки</button>
+      <button type="button" class="tab" data-tab="reco" data-i18n="tab_reco">Рекомендации</button>
+      <button type="button" class="tab" data-tab="assistant" data-i18n="tab_assistant">Консультант</button>
+      <button type="button" class="tab" data-tab="profile" data-i18n="tab_profile">Мой профиль</button>
+    </nav>
+
+    <section id="tab-clients" class="tab-panel">
+      <div class="kpi" id="prio-kpi"></div>
+      <div class="board-head">
+        <button id="btn-clear-prio" class="btn ghost sm" type="button" hidden data-i18n="clear_prio">Сбросить фильтр</button>
+      </div>
+      <div class="toolbar">
+        <input id="q-clients" data-i18n-placeholder="search_ph" placeholder="Поиск имени / телефона / ID" />
+        <select id="f-priority" hidden>
+          <option value="" data-i18n="all_priorities">Все приоритеты</option>
+          <option value="1">Приоритет 1</option>
+          <option value="2">Приоритет 2</option>
+          <option value="3">Приоритет 3</option>
+          <option value="4">Приоритет 4</option>
+          <option value="5">Приоритет 5</option>
+        </select>
+        <select id="f-tag"><option value="" data-i18n="all_tags">Все теги</option></select>
+        <select id="f-status">
+          <option value="" data-i18n="all_statuses">Все статусы</option>
+          <option value="active" data-i18n="status_active">Активный</option>
+          <option value="prospect" data-i18n="status_prospect">Потенциальный</option>
+          <option value="inactive" data-i18n="status_inactive">Неактивный</option>
+        </select>
+        <button id="btn-refresh-clients" class="btn" type="button" data-i18n="refresh">Обновить</button>
+      </div>
+      <div class="clients-layout">
+        <div id="client-list" class="tile-grid"></div>
+        <aside id="client-detail" class="card detail empty"><p class="muted" data-i18n="pick_client">Выберите клиента</p></aside>
+      </div>
+    </section>
+
+    <section id="tab-apps" class="tab-panel" hidden>
+      <div class="kpi kpi-apps" id="apps-kpi"></div>
+      <div class="board-head">
+        <button id="btn-clear-app-status" class="btn ghost sm" type="button" hidden data-i18n="clear_app_filter">Все заявки</button>
+      </div>
+      <div class="toolbar">
+        <select id="f-app-status" hidden>
+          <option value="" data-i18n="all_apps">Все заявки</option>
+          <option value="draft" data-i18n="draft">Черновик</option>
+          <option value="checklist" data-i18n="checklist">Чеклист</option>
+          <option value="submitted" data-i18n="submitted">Подана</option>
+        </select>
+        <button id="btn-refresh-apps" class="btn" type="button" data-i18n="refresh">Обновить</button>
+      </div>
+      <div class="apps-layout">
+        <div id="apps-list" class="tile-grid"></div>
+        <aside id="app-detail" class="card detail empty"><p class="muted" data-i18n="pick_app">Выберите заявку</p></aside>
+      </div>
+    </section>
+
+    <section id="tab-reco" class="tab-panel" hidden>
+      <div class="card reco-panel">
+        <h2 data-i18n="reco_title">Рекомендации для агента</h2>
+        <div class="toolbar">
+          <select id="reco-client"></select>
+          <button id="btn-reco" class="btn primary" type="button" data-i18n="reco_run">Показать рекомендации</button>
+        </div>
+        <div id="reco-cats" class="rec-cats"></div>
+        <div id="reco-out" class="rec-list"></div>
+      </div>
+    </section>
+
+    <section id="tab-assistant" class="tab-panel" hidden>
+      <div class="card assistant-chat-card">
+        <h2 data-i18n="rag_title">Консультант для страхового агента</h2>
+        <div class="chat">
+          <div class="chat-thread" id="rag-thread"></div>
+          <form class="chat-composer" id="rag-form">
+            <textarea id="rag-input" rows="2" required data-i18n-placeholder="rag_placeholder" placeholder="Спросите про продукт, возражение или чеклист…"></textarea>
+            <div class="chat-composer-bar">
+              <select id="rag-mode" aria-label="mode">
+                <option value="auto" data-i18n="rag_mode_auto">Авто</option>
+                <option value="extractive" data-i18n="rag_mode_extractive">Extractive</option>
+                <option value="ollama" data-i18n="rag_mode_ollama">Ollama / Qwen</option>
+                <option value="gigachat" data-i18n="rag_mode_gigachat">GigaChat</option>
+              </select>
+              <div class="chat-composer-actions">
+                <span id="rag-ollama" class="chat-ollama-status is-down"></span>
+                <button class="btn primary" type="submit" data-i18n="rag_ask">Спросить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-profile" class="tab-panel" hidden>
+      <form id="profile-form" class="card">
+        <h2 data-i18n="profile_title">Профиль агента</h2>
+        <label><span data-i18n="display_name">Отображаемое имя</span><input name="display_name" /></label>
+        <label><span data-i18n="phone">Телефон</span><input name="phone" /></label>
+        <label><span data-i18n="email">Email</span><input name="email" /></label>
+        <label><span data-i18n="product_prefs">Предпочтения продуктов</span><input name="product_prefs" /></label>
+        <label class="check"><input name="sales_ready" type="checkbox" /> <span data-i18n="sales_ready">Готов к продаже</span></label>
+        <p id="compliance" class="muted small"></p>
+        <button class="btn primary" type="submit" data-i18n="save">Сохранить</button>
+      </form>
+    </section>
+  </div>
+
+  <dialog id="dlg-quote">
+    <form method="dialog" id="quote-form" class="card dialog">
+      <h3 data-i18n="quote_title">Новая заявка</h3>
+      <input type="hidden" name="client_id" />
+      <label><span data-i18n="product">Продукт</span><select name="product_id" id="quote-products"></select></label>
+      <label><span data-i18n="note">Заметка</span><input name="notes" /></label>
+      <div class="row">
+        <button class="btn" value="cancel" type="submit" data-i18n="cancel">Отмена</button>
+        <button class="btn primary" id="btn-create-quote" type="button" data-i18n="create_draft">Создать черновик</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="pdf-modal" class="pdf-modal" hidden>
+    <div class="pdf-window" role="dialog" aria-modal="true" aria-labelledby="pdf-title">
+      <div class="pdf-window-head" id="pdf-drag-handle">
+        <strong id="pdf-title">Документ</strong>
+        <button id="pdf-close" class="pdf-close" type="button" aria-label="Закрыть">×</button>
+      </div>
+      <div class="pdf-match-wrap">
+        <div class="pdf-match-title" data-i18n="rag_relevant_fragment">Фрагмент, связанный с вопросом</div>
+        <mark id="pdf-match"></mark>
+      </div>
+      <iframe id="pdf-frame" class="pdf-frame" title="Просмотр PDF"></iframe>
+    </div>
+  </div>
+
+  <script src="/static/i18n.js?v=agent-rag-1"></script>
+  <script src="/static/app.js?v=agent-rag-1"></script>
+</body>
+</html>

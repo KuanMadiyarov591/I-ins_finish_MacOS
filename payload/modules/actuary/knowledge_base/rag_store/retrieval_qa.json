@@ -1,0 +1,230 @@
+{
+  "passed": 5,
+  "total": 5,
+  "cases": [
+    {
+      "query": "требования к актуарному заключению страховщика",
+      "expected_sources": [
+        "03_34_",
+        "03_21_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.317831,
+          "source": "03_30_Actuary_tarif_Ukazanie_N_5203.pdf",
+          "page": 1,
+          "chunk_id": "ec9a1f5b1ea33a48:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.295469,
+          "source": "03_34_Actuary_Vestnik_4533-U_actuarial_conclusion_insurers.pdf",
+          "page": 1,
+          "chunk_id": "f8344b8e78a9f3a3:p1:c0"
+        },
+        {
+          "rank": 3,
+          "score": 0.294869,
+          "source": "03_21_Actuary_ontologiya_Zakon_FZ-293.pdf",
+          "page": 4,
+          "chunk_id": "c373782fe279fe4b:p4:c11"
+        },
+        {
+          "rank": 4,
+          "score": 0.286895,
+          "source": "03_16_Actuary_31_Ukazanie_6805-U_insurer_reporting_Vestnik.pdf",
+          "page": 3,
+          "chunk_id": "97b1e3781668b7af:p3:c5"
+        },
+        {
+          "rank": 5,
+          "score": 0.266444,
+          "source": "03_43_Actuary_zakluchenie_Ukazanie_6009-U_current.pdf",
+          "page": 5,
+          "chunk_id": "c76c5c51e20b5f19:p5:c13"
+        }
+      ]
+    },
+    {
+      "query": "финансовая устойчивость и платежеспособность страховщика",
+      "expected_sources": [
+        "03_33_",
+        "03_20_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.384438,
+          "source": "03_20_Actuary_Law_Zakon_N_4015-I_current_2026-06-10.pdf",
+          "page": 31,
+          "chunk_id": "7594e2acece1594b:p31:c118"
+        },
+        {
+          "rank": 2,
+          "score": 0.368378,
+          "source": "03_11_Actuary_26_Ukazanie_6805-U_insurer_reporting_Vestnik.pdf",
+          "page": 6,
+          "chunk_id": "b481268bef26b8c7:p6:c15"
+        },
+        {
+          "rank": 3,
+          "score": 0.361101,
+          "source": "03_33_Actuary_Vestnik_858-P_financial_stability_solvency_insurers.pdf",
+          "page": 55,
+          "chunk_id": "197a7fd90290e18b:p55:c221"
+        },
+        {
+          "rank": 4,
+          "score": 0.284712,
+          "source": "03_20_Actuary_Law_Zakon_N_4015-I_current_2026-06-10.pdf",
+          "page": 70,
+          "chunk_id": "7594e2acece1594b:p70:c272"
+        },
+        {
+          "rank": 5,
+          "score": 0.281872,
+          "source": "03_12_Actuary_27_Ukazanie_6805-U_insurer_reporting_Vestnik.pdf",
+          "page": 5,
+          "chunk_id": "232da33e0525e233:p5:c8"
+        }
+      ]
+    },
+    {
+      "query": "используемые предположения при расчете страховых резервов",
+      "expected_sources": [
+        "03_27_",
+        "03_26_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.432186,
+          "source": "03_33_Actuary_Vestnik_858-P_financial_stability_solvency_insurers.pdf",
+          "page": 33,
+          "chunk_id": "197a7fd90290e18b:p33:c134"
+        },
+        {
+          "rank": 2,
+          "score": 0.360678,
+          "source": "03_33_Actuary_Vestnik_858-P_financial_stability_solvency_insurers.pdf",
+          "page": 38,
+          "chunk_id": "197a7fd90290e18b:p38:c153"
+        },
+        {
+          "rank": 3,
+          "score": 0.350756,
+          "source": "03_33_Actuary_Vestnik_858-P_financial_stability_solvency_insurers.pdf",
+          "page": 38,
+          "chunk_id": "197a7fd90290e18b:p38:c154"
+        },
+        {
+          "rank": 4,
+          "score": 0.343372,
+          "source": "03_27_Actuary_rezerv_FSAD_SADP_7.pdf",
+          "page": 10,
+          "chunk_id": "065c0804504e6ccb:p10:c21"
+        },
+        {
+          "rank": 5,
+          "score": 0.3345,
+          "source": "03_33_Actuary_Vestnik_858-P_financial_stability_solvency_insurers.pdf",
+          "page": 21,
+          "chunk_id": "197a7fd90290e18b:p21:c87"
+        }
+      ]
+    },
+    {
+      "query": "актуарный дефицит негосударственного пенсионного фонда",
+      "expected_sources": [
+        "03_39_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.48883,
+          "source": "03_39_Actuary_Vestnik_6884-U_actuarial_deficit_NPF.pdf",
+          "page": 1,
+          "chunk_id": "7fadf766d109b556:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.398382,
+          "source": "03_22_Actuary_pensiya_FSAD_SADP_18.pdf",
+          "page": 10,
+          "chunk_id": "d55ddf306c0d13a6:p10:c31"
+        },
+        {
+          "rank": 3,
+          "score": 0.398041,
+          "source": "03_22_Actuary_pensiya_FSAD_SADP_18.pdf",
+          "page": 9,
+          "chunk_id": "d55ddf306c0d13a6:p9:c29"
+        },
+        {
+          "rank": 4,
+          "score": 0.370256,
+          "source": "03_35_Actuary_Vestnik_4595-U_actuarial_conclusion_NPF.pdf",
+          "page": 4,
+          "chunk_id": "926c41e594f0b70a:p4:c14"
+        },
+        {
+          "rank": 5,
+          "score": 0.369637,
+          "source": "03_22_Actuary_pensiya_FSAD_SADP_18.pdf",
+          "page": 9,
+          "chunk_id": "d55ddf306c0d13a6:p9:c28"
+        }
+      ]
+    },
+    {
+      "query": "актуарное оценивание обязательств негосударственного пенсионного фонда",
+      "expected_sources": [
+        "03_24_",
+        "03_35_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.530022,
+          "source": "03_35_Actuary_Vestnik_4595-U_actuarial_conclusion_NPF.pdf",
+          "page": 3,
+          "chunk_id": "926c41e594f0b70a:p3:c10"
+        },
+        {
+          "rank": 2,
+          "score": 0.501294,
+          "source": "03_23_Actuary_pensiya_FSAD_SADP_21_liquidation_NPF.pdf",
+          "page": 3,
+          "chunk_id": "33ea501e6174fc37:p3:c4"
+        },
+        {
+          "rank": 3,
+          "score": 0.491282,
+          "source": "03_22_Actuary_pensiya_FSAD_SADP_18.pdf",
+          "page": 9,
+          "chunk_id": "d55ddf306c0d13a6:p9:c28"
+        },
+        {
+          "rank": 4,
+          "score": 0.476011,
+          "source": "03_35_Actuary_Vestnik_4595-U_actuarial_conclusion_NPF.pdf",
+          "page": 2,
+          "chunk_id": "926c41e594f0b70a:p2:c7"
+        },
+        {
+          "rank": 5,
+          "score": 0.472785,
+          "source": "03_22_Actuary_pensiya_FSAD_SADP_18.pdf",
+          "page": 9,
+          "chunk_id": "d55ddf306c0d13a6:p9:c29"
+        }
+      ]
+    }
+  ]
+}

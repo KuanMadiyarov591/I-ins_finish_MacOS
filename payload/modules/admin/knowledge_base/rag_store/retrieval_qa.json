@@ -1,0 +1,228 @@
+{
+  "passed": 5,
+  "total": 5,
+  "cases": [
+    {
+      "query": "как администратору назначать роли и журналировать действия",
+      "expected_sources": [
+        "04_admin_internal_01_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.255247,
+          "source": "04_admin_internal_01_01_access_audit_and_incidents.pdf",
+          "page": 1,
+          "chunk_id": "33d0c61f315de793:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.132161,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_42001-2024.pdf",
+          "page": 35,
+          "chunk_id": "164a3e355cf25c36:p35:c103"
+        },
+        {
+          "rank": 3,
+          "score": 0.132033,
+          "source": "04_04_admin_FSTEC_Order_21_current_2020.pdf",
+          "page": 13,
+          "chunk_id": "28562fa40c05c068:p13:c23"
+        },
+        {
+          "rank": 4,
+          "score": 0.13081,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_42001-2024.pdf",
+          "page": 35,
+          "chunk_id": "164a3e355cf25c36:p35:c104"
+        },
+        {
+          "rank": 5,
+          "score": 0.127977,
+          "source": "04_admin_internal_02_02_ai_rag_governance.pdf",
+          "page": 1,
+          "chunk_id": "2d95c75552201569:p1:c0"
+        }
+      ]
+    },
+    {
+      "query": "система менеджмента искусственного интеллекта управление рисками",
+      "expected_sources": [
+        "04_admin_Razrabotchik_IT_GOST_R_42001"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.291005,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_42001-2024.pdf",
+          "page": 46,
+          "chunk_id": "164a3e355cf25c36:p46:c138"
+        },
+        {
+          "rank": 2,
+          "score": 0.274492,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_42001-2024.pdf",
+          "page": 11,
+          "chunk_id": "164a3e355cf25c36:p11:c28"
+        },
+        {
+          "rank": 3,
+          "score": 0.24908,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_71539-2024.pdf",
+          "page": 5,
+          "chunk_id": "4ea7aeb5e8850d76:p5:c9"
+        },
+        {
+          "rank": 4,
+          "score": 0.248763,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_42001-2024.pdf",
+          "page": 45,
+          "chunk_id": "164a3e355cf25c36:p45:c135"
+        },
+        {
+          "rank": 5,
+          "score": 0.243384,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_42001-2024.pdf",
+          "page": 17,
+          "chunk_id": "164a3e355cf25c36:p17:c48"
+        }
+      ]
+    },
+    {
+      "query": "жизненный цикл системы искусственного интеллекта стадии",
+      "expected_sources": [
+        "04_admin_Razrabotchik_IT_GOST_R_71539"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.33103,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_71539-2024.pdf",
+          "page": 5,
+          "chunk_id": "4ea7aeb5e8850d76:p5:c9"
+        },
+        {
+          "rank": 2,
+          "score": 0.320349,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_71539-2024.pdf",
+          "page": 4,
+          "chunk_id": "4ea7aeb5e8850d76:p4:c8"
+        },
+        {
+          "rank": 3,
+          "score": 0.307277,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_71540-2024.pdf",
+          "page": 23,
+          "chunk_id": "3b9f6377145f293e:p23:c58"
+        },
+        {
+          "rank": 4,
+          "score": 0.288723,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_71539-2024.pdf",
+          "page": 10,
+          "chunk_id": "4ea7aeb5e8850d76:p10:c24"
+        },
+        {
+          "rank": 5,
+          "score": 0.286569,
+          "source": "04_admin_Razrabotchik_IT_GOST_R_42001-2024.pdf",
+          "page": 31,
+          "chunk_id": "164a3e355cf25c36:p31:c86"
+        }
+      ]
+    },
+    {
+      "query": "требования к защите персональных данных в информационной системе",
+      "expected_sources": [
+        "04_03_",
+        "04_04_",
+        "01_07_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.444341,
+          "source": "04_03_admin_RF_Government_1119_Personal_Data_Protection.pdf",
+          "page": 2,
+          "chunk_id": "45800cbfaa7c6f8d:p2:c1"
+        },
+        {
+          "rank": 2,
+          "score": 0.391197,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 2,
+          "chunk_id": "d376f55610040401:p2:c3"
+        },
+        {
+          "rank": 3,
+          "score": 0.369475,
+          "source": "04_04_admin_FSTEC_Order_21_current_2020.pdf",
+          "page": 7,
+          "chunk_id": "28562fa40c05c068:p7:c12"
+        },
+        {
+          "rank": 4,
+          "score": 0.363118,
+          "source": "04_03_admin_RF_Government_1119_Personal_Data_Protection.pdf",
+          "page": 3,
+          "chunk_id": "45800cbfaa7c6f8d:p3:c6"
+        },
+        {
+          "rank": 5,
+          "score": 0.361345,
+          "source": "04_04_admin_FSTEC_Order_21_current_2020.pdf",
+          "page": 4,
+          "chunk_id": "28562fa40c05c068:p4:c5"
+        }
+      ]
+    },
+    {
+      "query": "обеспечение информационной безопасности финансовой организации требования 757-П",
+      "expected_sources": [
+        "04_01_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.335264,
+          "source": "04_04_admin_FSTEC_Order_21_current_2020.pdf",
+          "page": 31,
+          "chunk_id": "28562fa40c05c068:p31:c49"
+        },
+        {
+          "rank": 2,
+          "score": 0.276288,
+          "source": "04_04_admin_FSTEC_Order_21_current_2020.pdf",
+          "page": 3,
+          "chunk_id": "28562fa40c05c068:p3:c3"
+        },
+        {
+          "rank": 3,
+          "score": 0.262914,
+          "source": "04_01_admin_CBR_757-P_base_2021_official.pdf",
+          "page": 11,
+          "chunk_id": "78682aeea7e10cbd:p11:c40"
+        },
+        {
+          "rank": 4,
+          "score": 0.260385,
+          "source": "04_04_admin_FSTEC_Order_21_current_2020.pdf",
+          "page": 8,
+          "chunk_id": "28562fa40c05c068:p8:c15"
+        },
+        {
+          "rank": 5,
+          "score": 0.249776,
+          "source": "04_04_admin_FSTEC_Order_21_current_2020.pdf",
+          "page": 10,
+          "chunk_id": "28562fa40c05c068:p10:c20"
+        }
+      ]
+    }
+  ]
+}

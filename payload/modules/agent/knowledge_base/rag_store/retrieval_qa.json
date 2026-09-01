@@ -1,0 +1,231 @@
+{
+  "passed": 5,
+  "total": 5,
+  "cases": [
+    {
+      "query": "что ответить клиенту на возражение дорого нет бюджета",
+      "expected_sources": [
+        "02_agent_internal_05_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.227821,
+          "source": "02_agent_internal_05_05_sales_objections.pdf",
+          "page": 1,
+          "chunk_id": "524bd13b8d4fccb5:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.175268,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 17,
+          "chunk_id": "d376f55610040401:p17:c36"
+        },
+        {
+          "rank": 3,
+          "score": 0.121126,
+          "source": "02_agent_internal_04_04_agent_playbook.pdf",
+          "page": 1,
+          "chunk_id": "42a2942f1cc1cf5b:p1:c0"
+        },
+        {
+          "rank": 4,
+          "score": 0.107398,
+          "source": "02_agent_internal_04_04_agent_playbook.pdf",
+          "page": 1,
+          "chunk_id": "42a2942f1cc1cf5b:p1:c1"
+        },
+        {
+          "rank": 5,
+          "score": 0.10676,
+          "source": "01_02_client_and_02_insurance_agent_and_04_admin_Law_4015-1_selected_current.pdf",
+          "page": 14,
+          "chunk_id": "6a16622946e61bbd:p14:c27"
+        }
+      ]
+    },
+    {
+      "query": "чеклист агента перед подачей страховой заявки",
+      "expected_sources": [
+        "02_agent_internal_04_",
+        "02_agent_internal_06_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.262651,
+          "source": "02_agent_internal_04_04_agent_playbook.pdf",
+          "page": 1,
+          "chunk_id": "42a2942f1cc1cf5b:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.119885,
+          "source": "02_agent_internal_05_05_sales_objections.pdf",
+          "page": 1,
+          "chunk_id": "524bd13b8d4fccb5:p1:c1"
+        },
+        {
+          "rank": 3,
+          "score": 0.115194,
+          "source": "02_agent_internal_06_06_funeral_agent.pdf",
+          "page": 1,
+          "chunk_id": "5147c61ec85aa82f:p1:c0"
+        },
+        {
+          "rank": 4,
+          "score": 0.112261,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 8,
+          "chunk_id": "5be7c1c5b39ea710:p8:c19"
+        },
+        {
+          "rank": 5,
+          "score": 0.103737,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 16,
+          "chunk_id": "5be7c1c5b39ea710:p16:c40"
+        }
+      ]
+    },
+    {
+      "query": "как подготовиться к звонку и назначить follow-up",
+      "expected_sources": [
+        "02_agent_internal_07_",
+        "02_agent_internal_05_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.247451,
+          "source": "02_agent_internal_07_07_call_email_followups.pdf",
+          "page": 1,
+          "chunk_id": "ff5e63f7adce6de8:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.094809,
+          "source": "02_agent_internal_04_04_agent_playbook.pdf",
+          "page": 1,
+          "chunk_id": "42a2942f1cc1cf5b:p1:c0"
+        },
+        {
+          "rank": 3,
+          "score": 0.086702,
+          "source": "02_agent_internal_05_05_sales_objections.pdf",
+          "page": 1,
+          "chunk_id": "524bd13b8d4fccb5:p1:c0"
+        },
+        {
+          "rank": 4,
+          "score": 0.084415,
+          "source": "01_02_client_and_02_insurance_agent_and_04_admin_Law_4015-1_selected_current.pdf",
+          "page": 13,
+          "chunk_id": "6a16622946e61bbd:p13:c24"
+        },
+        {
+          "rank": 5,
+          "score": 0.06588,
+          "source": "01_01_client_and_02_insurance_agent_and_04_admin_GK_RF_Chapter_48_selected_current.pdf",
+          "page": 14,
+          "chunk_id": "663f6909263acf96:p14:c18"
+        }
+      ]
+    },
+    {
+      "query": "права клиента при заключении договора страхования",
+      "expected_sources": [
+        "01_01_",
+        "01_03_",
+        "01_04_",
+        "01_05_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.230052,
+          "source": "01_04_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Consumer_Rights_2024.pdf",
+          "page": 27,
+          "chunk_id": "4c92511314f250ad:p27:c61"
+        },
+        {
+          "rank": 2,
+          "score": 0.218361,
+          "source": "01_03_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Insurance_Operations_2026.pdf",
+          "page": 7,
+          "chunk_id": "5be7c1c5b39ea710:p7:c15"
+        },
+        {
+          "rank": 3,
+          "score": 0.20862,
+          "source": "01_04_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Consumer_Rights_2024.pdf",
+          "page": 29,
+          "chunk_id": "4c92511314f250ad:p29:c63"
+        },
+        {
+          "rank": 4,
+          "score": 0.20552,
+          "source": "01_04_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Consumer_Rights_2024.pdf",
+          "page": 29,
+          "chunk_id": "4c92511314f250ad:p29:c64"
+        },
+        {
+          "rank": 5,
+          "score": 0.190219,
+          "source": "01_04_client_and_02_insurance_agent_and_04_admin_CBR_Basic_Standard_Consumer_Rights_2024.pdf",
+          "page": 11,
+          "chunk_id": "4c92511314f250ad:p11:c26"
+        }
+      ]
+    },
+    {
+      "query": "согласие клиента на обработку персональных данных",
+      "expected_sources": [
+        "01_07_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.415962,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 9,
+          "chunk_id": "d376f55610040401:p9:c17"
+        },
+        {
+          "rank": 2,
+          "score": 0.405961,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 10,
+          "chunk_id": "d376f55610040401:p10:c20"
+        },
+        {
+          "rank": 3,
+          "score": 0.401813,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 10,
+          "chunk_id": "d376f55610040401:p10:c21"
+        },
+        {
+          "rank": 4,
+          "score": 0.398883,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 9,
+          "chunk_id": "d376f55610040401:p9:c18"
+        },
+        {
+          "rank": 5,
+          "score": 0.333418,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 7,
+          "chunk_id": "d376f55610040401:p7:c15"
+        }
+      ]
+    }
+  ]
+}

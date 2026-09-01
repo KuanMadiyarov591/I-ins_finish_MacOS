@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Actuary Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css?v=20260801f" />
+</head>
+<body>
+  <div id="auth" class="shell auth-shell">
+    <div class="card auth-card">
+      <div class="auth-top">
+        <h1 class="brand" data-i18n="brand">Actuary Desk</h1>
+        <label class="lang-switch">
+          <span data-i18n="lang_label">Язык</span>
+          <select id="lang-auth">
+            <option value="ru">Русский</option>
+            <option value="kk">Қазақша</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+      </div>
+      <form id="login-form">
+        <label><span data-i18n="username">Логин</span><input name="username" value="actuary" autocomplete="username" /></label>
+        <label><span data-i18n="password">Пароль</span><input name="password" type="password" value="actuary123" autocomplete="current-password" /></label>
+        <button class="btn primary" type="submit" data-i18n="sign_in">Войти</button>
+        <p id="auth-err" class="error" hidden></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="app" class="shell desk-shell" hidden>
+    <header class="topbar">
+      <div class="brand-block">
+        <span class="brand-mark" data-i18n="brand_mark">AD</span>
+        <div>
+          <h1 class="brand" data-i18n="brand">Actuary Desk</h1>
+        </div>
+      </div>
+      <div class="top-search">
+        <input id="global-search" type="search" data-i18n-placeholder="search_ph" placeholder="Поиск по программе, территории или тарифной группе…" />
+      </div>
+      <div class="topbar-actions">
+        <label class="lang-switch">
+          <span data-i18n="lang_label">Язык</span>
+          <select id="lang-app">
+            <option value="ru">Русский</option>
+            <option value="kk">Қазақша</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+        <span id="user-chip" class="chip"></span>
+        <button id="btn-logout" class="btn ghost" type="button" data-i18n="logout">Выйти</button>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button type="button" class="tab active" data-tab="dashboard" data-i18n="tab_dashboard">Главная</button>
+      <button type="button" class="tab" data-tab="programs" data-i18n="tab_programs">Программы</button>
+      <button type="button" class="tab" data-tab="assumptions" data-i18n="tab_assumptions">Допущения</button>
+      <button type="button" class="tab" data-tab="runs" data-i18n="tab_runs">Прогоны</button>
+      <button type="button" class="tab" data-tab="recommend" data-i18n="tab_recommend">Рекомендации</button>
+      <button type="button" class="tab" data-tab="aihub" data-i18n="tab_aihub">AI Hub</button>
+      <button type="button" class="tab" data-tab="reports" data-i18n="tab_reports">Отчёты</button>
+    </nav>
+
+    <section id="tab-dashboard" class="tab-panel">
+      <div class="section-head">
+        <h2 data-i18n="dash_kpi">Ключевые показатели</h2>
+      </div>
+      <div class="kpi-strip" id="action-kpi"></div>
+      <div class="dash-grid" style="margin-top:16px">
+        <div class="card widget">
+          <h3 data-i18n="dash_model">Модель</h3>
+          <div id="model-meta" class="muted small"></div>
+        </div>
+        <div class="card widget">
+          <h3 data-i18n="dash_avgs">Средние премии (sample)</h3>
+          <div id="avg-meta" class="muted small"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-programs" class="tab-panel" hidden>
+      <div class="toolbar">
+        <button id="btn-refresh-programs" class="btn" type="button" data-i18n="refresh">Обновить</button>
+      </div>
+      <div class="table-wrap card">
+        <table class="data-table" id="programs-table">
+          <thead>
+            <tr>
+              <th data-i18n="th_id">ID</th>
+              <th data-i18n="th_territory">Territory</th>
+              <th data-i18n="th_gender">Gender</th>
+              <th data-i18n="th_age">Age</th>
+              <th data-i18n="th_ypc">YPC</th>
+              <th data-i18n="th_cgr">CGR</th>
+              <th data-i18n="th_indicated">Indicated</th>
+              <th data-i18n="th_selected">Selected</th>
+              <th data-i18n="th_fixed">Fixed exp.</th>
+              <th data-i18n="th_gap">Gap</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tab-assumptions" class="tab-panel" hidden>
+      <div class="subtabs" id="assumptions-subtabs">
+        <button type="button" class="tab active" data-sub="cgr" data-i18n="sub_cgr">Тарифные группы (CGR)</button>
+        <button type="button" class="tab" data-sub="terr" data-i18n="sub_terr">Тарифные территории</button>
+      </div>
+      <div id="assumptions-cgr" class="table-wrap card">
+        <table class="data-table" id="cgr-table">
+          <thead>
+            <tr>
+              <th data-i18n="th_cgr_code">Код тарифной группы</th><th>aa</th><th>bb</th><th>cc</th><th>va</th><th>dd</th><th>hh</th><th>ss</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="assumptions-terr" class="table-wrap card" hidden>
+        <table class="data-table" id="terr-table">
+          <thead>
+            <tr>
+              <th data-i18n="th_county">County</th>
+              <th data-i18n="th_county_code">Code</th>
+              <th data-i18n="th_territory">Territory</th>
+              <th data-i18n="th_zip">Zip</th>
+              <th data-i18n="th_town">Town</th>
+              <th data-i18n="th_area">Area</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tab-runs" class="tab-panel" hidden>
+      <div class="card">
+        <div class="section-head row" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+          <h2 data-i18n="runs_title">Модель расчёта премии</h2>
+          <button id="btn-retrain" class="btn" type="button" data-i18n="runs_retrain">Переобучить модель</button>
+        </div>
+        <p id="runs-status" class="muted small"></p>
+        <div class="table-wrap">
+          <table class="data-table" id="runs-table">
+            <thead>
+              <tr>
+                <th data-i18n="th_model">Model</th>
+                <th data-i18n="th_estimator">Estimator</th>
+                <th data-i18n="th_rows">Rows</th>
+                <th>MAE</th>
+                <th>R²</th>
+                <th data-i18n="th_features">Features</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-recommend" class="tab-panel" hidden>
+      <div class="card reco-panel">
+        <form id="reco-form" class="reco-form" onsubmit="return false;">
+          <div class="reco-form-grid">
+            <label class="reco-field">
+              <span data-i18n="reco_territory">Территория</span>
+              <select id="reco-territory"></select>
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_gender">Пол</span>
+              <select id="reco-gender">
+                <option value="M" data-i18n="gender_male">Мужчина</option>
+                <option value="F" data-i18n="gender_female">Женщина</option>
+              </select>
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_cgr">Класс CGR</span>
+              <select id="reco-cgr"></select>
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_age">Возраст</span>
+              <input id="reco-age" type="number" min="16" max="100" step="1" value="40" />
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_ypc">Год полиса (YPC)</span>
+              <input id="reco-ypc" type="number" min="0" max="20" step="1" value="2" />
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_indicated">Индикативная премия</span>
+              <input id="reco-indicated" type="number" min="0" step="1" value="800" />
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_fixed">Фикс. расходы</span>
+              <input id="reco-fixed" type="number" min="0" step="1" value="150" />
+            </label>
+            <div class="reco-field reco-field-action">
+              <span class="reco-field-spacer" aria-hidden="true">&nbsp;</span>
+              <button id="btn-reco" class="btn primary" type="submit" data-i18n="reco_run">Показать</button>
+            </div>
+          </div>
+        </form>
+        <div id="reco-toast" class="reco-toast" aria-live="polite"></div>
+        <div class="reco-results">
+          <div class="reco-table-wrap">
+            <table class="reco-table" id="reco-table">
+              <thead>
+                <tr>
+                  <th data-i18n="reco_col_pred">Прогноз</th>
+                  <th data-i18n="reco_col_indicated">Индикативная</th>
+                  <th data-i18n="reco_col_gap">Разрыв</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="reco-factors-wrap" id="reco-factors-wrap" hidden>
+            <h3 class="reco-factors-title" data-i18n="reco_col_factors">Факторы</h3>
+            <table class="reco-factors-table" id="reco-factors-table">
+              <thead>
+                <tr>
+                  <th data-i18n="reco_factor_attr">Признак</th>
+                  <th data-i18n="reco_factor_value">Значение</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-reports" class="tab-panel" hidden>
+      <div class="section-head">
+        <h2 data-i18n="rep_title">Аналитические отчёты</h2>
+      </div>
+      <div class="card widget">
+        <p class="muted small" data-i18n="rep_hint">Показатели считаются по данным кабинета, затем выбранная языковая модель объясняет их словами. В PDF расчёт и интерпретация разделены.</p>
+        <div class="row" style="gap:10px;flex-wrap:wrap;align-items:flex-end;margin-top:10px">
+          <label class="field">
+            <span data-i18n="rep_kind">Вид отчёта</span>
+            <select id="rep-kind"></select>
+          </label>
+          <label class="field">
+            <span data-i18n="rep_mode">Модель для интерпретации</span>
+            <select id="rep-mode">
+              <option value="auto" data-i18n="rag_mode_auto">Авто</option>
+              <option value="extractive" data-i18n="rag_mode_extractive">По базе</option>
+              <option value="ollama" data-i18n="rag_mode_ollama">Qwen RAG</option>
+              <option value="gigachat" data-i18n="rag_mode_gigachat">GigaChat</option>
+            </select>
+          </label>
+          <button class="btn primary" type="button" id="rep-build" data-i18n="rep_build">Построить отчёт</button>
+          <span id="rep-status" class="muted small"></span>
+        </div>
+        <p id="rep-desc" class="muted small" style="margin-top:8px"></p>
+      </div>
+      <div class="card widget" style="margin-top:16px">
+        <h3 data-i18n="rep_result">Результат</h3>
+        <div id="rep-result" class="muted small" data-i18n="rep_empty">Отчёт ещё не построен.</div>
+      </div>
+      <div class="card widget" style="margin-top:16px">
+        <h3 data-i18n="rep_recent">Готовые отчёты</h3>
+        <div id="rep-recent" class="muted small"></div>
+      </div>
+    </section>
+
+    <section id="tab-aihub" class="tab-panel" hidden>
+      <div class="card assistant-chat-card">
+        <div class="section-head row">
+          <div>
+            <h2 data-i18n="rag_title">Консультант актуария</h2>
+          </div>
+        </div>
+        <div class="chat">
+          <div class="chat-thread" id="rag-thread"></div>
+          <form class="chat-composer" id="rag-form">
+            <textarea id="rag-input" rows="2" required data-i18n-placeholder="rag_ph" placeholder="Спросите о тарификации, тарифных группах или территориях…"></textarea>
+            <div class="chat-composer-bar">
+              <select id="rag-mode" data-i18n-aria="rag_mode_aria" aria-label="Режим ответа">
+                <option value="auto" data-i18n="rag_mode_auto">Авто</option>
+                <option value="extractive" data-i18n="rag_mode_extractive">По базе</option>
+                <option value="ollama" data-i18n="rag_mode_ollama">Qwen</option>
+                <option value="gigachat" data-i18n="rag_mode_gigachat">GigaChat</option>
+              </select>
+              <div class="chat-composer-actions">
+                <span id="rag-ollama" class="chat-ollama-status is-down">Ollama…</span>
+                <button class="btn primary" type="submit" data-i18n="rag_ask">Спросить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="pdf-modal" class="pdf-modal" hidden>
+    <div class="pdf-window" role="dialog" aria-modal="true" aria-labelledby="pdf-title">
+      <div class="pdf-window-head" id="pdf-drag-handle">
+        <strong id="pdf-title">Документ</strong>
+        <button id="pdf-close" class="pdf-close" type="button" aria-label="Закрыть">×</button>
+      </div>
+      <div class="pdf-match-wrap">
+        <div class="pdf-match-title" data-i18n="rag_relevant_fragment">Фрагмент, связанный с вопросом</div>
+        <mark id="pdf-match"></mark>
+      </div>
+      <iframe id="pdf-frame" class="pdf-frame" title="Просмотр PDF"></iframe>
+    </div>
+  </div>
+
+  <script src="/static/i18n.js?v=20260801i"></script>
+  <script src="/static/app.js?v=20260801i"></script>
+</body>
+</html>

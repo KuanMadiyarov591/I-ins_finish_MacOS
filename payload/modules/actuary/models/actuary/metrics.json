@@ -1,0 +1,73 @@
+{
+  "primary": {
+    "name": "selected_premium",
+    "estimator": "HistGradientBoostingRegressor",
+    "n_rows": 40000,
+    "n_train": 32000,
+    "n_test": 8000,
+    "mae": 175.7922,
+    "r2": 0.8154,
+    "features": [
+      "ypc",
+      "fixed_expenses",
+      "age",
+      "indicated_premium",
+      "territory",
+      "gender",
+      "cgr"
+    ],
+    "excluded_leakage": [
+      "current_premium"
+    ],
+    "path": "models/actuary/selected_premium.joblib"
+  },
+  "models": [
+    {
+      "name": "selected_premium",
+      "estimator": "HistGradientBoostingRegressor",
+      "n_rows": 40000,
+      "n_train": 32000,
+      "n_test": 8000,
+      "mae": 175.7922,
+      "r2": 0.8154,
+      "features": [
+        "ypc",
+        "fixed_expenses",
+        "age",
+        "indicated_premium",
+        "territory",
+        "gender",
+        "cgr"
+      ],
+      "excluded_leakage": [
+        "current_premium"
+      ],
+      "path": "models/actuary/selected_premium.joblib"
+    }
+  ],
+  "leaderboard": [
+    {
+      "name": "selected_premium",
+      "estimator": "HistGradientBoostingRegressor",
+      "n_rows": 40000,
+      "n_train": 32000,
+      "n_test": 8000,
+      "mae": 175.7922,
+      "r2": 0.8154,
+      "features": [
+        "ypc",
+        "fixed_expenses",
+        "age",
+        "indicated_premium",
+        "territory",
+        "gender",
+        "cgr"
+      ],
+      "excluded_leakage": [
+        "current_premium"
+      ],
+      "path": "models/actuary/selected_premium.joblib"
+    }
+  ],
+  "target": "selected_premium"
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legal Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css?v=legal-rag-1" />
+</head>
+<body>
+  <div id="auth" class="shell auth-shell">
+    <div class="card auth-card">
+      <div class="auth-top">
+        <h1 class="brand" data-i18n="brand">Legal Hub</h1>
+        <label class="lang-switch">
+          <span data-i18n="lang_label">Язык</span>
+          <select id="lang-auth">
+            <option value="ru">Русский</option>
+            <option value="kk">Қазақша</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+      </div>
+      <form id="login-form">
+        <label><span data-i18n="username">Логин</span><input name="username" value="lawyer" autocomplete="username" /></label>
+        <label><span data-i18n="password">Пароль</span><input name="password" type="password" value="lawyer123" autocomplete="current-password" /></label>
+        <button class="btn primary" type="submit" data-i18n="sign_in">Войти</button>
+        <p id="auth-err" class="error" hidden></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="app" class="shell desk-shell" hidden>
+    <header class="topbar">
+      <div class="brand-block">
+        <span class="brand-mark" data-i18n="brand_mark">LH</span>
+        <div>
+          <h1 class="brand" data-i18n="brand">Legal Hub</h1>
+        </div>
+      </div>
+      <div class="top-search">
+        <input id="global-search" type="search" data-i18n-placeholder="search_ph" placeholder="Поиск дела / стороны…" />
+      </div>
+      <div class="topbar-actions">
+        <label class="lang-switch">
+          <span data-i18n="lang_label">Язык</span>
+          <select id="lang-app">
+            <option value="ru">Русский</option>
+            <option value="kk">Қазақша</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+        <span id="user-chip" class="chip"></span>
+        <button id="btn-logout" class="btn ghost" type="button" data-i18n="logout">Выйти</button>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button type="button" class="tab active" data-tab="dashboard" data-i18n="tab_dashboard">Главная</button>
+      <button type="button" class="tab" data-tab="requests" data-i18n="tab_requests">Запросы</button>
+      <button type="button" class="tab" data-tab="detail" data-i18n="tab_detail">Карточка</button>
+      <button type="button" class="tab" data-tab="recommend" data-i18n="tab_recommend">Рекомендации</button>
+      <button type="button" class="tab" data-tab="aihub" data-i18n="tab_aihub">AI Hub</button>
+    </nav>
+
+    <section id="tab-dashboard" class="tab-panel">
+      <div class="section-head">
+        <h2 data-i18n="dash_now">Сейчас в работе</h2>
+      </div>
+      <div class="kpi-strip" id="action-kpi"></div>
+
+      <div class="section-head">
+        <h2 data-i18n="dash_book">Портфель дел</h2>
+      </div>
+      <div class="kpi-strip book" id="book-kpi"></div>
+
+      <div class="dash-grid">
+        <div class="card widget">
+          <h3 data-i18n="w_amount_bar">Суммы: ожидает / принято</h3>
+          <div id="bar-pending-retained" class="bar-chart"></div>
+        </div>
+        <div class="card widget">
+          <h3 data-i18n="w_by_status">Дела по статусам</h3>
+          <div id="donut-status" class="donut-wrap"></div>
+        </div>
+        <div class="card widget mini-stats" id="risk-widgets"></div>
+        <div class="card widget">
+          <h3 data-i18n="w_lines">Линейки</h3>
+          <div id="workstream" class="workstream"></div>
+        </div>
+        <div class="card widget wide">
+          <h3 data-i18n="w_submissions">Новые поступления</h3>
+          <div class="table-wrap">
+            <table class="data-table" id="submissions-table">
+              <thead>
+                <tr>
+                  <th data-i18n="th_case">Дело</th>
+                  <th data-i18n="th_party">Сторона</th>
+                  <th data-i18n="th_line">Линейка</th>
+                  <th data-i18n="th_days">Дни</th>
+                  <th data-i18n="th_amount">Сумма</th>
+                  <th data-i18n="th_priority">Приоритет</th>
+                  <th data-i18n="th_rec">Рекомендация</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-requests" class="tab-panel" hidden>
+      <div class="kpi" id="status-kpi"></div>
+      <div class="toolbar">
+        <select id="f-status">
+          <option value="" data-i18n="all_statuses">Все статусы</option>
+          <option value="new" data-i18n="status_new">Новый</option>
+          <option value="in_review" data-i18n="status_in_review">В работе</option>
+          <option value="escalated" data-i18n="status_escalated">Эскалация</option>
+          <option value="accepted" data-i18n="status_accepted">Принято</option>
+          <option value="declined" data-i18n="status_declined">Отклонено</option>
+        </select>
+        <select id="f-line">
+          <option value="" data-i18n="all_lines">Все линейки</option>
+          <option value="pi" data-i18n="line_pi_full">Телесный вред · вердикт</option>
+          <option value="imr" data-i18n="line_imr_full">IMR · overturn</option>
+        </select>
+        <button id="btn-refresh" class="btn" type="button" data-i18n="refresh">Обновить</button>
+      </div>
+      <div class="table-wrap card">
+        <table class="data-table" id="cases-table">
+          <thead>
+            <tr>
+              <th data-i18n="th_case">Дело</th>
+              <th data-i18n="th_party">Сторона</th>
+              <th data-i18n="th_line">Линейка</th>
+              <th data-i18n="th_amount">Сумма</th>
+              <th data-i18n="th_status">Статус</th>
+              <th data-i18n="th_priority">Приоритет</th>
+              <th data-i18n="th_rec">Рекомендация</th>
+              <th data-i18n="th_days">Дни</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tab-detail" class="tab-panel" hidden>
+      <div id="case-detail" class="card detail empty">
+        <p class="muted" data-i18n="detail_empty">Выберите дело на вкладке «Запросы»</p>
+      </div>
+    </section>
+
+    <section id="tab-recommend" class="tab-panel" hidden>
+      <div class="card reco-panel">
+        <form id="reco-form" class="reco-form" onsubmit="return false;">
+          <div class="reco-form-grid">
+            <label class="reco-field reco-field-case">
+              <span data-i18n="reco_field_case">Дело</span>
+              <select id="reco-case">
+                <option value="" data-i18n="reco_pick_case">Выберите дело…</option>
+              </select>
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_field_line">Линейка</span>
+              <select id="reco-line">
+                <option value="pi" data-i18n="line_pi_full">Телесный вред · вердикт</option>
+                <option value="imr" data-i18n="line_imr_full">IMR · overturn</option>
+              </select>
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_field_amount">Сумма</span>
+              <input id="reco-amount" type="number" min="0" step="1000" data-i18n-placeholder="reco_amount_ph" placeholder="Сумма" />
+            </label>
+            <label class="reco-field">
+              <span data-i18n="reco_field_risk">Приоритет</span>
+              <input id="reco-risk-hint" type="number" min="0" max="100" step="1" data-i18n-placeholder="reco_risk_ph" placeholder="0–100" />
+            </label>
+            <label class="reco-field" id="reco-appeal-wrap">
+              <span data-i18n="reco_field_appeal">Тип апелляции</span>
+              <input id="reco-appeal" type="text" data-i18n-placeholder="reco_appeal_ph" placeholder="Surgery / Pharmacy…" />
+            </label>
+            <div class="reco-field reco-field-action">
+              <span class="reco-field-spacer" aria-hidden="true">&nbsp;</span>
+              <button id="btn-reco" class="btn primary" type="submit" data-i18n="reco_run">Показать</button>
+            </div>
+          </div>
+          <p class="muted small reco-form-hint" data-i18n="reco_form_hint">Если дело не выбрано — считаем по линейке и полям профиля.</p>
+        </form>
+        <div id="reco-toast" class="reco-toast" aria-live="polite"></div>
+        <div id="reco-out" class="rec-list"></div>
+      </div>
+    </section>
+
+    <section id="tab-aihub" class="tab-panel" hidden>
+      <div class="card assistant-chat-card">
+        <div class="section-head row">
+          <div>
+            <h2 data-i18n="rag_title">AI Hub — консультант юриста</h2>
+          </div>
+        </div>
+        <div class="chat">
+          <div class="chat-thread" id="rag-thread"></div>
+          <form class="chat-composer" id="rag-form">
+            <textarea id="rag-input" rows="2" required data-i18n-placeholder="rag_ph" placeholder="Спросите про PI, IMR, эскалацию, NDA или документы…"></textarea>
+            <div class="chat-composer-bar">
+              <select id="rag-mode" aria-label="Режим ответа">
+                <option value="auto" data-i18n="rag_mode_auto">Авто</option>
+                <option value="extractive" data-i18n="rag_mode_extractive">По базе</option>
+                <option value="ollama" data-i18n="rag_mode_ollama">Qwen</option>
+                <option value="gigachat" data-i18n="rag_mode_gigachat">GigaChat</option>
+              </select>
+              <div class="chat-composer-actions">
+                <span id="rag-ollama" class="chat-ollama-status is-down">Ollama…</span>
+                <button class="btn primary" type="submit" data-i18n="rag_ask">Спросить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="pdf-modal" class="pdf-modal" hidden>
+    <div class="pdf-window" role="dialog" aria-modal="true" aria-labelledby="pdf-title">
+      <div class="pdf-window-head" id="pdf-drag-handle">
+        <strong id="pdf-title">Документ</strong>
+        <button id="pdf-close" class="pdf-close" type="button" aria-label="Закрыть">×</button>
+      </div>
+      <div class="pdf-match-wrap">
+        <div class="pdf-match-title" data-i18n="rag_relevant_fragment">Фрагмент, связанный с вопросом</div>
+        <mark id="pdf-match"></mark>
+      </div>
+      <iframe id="pdf-frame" class="pdf-frame" title="Просмотр PDF"></iframe>
+    </div>
+  </div>
+
+  <script src="/static/i18n.js?v=legal-rag-1"></script>
+  <script src="/static/app.js?v=legal-rag-1"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+{
+  "passed": 6,
+  "total": 6,
+  "cases": [
+    {
+      "query": "PI претензия тяжкий вред жизни эскалация и доказательства",
+      "expected_sources": [
+        "06_legal_internal_01_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.499992,
+          "source": "06_legal_internal_01_01_pi_claims_policy.pdf",
+          "page": 1,
+          "chunk_id": "75d23f472435ffc5:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.126427,
+          "source": "legal_Федеральный закон от 25.04.2002 N 40-ФЗ (ред. от 31.07.2025, с изм. от 26.05.2026) _Об обязательном страховании .pdf",
+          "page": 49,
+          "chunk_id": "e9920437b62d3c64:p49:c184"
+        },
+        {
+          "rank": 3,
+          "score": 0.120457,
+          "source": "legal_apk.pdf",
+          "page": 54,
+          "chunk_id": "453fad8c8bf81b70:p54:c179"
+        },
+        {
+          "rank": 4,
+          "score": 0.105155,
+          "source": "legal_gpkodeksrf.pdf",
+          "page": 79,
+          "chunk_id": "e3cf535242304149:p79:c248"
+        },
+        {
+          "rank": 5,
+          "score": 0.097929,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 6,
+          "chunk_id": "30d1457108b4a9bc:p6:c22"
+        }
+      ]
+    },
+    {
+      "query": "IMR апелляция на отказ сроки медицинские документы",
+      "expected_sources": [
+        "06_legal_internal_02_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.461292,
+          "source": "06_legal_internal_02_02_imr_appeals_guide.pdf",
+          "page": 1,
+          "chunk_id": "d028317978a04784:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.198104,
+          "source": "01_02_client_and_02_insurance_agent_and_04_admin_Law_4015-1_selected_current.pdf",
+          "page": 31,
+          "chunk_id": "6a16622946e61bbd:p31:c73"
+        },
+        {
+          "rank": 3,
+          "score": 0.198091,
+          "source": "legal_apk.pdf",
+          "page": 174,
+          "chunk_id": "453fad8c8bf81b70:p174:c591"
+        },
+        {
+          "rank": 4,
+          "score": 0.193225,
+          "source": "legal_apk.pdf",
+          "page": 173,
+          "chunk_id": "453fad8c8bf81b70:p173:c588"
+        },
+        {
+          "rank": 5,
+          "score": 0.190005,
+          "source": "legal_gpkodeksrf.pdf",
+          "page": 128,
+          "chunk_id": "e3cf535242304149:p128:c408"
+        }
+      ]
+    },
+    {
+      "query": "NDA конфиденциальная информация обязательства и исключения",
+      "expected_sources": [
+        "06_legal_internal_04_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.472078,
+          "source": "06_legal_internal_04_04_nda_notes.pdf",
+          "page": 1,
+          "chunk_id": "a44a526f35ba3f71:p1:c0"
+        },
+        {
+          "rank": 2,
+          "score": 0.308714,
+          "source": "01_02_client_and_02_insurance_agent_and_04_admin_Law_4015-1_selected_current.pdf",
+          "page": 32,
+          "chunk_id": "6a16622946e61bbd:p32:c77"
+        },
+        {
+          "rank": 3,
+          "score": 0.244132,
+          "source": "01_07_client_and_02_insurance_agent_and_04_admin_Personal_Data_152-FZ_selected_current.pdf",
+          "page": 25,
+          "chunk_id": "d376f55610040401:p25:c53"
+        },
+        {
+          "rank": 4,
+          "score": 0.220671,
+          "source": "legal_Федеральный закон от 25.04.2002 N 40-ФЗ (ред. от 31.07.2025, с изм. от 26.05.2026) _Об обязательном страховании .pdf",
+          "page": 62,
+          "chunk_id": "e9920437b62d3c64:p62:c231"
+        },
+        {
+          "rank": 5,
+          "score": 0.198133,
+          "source": "01_02_client_and_02_insurance_agent_and_04_admin_Law_4015-1_selected_current.pdf",
+          "page": 32,
+          "chunk_id": "6a16622946e61bbd:p32:c76"
+        }
+      ]
+    },
+    {
+      "query": "подсудность спора физического лица со страховой компанией",
+      "expected_sources": [
+        "legal_gpkodeksrf",
+        "01_05_"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.194429,
+          "source": "legal_gpkodeksrf.pdf",
+          "page": 166,
+          "chunk_id": "e3cf535242304149:p166:c525"
+        },
+        {
+          "rank": 2,
+          "score": 0.191206,
+          "source": "legal_apk.pdf",
+          "page": 14,
+          "chunk_id": "453fad8c8bf81b70:p14:c46"
+        },
+        {
+          "rank": 3,
+          "score": 0.175569,
+          "source": "legal_gpkodeksrf.pdf",
+          "page": 15,
+          "chunk_id": "e3cf535242304149:p15:c45"
+        },
+        {
+          "rank": 4,
+          "score": 0.16646,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 21,
+          "chunk_id": "30d1457108b4a9bc:p21:c79"
+        },
+        {
+          "rank": 5,
+          "score": 0.165877,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 30,
+          "chunk_id": "30d1457108b4a9bc:p30:c115"
+        }
+      ]
+    },
+    {
+      "query": "арбитражный спор юридического лица со страховщиком иск",
+      "expected_sources": [
+        "legal_apk"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.272518,
+          "source": "legal_apk.pdf",
+          "page": 127,
+          "chunk_id": "453fad8c8bf81b70:p127:c432"
+        },
+        {
+          "rank": 2,
+          "score": 0.258127,
+          "source": "legal_apk.pdf",
+          "page": 127,
+          "chunk_id": "453fad8c8bf81b70:p127:c431"
+        },
+        {
+          "rank": 3,
+          "score": 0.24465,
+          "source": "legal_apk.pdf",
+          "page": 125,
+          "chunk_id": "453fad8c8bf81b70:p125:c425"
+        },
+        {
+          "rank": 4,
+          "score": 0.228772,
+          "source": "legal_apk.pdf",
+          "page": 114,
+          "chunk_id": "453fad8c8bf81b70:p114:c387"
+        },
+        {
+          "rank": 5,
+          "score": 0.225746,
+          "source": "legal_apk.pdf",
+          "page": 124,
+          "chunk_id": "453fad8c8bf81b70:p124:c422"
+        }
+      ]
+    },
+    {
+      "query": "ОСАГО досудебный порядок страховое возмещение потерпевшему",
+      "expected_sources": [
+        "legal_Федеральный",
+        "underwr_Постановление"
+      ],
+      "passed": true,
+      "hits": [
+        {
+          "rank": 1,
+          "score": 0.312196,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 18,
+          "chunk_id": "30d1457108b4a9bc:p18:c69"
+        },
+        {
+          "rank": 2,
+          "score": 0.29951,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 6,
+          "chunk_id": "30d1457108b4a9bc:p6:c19"
+        },
+        {
+          "rank": 3,
+          "score": 0.289261,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 11,
+          "chunk_id": "30d1457108b4a9bc:p11:c41"
+        },
+        {
+          "rank": 4,
+          "score": 0.284099,
+          "source": "legal_Федеральный закон от 25.04.2002 N 40-ФЗ (ред. от 31.07.2025, с изм. от 26.05.2026) _Об обязательном страховании .pdf",
+          "page": 18,
+          "chunk_id": "e9920437b62d3c64:p18:c67"
+        },
+        {
+          "rank": 5,
+          "score": 0.277564,
+          "source": "underwr_Пленум_ВС_РФ_08-11-2022_N31_ОСАГО.pdf",
+          "page": 8,
+          "chunk_id": "30d1457108b4a9bc:p8:c29"
+        }
+      ]
+    }
+  ]
+}
