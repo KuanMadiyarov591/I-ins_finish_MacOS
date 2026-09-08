@@ -82,7 +82,26 @@ qwen_present() {
 head_ "1. Сервер Ollama"
 
 OLLAMA=""
+APP_BUNDLE=""
 add_try() { TRIED="$TRIED  $1"$'\n'; }
+
+# Внутри Ollama.app два разных исполняемых файла: в Contents/MacOS лежит
+# само приложение с окном, а программа командной строки — в Contents/Resources.
+# Если запустить первое с аргументом pull, оно просто откроет окно и будет
+# висеть: именно на этом всё и останавливалось.
+to_cli() {
+  local p="$1" bundle
+  case "$p" in
+    */Contents/MacOS/*)
+      bundle="${p%/Contents/MacOS/*}"
+      APP_BUNDLE="${APP_BUNDLE:-$bundle}"
+      if [[ -x "$bundle/Contents/Resources/ollama" ]]; then
+        printf '%s' "$bundle/Contents/Resources/ollama"
+      fi
+      return 0 ;;
+  esac
+  printf '%s' "$p"
+}
 
 find_ollama() {
   local cand sh seen_sh sub app rc
@@ -90,6 +109,7 @@ find_ollama() {
   # 1. PATH текущей оболочки.
   cand="$(command -v ollama 2>/dev/null || true)"
   add_try "PATH этой оболочки: ${cand:-не найдено}"
+  cand="$(to_cli "$cand")"
   if [[ -n "$cand" && -x "$cand" ]]; then OLLAMA="$cand"; return 0; fi
 
   # 2. Псевдоним из ~/.zshrc. Очень частый случай: программа лежит там, где
@@ -98,12 +118,14 @@ find_ollama() {
   if [[ -x /bin/zsh ]]; then
     cand="$(/bin/zsh -ic 'whence -p ollama' 2>/dev/null | tail -1)"
     add_try "интерактивный zsh, обычный путь: ${cand:-не найдено}"
-    if [[ -n "$cand" && -x "$cand" ]]; then OLLAMA="$cand"; return 0; fi
+    cand="$(to_cli "$cand")"
+  if [[ -n "$cand" && -x "$cand" ]]; then OLLAMA="$cand"; return 0; fi
 
     cand="$(/bin/zsh -ic 'alias ollama' 2>/dev/null | tail -1 \
             | sed -e 's/^ollama=//' -e "s/^'//" -e "s/'$//" -e 's/^"//' -e 's/"$//')"
     add_try "псевдоним ollama: ${cand:-не найдено}"
-    if [[ -n "$cand" && -x "$cand" ]]; then OLLAMA="$cand"; return 0; fi
+    cand="$(to_cli "$cand")"
+  if [[ -n "$cand" && -x "$cand" ]]; then OLLAMA="$cand"; return 0; fi
   fi
 
   # 3. Профили: вдруг оболочка не отвечает, а строка в файле есть.
@@ -114,12 +136,12 @@ find_ollama() {
                 -e 's/^"//' -e 's/".*$//' -e 's/[[:space:]].*$//')"
   cand="${cand/#\~/$HOME}"
   add_try "псевдоним из профиля: ${cand:-не найдено}"
+  cand="$(to_cli "$cand")"
   if [[ -n "$cand" && -x "$cand" ]]; then OLLAMA="$cand"; return 0; fi
 
   # 4. Известные места. goinfre идёт первым: на учебных Mac программу ставят
   #    именно туда, потому что в домашней папке нет места.
   for cand in \
-    "$HOME/goinfre/Ollama.app/Contents/MacOS/ollama" \
     "$HOME/goinfre/Ollama.app/Contents/Resources/ollama" \
     "$HOME/goinfre/ollama/ollama" \
     "$HOME/goinfre/homebrew/bin/ollama" \
@@ -130,9 +152,7 @@ find_ollama() {
     "$HOME/bin/ollama" \
     "$HOME/homebrew/bin/ollama" \
     "$HOME/.brew/bin/ollama" \
-    /Applications/Ollama.app/Contents/MacOS/ollama \
     /Applications/Ollama.app/Contents/Resources/ollama \
-    "$HOME/Applications/Ollama.app/Contents/MacOS/ollama" \
     "$HOME/Applications/Ollama.app/Contents/Resources/ollama"
   do
     if [[ -x "$cand" ]]; then OLLAMA="$cand"; add_try "по известному пути: $cand"; return 0; fi
@@ -143,18 +163,20 @@ find_ollama() {
   for app in "$HOME"/goinfre/Ollama.app "$HOME"/goinfre/*/Ollama.app \
              "$HOME"/Downloads/Ollama.app "$HOME"/Desktop/Ollama.app; do
     [[ -d "$app" ]] || continue
-    for sub in Contents/MacOS/ollama Contents/Resources/ollama; do
-      if [[ -x "$app/$sub" ]]; then OLLAMA="$app/$sub"; add_try "найдено рядом: $app"; return 0; fi
-    done
+    if [[ -x "$app/Contents/Resources/ollama" ]]; then
+      OLLAMA="$app/Contents/Resources/ollama"; add_try "найдено рядом: $app"; return 0
+    fi
+    APP_BUNDLE="${APP_BUNDLE:-$app}"
   done
 
   # 6. Spotlight — если индекс на этой машине вообще работает.
   cand="$(mdfind -name 'Ollama.app' 2>/dev/null | head -1)"
   if [[ -n "$cand" ]]; then
     add_try "Spotlight нашёл: $cand"
-    for sub in Contents/MacOS/ollama Contents/Resources/ollama; do
-      if [[ -x "$cand/$sub" ]]; then OLLAMA="$cand/$sub"; return 0; fi
-    done
+    APP_BUNDLE="${APP_BUNDLE:-$cand}"
+    if [[ -x "$cand/Contents/Resources/ollama" ]]; then
+      OLLAMA="$cand/Contents/Resources/ollama"; return 0
+    fi
   else
     add_try "Spotlight: Ollama.app не найден"
   fi
@@ -176,10 +198,20 @@ else
     LOG="${TMPDIR:-/tmp}/iins-ollama.log"
     nohup "$OLLAMA" serve > "$LOG" 2>&1 &
     for _ in $(seq 1 30); do sleep 1; server_up && break; done
-  elif [[ -d /Applications/Ollama.app || -d "$HOME/Applications/Ollama.app" ]]; then
-    ok "Найдено приложение Ollama.app — открываю его"
-    open -a Ollama >/dev/null 2>&1
-    for _ in $(seq 1 30); do sleep 1; server_up && break; done
+  else
+    # Программы командной строки нет, но само приложение может быть — оно
+    # поднимает сервер само, достаточно его открыть.
+    seen_app=""
+    for app in "$APP_BUNDLE" "$HOME/goinfre/Ollama.app" /Applications/Ollama.app \
+               "$HOME/Applications/Ollama.app"; do
+      [[ -n "$app" && -d "$app" ]] || continue
+      case "$seen_app" in *"|$app|"*) continue ;; esac
+      seen_app="$seen_app|$app|"
+      ok "Открываю приложение: $app"
+      open -a "$app" >/dev/null 2>&1
+      for _ in $(seq 1 30); do sleep 1; server_up && break; done
+      server_up && break
+    done
   fi
 
   if server_up; then
@@ -190,11 +222,12 @@ else
     say "Где я искал программу:"
     printf '%s' "$TRIED"
     say
-    say "Запустите сервер вручную — откройте Терминал и оставьте в нём:"
+    say "Запустите Ollama сами — проще всего открыть само приложение"
+    say "(двойным щелчком по Ollama.app). Или в Терминале, оставив окно:"
     say
     say "    ollama serve"
     say
-    say "Затем, не закрывая то окно, запустите этот файл ещё раз."
+    say "Затем запустите этот файл ещё раз."
     say
     say "Без Qwen кабинеты работают: режим «RAG по базе знаний» отвечает"
     say "по документам и модели не требует."
@@ -207,83 +240,60 @@ head_ "2. Место под модель"
 
 # Модель весит около гигабайта; с распаковкой и временными файлами нужно
 # примерно вдвое больше. На учебных Mac домашняя квота обычно меньше —
-# именно на этом Ollama и ломается: место кончается прямо во время
-# скачивания, и дальше странно ведёт себя всё, включая саму Ollama.
+# именно на этом Ollama и ломается: место кончается прямо во время загрузки.
 NEED_KB=$((2 * 1024 * 1024))
 
 free_kb() { df -Pk "$1" 2>/dev/null | tail -1 | awk '{print $4}'; }
 human()   { df -Ph "$1" 2>/dev/null | tail -1 | awk '{print $4}'; }
 
-# Где сервер держит модели сейчас: своей переменной у нас нет, поэтому
-# исходим из того же правила, что и сам Ollama.
-CUR_DIR="${OLLAMA_MODELS:-$HOME/.ollama/models}"
-mkdir -p "$CUR_DIR" 2>/dev/null
-CUR_FREE="$(free_kb "$CUR_DIR")"
-say "Сейчас модели идут в: $CUR_DIR"
-say "     свободно: $(human "$CUR_DIR") (нужно около 2 ГБ)"
+STORE="$HOME/.ollama/models"
+ALT_DIR="$HOME/goinfre/ollama-models"
 
-USED="$(du -sh "$HOME/.ollama" 2>/dev/null | cut -f1)"
-[[ -n "$USED" ]] && say "     уже занято папкой ~/.ollama: $USED"
+# Если папка моделей уже ссылка на просторный диск — чинить нечего.
+if [[ -L "$STORE" ]]; then
+  TARGET="$(readlink "$STORE")"
+  mkdir -p "$TARGET" 2>/dev/null
+  ok "Модели уже вынесены на другой диск: $TARGET"
+  say "     свободно: $(human "$TARGET")"
+else
+  mkdir -p "$STORE" 2>/dev/null
+  CUR_FREE="$(free_kb "$STORE")"
+  say "Модели лежат в: $STORE"
+  say "     свободно: $(human "$STORE") (нужно около 2 ГБ)"
 
-# Запасная площадка: локальный диск учебной машины.
-ALT_DIR=""
-if [[ -d "$HOME/goinfre" ]]; then
-  ALT_DIR="$HOME/goinfre/ollama-models"
-fi
-
-RELOCATE=0
-if [[ -n "${CUR_FREE:-}" && "$CUR_FREE" -lt "$NEED_KB" ]]; then
-  bad "Места не хватает: модель сюда не влезет."
-  if [[ -n "$ALT_DIR" ]]; then
-    mkdir -p "$ALT_DIR" 2>/dev/null
-    ALT_FREE="$(free_kb "$ALT_DIR")"
-    if [[ -n "${ALT_FREE:-}" && "$ALT_FREE" -ge "$NEED_KB" ]]; then
-      say "     переношу модели на локальный диск: $ALT_DIR (свободно $(human "$ALT_DIR"))"
-      RELOCATE=1
+  if [[ -n "${CUR_FREE:-}" && "$CUR_FREE" -lt "$NEED_KB" ]]; then
+    bad "Столько сюда не влезет."
+    if [[ -d "$HOME/goinfre" ]]; then
+      mkdir -p "$ALT_DIR" 2>/dev/null
+      ALT_FREE="$(free_kb "$ALT_DIR")"
+      if [[ -n "${ALT_FREE:-}" && "$ALT_FREE" -ge "$NEED_KB" ]]; then
+        say "     выношу хранилище на локальный диск: $ALT_DIR (свободно $(human "$ALT_DIR"))"
+        # Ссылка вместо переменной окружения: работает при любом способе
+        # запуска Ollama — и из окна, и из командной строки, — и переживает
+        # перезагрузку. Перезапускать сервер не нужно.
+        if [[ -d "$STORE" ]]; then
+          ( cd "$STORE" && tar cf - . 2>/dev/null ) | ( cd "$ALT_DIR" && tar xf - 2>/dev/null )
+          rm -rf "$STORE" 2>/dev/null
+        fi
+        if ln -s "$ALT_DIR" "$STORE" 2>/dev/null; then
+          ok "Готово: $STORE теперь ведёт в $ALT_DIR"
+        else
+          bad "Не удалось создать ссылку $STORE"
+          say "Сделайте вручную:"
+          say "  mkdir -p \"$ALT_DIR\" && rm -rf \"$STORE\" && ln -s \"$ALT_DIR\" \"$STORE\""
+          finish 1
+        fi
+      else
+        bad "На $ALT_DIR тоже мало: $(human "$ALT_DIR")"
+        say "Освободите около 2 ГБ и запустите этот файл заново."
+        finish 1
+      fi
     else
-      say "     на $ALT_DIR тоже мало: $(human "$ALT_DIR")"
+      say
+      say "Освободите около 2 ГБ и запустите этот файл заново."
+      say "Посмотреть, что занимает место:  du -sh ~/.ollama ~/Library/Caches"
+      finish 1
     fi
-  fi
-  if [[ $RELOCATE -eq 0 ]]; then
-    say
-    say "Освободите около 2 ГБ и запустите этот файл заново."
-    say "Место занимают в том числе прошлые незавершённые загрузки:"
-    say "  du -sh ~/.ollama"
-    finish 1
-  fi
-fi
-
-if [[ $RELOCATE -eq 1 ]]; then
-  # Переменная действует на сервер, а не на клиента, поэтому сервер
-  # приходится перезапустить — иначе он продолжит писать в старую папку.
-  say
-  say "Перезапускаю сервер Ollama с новой папкой моделей…"
-  if [[ -z "$OLLAMA" ]]; then
-    bad "Программа Ollama не найдена — перезапустить сервер нечем."
-    say "Сделайте это сами:"
-    say "  pkill -f 'ollama serve'"
-    say "  OLLAMA_MODELS=\"$ALT_DIR\" ollama serve"
-    finish 1
-  fi
-  pkill -f 'ollama serve' >/dev/null 2>&1
-  osascript -e 'quit app "Ollama"' >/dev/null 2>&1
-  for _ in $(seq 1 10); do server_up || break; sleep 1; done
-  export OLLAMA_MODELS="$ALT_DIR"
-  LOG="${TMPDIR:-/tmp}/iins-ollama.log"
-  nohup "$OLLAMA" serve > "$LOG" 2>&1 &
-  for _ in $(seq 1 30); do sleep 1; server_up && break; done
-  if server_up; then
-    ok "Сервер перезапущен, модели идут в $ALT_DIR"
-    say
-    say "     Запомните эту команду: если запускать Ollama обычным способом,"
-    say "     она вернётся к домашней папке, где места нет."
-    say "     OLLAMA_MODELS=\"$ALT_DIR\" \"$OLLAMA\" serve"
-    say
-    say "     Впрочем, ./I-ins.command проверяет это при каждом запуске"
-    say "     и при необходимости перезапускает сервер сам."
-  else
-    bad "Сервер не поднялся. Журнал: $LOG"
-    finish 1
   fi
 fi
 
@@ -302,33 +312,29 @@ else
   say "Скачиваю $WANT_MODEL — это около 1 ГБ, займёт несколько минут."
   say
 
+  # Качаем через API сервера, а не через программу: сервер уже отвечает,
+  # а вот файл программы на этой машине может оказаться приложением с окном —
+  # тогда «pull» просто открыл бы окно и завис.
   pulled=1
-  if [[ -n "$OLLAMA" ]]; then
-    "$OLLAMA" pull "$WANT_MODEL" && pulled=0
-  else
-    # Программы под рукой нет, но сервер отвечает — качаем через его же API.
-    say "Программу не нашёл, качаю через сам сервер…"
-    curl -fsS --no-buffer -m 7200 -X POST "$BASE_URL/api/pull" \
-         -H 'Content-Type: application/json' \
-         -d "{\"model\":\"$WANT_MODEL\",\"stream\":true}" \
-      | awk '
-          match($0, /"status"[ ]*:[ ]*"[^"]*"/) {
-            s = substr($0, RSTART, RLENGTH); sub(/.*"status"[ ]*:[ ]*"/, "", s); sub(/"$/, "", s)
-          }
-          match($0, /"completed"[ ]*:[ ]*[0-9]+/) {
-            c = substr($0, RSTART, RLENGTH); sub(/.*:[ ]*/, "", c) + 0
-          }
-          match($0, /"total"[ ]*:[ ]*[0-9]+/) {
-            tt = substr($0, RSTART, RLENGTH); sub(/.*:[ ]*/, "", tt) + 0
-          }
-          {
-            pct = (tt + 0 > 0) ? int((c + 0) * 100 / (tt + 0)) : -1
-            if (pct >= 0 && pct >= shown + 5) { printf("  %s: %d%%\n", s, pct); shown = pct; fflush() }
-            else if (s != last && pct < 0) { printf("  %s\n", s); fflush(); last = s }
-          }
-          END { printf("  готово\n") }'
-    pulled=${PIPESTATUS[0]}
-  fi
+  curl -fsS --no-buffer -m 7200 -X POST "$BASE_URL/api/pull" \
+       -H 'Content-Type: application/json' \
+       -d "{\"model\":\"$WANT_MODEL\",\"stream\":true}" \
+    | awk '
+        match($0, /"status"[ ]*:[ ]*"[^"]*"/) {
+          s = substr($0, RSTART, RLENGTH); sub(/.*"status"[ ]*:[ ]*"/, "", s); sub(/"$/, "", s)
+        }
+        match($0, /"completed"[ ]*:[ ]*[0-9]+/) {
+          c = substr($0, RSTART, RLENGTH); sub(/.*:[ ]*/, "", c) + 0
+        }
+        match($0, /"total"[ ]*:[ ]*[0-9]+/) {
+          tt = substr($0, RSTART, RLENGTH); sub(/.*:[ ]*/, "", tt) + 0
+        }
+        {
+          pct = (tt + 0 > 0) ? int((c + 0) * 100 / (tt + 0)) : -1
+          if (pct >= 0 && pct >= shown + 5) { printf("  %s: %d%%\n", s, pct); shown = pct; fflush() }
+          else if (s != last && pct < 0) { printf("  %s\n", s); fflush(); last = s }
+        }'
+  pulled=${PIPESTATUS[0]}
 
   if [[ $pulled -eq 0 ]]; then
     CHOSEN="$(qwen_present || true)"
