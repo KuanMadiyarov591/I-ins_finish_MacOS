@@ -38,7 +38,7 @@ if errorlevel 1 ( echo [ERROR] git add failed & pause & exit /b 1 )
 
 git diff --cached --quiet
 if errorlevel 1 (
-  git -c user.name="Kuan Madiyarov" -c user.email="kukamadchemical@gmail.com" commit -m "I-ins 1.3.0: without GigaChat"
+  git -c user.name="Kuan Madiyarov" -c user.email="kukamadchemical@gmail.com" commit -m "QWEN_SETUP.command: check and set up local Qwen"
 )
 
 git remote remove origin >nul 2>&1

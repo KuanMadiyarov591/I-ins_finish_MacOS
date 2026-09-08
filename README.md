@@ -65,6 +65,16 @@ IINS_HOME=/Volumes/Data/I-ins ./I-ins.command
 
 ### Локальный Qwen
 
+Проще всего — запустить готовый скрипт: он найдёт Ollama, поднимет её,
+выберет место под модель и скачает её, если нужно.
+
+```bash
+./QWEN_SETUP.command
+```
+
+Скрипт ничего не ставит молча: если Ollama на Mac нет, он скажет об этом
+и покажет, как её поставить. Вручную то же самое:
+
 ```bash
 brew install ollama
 ollama serve &
@@ -128,6 +138,7 @@ Smoke-тест проверяет вход, главную страницу, п�
 ```
 I-ins/
 ├── I-ins.command            установка окружения, сборка комплекта и запуск
+├── QWEN_SETUP.command       проверка и настройка локального Qwen
 ├── requirements-macos.txt   библиотеки Python
 ├── README.md
 ├── ИНСТРУКЦИЯ_MACOS.md
