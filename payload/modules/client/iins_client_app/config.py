@@ -28,10 +28,6 @@ class Settings(BaseSettings):
     ollama_model: str = "qwen2.5:1.5b"
     # auto = Ollama/Qwen если готова, иначе extractive RAG; ollama | extractive
     lm_backend: str = "auto"
-    gigachat_base_url: str = "https://gigachat-students.nsk.21-school.ru/v1"
-    gigachat_model: str = "Gigashlep/GigaChat-2-Max"
-    gigachat_api_key: str = ""
-    gigachat_timeout: float = 60.0
     corpus_dir: Path = ROOT / "iins_client_app" / "data" / "rag_corpus"
     docs_storage_dir: Path = ROOT / "data" / "policy_docs"
     rag_vector_db_path: Path = ROOT / "knowledge_base" / "rag_store" / "vectors.sqlite3"

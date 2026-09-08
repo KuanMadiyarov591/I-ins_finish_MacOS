@@ -255,7 +255,7 @@ class RagAskIn(BaseModel):
     lang: str = Field(default="ru", description="Preferred UI language: ru | kk | en")
     mode: str = Field(
         default="auto",
-        description="Answer engine: auto | extractive | ollama (Qwen RAG) | gigachat",
+        description="Answer engine: auto | extractive | ollama (Qwen RAG)",
     )
 
 
@@ -293,11 +293,10 @@ class RagStatusOut(BaseModel):
     ready: bool
     message_ru: str
     ollama: dict = {}
-    gigachat: dict = {}
     providers: dict = {}
     provider_labels: dict = {}
     effective_backend: str = "extractive"
-    modes: list[str] = ["auto", "extractive", "ollama", "gigachat"]
+    modes: list[str] = ["auto", "extractive", "ollama"]
     retrieval_backend: str = "markdown-tfidf"
     vector_db_path: str = ""
     vector_db_error: Optional[str] = None

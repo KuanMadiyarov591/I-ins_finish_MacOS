@@ -29,7 +29,6 @@ import tempfile
 import threading
 import time
 import unicodedata
-import urllib.error
 import urllib.request
 import warnings
 import webbrowser
@@ -127,32 +126,13 @@ def active_services() -> tuple[Service, ...]:
 # --------------------------------------------------------------------------- пути
 
 
-
-def ensure_ca_bundle() -> None:
-    """Набор корневых сертификатов для сборок Python с python.org.
-
-    Такой Python не пользуется связкой ключей macOS: сразу после установки у
-    него нет ни одного доверенного корня, и любой HTTPS-запрос падает с
-    «certificate verify failed: unable to get local issuer certificate».
-    Набор certifi закрывает это, ничего не меняя в системе.
-    """
-    if os.getenv("SSL_CERT_FILE"):
-        return
-    try:
-        import certifi
-    except ImportError:
-        return
-    path = certifi.where()
-    if os.path.isfile(path):
-        os.environ["SSL_CERT_FILE"] = path
-        os.environ.setdefault("REQUESTS_CA_BUNDLE", path)
-
-
 def data_root() -> Path:
     override = os.getenv("IINS_DATA_ROOT")
     if override:
         return Path(override).expanduser().resolve()
     if sys.platform == "darwin":
+        # На учебных Mac домашняя квота мала, а локальный диск смонтирован
+        # как ~/goinfre: если он есть, рабочая папка идёт туда.
         goinfre = Path.home() / "goinfre"
         if goinfre.is_dir():
             return goinfre / APP_NAME
@@ -179,56 +159,44 @@ def payload_archive() -> Path:
     return candidate
 
 
-# ------------------------------------------------------------------ GigaChat
+# ------------------------------------------------------------------- Qwen
 
-GIGACHAT_BASE_URL = "https://gigachat-students.nsk.21-school.ru/v1"
-GIGACHAT_MODEL = "Gigashlep/GigaChat-2-Max"
+OLLAMA_BASE_URL = "http://127.0.0.1:11434"
+OLLAMA_MODEL = "qwen2.5:1.5b"
 
 
-def gigachat_key() -> str:
-    """Ключ GigaChat: переменная окружения либо файл gigachat.key.
+def ollama_probe(timeout: float = 5.0) -> tuple[bool, str]:
+    """Готов ли локальный Qwen. Возвращает (готов, пояснение для человека).
 
-    Ключ намеренно не хранится в исходном коде: файл gigachat.key лежит рядом
-    с I-ins.command и в репозиторий не попадает.
+    Совпадение по тегу не требуется: если скачана другая версия Qwen,
+    кабинеты возьмут её — здесь показываем ровно то, что они возьмут.
     """
-    for var in ("GIGACHAT_API_KEY", "IINS_GIGACHAT_KEY"):
-        value = (os.getenv(var) or "").strip()
-        if value:
-            return value
-    candidates = (
-        package_root().parent / "gigachat.key",
-        package_root() / "gigachat.key",
-        Path.home() / ".i-ins" / "gigachat.key",
-    )
-    for path in candidates:
-        try:
-            if path.is_file():
-                value = path.read_text(encoding="utf-8").strip()
-                if value:
-                    return value
-        except OSError:
-            continue
-    return ""
-
-
-def gigachat_probe(timeout: float = 8.0) -> tuple[bool, str]:
-    """Проверяет доступность GigaChat. Возвращает (готов, пояснение)."""
-    key = gigachat_key()
-    if not key:
-        return False, "ключ не задан — положите его в файл gigachat.key рядом с I-ins.command"
-    url = (os.getenv("GIGACHAT_BASE_URL") or GIGACHAT_BASE_URL).rstrip("/") + "/models"
-    request = urllib.request.Request(url, headers={"Authorization": f"Bearer {key}"})
+    base = (os.getenv("OLLAMA_BASE_URL") or OLLAMA_BASE_URL).rstrip("/")
+    want = os.getenv("OLLAMA_MODEL") or OLLAMA_MODEL
     try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            return response.status < 400, f"сервис отвечает ({response.status})"
-    except urllib.error.HTTPError as exc:
-        if exc.code in (401, 403):
-            return False, "ключ отклонён сервисом"
-        if exc.code in (404, 405):
-            return True, "сервис доступен"
-        return False, f"сервис ответил ошибкой {exc.code}"
-    except Exception as exc:  # noqa: BLE001
-        return False, f"нет связи: {exc}"
+        with urllib.request.urlopen(f"{base}/api/tags", timeout=timeout) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except Exception:  # noqa: BLE001
+        return False, (
+            f"Ollama не отвечает на {base}. Установите: brew install ollama, "
+            "запустите: ollama serve"
+        )
+    names = [m.get("name") for m in (data.get("models") or []) if m.get("name")]
+    if want in names:
+        return True, f"модель {want} готова"
+    family = want.split(":", 1)[0].lower()
+    same = sorted(n for n in names if n.split(":", 1)[0].lower() == family)
+    any_qwen = sorted(n for n in names if n.split(":", 1)[0].lower().startswith("qwen"))
+    if same:
+        return True, f"будет использована {same[0]} (вместо {want})"
+    if any_qwen:
+        return True, f"будет использована {any_qwen[0]} (вместо {want})"
+    if names:
+        return False, (
+            f"Ollama отвечает, но моделей Qwen нет — только {', '.join(names[:5])}. "
+            f"Выполните: ollama pull {want}"
+        )
+    return False, f"Ollama отвечает, но модели не скачаны. Выполните: ollama pull {want}"
 
 
 SMOKE_QUESTION_DEFAULT = "Какие обязанности сторон и порядок урегулирования предусмотрены?"
@@ -577,9 +545,8 @@ def configure_environment(service: Service, module_root: Path, state: Path) -> N
             "COMPANY_DATABASE_URL": sqlite_url(state / "company_insurance.db"),
             "DOCS_STORAGE_DIR": str(docs),
             "LM_BACKEND": os.getenv("IINS_LM_BACKEND", "auto"),
-            "GIGACHAT_BASE_URL": os.getenv("GIGACHAT_BASE_URL", GIGACHAT_BASE_URL),
-            "GIGACHAT_MODEL": os.getenv("GIGACHAT_MODEL", GIGACHAT_MODEL),
-            "GIGACHAT_API_KEY": gigachat_key(),
+            "OLLAMA_BASE_URL": os.getenv("OLLAMA_BASE_URL", OLLAMA_BASE_URL),
+            "OLLAMA_MODEL": os.getenv("OLLAMA_MODEL", OLLAMA_MODEL),
             "PYTHONUTF8": "1",
         }
     )
@@ -777,93 +744,6 @@ def check_knowledge_base(runtime: Path) -> list[str]:
     return notes
 
 
-
-def run_gigachat_test() -> int:
-    """Настоящий запрос к GigaChat с подробным разбором ответа."""
-    import urllib.parse
-
-    key = gigachat_key()
-    url = (os.getenv("GIGACHAT_BASE_URL") or GIGACHAT_BASE_URL).rstrip("/")
-    model = os.getenv("GIGACHAT_MODEL") or GIGACHAT_MODEL
-
-    print(f"{APP_NAME} {APP_VERSION} — проверка GigaChat")
-    print(f"Адрес:  {url}")
-    print(f"Модель: {model}")
-    print(f"Ключ:   {'задан, ' + str(len(key)) + ' знаков, ...' + key[-4:] if key else 'НЕ ЗАДАН'}")
-    for name in ("HTTPS_PROXY", "https_proxy", "HTTP_PROXY", "http_proxy", "NO_PROXY", "no_proxy"):
-        value = os.getenv(name)
-        if value:
-            short = value if len(value) <= 70 else value[:70] + "…"
-            print(f"Прокси: {name}={short}")
-    print()
-
-    if not key:
-        print("[ошибка] Ключ не найден. Положите его в файл gigachat.key в папке данных")
-        print(f"         {data_root() / 'gigachat.key'}")
-        return 1
-
-    ok, note = gigachat_probe(timeout=20.0)
-    print(f"[{'ок' if ok else '——'}] Список моделей ({url}/models): {note}")
-
-    body = json.dumps({
-        "model": model,
-        "messages": [
-            {"role": "system", "content": "Отвечай одним словом."},
-            {"role": "user", "content": "Скажи слово: работает"},
-        ],
-        "max_tokens": 32,
-        "temperature": 0.0,
-        "stream": False,
-    }, ensure_ascii=False).encode("utf-8")
-    request = urllib.request.Request(
-        f"{url}/chat/completions", data=body, method="POST",
-        headers={"Authorization": f"Bearer {key}",
-                 "Content-Type": "application/json; charset=utf-8"},
-    )
-    try:
-        with urllib.request.urlopen(request, timeout=90.0) as response:
-            raw = response.read().decode("utf-8", "replace")
-            status = response.status
-    except urllib.error.HTTPError as exc:
-        raw = exc.read().decode("utf-8", "replace")
-        status = exc.code
-    except Exception as exc:  # noqa: BLE001
-        print(f"[ошибка] Запрос не ушёл: {type(exc).__name__}: {exc}")
-        print()
-        print("Обычные причины: нет интернета; сеть требует прокси — задайте")
-        print("HTTPS_PROXY; сервис доступен только из сети учебного центра.")
-        return 1
-
-    print(f"[{'ок' if status < 400 else '——'}] Запрос к модели: HTTP {status}")
-    if status >= 400:
-        print(f"Ответ сервиса: {raw[:600]}")
-        if status in (401, 403):
-            print()
-            print("Ключ отклонён. Замените его командой:")
-            print(f"  echo 'sk-…' > \"{data_root() / 'gigachat.key'}\"")
-        return 1
-
-    try:
-        data = json.loads(raw)
-    except ValueError:
-        print(f"[ошибка] Ответ не разбирается как JSON: {raw[:300]}")
-        return 1
-
-    text = ""
-    choices = data.get("choices") or []
-    if choices:
-        text = ((choices[0].get("message") or {}).get("content")
-                or choices[0].get("text") or "")
-    if not text:
-        print(f"[ошибка] Пустой ответ. Тело: {raw[:400]}")
-        return 1
-
-    print(f"Ответ модели: {str(text).strip()[:200]}")
-    print()
-    print("GigaChat работает. Режим доступен во всех шести кабинетах.")
-    return 0
-
-
 def run_self_check(force_extract: bool) -> int:
     root = data_root()
     log_file = setup_logging(root)
@@ -914,9 +794,10 @@ def run_self_check(force_extract: bool) -> int:
         for note in check_knowledge_base(runtime):
             print(f"      {note}")
         print("[ок] База знаний полная")
-        ready, note = gigachat_probe()
-        print(f"[{'ок' if ready else ' —'}] GigaChat: {note}")
-        print("      Qwen RAG включается сам, когда на этом Mac запущена Ollama")
+        ready, note = ollama_probe()
+        print(f"[{'ок' if ready else ' —'}] Qwen RAG: {note}")
+        if not ready:
+            print("      Это не ошибка: кабинеты продолжат отвечать по базе знаний")
     except Exception as exc:  # noqa: BLE001
         logging.exception("Самопроверка не пройдена")
         print()
@@ -994,10 +875,9 @@ def run_smoke_test(report_path: Path | None, force_extract: bool) -> int:
                 "answered": bool(answer.get("answered")),
                 "sources": len(answer.get("chunks_used") or []),
                 "modes": modes,
-                "gigachat_ready": bool((rag.get("gigachat") or {}).get("available")),
                 "qwen_ready": bool((rag.get("ollama") or {}).get("model_ready")),
             }
-            for required in ("extractive", "ollama", "gigachat"):
+            for required in ("extractive", "ollama"):
                 if required not in modes:
                     raise RuntimeError(
                         f"{service.title}: в кабинете нет режима {required}; доступны {modes}"
@@ -1006,8 +886,6 @@ def run_smoke_test(report_path: Path | None, force_extract: bool) -> int:
             lm_mode = ""
             if (rag.get("ollama") or {}).get("model_ready"):
                 lm_mode = "ollama"
-            elif (rag.get("gigachat") or {}).get("available"):
-                lm_mode = "gigachat"
             if lm_mode:
                 lm_answer = request_json(
                     f"{service.url}{service.rag_ask_path}", method="POST", token=token,
@@ -1202,8 +1080,6 @@ class LauncherWindow:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(prog="iins_runtime", description=f"{APP_NAME} — локальный запуск")
     parser.add_argument("--self-check", action="store_true", help="проверить окружение и комплект")
-    parser.add_argument("--gigachat-test", action="store_true",
-                        help="проверить связь с GigaChat настоящим запросом")
     parser.add_argument("--smoke-test", action="store_true", help="запустить и проверить все модули без окна")
     parser.add_argument("--report", type=Path, help="куда сохранить JSON-отчёт smoke-теста")
     parser.add_argument("--force-extract", action="store_true", help="переустановить payload заново")
@@ -1212,13 +1088,10 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
-    ensure_ca_bundle()
     args = parse_args()
     if args.version:
         print(f"{APP_NAME} {APP_VERSION}")
         return 0
-    if args.gigachat_test:
-        return run_gigachat_test()
     if args.self_check:
         return run_self_check(args.force_extract)
     if args.smoke_test:

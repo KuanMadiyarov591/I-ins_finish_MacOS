@@ -172,88 +172,6 @@ if [[ ! -f "$DEPS_MARKER" || "$SOURCE_DIR/requirements-macos.txt" -nt "$DEPS_MAR
   echo
 fi
 
-# --- 4б. Корневые сертификаты ------------------------------------------------
-# Python с python.org не пользуется связкой ключей macOS: сразу после установки
-# у него нет доверенных корней, и любой HTTPS-запрос падает с
-# «certificate verify failed». Набор certifi закрывает это, не трогая систему.
-if [[ -z "${SSL_CERT_FILE:-}" ]]; then
-  CERT_FILE="$("$VENV_PY" -c 'import certifi; print(certifi.where())' 2>/dev/null || true)"
-  if [[ -n "$CERT_FILE" && -f "$CERT_FILE" ]]; then
-    export SSL_CERT_FILE="$CERT_FILE"
-    export REQUESTS_CA_BUNDLE="$CERT_FILE"
-    echo "Корневые сертификаты: $CERT_FILE"
-    echo
-  fi
-fi
-
-# --- 4a. Ключ GigaChat ------------------------------------------------------
-# Спрашивается ровно один раз. Дальше лежит в папке данных и переживает
-# обновление программы: в самом комплекте и в репозитории ключа нет.
-KEY_FILE="$APP_HOME/gigachat.key"
-GIGACHAT_URL="${GIGACHAT_BASE_URL:-https://gigachat-students.nsk.21-school.ru/v1}"
-
-giga_probe() {
-  local code
-  code="$(/usr/bin/curl -s -o /dev/null -w '%{http_code}' --max-time 20 \
-          -H "Authorization: Bearer $1" "$GIGACHAT_URL/models" 2>/dev/null || echo 000)"
-  case "$code" in
-    2*|404|405) return 0 ;;   # сервис отвечает
-    401|403)    return 2 ;;   # ключ отклонён
-    *)          return 3 ;;   # нет связи
-  esac
-}
-
-giga_save() {
-  mkdir -p "$APP_HOME"
-  printf '%s\n' "$1" > "$KEY_FILE"
-  chmod 600 "$KEY_FILE"
-}
-
-if [[ -z "${GIGACHAT_API_KEY:-}" ]]; then
-  for candidate in "$SOURCE_DIR/gigachat.key" "$KEY_FILE"; do
-    if [[ -f "$candidate" ]]; then
-      GIGACHAT_API_KEY="$(tr -d '[:space:]' < "$candidate")"
-      [[ -n "$GIGACHAT_API_KEY" ]] && break
-    fi
-  done
-fi
-
-if [[ -z "${GIGACHAT_API_KEY:-}" && -t 0 ]]; then
-  echo "------------------------------------------------------------"
-  echo " Ключ GigaChat"
-  echo
-  echo " Спрашивается один раз. Дальше он хранится в"
-  echo "   $KEY_FILE"
-  echo " и больше не запрашивается — ни при запуске, ни после обновления."
-  echo
-  echo " Enter без ввода — работать без GigaChat: режимы «по базе знаний»"
-  echo " и «Qwen RAG» ключа не требуют."
-  echo "------------------------------------------------------------"
-  for attempt in 1 2 3; do
-    printf 'Ключ GigaChat (ввод скрыт): '
-    read -r -s entered || entered=""
-    echo
-    entered="$(printf '%s' "$entered" | tr -d '[:space:]')"
-    if [[ -z "$entered" ]]; then
-      echo "Пропущено. Позже ключ можно задать так:"
-      echo "  echo 'sk-…' > \"$KEY_FILE\""
-      break
-    fi
-    echo "Проверка ключа на $GIGACHAT_URL …"
-    giga_probe "$entered"
-    case $? in
-      0) giga_save "$entered"; GIGACHAT_API_KEY="$entered"
-         echo "Ключ принят и сохранён."; break ;;
-      2) echo "Сервис отклонил этот ключ."
-         [[ $attempt -lt 3 ]] && echo "Попробуйте ещё раз." || echo "Продолжаю без GigaChat." ;;
-      *) giga_save "$entered"; GIGACHAT_API_KEY="$entered"
-         echo "Сервис сейчас недоступен, ключ сохранён — он подхватится, когда появится связь."
-         break ;;
-    esac
-  done
-  echo
-fi
-export GIGACHAT_API_KEY="${GIGACHAT_API_KEY:-}"
 
 # --- 5. Самопроверка --------------------------------------------------------
 export PYTHONDONTWRITEBYTECODE="1"
@@ -271,14 +189,6 @@ if [[ "${1:-}" == "--check-only" ]]; then
   echo "ПРОВЕРКА ЗАВЕРШЕНА: $APP_NAME готов к запуску."
   read -r -p "Нажмите Enter, чтобы закрыть окно..." _
   exit 0
-fi
-
-if [[ "${1:-}" == "--gigachat-test" ]]; then
-  echo
-  "$VENV_PY" "$RUNTIME_SRC/iins_runtime.py" --gigachat-test
-  code=$?
-  read -r -p "Нажмите Enter, чтобы закрыть окно..." _
-  exit $code
 fi
 
 if [[ "${1:-}" == "--smoke-test" ]]; then

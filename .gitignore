@@ -4,7 +4,15 @@ __pycache__/
 .DS_Store
 dist/
 build/
+# ключей в репозитории нет; строка оставлена, чтобы старый файл
+# gigachat.key, если он ещё лежит рядом, не попал в историю
 gigachat.key
+runtime/payload.zip
+runtime/payload.zip.sha256
 *-wal
 *-shm
-PUSH.bat
+
+# Извлечённый текст PDF — побочный продукт сборки базы знаний: его пишет
+# rag_pipeline.py и никто не читает, поиск работает по vectors.sqlite3.
+# В репозитории он не нужен и упирается в ограничение Windows на длину пути.
+payload/modules/*/knowledge_base/rag_store/extracted_text/

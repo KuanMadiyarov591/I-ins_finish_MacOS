@@ -27,10 +27,6 @@ class Settings(BaseSettings):
     ollama_base_url: str = "http://127.0.0.1:11434"
     ollama_model: str = "qwen2.5:1.5b"
     lm_backend: str = "auto"
-    gigachat_base_url: str = "https://gigachat-students.nsk.21-school.ru/v1"
-    gigachat_model: str = "Gigashlep/GigaChat-2-Max"
-    gigachat_api_key: str = ""
-    gigachat_timeout: float = 60.0
 
 
 @lru_cache

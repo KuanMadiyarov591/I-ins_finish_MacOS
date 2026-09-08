@@ -789,11 +789,7 @@
       if (modeSel) {
         const ollamaOpt = modeSel.querySelector('option[value="ollama"]');
         if (ollamaOpt) ollamaOpt.disabled = !ready;
-        const gigaReady = !!(st.gigachat && (st.gigachat.selectable || st.gigachat.configured || st.gigachat.available));
-        const gigaOpt = modeSel.querySelector('option[value="gigachat"]');
-        if (gigaOpt) gigaOpt.disabled = !gigaReady;
         if (!ready && modeSel.value === "ollama") modeSel.value = "auto";
-        if (!gigaReady && modeSel.value === "gigachat") modeSel.value = "auto";
       }
     } catch {
       if (badge) {
@@ -892,7 +888,13 @@
   });
 
   const savedRagMode = localStorage.getItem("uw_rag_mode") || "auto";
-  if ($("#rag-mode")) $("#rag-mode").value = savedRagMode;
+  const savedModeSel = $("#rag-mode");
+  if (savedModeSel) {
+    // Режим из прошлой сессии может уже не существовать — тогда «авто».
+    savedModeSel.value = savedModeSel.querySelector(`option[value="${savedRagMode}"]`)
+      ? savedRagMode
+      : "auto";
+  }
   $("#rag-input")?.addEventListener("keydown", (ev) => {
     if (ev.key === "Enter" && !ev.shiftKey) {
       ev.preventDefault();

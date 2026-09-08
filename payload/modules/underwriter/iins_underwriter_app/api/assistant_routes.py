@@ -19,7 +19,7 @@ class AskIn(BaseModel):
     question: str = Field(min_length=2, max_length=2000)
     top_k: int = Field(default=4, ge=1, le=8)
     lang: str = Field(default="ru", pattern="^(ru|kk|en)$")
-    mode: str = Field(default="auto", pattern="^(auto|extractive|ollama|qwen|gigachat)$")
+    mode: str = Field(default="auto", pattern="^(auto|extractive|ollama|qwen)$")
     policy_hint: str = ""
     case_id: Optional[int] = None
 

@@ -1,12 +1,11 @@
 """Единый выбор языковой модели для всех кабинетов I-ins.
 
-Три режима ответа:
+Два режима ответа:
   extractive — ответ строится только из найденных фрагментов базы знаний;
-  ollama     — Qwen RAG: локальная модель Qwen через Ollama, контекст из базы знаний;
-  gigachat   — GigaChat: облачная модель по API, контекст из базы знаний.
+  ollama     — Qwen RAG: локальная модель Qwen через Ollama, контекст из базы знаний.
 
-Во всех режимах, кроме extractive, модель получает только тот контекст,
-который вернул поиск: без найденных фрагментов генерация не запускается.
+В режиме ollama модель получает только тот контекст, который вернул поиск:
+без найденных фрагментов генерация не запускается.
 """
 
 from __future__ import annotations
@@ -16,12 +15,11 @@ from typing import Any, Optional
 
 _log = logging.getLogger(__name__)
 
-BACKENDS = ("extractive", "ollama", "gigachat")
+BACKENDS = ("extractive", "ollama")
 
 LABELS = {
     "extractive": "RAG по базе знаний",
     "ollama": "Qwen RAG (локально)",
-    "gigachat": "GigaChat (по API)",
 }
 
 _ALIASES = {
@@ -33,9 +31,6 @@ _ALIASES = {
     "qwen-rag": "ollama",
     "qwen_rag": "ollama",
     "local": "ollama",
-    "gigachat": "gigachat",
-    "giga": "gigachat",
-    "gigachat-2-max": "gigachat",
 }
 
 
@@ -58,19 +53,11 @@ def backend_ready(backend: str) -> bool:
         except Exception as exc:  # noqa: BLE001
             _log.debug("ollama readiness failed: %s", exc)
             return False
-    if backend == "gigachat":
-        try:
-            from iins_legal_app.services.gigachat_lm import gigachat_is_ready
-
-            return bool(gigachat_is_ready())
-        except Exception as exc:  # noqa: BLE001
-            _log.debug("gigachat readiness failed: %s", exc)
-            return False
     return False
 
 
 def resolve_backend(requested: Optional[str] = None) -> str:
-    """extractive | ollama | gigachat — движок, которым будет дан ответ."""
+    """extractive | ollama — движок, которым будет дан ответ."""
     mode = normalize(requested)
     if mode == "auto":
         try:
@@ -80,24 +67,27 @@ def resolve_backend(requested: Optional[str] = None) -> str:
         except Exception:  # noqa: BLE001
             mode = "auto"
     if mode == "auto":
-        for candidate in ("ollama", "gigachat"):
-            if backend_ready(candidate):
-                return candidate
-        return "extractive"
+        return "ollama" if backend_ready("ollama") else "extractive"
     return mode
 
 
 def model_name(backend: str) -> str:
-    try:
-        from iins_legal_app.config import get_settings
-
-        settings = get_settings()
-    except Exception:  # noqa: BLE001
-        settings = None
+    """Имя модели для подписи ответа — то, которым отвечали на самом деле."""
     if backend == "ollama":
-        return getattr(settings, "ollama_model", "qwen") or "qwen"
-    if backend == "gigachat":
-        return getattr(settings, "gigachat_model", "gigachat") or "gigachat"
+        try:
+            from iins_legal_app.services.ollama_lm import active_model
+
+            chosen = active_model()
+            if chosen:
+                return chosen
+        except Exception as exc:  # noqa: BLE001
+            _log.debug("active model lookup failed: %s", exc)
+        try:
+            from iins_legal_app.config import get_settings
+
+            return getattr(get_settings(), "ollama_model", "qwen") or "qwen"
+        except Exception:  # noqa: BLE001
+            return "qwen"
     return "extractive-tfidf"
 
 
@@ -107,14 +97,6 @@ def not_ready_message(backend: str) -> str:
             "Выбран режим Qwen RAG, но локальная модель не готова. "
             "Запустите Ollama и выполните: ollama pull qwen2.5:1.5b"
         )
-    if backend == "gigachat":
-        try:
-            from iins_legal_app.services.gigachat_lm import gigachat_status
-
-            err = gigachat_status().get("error")
-        except Exception:  # noqa: BLE001
-            err = None
-        return "Выбран режим GigaChat, но сервис недоступен." + (f" {err}" if err else "")
     return "Языковая модель недоступна."
 
 
@@ -126,15 +108,6 @@ def generate_reply(
     temperature: float = 0.35,
     system_prompt: Optional[str] = None,
 ) -> str:
-    if backend == "gigachat":
-        from iins_legal_app.services.gigachat_lm import generate_gigachat_reply
-
-        return generate_gigachat_reply(
-            user_instruction,
-            max_new_tokens=max_new_tokens,
-            temperature=temperature,
-            system_prompt=system_prompt,
-        )
     from iins_legal_app.services.ollama_lm import generate_ollama_reply
 
     return generate_ollama_reply(
@@ -153,17 +126,10 @@ def providers_status() -> dict[str, Any]:
         ollama = ollama_status()
     except Exception as exc:  # noqa: BLE001
         ollama = {"model": "", "model_ready": False, "available": False, "error": str(exc)}
-    try:
-        from iins_legal_app.services.gigachat_lm import gigachat_status
-
-        gigachat = gigachat_status()
-    except Exception as exc:  # noqa: BLE001
-        gigachat = {"model": "", "model_ready": False, "available": False, "error": str(exc)}
     return {
         "modes": ["auto", *BACKENDS],
         "labels": dict(LABELS),
         "ollama": ollama,
-        "gigachat": gigachat,
         "providers": {
             "extractive": {
                 "id": "extractive",
@@ -178,17 +144,6 @@ def providers_status() -> dict[str, Any]:
                 "ready": bool(ollama.get("model_ready")),
                 "model": ollama.get("model") or "",
                 "error": ollama.get("error"),
-            },
-            "gigachat": {
-                "id": "gigachat",
-                "label": LABELS["gigachat"],
-                # ready — проба прошла, этим пользуется режим «Авто»;
-                # selectable — ключ задан, этого довольно, чтобы выбрать режим
-                # руками и увидеть настоящую ошибку вместо серого пункта.
-                "ready": bool(gigachat.get("available")),
-                "selectable": bool(gigachat.get("selectable") or gigachat.get("configured")),
-                "model": gigachat.get("model") or "",
-                "error": gigachat.get("error"),
             },
         },
     }

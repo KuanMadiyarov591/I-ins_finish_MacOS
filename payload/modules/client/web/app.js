@@ -1614,7 +1614,6 @@
       return;
     }
     const ollamaReady = !!(status.ollama && status.ollama.model_ready);
-    const gigaReady = !!(status.gigachat && (status.gigachat.selectable || status.gigachat.configured || status.gigachat.available));
     const savedMode = localStorage.getItem("ins_rag_mode") || "auto";
     const history = Array.isArray(state.ragHistory) ? state.ragHistory : [];
     const threadHtml = history.length
@@ -1633,7 +1632,6 @@
               <option value="auto">${esc(t("rag_mode_auto"))}</option>
               <option value="extractive">${esc(t("rag_mode_extractive"))}</option>
               <option value="ollama"${ollamaReady ? "" : " disabled"}>${esc(t("rag_mode_ollama"))}</option>
-              <option value="gigachat"${gigaReady ? "" : " disabled"}>${esc(t("rag_mode_gigachat"))}</option>
             </select>
             <div class="chat-composer-actions">
               <span class="chat-ollama-status ${ollamaReady ? "is-ready" : "is-down"}" title="${esc(
@@ -1656,7 +1654,7 @@
 
     const modeSel = $("#rag-mode");
     if (modeSel) {
-      const modeReady = { auto: true, extractive: true, ollama: ollamaReady, gigachat: gigaReady };
+      const modeReady = { auto: true, extractive: true, ollama: ollamaReady };
       modeSel.value = modeReady[savedMode] ? savedMode : "auto";
       modeSel.onchange = () => localStorage.setItem("ins_rag_mode", modeSel.value);
     }

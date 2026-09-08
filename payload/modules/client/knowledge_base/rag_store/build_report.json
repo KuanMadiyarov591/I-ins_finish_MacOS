@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "pdf_pattern": "*.pdf",
+  "documents": 10,
+  "pages": 191,
+  "chunks": 407,
+  "characters": 408975,
+  "duplicate_chunks_removed": 0,
+  "documents_with_low_text": [],
+  "pages_with_low_text": 0,
+  "chunk_chars": {
+    "min": 91,
+    "max": 1400,
+    "average": 1098.51
+  },
+  "artifacts": {
+    "documents": "documents.jsonl",
+    "chunks": "chunks.jsonl",
+    "vectors": "vectors.sqlite3",
+    "extracted_text_dir": "extracted_text"
+  }
+}

@@ -43,14 +43,31 @@ def ollama_list_models(timeout: float = 4.0) -> list[str]:
     return names
 
 
-def _model_present(model: str, available: list[str]) -> bool:
+def _family(model: str) -> str:
+    """qwen2.5:1.5b -> qwen2.5"""
+    return (model or "").split(":", 1)[0].strip().lower()
+
+
+def pick_model(available: list[str], target: str | None = None) -> str:
+    """Какую модель звать: точный тег, иначе тот же qwen, иначе любой qwen.
+
+    Пользователь часто скачивает не тот тег, что записан в настройках
+    (qwen2.5:3b вместо qwen2.5:1.5b, qwen3:4b вместо qwen2.5). Раньше кабинет
+    в таком случае считал, что Qwen недоступен, хотя модель на машине была.
+    """
+    target = target or _model()
     if not available:
-        return False
-    base = model.split(":", 1)[0]
-    for name in available:
-        if name == model or name.startswith(f"{base}:") or name.startswith(f"{model}:"):
-            return True
-    return False
+        return ""
+    if target in available:
+        return target
+    base = _family(target)
+    same = [n for n in available if _family(n) == base]
+    if same:
+        return sorted(same)[0]
+    any_qwen = [n for n in available if _family(n).startswith("qwen")]
+    if any_qwen:
+        return sorted(any_qwen)[0]
+    return ""
 
 
 def _ping_root() -> bool:
@@ -62,27 +79,44 @@ def _ping_root() -> bool:
         return False
 
 
+def active_model() -> str:
+    """Модель, которой кабинет ответит прямо сейчас; пусто — Qwen недоступен."""
+    return pick_model(ollama_list_models())
+
+
 def ollama_is_ready() -> bool:
-    models = ollama_list_models()
-    return _model_present(_model(), models)
+    return bool(active_model())
 
 
 def ollama_status() -> dict[str, Any]:
     models = ollama_list_models()
     target = _model()
-    ready = _model_present(target, models)
+    chosen = pick_model(models, target)
+    reachable = bool(models) or _ping_root()
+
+    if chosen:
+        error = None
+    elif reachable:
+        error = (
+            f"Ollama отвечает на {_base_url()}, но модели Qwen нет. "
+            f"Выполните: ollama pull {target}"
+        )
+    else:
+        error = (
+            f"Ollama недоступна на {_base_url()}. "
+            "Запустите её командой: ollama serve"
+        )
+
     return {
         "base_url": _base_url(),
-        "model": target,
-        "reachable": bool(models) or _ping_root(),
-        "model_ready": ready,
-        "available": ready,
+        "model": chosen or target,
+        "configured_model": target,
+        "substituted": bool(chosen) and chosen != target,
+        "reachable": reachable,
+        "model_ready": bool(chosen),
+        "available": bool(chosen),
         "available_models": models[:16],
-        "error": None if ready else (
-            f"Модель {target} не найдена. Запустите: .\\scripts\\setup_qwen_ollama.ps1"
-            if _ping_root() or models
-            else "Ollama недоступна на " + _base_url()
-        ),
+        "error": error,
     }
 
 
@@ -104,14 +138,11 @@ def generate_ollama_reply(
     temperature: float = 0.35,
     system_prompt: Optional[str] = None,
 ) -> str:
-    if not ollama_is_ready():
-        raise FileNotFoundError(
-            f"Локальная модель Qwen (Ollama) не готова. "
-            f"Запустите Ollama и выполните: ollama pull {_model()} "
-            f"или .\\scripts\\setup_qwen_ollama.ps1"
-        )
+    chosen = active_model()
+    if not chosen:
+        raise FileNotFoundError(ollama_status()["error"] or "Локальная модель Qwen не готова.")
     payload = {
-        "model": _model(),
+        "model": chosen,
         "messages": [
             {"role": "system", "content": (system_prompt or _DEFAULT_SYSTEM).strip()},
             {"role": "user", "content": user_instruction.strip()},

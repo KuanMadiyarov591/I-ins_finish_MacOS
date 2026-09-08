@@ -211,7 +211,6 @@ window.InsuraI18n = (function () {
       rag_mode_auto: "Авто (Ollama если готова)",
       rag_mode_extractive: "RAG (поиск по документам)",
       rag_mode_ollama: "Qwen RAG",
-      rag_mode_gigachat: "GigaChat",
       rag_ollama_ready: "Qwen готова",
       rag_ollama_down: "Ollama не готова — выберите RAG или установите модель",
 
@@ -546,7 +545,6 @@ window.InsuraI18n = (function () {
       rag_mode_auto: "Авто (Ollama дайын болса)",
       rag_mode_extractive: "RAG (құжаттардан іздеу)",
       rag_mode_ollama: "Qwen RAG",
-      rag_mode_gigachat: "GigaChat",
       rag_ollama_ready: "Qwen дайын",
       rag_ollama_down: "Ollama дайын емес — RAG таңдаңыз немесе модельді орнатыңыз",
 
@@ -880,7 +878,6 @@ window.InsuraI18n = (function () {
       rag_mode_auto: "Auto (Ollama if ready)",
       rag_mode_extractive: "RAG (document search)",
       rag_mode_ollama: "Qwen RAG",
-      rag_mode_gigachat: "GigaChat",
       rag_ollama_ready: "Qwen ready",
       rag_ollama_down: "Ollama not ready — pick RAG or install the model",
 

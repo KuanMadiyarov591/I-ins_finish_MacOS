@@ -19,7 +19,7 @@ router = APIRouter(prefix="/api/report", tags=["report"])
 
 class BuildIn(BaseModel):
     kind: str = Field(min_length=2, max_length=32)
-    mode: str = Field(default="auto", pattern="^(auto|extractive|ollama|qwen|gigachat)$")
+    mode: str = Field(default="auto", pattern="^(auto|extractive|ollama|qwen)$")
 
 
 @router.get("/kinds")

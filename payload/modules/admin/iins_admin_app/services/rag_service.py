@@ -364,7 +364,7 @@ def _generate_answer(
     lang = normalize_lang(lang) or "ru"
     backend = resolve_backend(mode)
 
-    if backend in ("ollama", "gigachat"):
+    if backend == "ollama":
         if not backend_ready(backend):
             raise RuntimeError(not_ready_message(backend))
         context = _format_context(hits)
@@ -397,14 +397,11 @@ def status_payload() -> Dict[str, Any]:
     sources = store.sources if store is not None else sorted({c.source for c in idx.chunks})
     _providers = providers_status()
     ollama = _providers["ollama"]
-    gigachat = _providers["gigachat"]
     effective = resolve_backend()
     ready = bool(store and store.chunk_count) or bool(idx and idx.chunks)
 
     if ollama.get("model_ready"):
         msg = f"Qwen RAG готов: {ollama.get('model') or 'Ollama'}"
-    elif gigachat.get("available"):
-        msg = f"GigaChat готов: {gigachat.get('model') or 'API'}"
     elif not ready:
         msg = "Административная база знаний пуста"
     else:
@@ -426,7 +423,6 @@ def status_payload() -> Dict[str, Any]:
         "lm_backend": get_settings().lm_backend,
         "effective_backend": effective,
         "ollama": ollama,
-        "gigachat": gigachat,
         "providers": _providers["providers"],
         "provider_labels": _providers["labels"],
         "ready": ready,

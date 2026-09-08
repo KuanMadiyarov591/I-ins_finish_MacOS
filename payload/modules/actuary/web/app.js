@@ -612,22 +612,17 @@
     if (!sel) return;
     const qwen = sel.querySelector('option[value="ollama"]');
     if (qwen) qwen.disabled = !state.ragOllamaReady;
-    const giga = sel.querySelector('option[value="gigachat"]');
-    if (giga) giga.disabled = !state.ragGigaReady;
     if (qwen && qwen.disabled && sel.value === "ollama") sel.value = "auto";
-    if (giga && giga.disabled && sel.value === "gigachat") sel.value = "auto";
   }
 
   async function refreshRagStatus() {
     try {
       const st = await api("/api/assistant/rag/status");
       state.ragOllamaReady = !!(st.ollama && st.ollama.model_ready);
-      state.ragGigaReady = !!(st.gigachat && (st.gigachat.selectable || st.gigachat.configured || st.gigachat.available));
       paintRagOllamaBadge();
       paintRagModeOptions();
     } catch {
       state.ragOllamaReady = false;
-      state.ragGigaReady = false;
       paintRagOllamaBadge();
       paintRagModeOptions();
     }

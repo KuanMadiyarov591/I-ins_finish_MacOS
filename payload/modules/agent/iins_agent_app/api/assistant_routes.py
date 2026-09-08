@@ -22,7 +22,7 @@ class AssistantAskIn(BaseModel):
     question: str = Field(min_length=2, max_length=2000)
     top_k: int = Field(default=4, ge=1, le=8)
     lang: str = Field(default="ru", pattern="^(ru|kk|en)$")
-    mode: str = Field(default="auto", pattern="^(auto|extractive|ollama|qwen|gigachat)$")
+    mode: str = Field(default="auto", pattern="^(auto|extractive|ollama|qwen)$")
     client_id: Optional[int] = None
     policy_hint: str = ""
 
@@ -32,7 +32,7 @@ class CoachIn(BaseModel):
     client_id: int
     objection: str = Field(default="", max_length=500)
     lang: str = Field(default="ru", pattern="^(ru|kk|en)$")
-    mode: str = Field(default="auto", pattern="^(auto|extractive|ollama|qwen|gigachat)$")
+    mode: str = Field(default="auto", pattern="^(auto|extractive|ollama|qwen)$")
 
 
 def _client_context(db: Session, client_id: int) -> str:
