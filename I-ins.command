@@ -173,6 +173,18 @@ if [[ ! -f "$DEPS_MARKER" || "$SOURCE_DIR/requirements-macos.txt" -nt "$DEPS_MAR
 fi
 
 
+# --- 4b. Локальный Qwen -----------------------------------------------------
+# Модель ставится сама: если сервер Ollama отвечает, а модели Qwen нет,
+# она скачивается здесь же. Кабинеты без неё работают в режиме «по базе
+# знаний», поэтому неудача на этом шаге запуск не останавливает.
+if [[ -f "$SOURCE_DIR/QWEN_SETUP.command" ]]; then
+  chmod +x "$SOURCE_DIR/QWEN_SETUP.command" >/dev/null 2>&1 || true
+  echo
+  bash "$SOURCE_DIR/QWEN_SETUP.command" --auto || true
+  echo
+fi
+
+
 # --- 5. Самопроверка --------------------------------------------------------
 export PYTHONDONTWRITEBYTECODE="1"
 export PYTHONUTF8="1"
