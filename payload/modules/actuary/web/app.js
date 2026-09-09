@@ -26,6 +26,53 @@
       .replace(/"/g, "&quot;");
   }
 
+  // Модель отвечает разметкой Markdown: **жирный**, списки, заголовки.
+  // Раньше это выводилось как есть — со звёздочками и одним куском.
+  // Полноценный разбор здесь не нужен, хватает того, что модель реально
+  // использует. Текст сначала экранируется, разметка накладывается после,
+  // поэтому вставить свой HTML через ответ модели нельзя.
+  function mdInline(s) {
+    return esc(s)
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s).,;:!?]|$)/g, "$1<em>$2</em>")
+      .replace(/`([^`\n]+)`/g, "<code>$1</code>");
+  }
+
+  function mdToHtml(text) {
+    const src = String(text || "").replace(/\r\n?/g, "\n").trim();
+    if (!src) return "";
+    const out = [];
+    let list = null;                       // "ul" | "ol" | null
+    const closeList = () => { if (list) { out.push(`</${list}>`); list = null; } };
+
+    for (const raw of src.split("\n")) {
+      const line = raw.trim();
+      if (!line) { closeList(); continue; }
+
+      const head = line.match(/^(#{1,6})\s+(.*)$/);
+      if (head) { closeList(); out.push(`<h5>${mdInline(head[2])}</h5>`); continue; }
+
+      const num = line.match(/^(\d{1,3})[.)]\s+(.*)$/);
+      if (num) {
+        if (list !== "ol") { closeList(); out.push('<ol class="md-list">'); list = "ol"; }
+        out.push(`<li>${mdInline(num[2])}</li>`);
+        continue;
+      }
+
+      const bul = line.match(/^[-*\u2022]\s+(.*)$/);
+      if (bul) {
+        if (list !== "ul") { closeList(); out.push('<ul class="md-list">'); list = "ul"; }
+        out.push(`<li>${mdInline(bul[1])}</li>`);
+        continue;
+      }
+
+      if (list) { out[out.length - 1] = out[out.length - 1].replace(/<\/li>$/, ` ${mdInline(line)}</li>`); continue; }
+      out.push(`<p>${mdInline(line)}</p>`);
+    }
+    closeList();
+    return out.join("");
+  }
+
   function localeTag() {
     const lang = I.getLang();
     if (lang === "en") return "en-US";
@@ -92,6 +139,40 @@
     return res.blob();
   }
 
+  // PDF отдаётся по тому же токену, что и остальное API. Простая ссылка
+  // <a href> заголовок Authorization не несёт, поэтому сервер отвечал 401
+  // и вкладка открывалась пустой. Забираем файл запросом и сохраняем.
+  async function savePdf(url, name) {
+    const status = $("#rep-status");
+    try {
+      if (status) status.textContent = t("rep_loading_pdf");
+      const blob = await apiBlob(url);
+      const href = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = href;
+      a.download = name || url.split("/").pop() || "report.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(href), 20000);
+      if (status) status.textContent = t("rep_saved");
+    } catch (err) {
+      if (status) status.textContent = String(err.message || err);
+    }
+  }
+
+  async function openPdf(url) {
+    const status = $("#rep-status");
+    try {
+      const blob = await apiBlob(url);
+      const href = URL.createObjectURL(blob);
+      window.open(href, "_blank", "noopener");
+      setTimeout(() => URL.revokeObjectURL(href), 60000);
+    } catch (err) {
+      if (status) status.textContent = String(err.message || err);
+    }
+  }
+
   function showApp(on) {
     $("#auth").hidden = on;
     $("#app").hidden = !on;
@@ -154,7 +235,10 @@
         (r) =>
           `<div class="row" style="justify-content:space-between;padding:4px 0">
              <span>${esc(r.created_at)} · ${esc(r.kind)} · ${Math.round(r.bytes / 1024)} КБ</span>
-             <a class="btn ghost" href="${esc(r.pdf_url)}" target="_blank" rel="noopener">${esc(t("rep_open"))}</a>
+             <span class="row" style="gap:6px">
+               <button class="btn ghost" type="button" data-open-pdf="${esc(r.pdf_url)}">${esc(t("rep_open"))}</button>
+               <button class="btn ghost" type="button" data-save-pdf="${esc(r.pdf_url)}">${esc(t("rep_pdf"))}</button>
+             </span>
            </div>`
       )
       .join("");
@@ -176,21 +260,27 @@
         return `<h4>${esc(s.heading)}</h4>${notes}${rows}`;
       })
       .join("");
-    const interpretation = (res.interpretation || "")
-      .split(/\n\s*\n/)
-      .filter((p) => p.trim())
-      .map((p) => `<p>${esc(p.trim())}</p>`)
-      .join("");
+    const interpretation = mdToHtml(res.interpretation || "");
     box.innerHTML = `
       <div class="row" style="justify-content:space-between;align-items:center;margin-bottom:8px">
         <strong>${esc(res.title)}</strong>
-        <a class="btn primary" href="${esc(res.pdf_url)}" target="_blank" rel="noopener">${esc(t("rep_pdf"))}</a>
+        <span class="row" style="gap:6px">
+          <button class="btn ghost" type="button" data-open-pdf="${esc(res.pdf_url)}">${esc(t("rep_open"))}</button>
+          <button class="btn primary" type="button" data-save-pdf="${esc(res.pdf_url)}">${esc(t("rep_pdf"))}</button>
+        </span>
       </div>
       <p class="muted small">${esc(t("rep_by"))}: ${esc(res.lm_model || "—")} · ${esc(res.lm_mode || "—")} · ${esc(res.created_at)}</p>
       ${tables}
       <h4>${esc(t("rep_interpretation"))}</h4>
       ${interpretation || `<p class="muted small">${esc(t("rep_no_text"))}</p>`}`;
   }
+
+  document.addEventListener("click", (ev) => {
+    const save = ev.target.closest("[data-save-pdf]");
+    if (save) { ev.preventDefault(); savePdf(save.getAttribute("data-save-pdf")); return; }
+    const open = ev.target.closest("[data-open-pdf]");
+    if (open) { ev.preventDefault(); openPdf(open.getAttribute("data-open-pdf")); }
+  });
 
   async function buildReport() {
     const btn = $("#rep-build");
@@ -599,7 +689,7 @@
           : "";
         return `<div class="chat-msg ${m.role}">
         <div class="chat-role">${esc(m.role === "user" ? t("rag_you") : t("rag_bot"))}</div>
-        <div class="chat-bubble">${esc(m.text)}</div>
+        <div class="chat-bubble">${m.role === "user" ? esc(m.text) : mdToHtml(m.text)}</div>
         ${sourcesHtml}
       </div>`;
       })

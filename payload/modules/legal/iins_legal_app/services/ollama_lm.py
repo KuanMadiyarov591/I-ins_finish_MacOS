@@ -194,6 +194,12 @@ def generate_ollama_reply(
         "options": {
             "num_predict": max(32, min(max_new_tokens, 1024)),
             "temperature": max(0.0, min(temperature, 1.0)),
+            # Модель на 1,5 млрд параметров легко впадает в повтор: ответ
+            # вырождается в «2.3.2.3.2.3…». Штраф за повторение и запрет
+            # длинных дословных повторов это снимают.
+            "repeat_penalty": 1.15,
+            "repeat_last_n": 256,
+            "top_p": 0.9,
         },
     }
     with httpx.Client(timeout=180.0, trust_env=False) as client:

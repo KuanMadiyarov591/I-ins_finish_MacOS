@@ -549,8 +549,59 @@ def _register_fonts() -> tuple[str, str]:
         return "Helvetica", "Helvetica-Bold"
     pdfmetrics.registerFont(TTFont("IIns", str(regular)))
     pdfmetrics.registerFont(TTFont("IIns-Bold", str(bold if bold.is_file() else regular)))
+    # Без семейства reportlab не знает, чем набирать <b> внутри абзаца:
+    # полужирные куски в тексте модели молча оставались обычными.
+    pdfmetrics.registerFontFamily(
+        "IIns", normal="IIns", bold="IIns-Bold", italic="IIns", boldItalic="IIns-Bold"
+    )
     _FONT_READY = True
     return "IIns", "IIns-Bold"
+
+
+def _xml_escape(text: str) -> str:
+    return str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _md_inline(text: str) -> str:
+    """**жирный** и *курсив* — в разметку, понятную reportlab."""
+    safe = _xml_escape(text)
+    safe = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", safe)
+    safe = re.sub(r"(^|[\s(])\*([^*\n]+)\*(?=[\s).,;:!?]|$)", r"\1<i>\2</i>", safe)
+    safe = re.sub(r"`([^`\n]+)`", r"\1", safe)   # обратные кавычки в PDF не нужны
+    return safe
+
+
+def _interpretation_flowables(text: str, st_h: Any, st_p: Any) -> List[Any]:
+    """Текст модели с разметкой — в абзацы, заголовки и списки.
+
+    Модель отвечает на Markdown: заголовки решётками, нумерованные пункты,
+    **жирный**. Раньше всё это уходило в PDF как есть — звёздочками и одним
+    сплошным куском, потому что абзацы разделялись только пустой строкой.
+    """
+    from reportlab.lib.units import mm
+    from reportlab.platypus import Paragraph, Spacer
+
+    out: List[Any] = []
+    for raw in (text or "").replace("\r\n", "\n").replace("\r", "\n").split("\n"):
+        line = raw.strip()
+        if not line:
+            continue
+        head = re.match(r"^(#{1,6})\s+(.*)$", line)
+        if head:
+            out.append(Spacer(1, 2 * mm))
+            out.append(Paragraph(_md_inline(head.group(2)), st_h))
+            continue
+        num = re.match(r"^(\d{1,3})[.)]\s+(.*)$", line)
+        if num:
+            out.append(Paragraph(_md_inline(num.group(2)), st_p,
+                                 bulletText=f"{num.group(1)}."))
+            continue
+        bul = re.match(r"^[-*\u2022]\s+(.*)$", line)
+        if bul:
+            out.append(Paragraph(_md_inline(bul.group(1)), st_p, bulletText="\u2022"))
+            continue
+        out.append(Paragraph(_md_inline(line), st_p))
+    return out
 
 
 def render_pdf(report: Report, path: Path) -> Path:
@@ -648,8 +699,7 @@ def render_pdf(report: Report, path: Path) -> Path:
         escape("Ниже — текст, написанный языковой моделью по вычисленным выше числам. "
                "Модель не имела доступа ни к каким другим данным."), st_note))
     story.append(Spacer(1, 3 * mm))
-    for para in [p for p in re.split(r"\n\s*\n", report.interpretation or "") if p.strip()]:
-        story.append(Paragraph(escape(para.strip()), st_p))
+    story += _interpretation_flowables(report.interpretation or "", st_h, st_p)
     story.append(Spacer(1, 6 * mm))
     story.append(Paragraph(escape(DISCLAIMER), st_note))
 

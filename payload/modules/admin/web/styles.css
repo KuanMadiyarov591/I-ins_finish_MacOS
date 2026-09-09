@@ -670,3 +670,60 @@ td.row-actions:empty::after {
   from { opacity: 0; transform: translateY(4px); }
   to { opacity: 1; transform: none; }
 }
+
+
+/* ------------------------------------------------------------------ чат
+   Длинная строка без пробелов (модель иногда выдаёт «2.3.2.3.2.3…»)
+   не помещалась в пузырь и уезжала вправо вместе с прокруткой.
+   Перенос по любому символу это чинит. */
+.bubble,
+.chat-bubble,
+.chat-msg .chat-bubble {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.chat-thread,
+.chat-log {
+  overflow-x: hidden;
+}
+
+/* Разметка в ответах модели и в интерпретации отчёта. */
+.bubble .md-list,
+.chat-bubble .md-list,
+#rep-result .md-list {
+  margin: 6px 0 6px 0;
+  padding-left: 22px;
+}
+.bubble .md-list li,
+.chat-bubble .md-list li,
+#rep-result .md-list li {
+  margin: 3px 0;
+}
+.bubble p,
+.chat-bubble p,
+#rep-result p {
+  margin: 6px 0;
+}
+.bubble p:first-child,
+.chat-bubble p:first-child { margin-top: 0; }
+.bubble p:last-child,
+.chat-bubble p:last-child { margin-bottom: 0; }
+.bubble h5,
+.chat-bubble h5,
+#rep-result h5 {
+  margin: 10px 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.bubble code,
+.chat-bubble code,
+#rep-result code {
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  font-size: 0.94em;
+}
+.bubble.user code { background: rgba(255, 255, 255, 0.18); }
+/* Пузырь теперь содержит абзацы и списки — pre-wrap добавлял пустые строки. */
+.bubble, .chat-bubble { white-space: normal; }
+.bubble.user, .chat-msg.user .chat-bubble { white-space: pre-wrap; }

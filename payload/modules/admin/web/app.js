@@ -35,6 +35,53 @@
     return d.innerHTML;
   }
 
+  // Модель отвечает разметкой Markdown: **жирный**, списки, заголовки.
+  // Раньше это выводилось как есть — со звёздочками и одним куском.
+  // Полноценный разбор здесь не нужен, хватает того, что модель реально
+  // использует. Текст сначала экранируется, разметка накладывается после,
+  // поэтому вставить свой HTML через ответ модели нельзя.
+  function mdInline(s) {
+    return esc(s)
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s).,;:!?]|$)/g, "$1<em>$2</em>")
+      .replace(/`([^`\n]+)`/g, "<code>$1</code>");
+  }
+
+  function mdToHtml(text) {
+    const src = String(text || "").replace(/\r\n?/g, "\n").trim();
+    if (!src) return "";
+    const out = [];
+    let list = null;                       // "ul" | "ol" | null
+    const closeList = () => { if (list) { out.push(`</${list}>`); list = null; } };
+
+    for (const raw of src.split("\n")) {
+      const line = raw.trim();
+      if (!line) { closeList(); continue; }
+
+      const head = line.match(/^(#{1,6})\s+(.*)$/);
+      if (head) { closeList(); out.push(`<h5>${mdInline(head[2])}</h5>`); continue; }
+
+      const num = line.match(/^(\d{1,3})[.)]\s+(.*)$/);
+      if (num) {
+        if (list !== "ol") { closeList(); out.push('<ol class="md-list">'); list = "ol"; }
+        out.push(`<li>${mdInline(num[2])}</li>`);
+        continue;
+      }
+
+      const bul = line.match(/^[-*\u2022]\s+(.*)$/);
+      if (bul) {
+        if (list !== "ul") { closeList(); out.push('<ul class="md-list">'); list = "ul"; }
+        out.push(`<li>${mdInline(bul[1])}</li>`);
+        continue;
+      }
+
+      if (list) { out[out.length - 1] = out[out.length - 1].replace(/<\/li>$/, ` ${mdInline(line)}</li>`); continue; }
+      out.push(`<p>${mdInline(line)}</p>`);
+    }
+    closeList();
+    return out.join("");
+  }
+
   function attr(s) {
     return esc(s).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
   }
@@ -257,7 +304,7 @@
         </div>`
       : "";
     return `<div class="bubble ${message.role === "user" ? "user" : "bot"}${message.error ? " error" : ""}">
-      <div>${esc(message.text)}</div>${sourcesHtml}
+      <div>${message.role === "user" ? esc(message.text) : mdToHtml(message.text)}</div>${sourcesHtml}
     </div>`;
   }
 
