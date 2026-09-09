@@ -38,7 +38,7 @@ if errorlevel 1 ( echo [ERROR] git add failed & pause & exit /b 1 )
 
 git diff --cached --quiet
 if errorlevel 1 (
-  git -c user.name="Kuan Madiyarov" -c user.email="kukamadchemical@gmail.com" commit -m "UI: render model markdown, fix PDF download, wrap long text, taller chat"
+  git -c user.name="Kuan Madiyarov" -c user.email="kukamadchemical@gmail.com" commit -m "Analysis tab: distribution fitting and tariff sensitivity for the actuary, decision-threshold explorer for the underwriter"
 )
 
 git remote remove origin >nul 2>&1

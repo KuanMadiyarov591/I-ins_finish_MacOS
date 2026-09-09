@@ -64,6 +64,7 @@
       <button type="button" class="tab" data-tab="detail" data-i18n="tab_detail">Карточка</button>
       <button type="button" class="tab" data-tab="recommend" data-i18n="tab_recommend">Рекомендации</button>
       <button type="button" class="tab" data-tab="consultant" data-i18n="tab_consultant">Консультант</button>
+      <button type="button" class="tab" data-tab="analysis" data-i18n="tab_analysis">Анализ</button>
     </nav>
 
     <!-- Dashboard -->
@@ -253,6 +254,113 @@
         </div>
       </div>
     </section>
+    <section id="tab-analysis" class="tab-panel" hidden>
+      <div class="subtabs" id="analysis-subtabs">
+        <button type="button" class="subtab active" data-an="threshold" data-i18n="an_sub_threshold">Порог решения</button>
+        <button type="button" class="subtab" data-an="book" data-i18n="an_sub_book">Портфель</button>
+        <button type="button" class="subtab" data-an="factors" data-i18n="an_sub_factors">Факторы риска</button>
+      </div>
+      <p id="an-status" class="muted small an-status"></p>
+
+      <div class="an-view" data-view="threshold">
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_thr_hist">Распределение риск-балла</h3>
+            <div id="an-risk-hist" class="chart-host"></div>
+          </div>
+          <div class="card an-card">
+            <h3 data-i18n="an_curve_lift">Что даёт порог</h3>
+            <div id="an-lift" class="chart-host"></div>
+          </div>
+        </div>
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_card_params">Пороги</h3>
+            <div class="an-slider">
+              <span class="an-slider-name" data-i18n="an_thr_refer">Порог передачи на разбор</span>
+              <input id="an-refer" type="range" min="0" max="100" step="1" value="45" />
+              <span class="an-slider-val" id="an-refer-val">45</span>
+            </div>
+            <div class="an-slider">
+              <span class="an-slider-name" data-i18n="an_thr_decline">Порог отказа</span>
+              <input id="an-decline" type="range" min="0" max="100" step="1" value="75" />
+              <span class="an-slider-val" id="an-decline-val">75</span>
+            </div>
+            <div class="an-controls">
+              <label class="an-field">
+                <span data-i18n="an_weight">Считать по</span>
+                <select id="an-weight">
+                  <option value="count" data-i18n="an_cases">Делам</option>
+                  <option value="premium" data-i18n="an_premium">Премии</option>
+                </select>
+              </label>
+              <div class="an-buttons">
+                <button id="an-thr-reset" class="btn" type="button" data-i18n="an_thr_reset">Вернуть регламент</button>
+              </div>
+            </div>
+            <div id="an-band-bars" class="chart-host chart-host-sm"></div>
+            <p id="an-thr-hint" class="muted small"></p>
+          </div>
+          <div class="card an-card">
+            <h3 data-i18n="an_card_metrics">Метрики</h3>
+            <div id="an-thr-metrics" class="metric-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="an-view" data-view="book" hidden>
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_book_status">По статусам</h3>
+            <div id="an-status-donut" class="chart-host"></div>
+          </div>
+          <div class="card an-card">
+            <h3 data-i18n="an_book_line">По направлениям</h3>
+            <div class="an-controls">
+              <label class="an-field">
+                <span data-i18n="an_weight">Считать по</span>
+                <select id="an-book-metric">
+                  <option value="n" data-i18n="an_cases">Делам</option>
+                  <option value="premium" data-i18n="an_premium">Премии</option>
+                  <option value="avg_risk" data-i18n="an_avg_risk">Среднему риск-баллу</option>
+                </select>
+              </label>
+            </div>
+            <div id="an-line-bars" class="chart-host"></div>
+          </div>
+        </div>
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_book_scatter">Риск и премия</h3>
+            <div id="an-risk-premium" class="chart-host"></div>
+          </div>
+          <div class="card an-card">
+            <h3 data-i18n="an_card_metrics">Метрики</h3>
+            <div id="an-book-metrics" class="metric-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="an-view" data-view="factors" hidden>
+        <div class="card an-card">
+          <div class="an-controls">
+            <label class="an-field">
+              <span data-i18n="an_factor_sort">Упорядочить по</span>
+              <select id="an-factor-sort">
+                <option value="n" data-i18n="an_cases">Делам</option>
+                <option value="avg_risk" data-i18n="an_avg_risk">Среднему риск-баллу</option>
+                <option value="fraud_share" data-i18n="an_fraud_share">Доле сигналов мошенничества</option>
+              </select>
+            </label>
+          </div>
+          <div id="an-factor-bars"></div>
+        </div>
+        <div class="card an-card table-wrap">
+          <h3 data-i18n="an_factor_table">Факторы в числах</h3>
+          <table class="data-table" id="an-factor-table"></table>
+        </div>
+      </div>
+    </section>
   </div>
 
   <div id="pdf-modal" class="pdf-modal" hidden>
@@ -271,5 +379,7 @@
 
   <script src="/static/i18n.js?v=underwriter-rag-1"></script>
   <script src="/static/app.js?v=underwriter-rag-1"></script>
+  <script src="/static/charts.js?v=20260901a"></script>
+  <script src="/static/analysis.js?v=20260901a"></script>
 </body>
 </html>

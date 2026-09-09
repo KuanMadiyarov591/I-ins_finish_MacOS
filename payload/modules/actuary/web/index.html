@@ -65,6 +65,7 @@
       <button type="button" class="tab" data-tab="recommend" data-i18n="tab_recommend">Рекомендации</button>
       <button type="button" class="tab" data-tab="aihub" data-i18n="tab_aihub">AI Hub</button>
       <button type="button" class="tab" data-tab="reports" data-i18n="tab_reports">Отчёты</button>
+      <button type="button" class="tab" data-tab="analysis" data-i18n="tab_analysis">Анализ</button>
     </nav>
 
     <section id="tab-dashboard" class="tab-panel">
@@ -271,6 +272,155 @@
       </div>
     </section>
 
+    <section id="tab-analysis" class="tab-panel" hidden>
+      <div class="subtabs" id="analysis-subtabs">
+        <button type="button" class="tab active" data-an="fit" data-i18n="an_sub_fit">Подгонка распределения</button>
+        <button type="button" class="tab" data-an="slices" data-i18n="an_sub_slices">Срезы портфеля</button>
+        <button type="button" class="tab" data-an="sens" data-i18n="an_sub_sens">Чувствительность тарифа</button>
+      </div>
+      <p id="an-status" class="muted small an-status"></p>
+
+      <div class="an-view" data-view="fit">
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_card_sample">Выборка и плотность</h3>
+            <div id="an-hist" class="chart-host"></div>
+          </div>
+          <div class="card an-card">
+            <h3 data-i18n="an_card_ll">Логарифм правдоподобия</h3>
+            <div id="an-ll" class="chart-host"></div>
+            <p id="an-fit-hint" class="muted small"></p>
+          </div>
+        </div>
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_card_params">Параметры</h3>
+            <div class="an-controls">
+              <label class="an-field">
+                <span data-i18n="an_field">Показатель</span>
+                <select id="an-field"></select>
+              </label>
+              <label class="an-field">
+                <span data-i18n="an_family">Семейство</span>
+                <select id="an-family">
+                  <option value="normal" data-i18n="an_family_normal">Нормальное</option>
+                  <option value="lognormal" data-i18n="an_family_lognormal">Логнормальное</option>
+                  <option value="gamma" data-i18n="an_family_gamma">Гамма</option>
+                </select>
+              </label>
+              <label class="an-field">
+                <span data-i18n="an_profile">Профиль по</span>
+                <select id="an-profile">
+                  <option value="p1">1</option>
+                  <option value="p2">2</option>
+                </select>
+              </label>
+            </div>
+            <div class="an-slider">
+              <span class="an-slider-name" id="an-p1-name">μ</span>
+              <input id="an-p1" type="range" />
+              <span class="an-slider-val" id="an-p1-val">—</span>
+            </div>
+            <div class="an-slider">
+              <span class="an-slider-name" id="an-p2-name">σ</span>
+              <input id="an-p2" type="range" />
+              <span class="an-slider-val" id="an-p2-val">—</span>
+            </div>
+            <div class="an-slider">
+              <span class="an-slider-name" data-i18n="an_n">Объём выборки</span>
+              <input id="an-n" type="range" min="10" max="1000" step="10" value="200" />
+              <span class="an-slider-val" id="an-n-val">200</span>
+            </div>
+            <div class="an-buttons">
+              <button id="an-resample" class="btn" type="button" data-i18n="an_resample">Новая выборка</button>
+              <button id="an-reset" class="btn primary" type="button" data-i18n="an_reset_mle">Сбросить в МП-оценку</button>
+            </div>
+          </div>
+          <div class="card an-card">
+            <h3 data-i18n="an_card_metrics">Метрики</h3>
+            <div id="an-metrics" class="metric-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="an-view" data-view="slices" hidden>
+        <div class="card an-card">
+          <div class="an-controls">
+            <label class="an-field">
+              <span data-i18n="an_group">Группировка</span>
+              <select id="an-group">
+                <option value="territory" data-i18n="an_group_terr">Территория</option>
+                <option value="cgr" data-i18n="an_group_cgr">Тарифная группа</option>
+                <option value="age" data-i18n="an_group_age">Возраст</option>
+                <option value="gender" data-i18n="an_group_gender">Пол</option>
+              </select>
+            </label>
+            <label class="an-field">
+              <span data-i18n="an_metric">Показатель</span>
+              <select id="an-metric">
+                <option value="avg" data-i18n="an_metric_avg">Средние премии</option>
+                <option value="ratio" data-i18n="an_metric_ratio">Отношение отобранной к индикативной</option>
+                <option value="count" data-i18n="an_metric_count">Число программ</option>
+              </select>
+            </label>
+          </div>
+          <div id="an-bars" class="chart-host"></div>
+        </div>
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_scatter_title">Возраст и отобранная премия</h3>
+            <div id="an-scatter" class="chart-host"></div>
+            <p id="an-scatter-note" class="muted small"></p>
+          </div>
+          <div class="card an-card table-wrap">
+            <h3 data-i18n="an_table_title">Срез в числах</h3>
+            <table class="data-table" id="an-slice-table"></table>
+          </div>
+        </div>
+      </div>
+
+      <div class="an-view" data-view="sens" hidden>
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_sens_curve">Сумма премии при разных множителях</h3>
+            <div id="an-sens-curve" class="chart-host"></div>
+          </div>
+          <div class="card an-card">
+            <h3 data-i18n="an_sens_hist">Относительное изменение по программам</h3>
+            <div id="an-sens-hist" class="chart-host"></div>
+          </div>
+        </div>
+        <div class="an-grid an-grid-2">
+          <div class="card an-card">
+            <h3 data-i18n="an_card_params">Параметры</h3>
+            <div class="an-slider">
+              <span class="an-slider-name" data-i18n="an_sens_base">Множитель базовой ставки</span>
+              <input id="an-base" type="range" min="0.8" max="1.2" step="0.005" value="1" />
+              <span class="an-slider-val" id="an-base-val">1,000</span>
+            </div>
+            <div class="an-slider">
+              <span class="an-slider-name" data-i18n="an_sens_exp">Доля фиксированных расходов в тарифе</span>
+              <input id="an-exp" type="range" min="0" max="1" step="0.01" value="0" />
+              <span class="an-slider-val" id="an-exp-val">0 %</span>
+            </div>
+            <div class="an-slider">
+              <span class="an-slider-name" data-i18n="an_sens_cgr">Сдвиг коэффициента тарифной группы</span>
+              <input id="an-cgr-shift" type="range" min="-0.2" max="0.2" step="0.005" value="0" />
+              <span class="an-slider-val" id="an-cgr-val">+0,0 %</span>
+            </div>
+            <div class="an-buttons">
+              <button id="an-sens-reset" class="btn" type="button" data-i18n="an_sens_reset">Вернуть исходное</button>
+            </div>
+            <p class="muted small" data-i18n="an_sens_balance_hint">Балансовый разрыв — сумма расчётных премий минус сумма индикативных. У линейного тарифа он тождественно равен нулю; у обучаемой модели такого равенства нет.</p>
+          </div>
+          <div class="card an-card">
+            <h3 data-i18n="an_card_metrics">Метрики</h3>
+            <div id="an-sens-metrics" class="metric-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="tab-aihub" class="tab-panel" hidden>
       <div class="card assistant-chat-card">
         <div class="section-head row">
@@ -315,5 +465,7 @@
 
   <script src="/static/i18n.js?v=20260801i"></script>
   <script src="/static/app.js?v=20260801i"></script>
+  <script src="/static/charts.js?v=20260901a"></script>
+  <script src="/static/analysis.js?v=20260901a"></script>
 </body>
 </html>

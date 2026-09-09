@@ -6,6 +6,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from iins_actuary_app.api import (
+    analysis_routes,
     assumptions_routes,
     assistant_routes,
     auth_routes,
@@ -47,6 +48,7 @@ def create_app() -> FastAPI:
     )
 
     app.include_router(auth_routes.router)
+    app.include_router(analysis_routes.router)
     app.include_router(dashboard_routes.router)
     app.include_router(premiums_routes.router)
     app.include_router(assumptions_routes.router)
