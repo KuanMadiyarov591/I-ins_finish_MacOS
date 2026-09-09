@@ -131,6 +131,48 @@ def resolve_lm_backend(requested: Optional[str] = None) -> str:
     return "ollama" if ollama_is_ready() else "extractive"
 
 
+def _explain_http_error(response: Any, model: str) -> str:
+    """Причина отказа словами: Ollama кладёт её в тело ответа, а не в статус.
+
+    Раньше наружу уходило «Server error \'500 Internal Server Error\'» — по такому
+    сообщению понять ничего нельзя. Тело почти всегда объясняет: модель не
+    скачалась до конца, не хватило памяти, тег не найден.
+    """
+    detail = ""
+    try:
+        body = response.json()
+        detail = str(body.get("error") or "").strip()
+    except Exception:  # noqa: BLE001
+        try:
+            detail = (response.text or "").strip()[:300]
+        except Exception:  # noqa: BLE001
+            detail = ""
+
+    low = detail.lower()
+    if response.status_code == 404 or "not found" in low:
+        return (
+            f"Ollama не нашла модель {model}. Скачайте её заново: "
+            f"ollama pull {model}" + (f" ({detail})" if detail else "")
+        )
+    if "memory" in low or "out of memory" in low or "insufficient" in low:
+        return (
+            f"Ollama не смогла загрузить {model}: не хватает памяти. "
+            "Закройте тяжёлые программы или возьмите модель поменьше, "
+            "например qwen2.5:0.5b." + (f" ({detail})" if detail else "")
+        )
+    if "no such file" in low or "unable to load" in low or "digest" in low:
+        return (
+            f"Файлы модели {model} неполные — загрузка оборвалась. "
+            f"Скачайте заново: ollama pull {model}" + (f" ({detail})" if detail else "")
+        )
+    if detail:
+        return f"Ollama ответила ошибкой на модели {model}: {detail}"
+    return (
+        f"Ollama ответила кодом {response.status_code} на модели {model}. "
+        f"Проверьте её: ollama run {model} \"привет\""
+    )
+
+
 def generate_ollama_reply(
     user_instruction: str,
     *,
@@ -155,7 +197,8 @@ def generate_ollama_reply(
     }
     with httpx.Client(timeout=180.0, trust_env=False) as client:
         r = client.post(f"{_base_url()}/api/chat", json=payload)
-        r.raise_for_status()
+        if r.status_code >= 400:
+            raise RuntimeError(_explain_http_error(r, chosen))
         data = r.json()
     message = data.get("message") or {}
     text = (message.get("content") or "").strip()

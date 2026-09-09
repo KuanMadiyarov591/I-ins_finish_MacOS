@@ -78,6 +78,51 @@ qwen_present() {
   printf '%s' "$hit"
 }
 
+# Тело ответа Ollama при ошибке: там причина, а не в номере статуса.
+err_text() {
+  sed -n 's/.*"error"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' <<< "$1" | head -1
+}
+
+# Модель может числиться в списке, но не работать: если загрузка оборвалась,
+# манифест уже записан, а файлы весов — нет. Поэтому проверяем не наличие,
+# а работоспособность: просим сказать одно слово.
+model_answers() {
+  local out code
+  out="$(curl -sS -m 180 -w $'\n%{http_code}' -X POST "$BASE_URL/api/chat" \
+        -H 'Content-Type: application/json' \
+        -d "{\"model\":\"$1\",\"messages\":[{\"role\":\"user\",\"content\":\"привет\"}],\"stream\":false,\"options\":{\"num_predict\":8}}" 2>&1)"
+  code="$(tail -1 <<< "$out")"
+  LAST_ERR="$(err_text "$out")"
+  [[ "$code" == "200" ]]
+}
+
+pull_model() {
+  curl -fsS --no-buffer -m 7200 -X POST "$BASE_URL/api/pull" \
+       -H 'Content-Type: application/json' \
+       -d "{\"model\":\"$1\",\"stream\":true}" \
+    | awk '
+        match($0, /"status"[ ]*:[ ]*"[^"]*"/) {
+          s = substr($0, RSTART, RLENGTH); sub(/.*"status"[ ]*:[ ]*"/, "", s); sub(/"$/, "", s)
+        }
+        match($0, /"completed"[ ]*:[ ]*[0-9]+/) {
+          c = substr($0, RSTART, RLENGTH); sub(/.*:[ ]*/, "", c) + 0
+        }
+        match($0, /"total"[ ]*:[ ]*[0-9]+/) {
+          tt = substr($0, RSTART, RLENGTH); sub(/.*:[ ]*/, "", tt) + 0
+        }
+        {
+          pct = (tt + 0 > 0) ? int((c + 0) * 100 / (tt + 0)) : -1
+          if (pct >= 0 && pct >= shown + 5) { printf("  %s: %d%%\n", s, pct); shown = pct; fflush() }
+          else if (s != last && pct < 0) { printf("  %s\n", s); fflush(); last = s }
+        }'
+  return ${PIPESTATUS[0]}
+}
+
+drop_model() {
+  curl -fsS -m 60 -X DELETE "$BASE_URL/api/delete" \
+       -H 'Content-Type: application/json' -d "{\"model\":\"$1\"}" >/dev/null 2>&1
+}
+
 # --- 1. Отвечает ли сервер --------------------------------------------------
 head_ "1. Сервер Ollama"
 
@@ -297,54 +342,77 @@ else
   fi
 fi
 
-# --- 3. Какие модели скачаны ------------------------------------------------
-head_ "3. Модели"
+# --- 3. Модель ---------------------------------------------------------------
+head_ "3. Модель"
 
+LAST_ERR=""
 CHOSEN="$(qwen_present || true)"
-if [[ -n "$CHOSEN" ]]; then
-  ok "Модель Qwen на месте: $CHOSEN"
-  [[ "$CHOSEN" != "$WANT_MODEL" ]] && say "     кабинеты возьмут её вместо $WANT_MODEL — это нормально"
-else
+
+if [[ -z "$CHOSEN" ]]; then
   ALL="$(model_names | paste -sd, - | sed 's/,/, /g')"
   [[ -z "$ALL" ]] && ALL="их нет"
   bad "Моделей Qwen нет (сейчас скачано: $ALL)"
   say
   say "Скачиваю $WANT_MODEL — это около 1 ГБ, займёт несколько минут."
   say
-
-  # Качаем через API сервера, а не через программу: сервер уже отвечает,
-  # а вот файл программы на этой машине может оказаться приложением с окном —
-  # тогда «pull» просто открыл бы окно и завис.
-  pulled=1
-  curl -fsS --no-buffer -m 7200 -X POST "$BASE_URL/api/pull" \
-       -H 'Content-Type: application/json' \
-       -d "{\"model\":\"$WANT_MODEL\",\"stream\":true}" \
-    | awk '
-        match($0, /"status"[ ]*:[ ]*"[^"]*"/) {
-          s = substr($0, RSTART, RLENGTH); sub(/.*"status"[ ]*:[ ]*"/, "", s); sub(/"$/, "", s)
-        }
-        match($0, /"completed"[ ]*:[ ]*[0-9]+/) {
-          c = substr($0, RSTART, RLENGTH); sub(/.*:[ ]*/, "", c) + 0
-        }
-        match($0, /"total"[ ]*:[ ]*[0-9]+/) {
-          tt = substr($0, RSTART, RLENGTH); sub(/.*:[ ]*/, "", tt) + 0
-        }
-        {
-          pct = (tt + 0 > 0) ? int((c + 0) * 100 / (tt + 0)) : -1
-          if (pct >= 0 && pct >= shown + 5) { printf("  %s: %d%%\n", s, pct); shown = pct; fflush() }
-          else if (s != last && pct < 0) { printf("  %s\n", s); fflush(); last = s }
-        }'
-  pulled=${PIPESTATUS[0]}
-
-  if [[ $pulled -eq 0 ]]; then
+  if pull_model "$WANT_MODEL"; then
     CHOSEN="$(qwen_present || true)"
-    if [[ -n "$CHOSEN" ]]; then ok "Скачана: $CHOSEN"; else bad "Скачалось, но модель не видна"; fi
+  fi
+  if [[ -z "$CHOSEN" ]]; then
+    bad "Скачать не удалось — проверьте связь и свободное место."
+    finish 1
+  fi
+  ok "Скачана: $CHOSEN"
+else
+  ok "Модель числится в списке: $CHOSEN"
+fi
+
+# Наличие в списке ничего не гарантирует: при оборванной загрузке манифест
+# записан, а файлы весов — нет. Такая модель видна, но на первом же вопросе
+# отвечает пятисотой ошибкой. Поэтому спрашиваем её по-настоящему.
+say "Проверяю, отвечает ли она (первый запуск может занять полминуты)…"
+if model_answers "$CHOSEN"; then
+  ok "Отвечает"
+else
+  bad "Не отвечает: ${LAST_ERR:-сервер вернул ошибку}"
+  case "$(printf '%s' "$LAST_ERR" | tr 'A-Z' 'a-z')" in
+    *memory*|*insufficient*)
+      say
+      say "Не хватает оперативной памяти. Закройте тяжёлые программы или"
+      say "возьмите модель поменьше:"
+      say "  OLLAMA_MODEL=qwen2.5:0.5b ./QWEN_SETUP.command"
+      finish 1 ;;
+  esac
+  say
+  say "Похоже, файлы модели неполные — загрузка когда-то оборвалась."
+  say "Удаляю и качаю заново."
+  say
+  drop_model "$CHOSEN"
+  if ! pull_model "$WANT_MODEL"; then
+    bad "Скачать заново не удалось."
+    finish 1
+  fi
+  CHOSEN="$(qwen_present || true)"
+  if [[ -z "$CHOSEN" ]]; then
+    bad "После повторной загрузки модель не появилась в списке."
+    finish 1
+  fi
+  say
+  say "Проверяю ещё раз…"
+  if model_answers "$CHOSEN"; then
+    ok "Теперь отвечает: $CHOSEN"
   else
-    bad "Скачать не удалось — проверьте связь и свободное место"
-    say "Вручную: ollama pull $WANT_MODEL"
+    bad "По-прежнему не отвечает: ${LAST_ERR:-сервер вернул ошибку}"
+    say
+    say "Это уже не про загрузку. Посмотрите, что скажет сама Ollama:"
+    say "  curl -s $BASE_URL/api/chat -d '{\"model\":\"$CHOSEN\",\"messages\":[{\"role\":\"user\",\"content\":\"привет\"}],\"stream\":false}'"
+    say
+    say "Кабинеты продолжат работать в режиме «RAG по базе знаний»."
     finish 1
   fi
 fi
+
+[[ "$CHOSEN" != "$WANT_MODEL" ]] && say "     кабинеты возьмут её вместо $WANT_MODEL — это нормально"
 
 # --- 4. Итог ----------------------------------------------------------------
 head_ "Итог"
